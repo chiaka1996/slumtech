@@ -12,6 +12,19 @@ export default function Home() {
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+         dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        }
+      }
+    ],
   };
 
   const data = [
@@ -44,25 +57,61 @@ export default function Home() {
   ]
 
   return (
-   <main className="relative overflow-hidden">
+   <main className="relative overflow-hidden font-primary">
     <Navigation />
     <Sidebar /> 
   
-    <div className="">
+    <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[500px] relative">
+      <div className="absolute top-[10%] left-[10%] w-[45%] z-30">
+        <header className="font-header text-[48px] text-btn_color">
+          Nurturing Young Talents from Slum Communities in Africa Into Tech
+          </header>
+
+        <p className="font-normal text-normal text-btn_color w-[80%] mt-[3%]">
+            Join us in our mission to empower Africa's youth through technology
+            Together, we can build a more inclusive and empowered Africa
+            </p>
+      </div>
     <Image 
-      src="/images/home_banner.png"
-      width={2500}
-      height={2500}
-      // fill
+      src="/images/banner.png"
+      fill
       alt="banner"
-      className="rounded-full"
+      className="filter brightness-[30%]"
         /> 
-    </div>
+
+        <div className="absolute z-30 bottom-[25%] right-[10%] w-[22%]">
+          <header className="font-header text-[22px] text-btn_color">Brands Supporting Our Mission</header>
+          <div className="flex flex-row justify-around">
+          <div className="relative w-[110px] h-[35px]">
+          <Image 
+          src="/logo/a2z.png"
+          fill
+          alt="a2z"
+            /> 
+          </div>
+          <div className="relative w-[115px] h-[35px]">
+          <Image 
+          src="/logo/gtech.png"
+          fill
+          alt="banner"
+            /> 
+          </div>
+          </div>
+        </div>
+    </div> 
+    
    
 
     {/* our approach */}
-   <section className="w-[30%] mt-[10%] ml-[50%]">
-    <div>
+   <section className="w-full mt-[10%] px-[10%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center">
+   <div className="w-[450px] h-[450px]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
+    <Image
+      src="/images/approach.png"
+      fill
+      alt="school children"
+        /> 
+    </div>
+    <div className="w-[40%]  max-large:w-full">
     <header className="font-header text-header text-head mb-3">Our Approach</header>
     <div className="text-normal font-normal text-text_color">
     Through strategic partnerships, 
@@ -75,34 +124,34 @@ export default function Home() {
    </section>
 
    
-   <section className="relative mt-[3%] h-[1440px]">
-   <div className='absolute w-[500px] h-[500px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <section className="relative mt-[3%] h-[1440px]  max-large:h-[1800]">
+   <div className='absolute w-[500px]  max-large:w-[300px] h-[500px] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute bottom-[20%] left-[20%] w-[195px]">
       <div className="text-[#0F01AF] font-header text-head">100% Free</div>
-      <div className="text-normal text-header font-header">Tech training for young African talents from the slum</div>
+      <div className="text-normal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
-   <div className="absolute top-[30%] right-[30%] w-[146px]">
+   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[146px]">
       <div className="text-[#FFCB2F] font-header text-head">10M +</div>
-      <div className="text-normal text-header font-header">
+      <div className="text-normal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
-    <div className='absolute w-[650px] h-[650px] rounded-full top-[40%] -right-[1%] bg-[#FF4747] opacity-10' >
-   <div className="absolute -top-[8%] right-[25%] w-[206px]">
+    <div className='absolute w-[650px]  max-large:w-[450px] h-[650px]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
+   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[206px]  max-large:w-[150px]">
       <div className="text-[#1A9635] font-header text-head mb-2">5k +</div>
-      <div className="text-normal text-header font-header">
+      <div className="text-normal  max-large:text-[14px] text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
    </div>
 
     {/* our identity */}
-    <div className="w-[697px] h-[640px] bg-[#F5FBF6] px-[10%] py-[10%] absolute top-[10%] left-0">
+    <div className="w-[697px] max-large:w-[90%] bg-[#F5FBF6] px-[10%] py-[10%] absolute top-[10%] max-large:top-[43%] left-0 max-large:left-[5%]">
       <header className="font-header text-head text-header">Our Identity</header>
-      <div className="text-normal font-normal text-text_color w-[376px]">
+      <div className="text-normal font-normal text-text_color w-[376px] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
       environment that thrives on diversity, inclusivity, and social responsibility. 
       We prioritize ethical tech practices, environmental sustainability, and social impact,
@@ -111,8 +160,8 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[692px] h-[660px] bg-[#FDFEFD] absolute bottom-[15%] left-[10%]">
-      <div className="text-[24px] font-header text-text_color w-[408px]">
+    <div className="z-50 flex flex-row justify-center items-center w-[692px] max-large:w-[90%] h-[660px]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] max-large:left-[5%]">
+      <div className="text-[24px] max-large:text-[14px] font-header text-text_color w-[408px]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
        and register students with a passion for technology and a drive to excel. 
@@ -124,7 +173,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] left-[10%] z-10 h-[500px] w-[80%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[500px] w-[80%] max-large:w-[90%]">
     {/* <div className="w-[90%] h-[500px] max-md:h-[200px] relative"> */}
     <Image 
       src="/images/schoolboy.png"
@@ -138,21 +187,21 @@ export default function Home() {
     </div>
     </section>
 
-    <section className="bg-[#F5FBF6] w-[100%] h-[1356px] py-[5%] px-[10%] relative">
+    <section className="bg-[#F5FBF6] w-[100%] h-[1356px] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
       <div>
-        <header className="font-header text-head text-header">what We Do</header>
-        <div className="text-normal font-normal text-text_color w-[329px]">
+        <header className="font-header text-head text-header max-md:text-[25px]">what We Do</header>
+        <div className="text-normal font-normal text-text_color w-[329px] max-large:w-full">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
       </div>
       </div>
 
-      <div className="w-[70%] ml-[30%] flex flex-row justify-between">
-        <div className="font-header text-[20px] text-header w-[274px] pt-[20%]">
+      <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[274px] pt-[20%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[382px] h-[500px] max-md:h-[200px] relative">
+      <div className="w-[382px] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -160,14 +209,13 @@ export default function Home() {
           /> 
           </div>
         </div>
-
-      
-        <div className="absolute bottom-[25%] right-[37%] w-[53%] flex flex-row justify-between items-center">
-        <div className="font-header text-[20px] text-header w-[350px]">
+ 
+        <div className="absolute bottom-[25%] max-large:bottom-[35%] right-[37%] max-large:right-[5%] w-[53%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[350px]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[382px] h-[500px] max-md:h-[200px] relative">
+      <div className="w-[382px] max-large:w-full h-[500px] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -176,13 +224,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-[9%] right-[10%] w-[56%] flex flex-row justify-between">
-        <div className="font-header text-[20px] text-header w-[390px] mt-[40%]">
+        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[56%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[390px] w-[382px] max-large:w-full  mt-[40%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[382px] h-[500px] relative">
+      <div className="w-[382px] max-large:w-full h-[500px] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
@@ -193,10 +241,10 @@ export default function Home() {
     </section>
 
       {/* eductional initiatives */}
-    <section className="py-[5%] px-[10%]">
-      <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
+    <section className="py-[5%] px-[10%]  max-large:px-[5%] ">
+      <header className="font-header text-head max-large:text-[20px] text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
-      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[22%] h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
+      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[22%]  max-large:w-[40%]  h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
       <div className="h-[150px] rounded-xl relative">
       <Image 
       src={option.img}
@@ -215,7 +263,8 @@ export default function Home() {
     </section>
 
       {/* partner with us */}
-    <section className="ml-[20%] mt-[5%] mb-[10%] w-[442px]">
+    <section className="px-[15%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[10%] w-full flex flex-row max-large:flex-col-reverse justify-between">
+      <div className=" w-[45%] max-large:w-full max-large:mt-[5%]">
       <p className="text-normal font-normal text-color">
       Being a part of SlumTech is a rewarding experience that allows 
       you to make a tangible difference in the lives of others. By giving your 
@@ -227,8 +276,35 @@ export default function Home() {
       technology
       </p>
       <div className="flex flex-row justify-between mt-[5%]">
-        <button className="h-[48px] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color mr-5 outline-none">Partner with us</button>
-        <button className="h-[48px] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] outline-none" >Become a Volunteer</button>
+        <button className="h-[48px] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="h-[48px] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+      </div>
+      </div>
+      <div className="w-[45%] max-large:w-full">
+        <div className="flex flex-row items-center max-large:justify-center">
+        <div  className="relative w-[64px] max-large:w-[50px] h-[64px] max-large:h-[50px] mr-[50px]">
+          <Image 
+          src="/images/partner2.png"
+          fill
+          alt="logo"
+          /> 
+      </div>
+      <div  className="relative w-[150px] max-large:w-[120px] h-[150px] max-large:h-[120px]">
+          <Image 
+          src="/images/partner3.png"
+          fill
+          alt="logo"
+          /> 
+      </div>
+      </div>
+      <div  className="relative w-[260px] max-large:w-[200px] h-[260px] max-large:h-[200px]">
+      <Image 
+      src="/images/partner1.png"
+      fill
+      alt="slumtech shirt"
+      /> 
+      </div>
+
       </div>
     </section>
 
@@ -240,8 +316,8 @@ export default function Home() {
       alt="banner"
         /> 
 
-    <div className="absolute top-[30%] left-[10%] w-[421px] text-btn_color">
-      <p className="text-normal font-normal text-color">
+    <div className="absolute top-[30%] max-large:top-[20%] left-[10%] max-large:left-[5%] w-[421px] max-large:w-[90%] text-btn_color">
+      <p className="text-normal max-large:text-[12px] font-normal text-color">
       Your donation has the power to change lives.
        By contributing to SlumTech Foundation, you're not just giving, 
        you're impacting lives, opportunity, and a chance for a brighter future.
@@ -249,7 +325,7 @@ export default function Home() {
       Together, we can build a better world
       </p>
       <div className="mt-[5%]">
-        <button className="w-[259px] h-[48px] px-[5%] bg-btn_green rounded-[8px] font-btn_weight text-btn_color mr-5 outline-none">Donate</button>
+        <button className="w-[259px] max-large:w-[170px] h-[48px] max-large:h-[40px] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color mr-5 outline-none">Donate</button>
       </div>
     </div>
     </section>

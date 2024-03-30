@@ -5,47 +5,55 @@ import style from './sidebar.module.css';
 import Image from 'next/image'
 import { BarState } from '../../context/context';
 
-
-
 const SideBar = ({page}) => {
   const router = useRouter();
     const { bar, closeBar} = BarState();
 
-
+    const NavItems = [
+      {
+        label: "Home",
+        url: "/"
+      },
+      {
+        label: "Enroll",
+        url: "/register"
+      },
+      {
+        label: "About",
+        url: "/about"
+      },
+      // {
+      //    label: "Volunteer",
+      //    url: "/partnership"
+      //  },
+       {
+         label: "Partner with us",
+         url: "/partnership"
+       },
+       {
+         label: "Privacy Policy",
+         url: "/policy"
+       },
+      {
+        label: "Contact Us",
+        url: "/contact"
+      }
+    ]
     
     return(
        <nav className={bar ? style.sidebarContainer : style.sidebarContainerClose}>
-         <div onClick={()=>closeBar()}>
-         <Link href="#" className='no-underline text-nav_links text-normal '>
-            Home
-           </Link>
-        </div>
+          {
+              NavItems.map((data, i) =>  <div key={i} onClick={()=>closeBar()} className={router.asPath == data.url ? style.activeLink : style.navLink}>
+                <Link href={data.url} className='no-underline text-nav_links text-normal'>
+                {data.label}
+                </Link>
+                </div>
+              )
+            }
 
-        <div onClick={()=>closeBar()}>
-         <Link href="#" className='no-underline text-nav_links text-normal '>
-            Enroll
+         <Link href='/donation' onClick={()=>closeBar()} className='no-underline'>
+        <button className='bg-btn_green text-normal px-3 py-[2%] text-btn_color rounded-[5px] w-[80%] mx-[10%]'>Donate</button>
         </Link>
-        </div>
-
-        <div onClick={()=>closeBar()}>
-         <Link href="#" className='no-underline text-nav_links text-normal '>
-            About
-        </Link>
-        </div>
-
-        <div onClick={()=>closeBar()}>
-         <Link href="#" className='no-underline text-nav_links text-normal '>
-            Contact Us
-        </Link>
-        </div>
-
-        <div onClick={()=>closeBar()}>
-         <Link href="#" className='no-underline text-nav_links text-normal '>
-            Contact Us
-        </Link>
-        </div>
-
-        <button className='bg-btn_green text-normal px-3 py-1 text-btn_color rounded-[5px]'>Donate</button>
        </nav>
     )
 }
