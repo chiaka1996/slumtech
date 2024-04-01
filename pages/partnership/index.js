@@ -1,19 +1,122 @@
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
+import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, TextAreaComponent} from "../../components"
+
 
 const Partnership = () => {
+    const [loading, setLoading] = useState(false)
+    const [data, setData] =  useState({
+        name: "",
+        email: "",
+       phone: "",
+       type: "",
+       partnerDetails: "",
+       additionalInformation: ""
+
+    })
+  
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+  
+    const onChangeInput = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
+  
+    setData({
+        ...data, 
+        [name] : value
+    })
+
+    console.log(data)
+  }
+  
+  const submitBtn = async (e) => {
+    try{
+        e.preventDefault()
+        setLoading(true)
+    const {name, email, phone, type, partnerDetails, additionalInformation} = data;
+  
+    if(!name || !email || !phone || !type || !partnerDetails || !additionalInformation) {
+        setLoading(false)
+        return  toast.error("please fill all required fields.", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+  
+    if(name.length < 2){
+        setLoading(false)
+        return  toast.error("name should be a minimum of 2 characters", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+  
+    if(!emailRegex.test(email)){
+        setLoading(false)
+        return  toast.error("invalid email", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+  
+    const httpRequest = await fetch('../api/partnership',{
+        method: "POST",
+        body: JSON.stringify(data),
+        headers:{
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+  
+    const response = await httpRequest.json();
+  
+    if(response.status){
+        setLoading(false)
+        toast.success(`${response.message}`, {
+            position: "top-right",
+            theme: "colored",
+            });
+  
+        setData({
+            name: "",
+            email: "",
+            phone: "",
+            type: "",
+            partnerDetails: "",
+            additionalInformation: ""
+        })
+    }
+    else{
+        setLoading(false)
+        toast.error(`${response.message}`, {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+    }
+    catch(error){
+    setLoading(false)
+    return toast.error(`${error.message}`, {
+        position: "top-right",
+        theme: "colored",
+        });
+  }
+  }
+
     return (
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
         <Navigation />
         <Sidebar /> 
-        <div className="px-[10%] max-md:px-[5%] pt-[5%]">
+        <ToastContainer />
+        <div className="px-[10%] max-md:px-[5%] pt-[5%] max-large:mb-[7%] ">
         <Headers
             index={"C"}
             headings={"all for Partnership"}
           />
           </div>
 
-        <div className="relative w-full h-[320px] my-[1%]">
+        <div className="relative w-full h-[320px] max-md:h-[270px] my-[1%]">
             <Image 
             src="/images/partnership.png"
             fill
@@ -35,30 +138,39 @@ const Partnership = () => {
                 type="text"
                 placeholder="e.g nancy clemz"
                 labelName="Full Name"
+                value={data.name}
+                name="name"
+                onChangeInput={onChangeInput}
                 />
 
                 <InputComponent
                 type="email"
                 placeholder="e.g nancy@gmaail.com"
                 labelName="Email"
+                value={data.email}
+                name="email"
+                onChangeInput={onChangeInput}
                 />
 
                 <InputComponent
                 type="number"
                 placeholder="e.g nancy@gmaail.com"
                 labelName="Phone no"
+                value={data.phone}
+                name="phone"
+                onChangeInput={onChangeInput}
                 />
 
                 <div className="my-[5%]">
                     <header className="mb-[3%] font-label text-sub_header text-header">Please Indicate</header>
                     <div className="flex flex-row">
                     <div className="mr-[20px] flex flex-row items-center">
-                     <label for='Organization'>Organization</label>
-                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]"  id="organization" name="person" value="organization" />
+                     <label htmlFor='Organization'>Organization</label>
+                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]"  id="organization" name="type" value="organization" onChange={onChangeInput} />
                     </div>
                     <div className="flex flex-row items-center">
-                        <label for='individual mr-[10px]'>Individual</label>
-                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]" id="individual" name="person"  value="individual" />
+                        <label htmlFor='individual'>Individual</label>
+                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]" id="individual" name="type"  value="individual" onChange={onChangeInput} />
                     </div>
                     </div>
                 </div>
@@ -66,14 +178,20 @@ const Partnership = () => {
                 <TextAreaComponent
                     labelName="Partner Details"
                     placeholder="please type here..."
+                    value={data.partnerDetails}
+                    name="partnerDetails"
+                    onChangeInput={onChangeInput}
                 />
 
                 <TextAreaComponent
                     labelName="Additional Information"
                     placeholder="please type here..."
+                    value={data.additionalInformation}
+                    name="additionalInformation"
+                    onChangeInput={onChangeInput}
                 />
 
-                <ButtonComponent text="Submit" />
+                <ButtonComponent text="Submit" submitBtn={submitBtn} loading={loading}/>
                 </div>
             </form>
           <Footer />

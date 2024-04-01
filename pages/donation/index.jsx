@@ -28,8 +28,6 @@ const Donation = () => {
         ...data, 
         [name] : value
     })
-
-    console.log(data)
 }
 
 const submitBtn = async (e) => {

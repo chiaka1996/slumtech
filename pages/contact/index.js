@@ -1,12 +1,106 @@
+import { useState } from "react";
 import Image from "next/image";
-import {Navigation, Sidebar, Headers, Footer, InputComponent, TextAreaComponent, ButtonComponent} from "../../components"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {Navigation, Sidebar, Headers, Footer, InputComponent, TextAreaComponent, ButtonComponent} from "../../components";
+
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false)
+  const [data, setData] =  useState({
+      name: "",
+      email: "",
+      message: ""
+  })
+
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+
+  const onChangeInput = (e) => {
+  const value = e.target.value;
+  const name = e.target.name;
+
+  setData({
+      ...data, 
+      [name] : value
+  })
+}
+
+const submitBtn = async (e) => {
+  try{
+      e.preventDefault()
+      setLoading(true)
+  const {name, email, message} = data;
+
+  if(!name || !email || !message) {
+      setLoading(false)
+      return  toast.error("please fill all required fields.", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  if(name.length < 2){
+      setLoading(false)
+      return  toast.error("name should be a minimum of 2 characters", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  if(!emailRegex.test(email)){
+      setLoading(false)
+      return  toast.error("invalid email", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  const httpRequest = await fetch('../api/messages',{
+      method: "POST",
+      body: JSON.stringify(data),
+      headers:{
+          "Content-type": "application/json; charset=UTF-8"
+      }
+  })
+
+  const response = await httpRequest.json();
+
+  if(response.status){
+      setLoading(false)
+      toast.success(`${response.message}`, {
+          position: "top-right",
+          theme: "colored",
+          });
+
+      setData({
+          name: "",
+          email: "",
+         message: ""
+      })
+  }
+  else{
+      setLoading(false)
+      toast.error(`${response.message}`, {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+  }
+  catch(error){
+  setLoading(false)
+  return toast.error(`${error.message}`, {
+      position: "top-right",
+      theme: "colored",
+      });
+}
+}
+
     return (
         <main className="relative overflow-hidden">
         <Navigation />
         <Sidebar /> 
-        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[20%]">
+        <ToastContainer />
+        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[20%] mt-[5%]">
             <Headers
             index={"C"}
             headings={"ontact Us"}
@@ -24,20 +118,29 @@ const ContactUs = () => {
                         type="text"
                         placeholder="e.g nancy clemz"
                         labelName="Name"
+                        value={data.name}
+                        name="name"
+                        onChangeInput={onChangeInput}
                         />
 
                         <InputComponent
                         type="email"
                         placeholder="e.g chiaka@gmail.com"
                         labelName="Email"
+                        value={data.email}
+                        name="email"
+                        onChangeInput={onChangeInput}
                         />
 
-                    <TextAreaComponent
-                    labelName="Message"
-                    placeholder="please type here..."
-                      />
+                        <TextAreaComponent
+                        labelName="Message"
+                        placeholder="please type here..."
+                        value={data.message}
+                        name="message"
+                        onChangeInput={onChangeInput}
+                          />
 
-                      <ButtonComponent text="Send" />
+                      <ButtonComponent text="Send" submitBtn={submitBtn} loading={loading} />
                     </form>
                 </div>
 
@@ -103,7 +206,7 @@ const ContactUs = () => {
             </div>        
           </section>
 
-        <section className="px-[10%] max-md:px-md py-0 mt-0 max-large:mt-[5%]">
+        <section className="px-[10%] max-md:px-md py-0 mt-0 max-large:mt-[5%] mb-[5%]">
         <Headers
             index={"F"}
             headings={"AQS"}
