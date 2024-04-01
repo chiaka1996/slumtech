@@ -6,7 +6,7 @@ const Policy = () => {
         <main className="relative overflow-hidden">
         <Navigation />
         <Sidebar /> 
-        <section className="px-[10%] max-md:px-[5%] py-[5%] ">
+        <section className="px-[10%] max-md:px-[5%] py-[5%] mt-[5%]  max-large:mt-[25%]">
         <Headers
             index={"P"}
             headings={"rivacy and Policy"}
