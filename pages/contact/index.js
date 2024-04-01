@@ -6,12 +6,108 @@ const ContactUs = () => {
         <main className="relative overflow-hidden">
         <Navigation />
         <Sidebar /> 
-        <section className="px-[10%] max-md:px-md py-[5%] mt-[5%] max-large:mt-[20%] ">
+        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[20%]">
+            <Headers
+            index={"C"}
+            headings={"ontact Us"}
+            />
+            <div className="flex flex-row max-large:flex-col justify-between ">
+                <div className="w-[47%] max-large:w-full">
+                    <div className="mt-[5%] font-normal text-[12px] text-text_color">
+                    Please reach out to us by completing this form. Your messages,suggestions and 
+                    feedback will play a crucial role in shaping a brighter, technology-driven future 
+                    for everyone
+                    </div>
+
+                    <form className="mt-[5%]">
+                        <InputComponent
+                        type="text"
+                        placeholder="e.g nancy clemz"
+                        labelName="Name"
+                        />
+
+                        <InputComponent
+                        type="email"
+                        placeholder="e.g chiaka@gmail.com"
+                        labelName="Email"
+                        />
+
+                    <TextAreaComponent
+                    labelName="Message"
+                    placeholder="please type here..."
+                      />
+
+                      <ButtonComponent text="Send" />
+                    </form>
+                </div>
+
+            <div className="w-[40%] max-large:w-full h-full max-large:mt-[10%]">
+            <div className="relative w-full h-[490px]">
+            <Image 
+            src="/images/contact1.png"
+            fill
+            alt="register"
+                /> 
+            </div> 
+            </div>
+            </div>
+
+            <div className="flex flex-row max-large:flex-col justify-between mt-[5%]">
+                <div className="w-[250px] max-large:w-full max-large:mt-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[16px] h-[20px] mr-2">
+                        <Image 
+                        src="/icons/location.png"
+                        fill
+                        alt="location"
+                            /> 
+                        </div>
+                    <span className="font-header text-normal text-nav_links">Location</span>
+                    </h2>
+                    <p className="font-normal text-normal text-text_color">
+                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
+                    </p>
+                </div>
+
+                <div className="max-large:mt-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[40px] h-[26px] mr-2">
+                        <Image 
+                        src="/icons/email.png"
+                        fill
+                        alt="location"
+                            /> 
+                    </div>
+                    <span className="font-header text-normal text-nav_links">Email</span>
+                    </h2>
+                    <p className="font-normal text-normal text-text_color">
+                    contact@slumtechfoundation.com
+                    </p>
+                </div>
+
+                <div className="max-large:my-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[25px] h-[30px] mr-2">
+                    <Image 
+                    src="/icons/phone.png"
+                    fill
+                    alt="location"
+                        /> 
+                    </div>
+                    <span className="font-header text-normal text-nav_links">Phone</span>
+                    </h2>
+                    <p className="font-normal text-normal text-text_color">
+                    +1888-355-2015
+                    </p>
+             </div>                
+            </div>        
+          </section>
+
+        <section className="px-[10%] max-md:px-md py-0 mt-0 max-large:mt-[5%]">
         <Headers
             index={"F"}
             headings={"AQS"}
           />
-        
         
         <div className="mt-[5%] flex flex-row max-md:flex-col justify-between">
           <p className="font-normal text-normal text-text_color w-[47%] max-large:w-full">
@@ -137,105 +233,6 @@ const ContactUs = () => {
             </p>
             <p></p>
         </div>
-          </section>
-
-          <section className="px-[10%] max-md:px-[5%] pb-[4%] max-large:mt-[15%]">
-            <Headers
-            index={"C"}
-            headings={"ontact Us"}
-            />
-            <div className="flex flex-row max-large:flex-col justify-between ">
-                <div className="w-[47%] max-large:w-full">
-                    <div className="mt-[5%] font-normal text-[12px] text-text_color">
-                    Please reach out to us by completing this form. Your messages,suggestions and 
-                    feedback will play a crucial role in shaping a brighter, technology-driven future 
-                    for everyone
-                    </div>
-
-                    <form className="mt-[5%]">
-                        <InputComponent
-                        type="text"
-                        placeholder="e.g nancy clemz"
-                        labelName="Name"
-                        />
-
-                        <InputComponent
-                        type="email"
-                        placeholder="e.g chiaka@gmail.com"
-                        labelName="Email"
-                        />
-
-                    <TextAreaComponent
-                    labelName="Message"
-                    placeholder="please type here..."
-                      />
-
-                      <ButtonComponent text="Send" />
-                    </form>
-                </div>
-
-            <div className="w-[40%] max-large:w-full h-full max-large:mt-[10%]">
-            <div className="relative w-full h-[490px]">
-            <Image 
-            src="/images/contact1.png"
-            fill
-            alt="register"
-                /> 
-            </div> 
-            </div>
-            </div>
-
-            <div className="flex flex-row max-large:flex-col justify-between mt-[5%]">
-                <div className="w-[250px] max-large:w-full max-large:mt-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[16px] h-[20px] mr-2">
-                        <Image 
-                        src="/icons/location.png"
-                        fill
-                        alt="location"
-                            /> 
-                        </div>
-                    <span className="font-header text-normal text-nav_links">Location</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
-                    </p>
-                </div>
-
-                <div className="max-large:mt-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[40px] h-[26px] mr-2">
-                        <Image 
-                        src="/icons/email.png"
-                        fill
-                        alt="location"
-                            /> 
-                    </div>
-                    <span className="font-header text-normal text-nav_links">Email</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    contact@slumtechfoundation.com
-                    </p>
-                </div>
-
-                <div className="max-large:my-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[25px] h-[30px] mr-2">
-                    <Image 
-                    src="/icons/phone.png"
-                    fill
-                    alt="location"
-                        /> 
-                    </div>
-                    <span className="font-header text-normal text-nav_links">Phone</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    +1888-355-2015
-                    </p>
-                </div>
-                
-            </div>
-            
           </section>
           <Footer />
           </main>
