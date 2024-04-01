@@ -189,7 +189,7 @@ export default function Home() {
 
     <section className="bg-[#F5FBF6] w-[100%] h-[1356px] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
       <div>
-        <header className="font-header text-head text-header max-md:text-[25px]">what We Do</header>
+        <header className="font-header text-head text-header">what We Do</header>
         <div className="text-normal font-normal text-text_color w-[329px] max-large:w-full">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
@@ -242,7 +242,7 @@ export default function Home() {
 
       {/* eductional initiatives */}
     <section className="py-[5%] px-[10%]  max-large:px-[5%] ">
-      <header className="font-header text-head max-large:text-[20px] text-header mb-[3%]">Our Educational initiatives</header>
+      <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[22%]  max-large:w-[40%]  h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
       <div className="h-[150px] rounded-xl relative">
