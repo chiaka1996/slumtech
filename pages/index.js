@@ -9,12 +9,12 @@ export default function Home() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 760,
         settings: {
          dots: true,
         infinite: true,
@@ -61,13 +61,13 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[500px] relative">
-      <div className="absolute top-[10%] left-[10%] w-[45%] z-30">
-        <header className="font-header text-[48px] text-btn_color">
+    <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[350px] relative">
+      <div className="absolute top-[10%] max-large:top-[3%] left-[10%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">
+        <header className="font-header text-[48px] max-large:text-[24px] text-btn_color">
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
 
-        <p className="font-normal text-normal text-btn_color w-[80%] mt-[3%]">
+        <p className="font-normal text-normal max-large:text-[10px] max-large:h-[310px] text-btn_color w-[100%] mt-[1%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
             </p>
@@ -79,17 +79,17 @@ export default function Home() {
       className="filter brightness-[30%]"
         /> 
 
-        <div className="absolute z-30 bottom-[25%] right-[10%] w-[22%]">
-          <header className="font-header text-[22px] text-btn_color">Brands Supporting Our Mission</header>
+        <div className="absolute z-30 bottom-[25%] max-large:bottom-[15%] right-[10%] max-large:right-[5%] w-[22%] max-large:w-[40%]">
+          <header className="font-header text-[22px] max-large:text-[10px] text-btn_color">Brands Supporting Our Mission</header>
           <div className="flex flex-row justify-around">
-          <div className="relative w-[110px] h-[35px]">
+          <div className="relative w-[110px] max-large:w-[64px] h-[35px] max-large:h-[12px]">
           <Image 
           src="/logo/a2z.png"
           fill
           alt="a2z"
             /> 
           </div>
-          <div className="relative w-[115px] h-[35px]">
+          <div className="relative w-[115px] max-large:w-[64px] h-[35px] max-large:h-[12px]">
           <Image 
           src="/logo/gtech.png"
           fill
