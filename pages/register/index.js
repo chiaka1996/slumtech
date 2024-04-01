@@ -1,11 +1,113 @@
+import { useState } from "react";
 import Image from "next/image";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
 const Register = () => {
+  const [loading, setLoading] = useState(false)
+  const [data, setData] = useState({
+      schoolName: "",
+      email: "",
+      registrationNumber: "",
+      phone: "",
+      address: "",
+      country: "",
+      studentsNumber: ""
+  })
+
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+
+    const onChangeInput = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
+    setData({
+        ...data, 
+        [name] : value
+    })
+
+}
+
+const submitBtn = async (e) => {
+  try{
+      console.log("submited")
+      e.preventDefault()
+      setLoading(true)
+  const {schoolName, email, phone, registrationNumber, address, country, studentsNumber} = data;
+
+  if(!schoolName || !email || !registrationNumber || !phone || !address || !country || !studentsNumber) {
+      setLoading(false)
+      return  toast.error("please fill all required fields.", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  if(schoolName.length < 2){
+      setLoading(false)
+      return  toast.error("name should be a minimum of 2 characters", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  if(!emailRegex.test(email)){
+      setLoading(false)
+      return  toast.error("invalid email", {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+
+  const httpRequest = await fetch('../api/registerSchool',{
+      method: "POST",
+      body: JSON.stringify(data),
+      headers:{
+          "Content-type": "application/json; charset=UTF-8"
+      }
+  })
+
+  const response = await httpRequest.json();
+
+  if(response.status){
+      setLoading(false)
+      toast.success(`${response.message}`, {
+          position: "top-right",
+          theme: "colored",
+          });
+
+      setData({
+        schoolName: "",
+        email: "",
+        registrationNumber: "",
+        phone: "",
+        address: "",
+        country: "",
+        studentsNumber: ""
+      })
+  }
+  else{
+      setLoading(false)
+      toast.error(`${response.message}`, {
+          position: "top-right",
+          theme: "colored",
+          });
+  }
+  }
+  catch(error){
+  setLoading(false)
+  return toast.error(`${error.message}`, {
+      position: "top-right",
+      theme: "colored",
+      });
+}
+}
+
     return (
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
         <Navigation />
         <Sidebar /> 
+        <ToastContainer />
         <section className="px-[10%] max-md:px-[5%] pt-[5%]">
         <Headers
             index={"R"}
@@ -42,30 +144,45 @@ const Register = () => {
             type="text"
             placeholder=""
             labelName="Name Of School"
+            value={data.schoolName}
+            name="schoolName"
+            onChangeInput={onChangeInput}
             />
 
             <InputComponent
             type="text"
             placeholder=""
             labelName="School registration number"
+            value={data.registrationNumber}
+            name="registrationNumber"
+            onChangeInput={onChangeInput}
             />
 
             <InputComponent
             type="email"
             placeholder=""
             labelName="Email"
+            value={data.email}
+            name="email"
+            onChangeInput={onChangeInput}
             />
 
             <InputComponent
             type="number"
-            placeholder=""
+            placeholder="080 8405 2342"
             labelName="Phone no"
+            value={data.phone}
+            name="phone"
+            onChangeInput={onChangeInput}
             />
 
             <InputComponent
             type="text"
-            placeholder=""
+            placeholder="40, ajibulu str"
             labelName="School Address"
+            value={data.address}
+            name="address"
+            onChangeInput={onChangeInput}
             />
 
             <div className="flex flex-row max-large:flex-col justify-between">
@@ -73,24 +190,30 @@ const Register = () => {
             <SelectComponent
             labelName="Country"
             options={["Nigeria"]}
+            value={data.country}
+            name="country"
+            onChangeInput={onChangeInput}
             />
             </div>
             <div className="w-[47%] max-large:w-full">
             <InputComponent
-            type="text"
+            type="number"
             placeholder=""
             labelName="Number Of Students"
+            value={data.studentsNumber}
+            name="studentsNumber"
+            onChangeInput={onChangeInput}
             />
             </div>
             </div>
 
-            <ButtonComponent text="Submit Application" />
+            <ButtonComponent text="Submit Application" submitBtn={submitBtn} loading={loading} />
             </form>
             </div>
           </div>
 
         {/* register as individual */}
-        <form>
+        {/* <form>
           <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-[10%]">
             <div className="w-[47%] max-large:w-full">
             <p className="text-text_color font-normal text-normal mb-[5%]">
@@ -190,7 +313,9 @@ const Register = () => {
             
         </div>
         <ButtonComponent text="Submit Application" />
-        </form>
+        </form> */}
+
+        <RegisterIndividual />
 
         <div className="relative w-full h-[390px] max-sm:h-[230px] my-[5%]">
             <Image 

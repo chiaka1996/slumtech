@@ -1,18 +1,124 @@
+import { useState } from "react";
 import Image from "next/image";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
 
+
 const Donation = () => {
+
+    const [loading, setLoading] = useState(false)
+    const [data, setData] =  useState({
+        name: "",
+        email: "",
+        nationality: "",
+        location: "",
+        skills: "",
+        gender: "",
+        phone: ""
+    })
+
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+
+    const onChangeInput = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
+
+    setData({
+        ...data, 
+        [name] : value
+    })
+
+    console.log(data)
+}
+
+const submitBtn = async (e) => {
+    try{
+        console.log("submited")
+        // e.preventDefault()
+        setLoading(true)
+    const {name, email, phone, gender, nationality, location, skills} = data;
+
+    if(!name || !email || !phone || !gender || !nationality || !location || !skills) {
+        setLoading(false)
+        return  toast.error("please fill all required fields.", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+
+    if(name.length < 2){
+        setLoading(false)
+        return  toast.error("name should be a minimum of 2 characters", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+
+    if(!emailRegex.test(email)){
+        setLoading(false)
+        return  toast.error("invalid email", {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+
+    const httpRequest = await fetch('../api/addvolunteer',{
+        method: "POST",
+        body: JSON.stringify(data),
+        headers:{
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+
+    const response = await httpRequest.json();
+
+    if(response.status){
+        setLoading(false)
+        toast.success(`${response.message}`, {
+            position: "top-right",
+            theme: "colored",
+            });
+
+        setData({
+            name: "",
+            email: "",
+            nationality: "",
+            location: "",
+            skills: "",
+            gender: "",
+            phone: ""
+        })
+    }
+    else{
+        setLoading(false)
+        toast.error(`${response.message}`, {
+            position: "top-right",
+            theme: "colored",
+            });
+    }
+    }
+    catch(error){
+    setLoading(false)
+    return toast.error(`${error.message}`, {
+        position: "top-right",
+        theme: "colored",
+        });
+}
+}
+
     return (
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
         <Navigation />
         <Sidebar /> 
+        <ToastContainer />
         <section className="px-[10%] max-md:px-[5%] py-[5%]">
         <Headers
             index={"D"}
             headings={"onation"}
           />
 
-          <div className="font-lael text-sub_header text-[#111111]">
+          <div className="font-lael text-sub_header text-[#111111] max-large:mt-[7%]">
           Kindly choose your preferred method of donation
           </div>
 
@@ -133,7 +239,7 @@ const Donation = () => {
           </div>
           </section>
 
-          <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] max-large:w-full mx-[10%]  max-large:mx-0">
+          <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] max-large:w-full mx-[10%]  max-large:mx-0">
             <div className="w-[400px] max-large:w-full h-[370px] relative">
             <Image 
             src="/images/donate_book.png"
@@ -170,18 +276,27 @@ const Donation = () => {
             type="text"
             placeholder="e.g nancy clemz"
             labelName="Name"
+            value={data.name}
+            name="name"
+            onChangeInput={onChangeInput}
             />
-
+             
             <InputComponent
             type="email"
             placeholder="e.g clement@gmail.com"
             labelName="Email"
+            value={data.email}
+            name="email"
+            onChangeInput={onChangeInput}
             />
 
             <InputComponent
             type="number"
             placeholder="e.g 0989 535 9584"
             labelName="Phone No"
+            value={data.phone}
+            name="phone"
+            onChangeInput={onChangeInput}
             />
 
             <div className="flex flex-row justify-between">
@@ -189,12 +304,18 @@ const Donation = () => {
             <SelectComponent
             labelName="Gender"
             options={["male", "female"]}
+            value={data.gender}
+            name="gender"
+            onChangeInput={onChangeInput}
             />
             </div>
             <div className="w-[47%]">
             <SelectComponent
             labelName="Nationality"
             options={["Nigerian"]}
+            value={data.nationality}
+            name="nationality"
+            onChangeInput={onChangeInput}
             />
             </div>
             </div>
@@ -202,14 +323,19 @@ const Donation = () => {
             <SelectComponent
             labelName="Location"
             options={["Lagos", "Abuja", "Owerri"]}
+            value={data.location}
+            name="location"
+            onChangeInput={onChangeInput}
             />
 
-            <TextAreaComponent
-            
+            <TextAreaComponent      
             labelName="Skills"
             placeholder="web development"
+            value={data.skills}
+            name="skills"
+            onChangeInput={onChangeInput}
             />
-            <ButtonComponent text="Submit" />
+            <ButtonComponent text="Submit" submitBtn={submitBtn} loading={loading} />
           </div>
           <div className="w-[47%] max-large:w-full px-[5%] max-large:px-0">
           <div className="relative w-[450px] max-large:w-full h-[360px] mt-[10%] max-large:mt-[5%]">

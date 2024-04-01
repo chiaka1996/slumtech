@@ -6,3 +6,4 @@ export {default as InputComponent} from "./Form-assets/input";
 export {default as SelectComponent} from "./Form-assets/select";
 export {default as TextAreaComponent} from "./Form-assets/textarea";
 export {default as ButtonComponent} from "./Form-assets/button";
+export {default as RegisterIndividual} from "./registerIndividual";

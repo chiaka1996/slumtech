@@ -7,7 +7,7 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return( 
     <State>
-    <div>
+    <div className='font-primary'>
     <Component {...pageProps} />
     </div>
     </State>
