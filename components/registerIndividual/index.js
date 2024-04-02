@@ -2,10 +2,11 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent} from "../../components"
+import {SubmitModal, ButtonComponent, InputComponent, SelectComponent} from "../../components"
 let FormData = require('form-data');
 
 const RegisterIndividual = () => {
+    const [toggleModal, setToggleModal] = useState(false)
     const [loading, setLoading] = useState(false)
     const [schoolCert, setSchoolCert] = useState(null)
     const [birthCert, setBirthCert] = useState(null)
@@ -13,6 +14,9 @@ const RegisterIndividual = () => {
     const [preview2, setPreview2] = useState("");
 
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+    const toggleState = () => {
+        setToggleModal(false)
+      }
 
     const [data, setData] = useState({
         name: "",
@@ -118,6 +122,8 @@ const RegisterIndividual = () => {
                 let response = await addIndividual.json()   
                 if(response.status){
                     setLoading(false)
+                    setToggleModal(true)
+
                     setData({
                         name: "",
                         email: "",
@@ -137,10 +143,7 @@ const RegisterIndividual = () => {
                     setPreview1("")
                     setPreview2("")
 
-                    toast.success(`${response.message}`, {
-                        position: "top-right",
-                        theme: "colored",
-                      });
+                    
                 }  
                 else{
                     setLoading(false)
@@ -163,6 +166,10 @@ const RegisterIndividual = () => {
     return(
         <div>
             <ToastContainer />
+            <SubmitModal 
+        toggle={toggleModal} 
+        toggleState={toggleState}
+        />
             <form>
           <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-[10%]">
             <div className="w-[47%] max-large:w-full">

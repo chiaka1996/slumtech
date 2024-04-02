@@ -9,7 +9,7 @@ export default function Home() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     responsive: [
@@ -189,7 +189,7 @@ export default function Home() {
 
     <section className="bg-[#F5FBF6] w-[100%] h-[1356px] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
       <div>
-        <header className="font-header text-head text-header">what We Do</header>
+        <header className="font-header text-head text-header">What We Do</header>
         <div className="text-normal font-normal text-text_color w-[329px] max-large:w-full">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 

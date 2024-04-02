@@ -2,11 +2,13 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
+import {SubmitModal, DonateMoney, DonateGadget, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
 
 
 const Donation = () => {
-
+    const [toggleModal, setToggleModal] = useState(false)
+    const [toggleMoney, setToggleMoney] = useState(false)
+    const [toggleGadget, setToggleGadget] = useState(false)
     const [loading, setLoading] = useState(false)
     const [data, setData] =  useState({
         name: "",
@@ -17,8 +19,19 @@ const Donation = () => {
         gender: "",
         phone: ""
     })
-
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+
+    const toggleState = () => {
+        setToggleModal(false)
+      }
+
+      const toggleMoneyState = () => {
+        setToggleMoney(false)
+      }
+
+      const toggleGadgetState = () => {
+        setToggleGadget(false)
+      }
 
     const onChangeInput = (e) => {
     const value = e.target.value;
@@ -73,10 +86,7 @@ const submitBtn = async (e) => {
 
     if(response.status){
         setLoading(false)
-        toast.success(`${response.message}`, {
-            position: "top-right",
-            theme: "colored",
-            });
+        setToggleModal(true)
 
         setData({
             name: "",
@@ -110,6 +120,18 @@ const submitBtn = async (e) => {
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
+        <DonateMoney
+        toggle={toggleMoney} 
+        toggleState={toggleMoneyState}
+        />
+        <DonateGadget
+        toggle={toggleGadget} 
+        toggleState={toggleGadgetState}
+        />
+        <SubmitModal 
+        toggle={toggleModal} 
+        toggleState={toggleState}
+        />
         <section className="px-[10%] max-md:px-[5%] py-[5%]">
         <Headers
             index={"D"}
@@ -121,7 +143,7 @@ const submitBtn = async (e) => {
           </div>
 
           <div className="flex flex-row max-md:flex-col justify-between mt-3">
-            <section className="p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] max-md:px-[5%] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
+            <section onClick={() => setToggleMoney(true)} className="cursor-pointer p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] max-md:px-[5%] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
             <div className="relative w-[80px] h-[80px]">
                 <Image 
                 src="/images/donate1.png"
@@ -159,7 +181,7 @@ const submitBtn = async (e) => {
             </div>
             </section>
 
-            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
+            <section onClick={() => setToggleGadget(true)} className="cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
             <div className="relative w-[80px] h-[80px]">
                 <Image 
                 src="/images/donate2.png"
@@ -326,6 +348,7 @@ const submitBtn = async (e) => {
             onChangeInput={onChangeInput}
             />
 
+            <div className="mt-[7%]">
             <TextAreaComponent      
             labelName="Skills"
             placeholder="web development"
@@ -333,6 +356,7 @@ const submitBtn = async (e) => {
             name="skills"
             onChangeInput={onChangeInput}
             />
+            </div>
             <ButtonComponent text="Submit" submitBtn={submitBtn} loading={loading} />
           </div>
           <div className="w-[47%] max-large:w-full px-[5%] max-large:px-0">

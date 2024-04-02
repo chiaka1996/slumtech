@@ -2,18 +2,22 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {Navigation, Sidebar, Headers, Footer, InputComponent, TextAreaComponent, ButtonComponent} from "../../components";
+import {Navigation, Sidebar, Headers, Footer, InputComponent, TextAreaComponent, ButtonComponent, SubmitModal} from "../../components";
 
 
 const ContactUs = () => {
+  const [toggleModal, setToggleModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [data, setData] =  useState({
       name: "",
       email: "",
       message: ""
   })
-
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+
+  const toggleState = () => {
+    setToggleModal(false)
+  }
 
   const onChangeInput = (e) => {
   const value = e.target.value;
@@ -67,10 +71,7 @@ const submitBtn = async (e) => {
 
   if(response.status){
       setLoading(false)
-      toast.success(`${response.message}`, {
-          position: "top-right",
-          theme: "colored",
-          });
+      setToggleModal(true)
 
       setData({
           name: "",
@@ -100,7 +101,11 @@ const submitBtn = async (e) => {
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
-        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[20%] mt-[5%]">
+        <SubmitModal 
+        toggle={toggleModal} 
+        toggleState={toggleState}
+        />
+        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
             <Headers
             index={"C"}
             headings={"ontact Us"}

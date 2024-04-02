@@ -2,9 +2,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
+import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
 const Register = () => {
+  const [toggleModal, setToggleModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState({
       schoolName: "",
@@ -15,8 +16,11 @@ const Register = () => {
       country: "",
       studentsNumber: ""
   })
-
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
+ 
+  const toggleState = () => {
+    setToggleModal(false)
+  }
 
     const onChangeInput = (e) => {
     const value = e.target.value;
@@ -71,10 +75,7 @@ const submitBtn = async (e) => {
 
   if(response.status){
       setLoading(false)
-      toast.success(`${response.message}`, {
-          position: "top-right",
-          theme: "colored",
-          });
+    setToggleModal(true)
 
       setData({
         schoolName: "",
@@ -108,6 +109,10 @@ const submitBtn = async (e) => {
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
+        <SubmitModal 
+        toggle={toggleModal} 
+        toggleState={toggleState}
+        />
         <section className="px-[10%] max-md:px-[5%] pt-[5%]">
         <Headers
             index={"R"}

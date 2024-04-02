@@ -7,3 +7,6 @@ export {default as SelectComponent} from "./Form-assets/select";
 export {default as TextAreaComponent} from "./Form-assets/textarea";
 export {default as ButtonComponent} from "./Form-assets/button";
 export {default as RegisterIndividual} from "./registerIndividual";
+export {default as SubmitModal} from "./Modals/SubmitModal";
+export {default as DonateGadget} from "./Modals/GadgetModal";
+export {default as DonateMoney} from "./Modals/MoneyModal";

@@ -9,10 +9,21 @@
     font-size: 16px;
 }
 
-
-
-
 /* react slick */
 .slick-slide > div{
     margin: 0 10px
+}
+
+.modalCircle{
+    background: linear-gradient(180deg, #FFFFFF 5%, #999999 100%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.smallModalCircle{
+    width: 30px;
+    height: 30px;
+    background-color: #66B978;
+    border-radius: 50%;
 }

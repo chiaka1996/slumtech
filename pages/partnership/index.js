@@ -2,10 +2,11 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Image from "next/image";
-import {Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, TextAreaComponent} from "../../components"
+import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, TextAreaComponent} from "../../components"
 
 
 const Partnership = () => {
+    const [toggleModal, setToggleModal] = useState(false)
     const [loading, setLoading] = useState(false)
     const [data, setData] =  useState({
         name: "",
@@ -19,6 +20,10 @@ const Partnership = () => {
   
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
   
+    const toggleState = () => {
+        setToggleModal(false)
+      }
+
     const onChangeInput = (e) => {
     const value = e.target.value;
     const name = e.target.name;
@@ -73,10 +78,7 @@ const Partnership = () => {
   
     if(response.status){
         setLoading(false)
-        toast.success(`${response.message}`, {
-            position: "top-right",
-            theme: "colored",
-            });
+        setToggleModal(true)
   
         setData({
             name: "",
@@ -109,6 +111,10 @@ const Partnership = () => {
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
+        <SubmitModal 
+        toggle={toggleModal} 
+        toggleState={toggleState}
+        />
         <div className="px-[10%] max-md:px-[5%] pt-[5%] max-large:mb-[7%] ">
         <Headers
             index={"C"}
