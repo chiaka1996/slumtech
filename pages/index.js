@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -5,11 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import {Navigation, Sidebar, Footer} from "../components"
 
 export default function Home() {
+  const [toggleIdentity, setToggleIdentity] = useState(true)
+  setInterval(() => setToggleIdentity(!toggleIdentity), 9000);
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
     responsive: [
@@ -30,13 +34,13 @@ export default function Home() {
   const data = [
     {
       "header" : "Cloud Computing",
-      "img": "/images/education1.jpg",
+      "img": "/images/cloud.jpg",
       "text" : "Providing hands on experience in cloud infrastructure, Services and deployment"
     },
     {
       "header" : "Software Development",
-      "img": "/images/education1.jpg",
-      "text" : "Providing hands on experience in cloud infrastructure, Services and deployment"
+      "img": "/images/software.jpg",
+      "text" : "Empowering Students with knowledge and skills to excel in coding, programming and software engineering"
     },
     {
       "header" : "Artificial Intelligence",
@@ -45,13 +49,33 @@ export default function Home() {
     },
     {
       "header" : "Devops Engineering",
-      "img": "/images/education1.jpg",
-      "text" : "Providing hands on experience in cloud infrastructure, Services and deployment"
+      "img": "/images/devops.jpg",
+      "text" : "Introducing to students the practices that combine IT operations with software development and ensure students deliver highly quality software"
     },
     {
       "header" : "UI/UX",
-      "img": "/images/education1.jpg",
-      "text" : "Providing hands on experience in cloud infrastructure, Services and deployment"
+      "img": "/images/ux.jpg",
+      "text" : "Cultivating creativity and attention to detail in user interface and user experience design"
+    },
+    {
+      "header" : "Machine Learning",
+      "img": "/images/machine.jpg",
+      "text" : "Focused on building computer systems capable of learning from data, empowering software to enhance it's performance progressively"
+    },
+    {
+      "header" : "Data Science",
+      "img": "/images/data.jpg",
+      "text" : "Students will acquire the skills to collect and analyze data, followed by presenting their discoveries."
+    },
+    {
+      "header" : "Digital Transformation",
+      "img": "/images/digital.jpg",
+      "text" : "Guiding students through the process of digitizing businesses and processes to meet modern demands"
+    },
+    {
+      "header" : "App Development",
+      "img": "/images/app.jpg",
+      "text" : "Enabling students to explore the world of mobile application development for various platforms"
     },
 
   ]
@@ -62,15 +86,21 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[350px] relative">
-      <div className="absolute top-[10%] max-large:top-[3%] left-[10%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">
-        <header className="font-header text-[48px] max-large:text-[24px] text-btn_color">
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[5%] max-large:top-[3%] left-[10%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">  
+        <header className={`font-header text-[48px] max-large:text-[24px] text-btn_color absolute top-[5%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
-
-        <p className="font-normal text-normal max-large:text-[10px] max-large:h-[310px] text-btn_color w-[100%] mt-[1%]">
-            Join us in our mission to empower Africa's youth through technology
-            Together, we can build a more inclusive and empowered Africa
-            </p>
+          
+          <header className={`font-header text-[48px] max-large:text-[24px] text-btn_color absolute top-[5%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
+          the World of Tommorrow!
+          </header>        
+      </div>
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[46%] left-[10%] w-[35%]">
+      <div className="join font-normal text-normal max-large:text-[10px] max-large:h-[310px] text-btn_color">
+        Join us in our mission to empower Africa's youth through technology
+        Together, we can build a more inclusive and empowered Africa
+      </div>
       </div>
     <Image 
       src="/images/banner.png"
@@ -109,6 +139,7 @@ export default function Home() {
       src="/images/approach.png"
       fill
       alt="school children"
+      className="approach"
         /> 
     </div>
     <div className="w-[40%]  max-large:w-full">
@@ -127,13 +158,13 @@ export default function Home() {
    <section className="relative mt-[3%] h-[1440px]  max-large:h-[1800]">
    <div className='absolute w-[500px]  max-large:w-[300px] h-[500px] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute bottom-[20%] left-[20%] w-[195px]">
-      <div className="text-[#0F01AF] font-header text-head">100% Free</div>
+      <div className="text-[#0F01AF] font-header text-head"><span className="free">100% </span>Free</div>
       <div className="text-normal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
    <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[146px]">
-      <div className="text-[#FFCB2F] font-header text-head">10M +</div>
+      <div className="text-[#FFCB2F] font-header text-head recruite"></div>
       <div className="text-normal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
@@ -141,7 +172,7 @@ export default function Home() {
 
     <div className='absolute w-[650px]  max-large:w-[450px] h-[650px]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
    <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[206px]  max-large:w-[150px]">
-      <div className="text-[#1A9635] font-header text-head mb-2">5k +</div>
+      <div className="text-[#1A9635] font-header text-head mb-2 mission"></div>
       <div className="text-normal  max-large:text-[14px] text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
@@ -149,8 +180,11 @@ export default function Home() {
    </div>
 
     {/* our identity */}
-    <div className="w-[697px] max-large:w-[90%] bg-[#F5FBF6] px-[10%] py-[10%] absolute top-[10%] max-large:top-[43%] left-0 max-large:left-[5%]">
-      <header className="font-header text-head text-header">Our Identity</header>
+    <div className="w-[697px] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-0 max-large:left-[5%]">
+    {
+        toggleIdentity ? 
+      <div className="w-[60%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
+          <header className="font-header text-head text-header">Our Identity</header>
       <div className="text-normal font-normal text-text_color w-[376px] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
       environment that thrives on diversity, inclusivity, and social responsibility. 
@@ -158,6 +192,34 @@ export default function Home() {
       ensuring that our initiatives contribute to a future where all African
       teens and youth [18 - 21 yrs] can participate in, and benefit from the digital economy
       </div>
+      </div> 
+       :
+      <div> 
+          <section className="flex flex-row  max-large:flex-col items-center justify-between w-[80%]  max-large:w-[90%] mx-[10%]  max-large:mx-[5%]">
+            <div className="w-[50%]  max-large:w-[60%] bg-[#fff] h-full py-[5%] flex flex-row justify-center">
+            <div className="w-[167px] max-large:w-full h-[158px] relative">
+            <Image 
+            src="/images/donate_book.png"
+            fill
+            alt="donate"
+            /> 
+            </div>
+            </div>
+            <div className="w-[40%]  max-large:w-[100%]  max-large:mt-3">
+            <p className="text-text_color font-normal text-[12px]">
+            "Tech Entrepreneurship and Career for 
+            Africa Development" is a comprehensive guide by SlumTech Foundation, 
+            focusing on leveraging technology for economic growth,
+            entrepreneurship opportunities, and career development in Africa. 
+            The book explores innovative strategies for sustainable development in the tech sector”
+            </p>
+
+            <p className="text-[#F32B04] font-header text-[12px] mt-[2%] coming">Coming Soon..</p>
+            </div>
+          </section>
+       </div>
+      } 
+     
     </div>
 
     <div className="z-50 flex flex-row justify-center items-center w-[692px] max-large:w-[90%] h-[660px]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] max-large:left-[5%]">
@@ -244,7 +306,7 @@ export default function Home() {
     <section className="py-[5%] px-[10%]  max-large:px-[5%] ">
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
-      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[22%]  max-large:w-[40%]  h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
+      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
       <div className="h-[150px] rounded-xl relative">
       <Image 
       src={option.img}
@@ -287,6 +349,7 @@ export default function Home() {
           src="/images/partner2.png"
           fill
           alt="logo"
+          className="blackshirt"
           /> 
       </div>
       <div  className="relative w-[150px] max-large:w-[120px] h-[150px] max-large:h-[120px]">
@@ -294,6 +357,7 @@ export default function Home() {
           src="/images/partner3.png"
           fill
           alt="logo"
+          className="yellowshirt"
           /> 
       </div>
       </div>
@@ -302,6 +366,7 @@ export default function Home() {
       src="/images/partner1.png"
       fill
       alt="slumtech shirt"
+      className="whiteshirt"
       /> 
       </div>
 

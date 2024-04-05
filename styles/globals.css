@@ -11,7 +11,7 @@
 
 /* react slick */
 .slick-slide > div{
-    margin: 0 10px
+    margin: 0 25px
 }
 
 .modalCircle{
@@ -27,3 +27,342 @@
     background-color: #66B978;
     border-radius: 50%;
 }
+
+/* animations */
+.header1{
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 2s ease-in;
+} 
+
+.header2{
+  transform: translateX(-120%);
+  opacity: 0;
+  transition: all 2s ease-in;
+}
+
+
+.recruite::after{
+    content: "40M +";
+    animation-name: recruite;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes recruite{
+    0%   {
+       content: "40M +";
+    }
+    
+    25%{
+        content: "120k +";
+    }
+
+    50% {
+        content: "3M +";
+    }
+
+    75%{
+        content: "150M +";
+    }
+    100% {
+        content: "15K +";
+      }
+        
+ }  
+ 
+ .mission::after{
+    content: "5k +";
+    animation-name: mission;
+    animation-duration: 0.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mission{
+    0%   {
+       content: "5M +";
+    }
+    
+    25%{
+        content: "20K +";
+    }
+
+    50% {
+        content: "30M +";
+    }
+
+    75%{
+        content: "11K +";
+    }
+    100% {
+        content: "7K +";
+      }
+        
+ }  
+
+.free{
+    animation-name: free;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes free{
+    0%   {
+       color: #0F01AF;
+    }
+    
+    25%{
+        color: red;
+    }
+
+    50% {
+        color: #FFCB2F;
+    }
+
+    75%{
+        color: green;
+    }
+
+  100% {
+    color: red;
+  }
+    
+}   
+
+.coming{
+    animation-name: coming;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes coming{
+    0%   {
+       color: #0F01AF;
+    }  
+    25%{
+        color: red;
+    }
+    50% {
+        color: #FFCB2F;
+    }
+    75%{
+        color: green;
+    }
+  100% {
+    color: red;
+  }
+    
+}  
+
+.join{
+    animation-name: join;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes join{
+    0%   {
+       color: #FDFEFD;
+    } 
+    10%   {
+      color: #FFCB2F;
+   }  
+   20%   {
+    color: #FDFEFD;
+  } 
+    50%   {
+      color: #FDFEFD;
+   }  
+   60%   {
+    color: #FFCB2F;
+ } 
+ 55%   {
+  color: #FDFEFD;
+  } 
+  75%   {
+    color: #FDFEFD;
+    } 
+  100% {
+    color: #FFCB2F;
+  }
+    
+}  
+
+
+.approach{
+    animation-name: zoomImage;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes zoomImage {
+    0%   {
+        width: 5px;
+        height: 5px;
+    }
+  90% {
+    width: 450px;
+    height: 450px;
+  }
+    
+}
+
+.blackshirt{
+    animation-name: blackshirt;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes blackshirt {
+    0%   {
+        width: 1px;
+        height: 1px;
+    }
+  60% {
+    top: 5%;
+    width: 64px;
+    height: 64px;
+   
+  }
+  100%{
+    transform: translate(0, 40px);
+  }
+    
+}
+
+.whiteshirt{
+    animation-name: whiteshirt;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes whiteshirt {
+    0%   {
+        width: 1px;
+        height: 1px;
+    }
+  60% {
+    width: 260px;
+    height: 260px;
+   
+  }
+  100%{
+    transform: translate(-40px, 0);
+  }
+    
+}
+
+.yellowshirt{
+    animation-name: yellowshirt;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes yellowshirt {
+    0%   {
+        width: 1px;
+        height: 1px;
+    }
+  60% {
+    width: 150px;
+    height: 150px;
+   
+  }
+  100%{
+    transform: translate(-40px, 0);
+  }
+    
+}
+
+
+@media only screen and (max-width: 760px) {
+    .slick-slide > div{
+        margin: 0 5px
+    }
+
+    @keyframes zoomImage {
+        0%   {
+            width: 5px;
+            height: 5px;
+        }
+      90% {
+        width: 250px;
+        height: 250px;
+      }
+        
+    }
+
+    @keyframes blackshirt {
+        0%   {
+            width: 1px;
+            height: 1px;
+            top: 0;
+        }
+      100% {
+        top: 5%;
+        width: 50px;
+        height: 50px;
+       
+      }
+        
+    }
+
+    @keyframes whiteshirt {
+        0%   {
+            width: 1px;
+            height: 1px;
+        }
+      60% {
+        width: 200px;
+        height: 200px;
+       
+      }
+
+      100%{
+        transform: translate(-40px, 0);
+      }
+        
+    }
+
+    @keyframes yellowshirt {
+        0%   {
+            width: 1px;
+            height: 1px;
+        }
+      60% {
+        width: 120px;
+        height: 120px; 
+      }
+
+      100%{
+        transform: translate(-40px, 0);
+      }
+        
+    }
+
+
+  }
+
+  

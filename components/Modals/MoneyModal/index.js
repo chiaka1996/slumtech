@@ -13,13 +13,10 @@ const DonateMoney = ({toggle, toggleState}) => {
             <div>
             <header className="flex flex-row font-header text-[32px] max-sm:text-[29px] text-header relative mb-[3%]">
               <div className="text-right w-[60px] max-sm:w-[50px] h-[60px] max-sm:h-[50px] bg-header_shadow rounded-full text-index z-70">D</div>
-              <div>onate via this Details</div>
+              <div className="">onate via this Details</div>
               </header>
               </div>
-          {/* <Headers
-            index={"D"}
-            headings={""}
-          /> */}
+          
           </div> 
 
           <div className="my-[2%] font-header text-[48px] text-nav_links">9068458302</div>
