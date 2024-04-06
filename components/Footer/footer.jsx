@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return(
-        <footer className='bg-text_color py-[3%]'>
+        <footer className='bg-text_color py-[3%] cursor-pointer'>
             <section className='w-[25%] max-md:w-full ml-[65%] max-md:ml-0 max-md:px-md'>
                 <div className='text-[#F9FCF9] text-normal font-btn_weight'>
                 Be the first to get updated on our Latest projects and ways to Participate
@@ -22,11 +22,28 @@ const Footer = () => {
                     <div>
                     <header className='font-btn_weight mb-3 text-[14px]'>Services</header>
                     <ul className='text-footertext font-normal'>
-                        <li className='mb-2'>Partner</li>
-                        <li  className='mb-2'>Donate</li>
-                        <li  className='mb-2'>Volunteer</li>
-                        <li  className='mb-2'>Enroll</li>
-                        <li  className='mb-2'>FAQs</li>
+                        <li className='mb-2'>
+                            Partner</li>
+                        <li  className='mb-2'>
+                        <Link href="/donation" className='no-underline'>
+                            Donate
+                        </Link>    
+                        </li>
+                        <li  className='mb-2'>
+                        <Link href="/donation" className='no-underline'>
+                            Volunteer
+                        </Link>    
+                        </li>
+                        <li  className='mb-2'>
+                        <Link href="/register" className='no-underline'>
+                            Enroll
+                        </Link> 
+                        </li>
+                        <li  className='mb-2'>
+                        <Link href="/contact" className='no-underline'>
+                            FAQs
+                        </Link> 
+                        </li>
                     </ul>
                     </div>
 
@@ -35,9 +52,17 @@ const Footer = () => {
                     <ul className='text-footertext font-normal'>
                         <li  className='mb-2'>Team</li>
                         <li  className='mb-2'>Initiatives</li>
-                        <li  className='mb-2'>Contact</li>
+                        <li  className='mb-2'>
+                        <Link href="/contact" className='no-underline'>
+                            Contacts
+                        </Link> 
+                        </li>
                         <li  className='mb-2'>Gallery</li>
-                        <li  className='mb-2'>Privacy Policy</li>
+                        <li  className='mb-2'>
+                        <Link href="/policy" className='no-underline'>
+                            Privacy Policy
+                        </Link> 
+                        </li>
                     </ul>
                     </div>
                 </div>

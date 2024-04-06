@@ -103,7 +103,7 @@ export default function Home() {
       </div>
       </div>
       <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
-      <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label'>Donate</button>
+      <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label large:hidden'>Donate</button>
       </div>
       <Image 
         src="/images/banner.png"
