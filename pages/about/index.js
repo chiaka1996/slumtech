@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ScrollAnimation from 'react-animate-on-scroll';
 import {Navigation, Sidebar, Headers, Footer} from "../../components"
 
 export default function About() {

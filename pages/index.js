@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +9,7 @@ import {Navigation, Sidebar, Footer} from "../components"
 export default function Home() {
   const [toggleIdentity, setToggleIdentity] = useState(true)
   setInterval(() => setToggleIdentity(!toggleIdentity), 9000);
+  const router = useRouter();
 
   const settings = {
     dots: true,
