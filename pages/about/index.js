@@ -71,10 +71,6 @@ export default function About() {
     </section>
 
     {/* vision section */}
-    <ScrollAnimation 
-    animateIn='flipInY'
-    animateOnce = {true}
-    >
     <section className="flex flex-row max-large:flex-col-reverse justify-between px-normal max-md:px-md pt-[5%]">
       <div className="w-[50%] max-large:w-full">
       <div className="w-full h-[450px] max-large:h-[250px] relative"> 
@@ -99,17 +95,6 @@ export default function About() {
         </div>
       </div>
     </section>
-  </ScrollAnimation>
-
-  {/* <ScrollAnimation animateIn='fadeIn'
-  animateOut='fadeOut'>
-  <h1>
-    React Animate On Scroll
-  </h1>
-  <h2>
-    Using:
-  </h2>
-</ScrollAnimation> */}
 
     {/* program initiative */}
     <section className="py-[5%] max-large:py-[15%] px-[10%] max-md:px-md  bg-layout">
@@ -117,11 +102,6 @@ export default function About() {
         index={"P"}
         headings={"rogram Initiatives"}
       />
-      <ScrollAnimation 
-        animateIn='fadeIn'
-        animateOnce = {true}
-        duration={5}
-        >
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full">
       <div className="flex flex-row large:justify-between w-[40%] max-md:w-full large:hidden">
       <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
@@ -169,13 +149,6 @@ export default function About() {
       </div>
       </div>
       </div>
-      </ScrollAnimation>
-
-      <ScrollAnimation 
-        animateIn='fadeIn'
-        animateOnce = {true}
-        duration={5}
-        >
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-lg:w-full ml-[20%] max-lg:ml-0 mt-[5%]">
       <div className="flex flex-row large:justify-between w-[40%] max-large:w-full">
       <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
@@ -207,13 +180,6 @@ export default function About() {
         </div>
       </div>  
       </div>
-      </ScrollAnimation>
-
-        <ScrollAnimation 
-        animateIn='fadeIn'
-        animateOnce = {true}
-        duration={5}
-        >
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full mt-[5%]">
       <div className="flex flex-row w-[40%] max-lg:w-full large:hidden">
       <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
@@ -260,13 +226,7 @@ export default function About() {
       </div>
       </div>
       </div>
-      </ScrollAnimation>
 
-    <ScrollAnimation 
-        animateIn='fadeIn'
-        animateOnce = {true}
-        duration={5}
-        >
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full ml-[20%] max-large:ml-0 mt-[5%]">
       <div className="flex flex-row large:justify-between w-[40%] max-large:w-full">
       <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
@@ -297,7 +257,6 @@ export default function About() {
         </div>
       </div>  
       </div>
-      </ScrollAnimation>
     </section>
 
     {/* our impact */} 
