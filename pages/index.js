@@ -112,7 +112,7 @@ export default function Home() {
         className="filter brightness-[30%] max-large:hidden"
           />
 
-            <Image 
+        <Image 
         src="/images/mobile_banner.jpg"
         fill
         alt="banner"
