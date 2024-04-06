@@ -85,7 +85,7 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[350px] relative">
+    <div className="mt-[5%] max-large:mt-[22%] w-full h-[700px] max-large:h-[300px] relative">
       <div className="animate__animated animate__slower animate__slideInLeft absolute top-[5%] max-large:top-[3%] left-[10%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">  
         <header className={`font-header text-[48px] max-large:text-[24px] text-btn_color absolute top-[5%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
@@ -96,20 +96,31 @@ export default function Home() {
           the World of Tommorrow!
           </header>        
       </div>
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[46%] left-[10%] w-[35%]">
-      <div className="join font-normal text-normal max-large:text-[10px] max-large:h-[310px] text-btn_color">
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[46%] max-large:top-[52%] left-[10%] max-large:left-[5%] w-[35%] max-large:w-[70%]">
+      <div className="join font-normal text-normal max-large:text-[12px] max-large:h-[310px] text-btn_color">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa
       </div>
       </div>
-    <Image 
-      src="/images/banner.png"
-      fill
-      alt="banner"
-      className="filter brightness-[30%]"
-        /> 
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
+      <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label'>Donate</button>
+      </div>
+      <Image 
+        src="/images/banner.png"
+        fill
+        alt="banner"
+        className="filter brightness-[30%] max-large:hidden"
+          />
 
-        <div className="absolute z-30 bottom-[25%] max-large:bottom-[15%] right-[10%] max-large:right-[5%] w-[22%] max-large:w-[40%]">
+            <Image 
+        src="/images/mobile_banner.jpg"
+        fill
+        alt="banner"
+        className="filter brightness-[30%] large:hidden"
+          />  
+        
+
+        <div className="absolute z-30 bottom-[25%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[22%] max-large:w-[40%]">
           <header className="font-header text-[22px] max-large:text-[10px] text-btn_color">Brands Supporting Our Mission</header>
           <div className="flex flex-row justify-around">
           <div className="relative w-[110px] max-large:w-[64px] h-[35px] max-large:h-[12px]">
