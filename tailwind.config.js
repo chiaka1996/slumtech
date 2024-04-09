@@ -43,7 +43,8 @@ module.exports = {
     sub_header: "1.25rem",
     footertext: "0.75rem",
     fourteen: "0.875rem",
-    ten: "0.625rem"
+    ten: "0.625rem",
+    twelve: "0.75rem"
 },
 fontFamily: {
   "primary": ['Lato'],

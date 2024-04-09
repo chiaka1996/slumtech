@@ -18,6 +18,7 @@ export default function Home() {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
+    
     responsive: [
       {
         breakpoint: 760,
@@ -87,18 +88,18 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[5%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[5%] max-large:top-[3%] left-[10%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">  
-        <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[5%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+    <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[300px] relative">
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[4%] max-large:top-[3%] left-[11%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">  
+        <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[5%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>        
       </div>
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[46%] max-large:top-[52%] left-[10%] max-large:left-[5%] w-[35%] max-large:w-[70%]">
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[47%] max-large:top-[52%] left-[11%] max-large:left-[5%] w-[35%] max-large:w-[70%]">
       <div className="join font-normal text-normal max-large:text-[12px] max-large:h-[310px] text-btn_color">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa
@@ -147,7 +148,7 @@ export default function Home() {
 
     {/* our approach */}
    <section className="w-full mt-[10%] px-[10%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center">
-   <div className="w-[450px] h-[450px]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
+   <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
       fill
@@ -169,36 +170,36 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[1440px]  max-large:h-[1800]">
-   <div className='absolute w-[500px]  max-large:w-[300px] h-[500px] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className='absolute w-[31.3rem]  max-large:w-[300px] h-[31.3rem] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute bottom-[20%] left-[20%] w-[195px]">
       <div className="text-[#0F01AF] font-header text-head"><span className="free">100% </span>Free</div>
       <div className="text-normal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
-   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[146px]">
+   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem]">
       <div className="text-[#FFCB2F] font-header text-head recruite"></div>
       <div className="text-normal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
-    <div className='absolute w-[650px]  max-large:w-[450px] h-[650px]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
-   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[206px]  max-large:w-[150px]">
+    <div className='absolute w-[40.6rem]  max-large:w-[450px] h-[40.6rem]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
+   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem]  max-large:w-[150px]">
       <div className="text-[#1A9635] font-header text-head mb-2 mission"></div>
-      <div className="text-normal  max-large:text-[14px] text-header font-header">
+      <div className="text-normal  max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
    </div>
 
     {/* our identity */}
-    <div className="w-[697px] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-0 max-large:left-[5%]">
+    <div className="w-[43.6rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-0 max-large:left-[5%]">
     {
         toggleIdentity ? 
       <div className="w-[60%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
           <header className="font-header text-head text-header">Our Identity</header>
-      <div className="text-normal font-normal text-text_color w-[376px] max-large:w-[100%]">
+      <div className="text-normal font-normal text-text_color w-[23.5rem] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
       environment that thrives on diversity, inclusivity, and social responsibility. 
       We prioritize ethical tech practices, environmental sustainability, and social impact,
@@ -210,7 +211,7 @@ export default function Home() {
       <div> 
           <section className="flex flex-row  max-large:flex-col items-center justify-between w-[80%]  max-large:w-[90%] mx-[10%]  max-large:mx-[5%]">
             <div className="w-[50%]  max-large:w-[60%] bg-[#fff] h-full py-[5%] flex flex-row justify-center">
-            <div className="w-[167px] max-large:w-full h-[158px] relative">
+            <div className="w-[10.4rem] max-large:w-full h-[10rem] relative">
             <Image 
             src="/images/donate_book.png"
             fill
@@ -219,7 +220,7 @@ export default function Home() {
             </div>
             </div>
             <div className="w-[40%]  max-large:w-[100%]  max-large:mt-3">
-            <p className="text-text_color font-normal text-[12px]">
+            <p className="text-text_color font-normal text-twelve">
             "Tech Entrepreneurship and Career for 
             Africa Development" is a comprehensive guide by SlumTech Foundation, 
             focusing on leveraging technology for economic growth,
@@ -227,7 +228,7 @@ export default function Home() {
             The book explores innovative strategies for sustainable development in the tech sector”
             </p>
 
-            <p className="text-[#F32B04] font-header text-[12px] mt-[2%] coming">Coming Soon..</p>
+            <p className="text-[#F32B04] font-header text-twelve mt-[2%] coming">Coming Soon..</p>
             </div>
           </section>
        </div>
@@ -236,7 +237,7 @@ export default function Home() {
     </div>
 
     <div className="z-50 flex flex-row justify-center items-center w-[692px] max-large:w-[90%] h-[660px]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] max-large:left-[5%]">
-      <div className="text-[24px] max-large:text-[14px] font-header text-text_color w-[408px]  max-large:px-[5%]">
+      <div className="text-[1.5rem] max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
        and register students with a passion for technology and a drive to excel. 
@@ -244,11 +245,11 @@ export default function Home() {
       skilled students to participate in the SlumTech project and benefit from our
       educational programs
       </p>
-      <button className="h-[48px] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
+      <button className="h-[3rem] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[500px] w-[80%] max-large:w-[90%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] max-large:w-[90%]">
     {/* <div className="w-[90%] h-[500px] max-md:h-[200px] relative"> */}
     <Image 
       src="/images/schoolboy.png"
@@ -262,10 +263,10 @@ export default function Home() {
     </div>
     </section>
 
-    <section className="bg-[#F5FBF6] w-[100%] h-[1356px] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
+    <section className="bg-[#F5FBF6] w-[100%] h-[84.75rem] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
       <div>
         <header className="font-header text-head text-header">What We Do</header>
-        <div className="text-normal font-normal text-text_color w-[329px] max-large:w-full">
+        <div className="text-normal font-normal text-text_color w-[20.56rem] max-large:w-full">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
@@ -276,7 +277,7 @@ export default function Home() {
         <div className="font-header text-[20px] max-large:text-[16px] text-header w-[274px] pt-[20%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[382px] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
+      <div className="w-[24rem] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -286,11 +287,11 @@ export default function Home() {
         </div>
  
         <div className="absolute bottom-[25%] max-large:bottom-[35%] right-[37%] max-large:right-[5%] w-[53%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[350px]">
+        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[21.875rem]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[382px] max-large:w-full h-[500px] max-large:h-[250px] relative">
+      <div className="w-[23.875rem] max-large:w-full h-[31.25rem] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -300,12 +301,12 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[56%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[390px] w-[382px] max-large:w-full  mt-[40%] max-large:mt-0">
+        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[23.875rem] max-large:w-full  mt-[40%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[382px] max-large:w-full h-[500px] max-large:h-[250px] relative">
+      <div className="w-[23.875rem] max-large:w-full h-[31.25rem] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
@@ -319,8 +320,8 @@ export default function Home() {
     <section className="py-[5%] px-[10%]  max-large:px-[5%] ">
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
-      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[320px] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
-      <div className="h-[150px] rounded-xl relative">
+      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
+      <div className="h-[9.4rem] rounded-xl relative">
       <Image 
       src={option.img}
       fill
@@ -330,7 +331,7 @@ export default function Home() {
       </div>
         <div className="pt-[5%] px-[5%]">
         <h3 className="mt-1 text-text_color font-header text-sub_header ">{option.header}</h3>
-        <div className="text-[#7d7f82] text-[14px] font-normal">{option.text}</div>
+        <div className="text-[#7d7f82] text-fourteen font-normal">{option.text}</div>
         </div>
       </div>
        )} 
@@ -351,13 +352,13 @@ export default function Home() {
       technology
       </p>
       <div className="flex flex-row justify-between mt-[5%]">
-        <button className="h-[48px] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-        <button className="h-[48px] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+        <button className="h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
       </div>
       </div>
       <div className="w-[45%] max-large:w-full">
         <div className="flex flex-row items-center max-large:justify-center">
-        <div  className="relative w-[64px] max-large:w-[50px] h-[64px] max-large:h-[50px] mr-[50px]">
+        <div  className="relative w-[4rem] max-large:w-[50px] h-[4rem] max-large:h-[50px] mr-[3.125rem]">
           <Image 
           src="/images/partner2.png"
           fill
@@ -365,7 +366,7 @@ export default function Home() {
           className="blackshirt"
           /> 
       </div>
-      <div  className="relative w-[150px] max-large:w-[120px] h-[150px] max-large:h-[120px]">
+      <div  className="relative w-[9.375rem] max-large:w-[120px] h-[9.375rem] max-large:h-[120px]">
           <Image 
           src="/images/partner3.png"
           fill
@@ -374,7 +375,7 @@ export default function Home() {
           /> 
       </div>
       </div>
-      <div  className="relative w-[260px] max-large:w-[200px] h-[260px] max-large:h-[200px]">
+      <div  className="relative w-[16.25rem] max-large:w-[200px] h-[16.25rem] max-large:h-[200px]">
       <Image 
       src="/images/partner1.png"
       fill
@@ -387,7 +388,7 @@ export default function Home() {
     </section>
 
     {/* donate */}
-    <section className="w-[100%] h-[400px] max-md:h-[250px] relative">
+    <section className="w-[100%] h-[25rem] max-md:h-[250px] relative">
     <Image 
       src="/images/donate_banner.png"
       fill
@@ -403,7 +404,7 @@ export default function Home() {
       Together, we can build a better world
       </p>
       <div className="mt-[5%]">
-        <button className="w-[259px] max-large:w-[170px] h-[48px] max-large:h-[40px] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color mr-5 outline-none">Donate</button>
+        <button className="w-[16.1875rem] max-large:w-[170px] h-[3rem] max-large:h-[40px] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color mr-5 outline-none">Donate</button>
       </div>
     </div>
     </section>

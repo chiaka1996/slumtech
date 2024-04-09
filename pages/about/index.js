@@ -272,7 +272,7 @@ export default function About() {
       them a pathway to upward mobility, economic independence, and a brighter future. 
       By providing equal opportunities and fostering a supportive learning environment, 
       we aim to break the cycle 
-      of poverty and drive sustainable transformation within Nigeria's 
+      of poverty and drive sustainable transformation within Africa's 
       most underserved communities.
       </div>
       </div>

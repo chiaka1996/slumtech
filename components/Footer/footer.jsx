@@ -11,16 +11,16 @@ const Footer = () => {
                 <form className='mt-3'>
                     <div>
                         <label className='text-[#ffffff] text-normal font-normal'>Email</label><br/>
-                        <input type='email' placeholder='email@gmail.com' className='h-[48px] px-2 w-full rounded-[8px] outline-none border-1 border-text_color' />
+                        <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-2 w-full rounded-[8px] outline-none border-1 border-text_color' />
                     </div>
-                    <button className='mt-3 h-[40px] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
+                    <button className='mt-3 h-[2.5rem] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
                 </form>
             </section>
 
             <section className='pl-[20%] max-md:pl-0 mt-[5%] flex flex-row max-md:flex-col justify-between'>
                 <div className='w-[20%] max-large:w-full flex flex-row md:justify-between text-footer_text max-md:px-md'>
                     <div>
-                    <header className='font-btn_weight mb-3 text-[14px]'>Services</header>
+                    <header className='font-btn_weight mb-3 text-fourteen'>Services</header>
                     <ul className='text-footertext font-normal'>
                         <li className='mb-2'>
                             Partner</li>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
 
                     <div className='max-md:ml-[40px]'>
-                    <header className='text-[14px] font-btn_weight mb-3'>About SlumTech</header>
+                    <header className='text-fourteen font-btn_weight mb-3'>About SlumTech</header>
                     <ul className='text-footertext font-normal'>
                         <li  className='mb-2'>Team</li>
                         <li  className='mb-2'>Initiatives</li>
@@ -67,35 +67,49 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='w-[90%] large:w-[65%] max-md:ml-[10%]'>
-                <div className='h-[120px] mt-3 w-full bg-btn_color rounded-tl-[40px] rounded-bl-[40px] py-[1%]'>
-                <div className='relative w-[144px] h-[40px] mx-auto'>
+                <div className='h-[7.5rem] mt-3 w-full bg-btn_color rounded-tl-[2.5rem] rounded-bl-[2.5rem] py-[1%]'>
+                <div className='relative w-[9rem] h-[2.5rem] mx-auto'>
                 <Image 
                 src="/logo/slumtech.png"
                 fill
                 alt="logo"
                 />
                 </div>
-                <div className='w-[50%] max-md:w-[90%] mx-auto text-[10px] text-center'>
+                <div className='w-[55%] max-md:w-[90%] mx-auto text-ten text-center'>
                 Connect with us to learn more about our 100% free programs, 
                 partnership opportunities, or to get involved, please reach 
-                out to us at info@slumtechng.com
+                out to us at contact@slumtechfoundation.com
                 </div>
-                <div className='w-[7%] max-md:w-[12%] flex flex-row justify-between mx-auto'>
+                <div className='w-[12%] max-md:w-[12%] flex flex-row justify-between mx-auto'>
+                <a href="https://www.instagram.com/slumtechfoundation/" target="_blank">
                 <img 
                 width="20" 
                 height="20" 
                 src="https://img.icons8.com/ios/20/343434/instagram-new--v1.png" 
                 alt="instagram-new--v1"
                 />
+                </a>
+               
+                <a href="https://www.linkedin.com/company/slumtech-foundation/" target="_blank">
+                <img 
+                width="20" 
+                height="20" 
+                src="https://img.icons8.com/ios-glyphs/20/343434/linkedin.png"
+                alt="linkedin-new--v1"
+                />
+                </a>
+
+                <a href="https://web.facebook.com/profile.php?id=61557154079357" target="_blank">
                  <Image 
                  width="20" 
                  height="20" 
                  src="https://img.icons8.com/ios-filled/20/343434/facebook-new.png" 
                  alt="facebook-new"
                  />
+                 </a>
                 </div>
                 </div>
-                <div className='text-[#CAD0CB] font-normal text-[12px] text-center'>
+                <div className='text-[#CAD0CB] font-normal text-twelve text-center'>
                 SlumTech Foundation - Empowering Africa's Future through Technology
                 </div>
                 </div>
