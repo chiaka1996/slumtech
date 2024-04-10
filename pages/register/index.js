@@ -130,7 +130,7 @@ const submitBtn = async (e) => {
              Educators are kindly requested to register their schools by completing the input 
              form provided.
             </p>
-            <div className="relative w-full h-[280px] my-[5%]">
+            <div className="relative w-full h-[17.5rem] my-[5%]">
             <Image 
             src="/images/register1.png"
             fill
@@ -140,7 +140,7 @@ const submitBtn = async (e) => {
             </div>
 
             <div className="w-[47%] max-large:w-full">
-            <span className="px-[5%] font-header text-header text-sub_header border border-header rounded-[16px]">
+            <span className="px-[5%] font-header text-header text-sub_header border border-header rounded-[1rem]">
             Register as a School
             </span>
 
@@ -216,109 +216,6 @@ const submitBtn = async (e) => {
             </form>
             </div>
           </div>
-
-        {/* register as individual */}
-        {/* <form>
-          <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-[10%]">
-            <div className="w-[47%] max-large:w-full">
-            <p className="text-text_color font-normal text-normal mb-[5%]">
-            We are deeply committed to shaping the future alongside the youth in the slum through 
-            technology. Recognizing that individuals within the desired age range (15 - 21) may have 
-            completed secondary school and therefore may not be eligible
-             to register with a school, we have created an opportunity for such individuals to register in this section
-            </p>
-            <span className="px-[5%] font-header text-header text-sub_header border border-header rounded-[16px]">
-            Register as an individual
-            </span>
-
-            <div className=" mt-[10%]">
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Full Name"
-            />
-
-            <InputComponent
-            type="email"
-            placeholder=""
-            labelName="Email"
-            />
-
-            <InputComponent
-            type="number"
-            placeholder=""
-            labelName="Phone Number"
-            />
-
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Nationality"
-            />
-
-            <div className="flex flex-row justify-between">
-            <div className="w-[47%]">
-            <SelectComponent
-            labelName="Gender"
-            options={["Male","Female"]}
-            />
-            </div>
-            <div className="w-[47%]">
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Age"
-            />
-            </div>
-            </div>
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Address"
-            />
-            </div>
-
-            </div>
-
-            <div className="w-[47%] max-large:w-full">
-            <div className="relative w-full h-[160px] my-[10%]">
-            <Image 
-            src="/images/register2.png"
-            fill
-            alt="register"
-                /> 
-            </div>
-            <header className="font-header text-[18px] text-header">Provide your guarantor information</header>
-            <div className=" mt-[10%]">
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Full Name"
-            />
-
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Your Relationship with the above"
-            />
-
-            <InputComponent
-            type="number"
-            placeholder=""
-            labelName="Phone Number"
-            />
-
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Address"
-            />
-            </div>
-            </div>
-            
-        </div>
-        <ButtonComponent text="Submit Application" />
-        </form> */}
 
         <RegisterIndividual />
 

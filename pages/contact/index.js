@@ -112,7 +112,7 @@ const submitBtn = async (e) => {
             />
             <div className="flex flex-row max-large:flex-col justify-between ">
                 <div className="w-[47%] max-large:w-full">
-                    <div className="mt-[5%] font-normal text-[12px] text-text_color">
+                    <div className="mt-[5%] font-normal text-twelve text-text_color">
                     Please reach out to us by completing this form. Your messages,suggestions and 
                     feedback will play a crucial role in shaping a brighter, technology-driven future 
                     for everyone
@@ -150,7 +150,7 @@ const submitBtn = async (e) => {
                 </div>
 
             <div className="w-[40%] max-large:w-full h-full max-large:mt-[10%]">
-            <div className="relative w-full h-[490px]">
+            <div className="relative w-full h-[30.625rem]">
             <Image 
             src="/images/contact1.png"
             fill
@@ -161,9 +161,9 @@ const submitBtn = async (e) => {
             </div>
 
             <div className="flex flex-row max-large:flex-col justify-between mt-[5%]">
-                <div className="w-[250px] max-large:w-full max-large:mt-[5%]">
+                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
                     <h2 className="flex flex-row">
-                    <div className="relative w-[16px] h-[20px] mr-2">
+                    <div className="relative w-[1rem] h-[1.25rem] mr-2">
                         <Image 
                         src="/icons/location.png"
                         fill
@@ -195,7 +195,7 @@ const submitBtn = async (e) => {
 
                 <div className="max-large:my-[5%]">
                     <h2 className="flex flex-row">
-                    <div className="relative w-[25px] h-[30px] mr-2">
+                    <div className="relative w-[1.5625rem] h-[1.875rem] mr-2">
                     <Image 
                     src="/icons/phone.png"
                     fill

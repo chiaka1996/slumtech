@@ -144,7 +144,7 @@ const submitBtn = async (e) => {
 
           <div className="flex flex-row max-md:flex-col justify-between mt-3">
             <section onClick={() => setToggleMoney(true)} className="cursor-pointer p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] max-md:px-[5%] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[80px] h-[80px]">
+            <div className="relative w-[5rem] h-[5rem]">
                 <Image 
                 src="/images/donate1.png"
                 fill
@@ -153,7 +153,7 @@ const submitBtn = async (e) => {
                 </div>
 
             <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[50px] h-[80px] mx-auto mb-[20%]">
+            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
                 <Image 
                 src="/images/donate5.png"
                 fill
@@ -161,8 +161,8 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
 
-                <div className="w-[100%] h-[48px] relative flex flex-row justify-between items-c">
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
+                <div className="w-[100%] h-[3rem] relative flex flex-row justify-between items-c">
+                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
                     <Image 
                     src="/images/donate4.png"
                     fill
@@ -170,7 +170,7 @@ const submitBtn = async (e) => {
                     /> 
                     </div>
                     <div className="text-sub_header text-nav_links font-header">Donate Money</div>
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
+                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
                     <Image 
                     src="/images/donate4.png"
                     fill
@@ -182,7 +182,7 @@ const submitBtn = async (e) => {
             </section>
 
             <section onClick={() => setToggleGadget(true)} className="cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[80px] h-[80px]">
+            <div className="relative w-[5rem] h-[5rem]">
                 <Image 
                 src="/images/donate2.png"
                 fill
@@ -191,7 +191,7 @@ const submitBtn = async (e) => {
                 </div>
 
             <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[50px] h-[80px] mx-auto mb-[20%]">
+            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
                 <Image 
                 src="/images/donate5.png"
                 fill
@@ -208,7 +208,7 @@ const submitBtn = async (e) => {
                     /> 
                     </div>
                     <div className="text-sub_header text-nav_links font-header">Donate Gadgets</div>
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
+                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
                     <Image 
                     src="/images/donate4.png"
                     fill
@@ -219,8 +219,8 @@ const submitBtn = async (e) => {
             </div>
             </section>
 
-            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[80px] h-[80px]">
+            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[25rem] max-large:h-[350px] bg-btn_color rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
+            <div className="relative w-[5rem] h-[5rem]">
                 <Image 
                 src="/images/donate3.png"
                 fill
@@ -229,7 +229,7 @@ const submitBtn = async (e) => {
                 </div>
 
             <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[50px] h-[80px] mx-auto mb-[20%]">
+            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
                 <Image 
                 src="/images/donate5.png"
                 fill
@@ -238,7 +238,7 @@ const submitBtn = async (e) => {
                 </div>
 
                 <div className="w-[100%] h-[48px] relative flex flex-row justify-between items-c">
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
+                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
                     <Image 
                     src="/images/donate4.png"
                     fill
@@ -246,7 +246,7 @@ const submitBtn = async (e) => {
                     /> 
                     </div>
                     <div className="text-sub_header text-nav_links font-header">GoFundMe</div>
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
+                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
                     <Image 
                     src="/images/donate4.png"
                     fill
@@ -260,14 +260,14 @@ const submitBtn = async (e) => {
           </section>
 
           <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] max-large:w-full mx-[10%]  max-large:mx-0">
-            <div className="w-[400px] max-large:w-full h-[370px] relative">
+            <div className="w-[25rem] max-large:w-full h-[23.125rem] relative">
             <Image 
             src="/images/donate_book.png"
             fill
             alt="donate"
             /> 
             </div>
-            <div className="w-[328px]">
+            <div className="w-[20.5rem]">
             <p className="text-text_color font-normal text-normal">
             "Tech Entrepreneurship and Career for 
             Africa Development" is a comprehensive guide by SlumTech Foundation, 

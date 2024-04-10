@@ -12,17 +12,17 @@ const DonateMoney = ({toggle, toggleState}) => {
             <div className="mt-[3%] flex flex-row justify-center">
             <div>
             <header className="flex flex-row font-header text-[32px] max-sm:text-[29px] text-header relative mb-[3%]">
-              <div className="text-right w-[60px] max-sm:w-[50px] h-[60px] max-sm:h-[50px] bg-header_shadow rounded-full text-index z-70">D</div>
+              <div className="text-right w-[3.75rem] max-sm:w-[50px] h-[3.75rem] max-sm:h-[50px] bg-header_shadow rounded-full text-index z-70">D</div>
               <div className="">onate via this Details</div>
               </header>
               </div>
           
           </div> 
 
-          <div className="my-[2%] font-header text-[48px] text-nav_links">9068458302</div>
-          <div className="my-[2%] font-[500] text-[28px] text-nav_links">Guarantee Trust Bank</div>
-          <div className="my-[2%] font-[500] text-[28px] text-nav_links">SlumTech Foundation</div>
-          <div className="my-[2%] font-[400] text-[20px] text-[#232323]">
+          <div className="my-[2%] font-header text-[3rem] text-nav_links">9068458302</div>
+          <div className="my-[2%] font-[500] text-[1.75rem] text-nav_links">Guarantee Trust Bank</div>
+          <div className="my-[2%] font-[500] text-[1.75rem] text-nav_links">SlumTech Foundation</div>
+          <div className="my-[2%] font-[400] text-[1.25rem] text-[#232323]">
           We sincerely appreciate your generosity in providing hope to these young talents
           Your support is deeply valued and enables us to persist in our crucial mission
           </div>

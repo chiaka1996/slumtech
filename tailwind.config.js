@@ -28,7 +28,7 @@ module.exports = {
       "small": "395px"
     },
     borderRadius: {
-      'normal':"8px"
+      'normal':"0.5rem"
     },
     fontWeight: {
       normal: "400",

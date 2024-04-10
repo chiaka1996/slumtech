@@ -122,7 +122,7 @@ const Partnership = () => {
           />
           </div>
 
-        <div className="relative w-full h-[320px] max-md:h-[270px] my-[1%]">
+        <div className="relative w-full h-[20rem] max-md:h-[270px] my-[1%]">
             <Image 
             src="/images/partnership.png"
             fill
@@ -170,13 +170,13 @@ const Partnership = () => {
                 <div className="my-[5%]">
                     <header className="mb-[3%] font-label text-sub_header text-header">Please Indicate</header>
                     <div className="flex flex-row">
-                    <div className="mr-[20px] flex flex-row items-center">
+                    <div className="mr-[1.25rem] flex flex-row items-center">
                      <label htmlFor='Organization'>Organization</label>
-                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]"  id="organization" name="type" value="organization" onChange={onChangeInput} />
+                    <input type="radio" className="ml-[0.625rem] w-[1.25rem] h-[1.25rem]"  id="organization" name="type" value="organization" onChange={onChangeInput} />
                     </div>
                     <div className="flex flex-row items-center">
                         <label htmlFor='individual'>Individual</label>
-                    <input type="radio" className="ml-[10px] w-[20px] h-[20px]" id="individual" name="type"  value="individual" onChange={onChangeInput} />
+                    <input type="radio" className="ml-[0.625rem] w-[1.25rem] h-[1.25rem]" id="individual" name="type"  value="individual" onChange={onChangeInput} />
                     </div>
                     </div>
                 </div>

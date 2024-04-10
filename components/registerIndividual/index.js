@@ -304,7 +304,7 @@ const RegisterIndividual = () => {
                     <div className="font-header text-normal text-header">Senior School Certificate</div>
                     <span className="text-[#565656] font-normal text-[14px]">e.g Waec, Kcse, Gce</span>
                     
-                        {preview1 ?  <div className="w-[30px] h-[30px] relative">
+                        {preview1 ?  <div className="w-[1.875rem] h-[1.875rem] relative">
                             <Image 
                         src={preview1}
                        fill
@@ -313,7 +313,7 @@ const RegisterIndividual = () => {
                         </div>
                         : "" 
                         }
-                    <label htmlFor="certificate" className="mt-1 w-[140px] rounded-[8px] flex flex-row items-center justify-center font-btn_weight text-normal text-[#093212] py-[3%] px-[1%] bg-[#D1EAD7]">
+                    <label htmlFor="certificate" className="mt-1 w-[8.75rem] rounded-[0.5rem] flex flex-row items-center justify-center font-btn_weight text-normal text-[#093212] py-[3%] px-[1%] bg-[#D1EAD7]">
                        <span className="mr-1"> upload</span>
                         <Image 
                         src="/icons/document.png"
@@ -333,7 +333,7 @@ const RegisterIndividual = () => {
                 <div className="text-right">
                     <div className="font-header text-normal text-header">Date of Birth Certificate</div>
                     
-                        {preview2 ?  <div className="w-[30px] h-[30px] relative">
+                        {preview2 ?  <div className="w-[1.875rem] h-[1.875rem] relative">
                             <Image 
                         src={preview2}
                        fill
@@ -342,7 +342,7 @@ const RegisterIndividual = () => {
                         </div> : "" 
                         }
                    
-                    <label htmlFor="b-certificate" className="mt-1 w-[140px] rounded-[8px] flex flex-row items-center justify-center font-btn_weight text-normal text-[#093212] py-[3%] px-[1%] bg-[#D1EAD7]">
+                    <label htmlFor="b-certificate" className="mt-1 w-[8.75rem] rounded-[0.2rem] flex flex-row items-center justify-center font-btn_weight text-normal text-[#093212] py-[3%] px-[1%] bg-[#D1EAD7]">
                        <span className="mr-1"> upload</span>
                         <Image 
                         src="/icons/document.png"

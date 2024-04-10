@@ -8,8 +8,8 @@ const Submited = ({toggle, toggleState}) => {
         <Modal.Header />
         <Modal.Body>
           <div className="text-center">
-            <div className="w-[100px] h-[100px] rounded-full bg-[#D1EAD7] flex flex-row justify-center items-center mx-auto ">
-            <div className="relative w-[50px] h-[50px]">
+            <div className="w-[6.25rem] h-[6.25rem] rounded-full bg-[#D1EAD7] flex flex-row justify-center items-center mx-auto ">
+            <div className="relative w-[3.125rem] h-[3.125rem]">
             <Image 
             src="/icons/mark.png"
             fill
@@ -17,7 +17,7 @@ const Submited = ({toggle, toggleState}) => {
                 /> 
             </div> 
             </div>
-            <div className="text-[#2B2B2B] font-normal text-[32px]">Submited</div>  
+            <div className="text-[#2B2B2B] font-normal text-[2rem]">Submited</div>  
             </div>
           
        </Modal.Body>

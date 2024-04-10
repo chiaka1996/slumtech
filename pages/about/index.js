@@ -6,7 +6,7 @@ export default function About() {
    <main>
     <Navigation />
     <Sidebar /> 
-    <div className="w-[100%] h-[320px] max-md:h-[250px] relative mt-[5%]">
+    <div className="w-[100%] h-[20rem] max-md:h-[250px] relative mt-[5%]">
     <Image 
       src="/images/about_banner.png"
       fill
@@ -33,7 +33,7 @@ export default function About() {
       {/* grid2 */}
       <div className="w-[55%] max-large:w-full">
         <div className="flex flex-row justify-center"> 
-        <div  className="relative w-[170px] max-large:w-[120px] h-[170px] max-large:h-[120px]">
+        <div  className="relative w-[10.625rem] max-large:w-[120px] h-[10.625rem] max-large:h-[120px]">
         <Image 
         src="/images/mission1.png"
         fill
@@ -42,14 +42,14 @@ export default function About() {
       </div>
       </div>
       <div  className="flex flex-row justify-between">
-      <div  className="relative w-[170px] max-large:w-[120px] h-[170px] max-large:h-[120px]">
+      <div  className="relative w-[10.625rem] max-large:w-[120px] h-[10.625rem] max-large:h-[120px]">
         <Image 
       src="/images/mission2.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] max-large:w-[120px] h-[170px] max-large:h-[120px]">
+      <div  className="relative w-[10.625rem] max-large:w-[120px] h-[10.625rem] max-large:h-[120px]">
         <Image 
       src="/images/mission3.png"
       fill
@@ -58,7 +58,7 @@ export default function About() {
       </div>
       </div>
       <div className="flex flex-row justify-center">
-      <div className="relative w-[170px] max-large:w-[120px] h-[170px] max-large:h-[120px]"> 
+      <div className="relative w-[10.625rem] max-large:w-[120px] h-[10.625rem] max-large:h-[120px]"> 
         <Image 
       src="/images/mission4.png"
       fill
@@ -72,7 +72,7 @@ export default function About() {
     {/* vision section */}
     <section className="flex flex-row max-large:flex-col-reverse justify-between px-normal max-md:px-md pt-[5%]">
       <div className="w-[50%] max-large:w-full">
-      <div className="w-full h-[450px] max-large:h-[250px] relative"> 
+      <div className="w-full h-[28.125rem] max-large:h-[250px] relative"> 
           <Image 
             src="/images/vision.png"
             fill
@@ -110,7 +110,7 @@ export default function About() {
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]  max-large:ml-[5%]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px]  max-large:ml-[5%]">
         <Image 
       src="/images/free2.png"
       fill
@@ -132,14 +132,14 @@ export default function About() {
       {/* free tech images for big screens */}
       
       <div className="flex flex-row justify-between w-[40%] max-large:hidden">
-      <div  className="relative w-[170px] h-[170px]">
+      <div  className="relative w-[10.625rem] h-[10.625rem]">
         <Image 
       src="/images/free1.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] h-[170px]">
+      <div  className="relative w-[10.625rem] h-[10.625rem]">
         <Image 
       src="/images/free2.png"
       fill
@@ -150,14 +150,14 @@ export default function About() {
       </div>
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-lg:w-full ml-[20%] max-lg:ml-0 mt-[5%]">
       <div className="flex flex-row large:justify-between w-[40%] max-large:w-full">
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px]">
         <Image 
       src="/images/youth1.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px] max-large:ml-[5%]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px] max-large:ml-[5%]">
         <Image 
       src="/images/youth2.png"
       fill
@@ -181,14 +181,14 @@ export default function About() {
       </div>
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full mt-[5%]">
       <div className="flex flex-row w-[40%] max-lg:w-full large:hidden">
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px]">
         <Image 
       src="/images/community1.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px] max-large:ml-[5%]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px] max-large:ml-[5%]">
         <Image 
       src="/images/community2.png"
       fill
@@ -209,14 +209,14 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-row justify-between w-[40%] max-large:hidden">
-      <div  className="relative w-[170px] h-[170px]">
+      <div  className="relative w-[10.625rem] h-[10.625rem]">
         <Image 
       src="/images/community1.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] h-[170px]">
+      <div  className="relative w-[10.625rem] h-[10.625rem]">
         <Image 
       src="/images/community2.png"
       fill
@@ -228,14 +228,14 @@ export default function About() {
 
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full ml-[20%] max-large:ml-0 mt-[5%]">
       <div className="flex flex-row large:justify-between w-[40%] max-large:w-full">
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px]">
         <Image 
       src="/images/advocating1.png"
       fill
       alt="logo"
       /> 
       </div>
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px] max-large:ml-[5%]">
+      <div  className="relative w-[10.625rem] max-md:w-[150px] h-[10.625rem] max-md:h-[150px] max-large:ml-[5%]">
         <Image 
       src="/images/advocating2.png"
       fill
@@ -278,7 +278,7 @@ export default function About() {
       </div>
     </section>
 
-    <section className="relative h-[450px] max-large:h-[300px] w-full">
+    <section className="relative h-[28.125rem] max-large:h-[300px] w-full">
     <Image 
       src="/images/ladies.png"
       fill
@@ -286,14 +286,14 @@ export default function About() {
         /> 
 
         <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] max-md:left-[5%] w-[50%] max-large:w-[80%]">
-          <span className="text-[14px] max-large:text-[11px]">
+          <span className="text-fourteen max-large:text-[11px]">
           SlumTech Foundation welcomes collaborations, partnerships, 
           and support from individuals, organizations, and stakeholders who share our 
           vision of empowering youths from slum communities and positioning africa as a 
           trailblazing tech hub in the world
           </span>
           <div className="text-center max-large:text-left mt-3">
-            <button className="text-normal text_btn_color bg-btn_green rounded-normal px-[16px] h-[48px] ">Partner with us</button>
+            <button className="text-normal text_btn_color bg-btn_green rounded-normal px-[1rem] h-[3rem] ">Partner with us</button>
           </div>
         </div>
     </section>

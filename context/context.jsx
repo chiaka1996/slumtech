@@ -18,12 +18,10 @@ export function BarState() {
     const [bar, setBar] = useState(false)
 
     const openBar = () => {
-      console.log("how")
         setBar(true);
       };
     
       const closeBar = () => {
-        console.log("close")
         setBar(false);
       };
 
