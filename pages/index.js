@@ -88,13 +88,13 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[300px] relative">
+    <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
       <div className="animate__animated animate__slower animate__slideInLeft absolute top-[4%] max-large:top-[3%] left-[11%] max-large:left-[5%] w-[45%] max-large:w-[90%] z-30">  
-        <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+        <header className={`font-header text-[3em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3rem] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>        
@@ -112,16 +112,8 @@ export default function Home() {
         src="/images/banner.png"
         fill
         alt="banner"
-        className="filter brightness-[30%] max-large:hidden"
+        className="filter brightness-[30%]"
           />
-
-        <Image 
-        src="/images/mobile_banner.jpg"
-        fill
-        alt="banner"
-        className="filter brightness-[30%] large:hidden"
-          />  
-        
 
         {/* <div className="absolute z-30 bottom-[25%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[22%] max-large:w-[40%]">
           <header className="font-header text-[22px] max-large:text-[10px] text-btn_color">Brands Supporting Our Mission</header>

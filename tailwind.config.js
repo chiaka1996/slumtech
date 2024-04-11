@@ -38,13 +38,13 @@ module.exports = {
       nav: "600"
   },
   fontSize: {
-    normal: "1rem",
-    head: "2.5rem",
-    sub_header: "1.25rem",
-    footertext: "0.75rem",
-    fourteen: "0.875rem",
-    ten: "0.625rem",
-    twelve: "0.75rem"
+    normal: "1em",
+    head: "2.5em",
+    sub_header: "1.25em",
+    footertext: "0.75em",
+    fourteen: "0.875em",
+    ten: "0.625em",
+    twelve: "0.75em"
 },
 fontFamily: {
   "primary": ['Lato'],
