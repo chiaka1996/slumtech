@@ -28,6 +28,9 @@ module.exports = {
       "small": "395px",
       "xlarge": "1900px"
     },
+    backgroundImage: {
+      'hero': "url('/images/approach2.png')"
+    },
     borderRadius: {
       'normal':"0.5rem"
     },

@@ -194,7 +194,7 @@ export default function Home() {
    
 
     {/* our approach */}
-   <section className="w-full mt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
+   <section className="bg-hero w-full mt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
@@ -204,8 +204,8 @@ export default function Home() {
         /> 
     </div>
     <div className="w-[40%] 2xl:w-[35%]  max-large:w-full">
-    <header className="font-header text-header text-head 2xl:text-[5em] mb-3">Our Approach</header>
-    <div className="text-normal 2xl:text-xnormal  font-normal text-text_color">
+    <header className="font-header text-header text-head 2xl:text-btn_color 2xl:text-[5em] mb-3">Our Approach</header>
+    <div className="text-normal 2xl:text-xnormal  font-normal text-text_color 2xl:text-btn_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
     to provide a comprehensive tech education experience that equips 
