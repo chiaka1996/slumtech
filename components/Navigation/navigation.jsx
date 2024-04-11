@@ -28,7 +28,7 @@ const Navigation = () => {
   ]
 
     return(
-      <nav className="font-primary bg-[#FDFEFD] shadow-md shadow-[#00000029] z-[500] py-2 2xl:py-4 px-normal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
+      <nav className="font-primary bg-[#FDFEFD] shadow-md shadow-[#00000029] z-[500] py-2 2xl:py-6 px-normal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
          <Image 
             src="/logo/slumtech.png"
             width="192"
@@ -46,7 +46,7 @@ const Navigation = () => {
             }
 
             
-              <button onClick={() => router.push('/donation')} className='bg-btn_green hover:bg-[#66B978] text-normal px-[5%]  py-1 text-btn_color hover:text-text_color rounded-[0.313rem] font-label'>Donate</button>
+              <button onClick={() => router.push('/donation')} className='bg-btn_green hover:bg-[#66B978] text-normal px-[5%]  py-2 2xl:py-3 text-btn_color hover:text-text_color rounded-[0.313rem] font-label'>Donate</button>
           
            </div>
 

@@ -25,7 +25,8 @@ module.exports = {
     },
     screens: {
       'large': '950px',
-      "small": "395px"
+      "small": "395px",
+      "xlarge": "1900px"
     },
     borderRadius: {
       'normal':"0.5rem"
