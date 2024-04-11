@@ -89,22 +89,27 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] max-large:top-[3%] left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
-        <header className={`font-header text-[3em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[20%] max-large:top-[3%] left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+        <header className={`font-header text-[3em] 2xl:text-[3.2em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3em] 2xl:text-[3.2em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>        
       </div>
 
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] max-large:top-[52%] left-[15%] max-large:left-[5%] w-[35%] max-large:w-[70%] 2xl:w-[20%]">
-      <div className="join font-normal text-normal 2xl:text-[1.125em] max-large:text-[12px] max-large:h-[310px] text-btn_color">
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] 2xl:top-[55%] max-large:top-[52%] left-[15%] max-large:left-[5%]">
+      <div className="join font-normal text-normal 2xl:text-[1.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[21%]">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa
       </div>
+      <div className="flex flex-row mt-[7%]">
+        <button className="h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+      </div>
+
       </div>
       <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
       <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label large:hidden'>Donate</button>
