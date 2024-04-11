@@ -89,7 +89,7 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] max-large:top-[3%] left-[11%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] max-large:top-[3%] left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
         <header className={`font-header text-[3em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
@@ -100,7 +100,7 @@ export default function Home() {
           </header>        
       </div>
 
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] max-large:top-[52%] left-[11%] max-large:left-[5%] w-[35%] max-large:w-[70%] 2xl:w-[20%]">
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] max-large:top-[52%] left-[15%] max-large:left-[5%] w-[35%] max-large:w-[70%] 2xl:w-[20%]">
       <div className="join font-normal text-normal 2xl:text-[1.125em] max-large:text-[12px] max-large:h-[310px] text-btn_color">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa

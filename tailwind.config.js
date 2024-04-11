@@ -53,6 +53,7 @@ fontFamily: {
 },
 padding: {
   normal: "10%",
+  xnormal: "15%",
   md: "5%"
 },
     },

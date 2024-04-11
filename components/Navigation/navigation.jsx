@@ -28,7 +28,7 @@ const Navigation = () => {
   ]
 
     return(
-      <nav className="font-primary bg-[#FDFEFD] shadow-md shadow-[#00000029] z-[500] py-2 2xl:py-6 px-normal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
+      <nav className="font-primary bg-[#FDFEFD] shadow-md shadow-[#00000029] z-[500] py-2 2xl:py-6 px-normal 2xl:px-xnormal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
          <Image 
             src="/logo/slumtech.png"
             width="192"
