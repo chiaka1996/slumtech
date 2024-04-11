@@ -89,7 +89,7 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[20%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
         <header className={`font-header text-[3em] 2xl:text-[3.2em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
@@ -100,14 +100,14 @@ export default function Home() {
           </header>        
       </div>
 
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] 2xl:top-[55%] max-large:top-[52%] left-[15%] max-large:left-[5%]">
-      <div className="join font-normal text-normal 2xl:text-[1.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[22%]">
+      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] 2xl:top-[45%] max-large:top-[52%] left-[15%] max-large:left-[5%]">
+      <div className="join font-normal text-normal 2xl:text-[1.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[28%]">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa
       </div>
       <div className="flex flex-row mt-[7%]">
-        <button className="h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-        <button className="h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+        <button className="h-[3rem] 2xl:h-[3.2rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="h-[3rem] 2xl:h-[3.2rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
       </div>
 
       </div>
@@ -140,6 +140,55 @@ export default function Home() {
           </div>
           </div>
         </div> */}
+        <div className="flex flex-row absolute bottom-[15%] right-[15%] text-btn_color">
+                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[1rem] h-[1.25rem] mr-2">
+                        <Image 
+                        src="/icons/location.png"
+                        fill
+                        alt="location"
+                            /> 
+                        </div>
+                    <span className="font-header text-normal text-btn_color">Location</span>
+                    </h2>
+                    <p className="font-normal text-normal text-btn_color">
+                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
+                    </p>
+                </div>
+
+                <div className="ml-5">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[40px] h-[26px] mr-2">
+                        <Image 
+                        src="/icons/email.png"
+                        fill
+                        alt="location"
+                            /> 
+                    </div>
+                    <span className="font-header text-normal text-btn_color">Email</span>
+                    </h2>
+                    <p className="font-normal text-normal text-btn_color">
+                    contact@slumtechfoundation.com
+                    </p>
+                </div>
+
+                {/* <div className="max-large:my-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[1.5625rem] h-[1.875rem] mr-2">
+                    <Image 
+                    src="/icons/phone.png"
+                    fill
+                    alt="location"
+                        /> 
+                    </div>
+                    <span className="font-header text-normal text-nav_links">Phone</span>
+                    </h2>
+                    <p className="font-normal text-normal text-text_color">
+                    +1888-355-2015
+                    </p>
+             </div>                 */}
+            </div>        
     </div> 
     
    
