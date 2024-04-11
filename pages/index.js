@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
       <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] 2xl:top-[55%] max-large:top-[52%] left-[15%] max-large:left-[5%]">
-      <div className="join font-normal text-normal 2xl:text-[1.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[21%]">
+      <div className="join font-normal text-normal 2xl:text-[1.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[22%]">
         Join us in our mission to empower Africa's youth through technology
         Together, we can build a more inclusive and empowered Africa
       </div>
