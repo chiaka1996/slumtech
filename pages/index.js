@@ -89,7 +89,7 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[20%] max-large:top-[3%] left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[20%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
         <header className={`font-header text-[3em] 2xl:text-[3.2em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
