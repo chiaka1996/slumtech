@@ -217,10 +217,10 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[1440px]  max-large:h-[1800]">
-   <div className='absolute w-[31.3rem]  max-large:w-[300px] h-[31.3rem] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className='absolute w-[31.3rem] 2xl:w-[50em]  max-large:w-[300px] h-[31.3rem] 2xl:h-[50em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute bottom-[20%] left-[20%] w-[195px]">
-      <div className="text-[#0F01AF] font-header text-head"><span className="free">100% </span>Free</div>
-      <div className="text-normal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
+      <div className="text-[#0F01AF] font-header text-head text-xhead"><span className="free">100% </span>Free</div>
+      <div className="text-normal  max-large:text-[14px] text-header text-xhead font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
