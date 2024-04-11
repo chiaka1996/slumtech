@@ -194,7 +194,7 @@ export default function Home() {
    
 
     {/* our approach */}
-   <section className="w-full mt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center">
+   <section className="w-full mt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
