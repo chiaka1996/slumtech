@@ -198,7 +198,7 @@ export default function Home() {
    
 
     {/* our approach */}
-   <section className="bg-hero brightness-0 w-full mt-[10%] 2xl:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
+   <section className="bg-hero brightness-0 w-full mt-[10%] xlarge:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
@@ -208,8 +208,8 @@ export default function Home() {
         /> 
     </div>
     <div className="w-[40%] 2xl:w-[35%]  max-large:w-full">
-    <header className="font-header text-header text-head 2xl:text-btn_color 2xl:text-[5em] mb-3">Our Approach</header>
-    <div className="text-normal 2xl:text-xnormal  font-normal text-text_color 2xl:text-btn_color">
+    <header className="font-header text-header text-head xlarge:text-btn_color xlarge:text-[5em] mb-3">Our Approach</header>
+    <div className="text-normal xlarge:text-xnormal  font-normal text-text_color xlarge:text-btn_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
     to provide a comprehensive tech education experience that equips 
@@ -221,24 +221,24 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[90em]  max-large:h-[1800]">
-   <div className='absolute w-[31.3rem]  2xl:w-[35.2em]  max-large:w-[300px] h-[31.3rem] 2xl:w-[35em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
-   <div className="absolute bottom-[20%] left-[20%] w-[195px] 2xl:w-[12.2em]">
-      <div className="text-[#0F01AF] font-header text-head 2xl:text-xhead"><span className="free">100% </span>Free</div>
-      <div className="text-normal 2xl:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
+   <div className='absolute w-[31.3rem]  xlarge:w-[35.2em]  max-large:w-[300px] h-[31.3rem] xlarge:w-[35em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className="absolute bottom-[20%] left-[20%] w-[195px] xlarge:w-[12.2em]">
+      <div className="text-[#0F01AF] font-header text-head xlarge:text-xhead"><span className="free">100% </span>Free</div>
+      <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
-   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] 2xl:w-[10em]">
-      <div className="text-[#FFCB2F] font-header text-head  2xl:text-xhead recruite"></div>
-      <div className="text-normal  2xl:text-xnormal  max-large:text-[14px] text-header font-header">
+   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] xlarge:w-[10em]">
+      <div className="text-[#FFCB2F] font-header text-head  xlarge:text-xhead recruite"></div>
+      <div className="text-normal  xlarge:text-xnormal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
     <div className='absolute w-[40.6rem]  max-large:w-[450px] h-[40.6rem]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
-   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem] 2xl:w-[15.2em]  max-large:w-[150px]">
+   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[15.2em]  max-large:w-[150px]">
       <div className="text-[#1A9635] font-header text-head  2xl:text-xhead mb-2 mission"></div>
-      <div className="text-normal  2xl:text-xnormal max-large:text-fourteen text-header font-header">
+      <div className="text-normal xlarge:text-xnormal max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
@@ -300,7 +300,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] 2xl:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] 2xl:w-[70%] max-large:w-[90%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     {/* <div className="w-[90%] h-[500px] max-md:h-[200px] relative"> */}
     <Image 
       src="/images/schoolboy.png"
