@@ -91,7 +91,7 @@ export default function Home() {
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
       <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[50%] max-large:w-[90%] xlarge:w-[35%] z-30">  
        <div className="h-[20em]">
-        <header className={`font-header text-[3em] 2xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+        <header className={`font-header text-[3em] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
@@ -158,7 +158,7 @@ export default function Home() {
    
 
     {/* our approach */}
-   <section className="brightness-0 w-full mt-[10%] xlarge:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
+   <section className="w-full mt-[10%] xlarge:mt-0 xlarge:pt-[10%] px-[10%] xlarge:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
@@ -305,7 +305,7 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[38%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[65%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="absolute bottom-[38%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
         <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[21.875rem]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
@@ -416,7 +416,7 @@ export default function Home() {
       alt="banner"
         /> 
 
-    <div className="absolute top-[30%] max-large:top-[20%] left-[10%] max-large:left-[5%] w-[421px] max-large:w-[90%] text-btn_color">
+    <div className="absolute top-[30%] max-large:top-[20%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[26.3125em] max-large:w-[90%] text-btn_color">
       <p className="text-normal max-large:text-[12px] font-normal text-color">
       Your donation has the power to change lives.
        By contributing to SlumTech Foundation, you're not just giving, 
@@ -425,7 +425,7 @@ export default function Home() {
       Together, we can build a better world
       </p>
       <div className="mt-[5%]">
-        <button className="w-[16.1875rem] max-large:w-[170px] h-[3rem] max-large:h-[40px] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color mr-5 outline-none">Donate</button>
+        <button onClick={() => router.push('/donation')}  className="hover:bg-[#66B978] w-[16.187rem] max-large:w-[170px] h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color hover:text-text_color mr-5 outline-none">Donate</button>
       </div>
     </div>
     </section>
