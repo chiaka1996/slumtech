@@ -245,7 +245,7 @@ export default function Home() {
    </div>
 
     {/* our identity */}
-    <div className="w-[43.25rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] 2xl:left-[15%] max-large:left-[5%]">
+    <div className="w-[43.25rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
     {
         toggleIdentity ? 
       <div className="w-[60%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
@@ -287,7 +287,7 @@ export default function Home() {
      
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[43.25em] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] 2xl:left-[15%] max-large:left-[5%]">
+    <div className="z-50 flex flex-row justify-center items-center w-[43.25em] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
       <div className="text-[1.5rem] max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
