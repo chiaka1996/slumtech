@@ -317,7 +317,7 @@ export default function Home() {
     <section className="bg-[#F5FBF6] w-[100%] h-[84.75rem] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
       <div>
         <header className="font-header text-head text-header">What We Do</header>
-        <div className="text-normal font-normal text-text_color w-[20.56rem] max-large:w-full">
+        <div className="text-normal font-normal text-text_color w-[20.56em] max-large:w-full">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
@@ -325,10 +325,10 @@ export default function Home() {
       </div>
 
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[274px] pt-[20%] max-large:pt-[15%]">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[15.5em] pt-[20%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[24rem] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
+      <div className="w-[24em] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -337,8 +337,8 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[25%] max-large:bottom-[35%] right-[37%] max-large:right-[5%] w-[53%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[21.875rem]">
+        <div className="absolute bottom-[25%] max-large:bottom-[35%] right-[38%] max-large:right-[5%] w-[53%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[21.875rem]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
@@ -351,8 +351,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[56%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[20px] max-large:text-[16px] text-header w-[23.875rem] max-large:w-full  mt-[40%] max-large:mt-0">
+        <div className="absolute bottom-[8%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[56%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[24.875rem] max-large:w-full  mt-[40%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
