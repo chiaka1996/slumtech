@@ -89,26 +89,26 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[50%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[50%] max-large:w-[90%] xlarge:w-[35%] z-30">  
        <div className="h-[20em]">
-        <header className={`font-header text-[3em] 2xl:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+        <header className={`font-header text-[3em] 2xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3em] 2xl:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3em] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>  
           </div> 
 
           <div className="z-30">
-          <div className="font-normal text-normal 2xl:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] 2xl:w-[45%]">
+          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[45%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
           <div className="flex flex-row mt-[2%]">
-            <button onClick={() => router.push('/partnership')} className="h-[3rem] 2xl:h-[3.5rem] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-            <button onClick={() => router.push('/contact')} className="h-[3rem] 2xl:h-[3.5rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5rem] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
           </div>
 
           </div>     
