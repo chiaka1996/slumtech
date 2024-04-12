@@ -197,7 +197,7 @@ export default function Home() {
 
     <div className='absolute w-[40.6rem]  max-large:w-[450px] h-[40.6rem]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
    <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[15.2em]  max-large:w-[150px]">
-      <div className="text-[#1A9635] font-header text-head  2xl:text-xhead mb-2 mission"></div>
+      <div className="text-[#1A9635] font-header text-head  xlarge:text-xhead mb-2 mission"></div>
       <div className="text-normal xlarge:text-xnormal max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
@@ -334,12 +334,10 @@ export default function Home() {
           </div>
         </div>
         </section>
-
-      <div>hello</div>
     </section>
 
       {/* eductional initiatives */}
-    <section className="py-[5%] px-[10%]  max-large:px-[5%] ">
+    <section className="py-[5%] px-[10%] xlarge:px-[15%]  max-large:px-[5%] ">
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#00000029] bg-btn-color">
@@ -361,8 +359,8 @@ export default function Home() {
     </section>
 
       {/* partner with us */}
-    <section className="px-[15%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[10%] w-full flex flex-row max-large:flex-col-reverse justify-between">
-      <div className=" w-[45%] max-large:w-full max-large:mt-[5%]">
+    <section className="px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[10%] w-full flex flex-row max-large:flex-col-reverse justify-between">
+      <div className=" w-[45%] max-large:w-full max-large:mt-[5%] ">
       <p className="text-normal font-normal text-color">
       Being a part of SlumTech is a rewarding experience that allows 
       you to make a tangible difference in the lives of others. By giving your 
@@ -379,7 +377,7 @@ export default function Home() {
       </div>
       </div>
       <div className="w-[45%] max-large:w-full">
-        <div className="flex flex-row items-center max-large:justify-center">
+        <div className="flex flex-row items-center justify-center">
         <div  className="relative w-[4rem] max-large:w-[50px] h-[4rem] max-large:h-[50px] mr-[3.125rem]">
           <Image 
           src="/images/partner2.png"
@@ -397,6 +395,7 @@ export default function Home() {
           /> 
       </div>
       </div>
+      <div className="flex flex-row justify-center">
       <div  className="relative w-[16.25rem] max-large:w-[200px] h-[16.25rem] max-large:h-[200px]">
       <Image 
       src="/images/partner1.png"
@@ -405,7 +404,7 @@ export default function Home() {
       className="whiteshirt"
       /> 
       </div>
-
+      </div>
       </div>
     </section>
 
