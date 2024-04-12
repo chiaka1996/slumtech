@@ -114,36 +114,12 @@ export default function Home() {
           </div>     
       </div>
 
-      
-      {/* <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
-      <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label large:hidden'>Donate</button>
-      </div> */}
       <Image 
         src="/images/banner.png"
         fill
         alt="banner"
         className="filter brightness-[30%]"
           />
-
-        {/* <div className="absolute z-30 bottom-[25%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[22%] max-large:w-[40%]">
-          <header className="font-header text-[22px] max-large:text-[10px] text-btn_color">Brands Supporting Our Mission</header>
-          <div className="flex flex-row justify-around">
-          <div className="relative w-[110px] max-large:w-[64px] h-[35px] max-large:h-[12px]">
-          <Image 
-          src="/logo/a2z.png"
-          fill
-          alt="a2z"
-            /> 
-          </div>
-          <div className="relative w-[115px] max-large:w-[64px] h-[35px] max-large:h-[12px]">
-          <Image 
-          src="/logo/gtech.png"
-          fill
-          alt="banner"
-            /> 
-          </div>
-          </div>
-        </div> */}
         <div className="flex flex-row absolute bottom-[5%] right-[5%] text-btn_color">
                 <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
                     <h2 className="flex flex-row">
@@ -156,12 +132,12 @@ export default function Home() {
                         </div>
                     <span className="font-header text-normal text-btn_color">Location</span>
                     </h2>
-                    <p className="font-normal text-normal text-btn_color ml-5">
+                    <p className="font-normal text-twelve text-btn_color">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>
                 </div>
 
-                <div className="ml-8">
+                <div className="ml-2">
                     <h2 className="flex flex-row">
                     <div className="relative w-[40px] h-[26px] mr-2">
                         <Image 
@@ -172,33 +148,17 @@ export default function Home() {
                     </div>
                     <span className="font-header text-normal text-btn_color">Email</span>
                     </h2>
-                    <p className="font-normal text-normal text-btn_color ml-[3em]">
+                    <p className="font-normal text-twelve text-btn_color">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
-
-                {/* <div className="max-large:my-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[1.5625rem] h-[1.875rem] mr-2">
-                    <Image 
-                    src="/icons/phone.png"
-                    fill
-                    alt="location"
-                        /> 
-                    </div>
-                    <span className="font-header text-normal text-nav_links">Phone</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    +1888-355-2015
-                    </p>
-             </div>                 */}
             </div>        
     </div> 
     
    
 
     {/* our approach */}
-   <section className="bg-hero brightness-0 w-full mt-[10%] xlarge:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
+   <section className="brightness-0 w-full mt-[10%] xlarge:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
@@ -207,7 +167,7 @@ export default function Home() {
       className="approach"
         /> 
     </div>
-    <div className="w-[40%] 2xl:w-[35%]  max-large:w-full">
+    <div className="w-[40%] xlarge:w-[35%]  max-large:w-full">
     <header className="font-header text-header text-head xlarge:text-btn_color xlarge:text-[5em] mb-3">Our Approach</header>
     <div className="text-normal xlarge:text-xnormal  font-normal text-text_color xlarge:text-btn_color">
     Through strategic partnerships, 
@@ -296,12 +256,12 @@ export default function Home() {
       skilled students to participate in the SlumTech project and benefit from our
       educational programs
       </p>
-      <button className="h-[3em] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
+      <button  onClick={() => router.push('/register')} className="h-[3em] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
-    {/* <div className="w-[90%] h-[500px] max-md:h-[200px] relative"> */}
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    
     <Image 
       src="/images/schoolboy.png"
       style={{
@@ -314,21 +274,29 @@ export default function Home() {
     </div>
     </section>
 
-    <section className="bg-[#F5FBF6] w-[100%] h-[84.75rem] py-[5%] px-[10%] max-md:px-[5%] relative max-md:mt-[5%]">
-      <div>
-        <header className="font-header text-head text-header">What We Do</header>
-        <div className="text-normal font-normal text-text_color w-[20.56em] max-large:w-full">
+    <section className="w-[100%] h-[84.75rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+    <Image 
+      src="/images/what.png"
+      fill
+      className="filter brightness-[10%] -z-5"
+      alt="what background"
+        /> 
+    
+    <div className="z-10 absolute top-[5% left-[10%] xlarge:left-[15%]">
+        <header className="font-header text-head text-btn_color z-100">What We Do</header>
+        <div className="text-normal font-normal text-btn_color w-[20.56em] max-large:w-full z-100">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
       </div>
       </div>
-
+  
+      <section className="relative h-[70rem] mt-[18%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[15.5em] pt-[20%] max-large:pt-[15%]">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[15.5em] pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[24em] max-large:w-full max-md:h-[250px] h-[500px] max-large:h-[200px] relative">
+      <div className="w-[23.875em] max-large:w-full max-md:h-[250px] h-[31.25em] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -337,12 +305,12 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[25%] max-large:bottom-[35%] right-[36%] max-large:right-[5%] w-[53%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[21.875rem]">
+        <div className="absolute bottom-[38%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[65%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[21.875rem]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[23.875rem] max-large:w-full h-[31.25rem] max-large:h-[250px] relative">
+      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -351,13 +319,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-[7%] max-large:bottom-[5%] right-[10%] max-large:right-[5%] w-[56%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-header w-[24.875rem] max-large:w-full mt-[38%] max-large:mt-0">
+        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[24.875rem] max-large:w-full mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[23.875rem] max-large:w-full h-[31.25rem] max-large:h-[250px] relative">
+      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
@@ -365,6 +333,9 @@ export default function Home() {
           /> 
           </div>
         </div>
+        </section>
+
+      <div>hello</div>
     </section>
 
       {/* eductional initiatives */}
