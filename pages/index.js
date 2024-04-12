@@ -89,7 +89,8 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[90vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[45%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] 2xl:top-[15%] max-large:top-[3%] left-[10%] 2xl:left-[15%] max-large:left-[5%] w-[50%] max-large:w-[90%] 2xl:w-[35%] z-30">  
+       <div className="h-[20em]">
         <header className={`font-header text-[3em] 2xl:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
@@ -97,23 +98,26 @@ export default function Home() {
           <header className={`font-header text-[3em] 2xl:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
-          </header>        
+          </header>  
+          </div> 
+
+          <div className="z-30">
+          <div className="font-normal text-normal 2xl:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] 2xl:w-[45%]">
+            Join us in our mission to empower Africa's youth through technology
+            Together, we can build a more inclusive and empowered Africa
+          </div>
+          <div className="flex flex-row mt-[2%]">
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] 2xl:h-[3.5rem] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/contact')} className="h-[3rem] 2xl:h-[3.5rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+          </div>
+
+          </div>     
       </div>
 
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[60%] 2xl:top-[50%] max-large:top-[52%] left-[15%] max-large:left-[5%]">
-      <div className="font-normal text-normal 2xl:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[40%] max-large:w-[70%] 2xl:w-[45%]">
-        Join us in our mission to empower Africa's youth through technology
-        Together, we can build a more inclusive and empowered Africa
-      </div>
-      <div className="flex flex-row mt-[5%]">
-        <button className="h-[3rem] 2xl:h-[3.2rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-        <button className="h-[3rem] 2xl:h-[3.2rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
-      </div>
-
-      </div>
-      <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
+      
+      {/* <div className="animate__animated animate__slower animate__slideInLeft z-30 absolute top-[74%] left-[5%]  w-[60%]">
       <button onClick={() => router.push('/donation')} className='bg-btn_green text-normal px-[10%]  py-1 text-btn_color  rounded-[5px] font-label large:hidden'>Donate</button>
-      </div>
+      </div> */}
       <Image 
         src="/images/banner.png"
         fill
@@ -168,7 +172,7 @@ export default function Home() {
                     </div>
                     <span className="font-header text-normal text-btn_color">Email</span>
                     </h2>
-                    <p className="font-normal text-normal text-btn_color ml-5">
+                    <p className="font-normal text-normal text-btn_color ml-[3em]">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
@@ -194,7 +198,7 @@ export default function Home() {
    
 
     {/* our approach */}
-   <section className="bg-hero w-full mt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
+   <section className="bg-hero brightness-0 w-full mt-[10%] 2xl:mt-0 2xl:pt-[10%] px-[10%] 2xl:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center">
    <div className="w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[150px]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
@@ -216,7 +220,7 @@ export default function Home() {
    </section>
 
    
-   <section className="relative mt-[3%] h-[1440px]  max-large:h-[1800]">
+   <section className="relative mt-[3%] h-[90em]  max-large:h-[1800]">
    <div className='absolute w-[31.3rem]  max-large:w-[300px] h-[31.3rem] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute bottom-[20%] left-[20%] w-[195px]">
       <div className="text-[#0F01AF] font-header text-head"><span className="free">100% </span>Free</div>
@@ -241,7 +245,7 @@ export default function Home() {
    </div>
 
     {/* our identity */}
-    <div className="w-[43.6rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[15%] max-large:left-[5%]">
+    <div className="w-[43.25rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] 2xl:left-[15%] max-large:left-[5%]">
     {
         toggleIdentity ? 
       <div className="w-[60%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
@@ -258,7 +262,7 @@ export default function Home() {
       <div> 
           <section className="flex flex-row  max-large:flex-col items-center justify-between w-[80%]  max-large:w-[90%] mx-[10%]  max-large:mx-[5%]">
             <div className="w-[50%]  max-large:w-[60%] bg-[#fff] h-full py-[5%] flex flex-row justify-center">
-            <div className="w-[10.4rem] max-large:w-full h-[10rem] relative">
+            <div className="w-[10.4em] max-large:w-full h-[10em] relative">
             <Image 
             src="/images/donate_book.png"
             fill
@@ -283,7 +287,7 @@ export default function Home() {
      
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[692px] max-large:w-[90%] h-[660px]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[15%] max-large:left-[5%]">
+    <div className="z-50 flex flex-row justify-center items-center w-[43.25em] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] 2xl:left-[15%] max-large:left-[5%]">
       <div className="text-[1.5rem] max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
@@ -292,11 +296,11 @@ export default function Home() {
       skilled students to participate in the SlumTech project and benefit from our
       educational programs
       </p>
-      <button className="h-[3rem] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
+      <button className="h-[3em] px-[7%] bg-[#1A9635] font-btn_weight text-btn_color text-normal rounded-[8px] mt-7">Enroll Now</button>
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] max-large:w-[90%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] 2xl:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25rem] w-[80%] 2xl:w-[70%] max-large:w-[90%]">
     {/* <div className="w-[90%] h-[500px] max-md:h-[200px] relative"> */}
     <Image 
       src="/images/schoolboy.png"
