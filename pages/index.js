@@ -221,24 +221,24 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[90em]  max-large:h-[1800]">
-   <div className='absolute w-[31.3rem]  max-large:w-[300px] h-[31.3rem] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
-   <div className="absolute bottom-[20%] left-[20%] w-[195px]">
-      <div className="text-[#0F01AF] font-header text-head"><span className="free">100% </span>Free</div>
-      <div className="text-normal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
+   <div className='absolute w-[31.3rem]  2xl:w-[35.2em]  max-large:w-[300px] h-[31.3rem] 2xl:w-[35em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className="absolute bottom-[20%] left-[20%] w-[195px] 2xl:w-[12.2em]">
+      <div className="text-[#0F01AF] font-header text-head 2xl:text-xhead"><span className="free">100% </span>Free</div>
+      <div className="text-normal 2xl:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
-   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem]">
-      <div className="text-[#FFCB2F] font-header text-head recruite"></div>
-      <div className="text-normal  max-large:text-[14px] text-header font-header">
+   <div className="absolute top-[30%]  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] 2xl:w-[10em]">
+      <div className="text-[#FFCB2F] font-header text-head  2xl:text-xhead recruite"></div>
+      <div className="text-normal  2xl:text-xnormal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
     <div className='absolute w-[40.6rem]  max-large:w-[450px] h-[40.6rem]  max-large:h-[450px] rounded-full top-[40%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' >
-   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem]  max-large:w-[150px]">
-      <div className="text-[#1A9635] font-header text-head mb-2 mission"></div>
-      <div className="text-normal  max-large:text-fourteen text-header font-header">
+   <div className="absolute z-50 -top-[8%]  max-large:-top-[10%] right-[25%]  max-large:right-[35%] w-[12.9rem] 2xl:w-[15.2em]  max-large:w-[150px]">
+      <div className="text-[#1A9635] font-header text-head  2xl:text-xhead mb-2 mission"></div>
+      <div className="text-normal  2xl:text-xnormal max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
