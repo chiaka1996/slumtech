@@ -298,12 +298,12 @@ export default function Home() {
       </div>
       </div>
   
-      <section className="relative h-[70rem] xlarge:h-[75rem] mt-[18%] xlarge:mt-[15%]">
+      <section className="relative h-[70rem] xlarge:h-[93rem] mt-[18%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-full pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[23.875em] max-large:w-full max-md:h-[250px] h-[31.25em] max-large:h-[200px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full max-md:h-[250px] h-[31.25em] xlarge:h-[58em]  max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -317,7 +317,7 @@ export default function Home() {
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[58em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -332,7 +332,7 @@ export default function Home() {
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[58em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
