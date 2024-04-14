@@ -116,7 +116,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%] bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -132,7 +132,7 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] max-md:px-[5%] py-[5%]">
+        <section className="px-normal xlarge:px-xnormal max-md:px-[5%] py-[5%]">
         <Headers
             index={"D"}
             headings={"onation"}
@@ -151,34 +151,7 @@ const submitBtn = async (e) => {
                 alt="donate"
                     /> 
                 </div>
-
-            <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
-                <Image 
-                src="/images/donate5.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-
-                <div className="w-[100%] h-[3rem] relative flex flex-row justify-between items-c">
-                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                    </div>
-                    <div className="text-sub_header text-nav_links font-header">Donate Money</div>
-                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                </div>
-            </div>
-            </div>
+            <div className="text-sub_header text-nav_links font-header">Donate Money</div>
             </section>
 
             <section onClick={() => setToggleGadget(true)} className="cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
@@ -189,37 +162,10 @@ const submitBtn = async (e) => {
                 alt="donate"
                     /> 
                 </div>
-
-            <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
-                <Image 
-                src="/images/donate5.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-
-                <div className="w-[100%] h-[48px] relative flex flex-row justify-between items-c">
-                    <div className="relative w-[30px] h-[30px] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                    </div>
                     <div className="text-sub_header text-nav_links font-header">Donate Gadgets</div>
-                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                </div>
-            </div>
-            </div>
             </section>
 
-            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[25rem] max-large:h-[350px] bg-btn_color rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
+            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[25rem] max-large:h-[350px] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
             <div className="relative w-[5rem] h-[5rem]">
                 <Image 
                 src="/images/donate3.png"
@@ -227,34 +173,7 @@ const submitBtn = async (e) => {
                 alt="donate"
                     /> 
                 </div>
-
-            <div className="mt-[25%] mx-[10%] w-[80%]">     
-            <div className="relative w-[3.125rem] h-[5rem] mx-auto mb-[20%]">
-                <Image 
-                src="/images/donate5.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-
-                <div className="w-[100%] h-[48px] relative flex flex-row justify-between items-c">
-                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                    </div>
                     <div className="text-sub_header text-nav_links font-header">GoFundMe</div>
-                    <div className="relative w-[1.875rem] h-[1.875rem] mt-[5%]" >
-                    <Image 
-                    src="/images/donate4.png"
-                    fill
-                    alt="donate"
-                    /> 
-                </div>
-            </div>
-            </div>
             </section>
           </div>
           </section>

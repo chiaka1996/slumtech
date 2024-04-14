@@ -97,7 +97,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -105,7 +105,7 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] max-md:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
+        <section className="px-[10%] xlarge:px-[15%] max-md:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
             <Headers
             index={"C"}
             headings={"ontact Us"}
@@ -211,7 +211,7 @@ const submitBtn = async (e) => {
             </div>        
           </section>
 
-        <section className="px-[10%] max-md:px-md py-0 mt-0 max-large:mt-[5%] mb-[5%]">
+        <section className="px-[10%] xlarge:px-[15%] max-md:px-md py-0 mt-0 max-large:mt-[5%] mb-[5%]">
         <Headers
             index={"F"}
             headings={"AQS"}

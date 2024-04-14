@@ -105,7 +105,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%] bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -113,14 +113,14 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] max-md:px-[5%] pt-[5%]">
+        <section className="px-[10%] xlarge:px-[15%] max-md:px-[5%] pt-[5%]">
         <Headers
             index={"R"}
             headings={"egistration"}
           />
 
           <div className="flex flex-row max-large:flex-col justify-between">
-            <div className="pt-[10%] max-md:pt-[5%] w-[47%] max-large:w-full">
+            <div className="w-[47%] max-large:w-full">
             <p className="text-text_color font-normal text-normal">
             We're keen on reaching out to schools in underprivileged areas, 
             such as public schools, to identify their top-performing students. 
@@ -130,7 +130,7 @@ const submitBtn = async (e) => {
              Educators are kindly requested to register their schools by completing the input 
              form provided.
             </p>
-            <div className="relative w-full h-[17.5rem] my-[5%]">
+            <div className="relative w-full h-[34em] my-[5%]">
             <Image 
             src="/images/register1.png"
             fill
@@ -224,6 +224,7 @@ const submitBtn = async (e) => {
             src="/images/register3.png"
             fill
             alt="register"
+            className="filter brightness-[30%]"
                 /> 
               <p className="absolute right-[8%] bottom-[5%] font-header text-btn_color text-[45px] max-md:text-[15px]">Together, we can make a difference... </p>
             </div> 

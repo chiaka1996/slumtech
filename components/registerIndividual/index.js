@@ -254,7 +254,7 @@ const RegisterIndividual = () => {
             </div>
 
             <div className="w-[47%] max-large:w-full">
-            <div className="relative w-full h-[160px] my-[10%]">
+            <div className="relative w-full h-[160px] mb-[10%]">
             <Image 
             src="/images/register2.png"
             fill
