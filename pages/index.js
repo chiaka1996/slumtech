@@ -281,7 +281,7 @@ export default function Home() {
     </section>
     </section>
 
-    <section className="w-[100%] h-[84.75rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+    <section className="w-[100%] h-[84.75rem] xlarge:h-[110rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
     <Image 
       src="/images/what.png"
       fill
@@ -298,7 +298,7 @@ export default function Home() {
       </div>
       </div>
   
-      <section className="relative h-[70rem] xlarge:h-[93rem] mt-[18%] xlarge:mt-[15%]">
+      <section className="relative h-[70rem] xlarge:h-[100rem] mt-[18%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-full pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
@@ -312,7 +312,7 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[38%] xlarge:bottom-[34%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="absolute bottom-[38%] xlarge:bottom-[34%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] xlarge:w-[70] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-full">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
