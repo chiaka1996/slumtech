@@ -3,18 +3,25 @@ import {Navigation, Sidebar, Headers, Footer} from "../../components"
 
 export default function About() {
   return (
-   <main>
+   <main className="bg-[#EDECEC]">
     <Navigation />
     <Sidebar /> 
     <div className="w-[100%] h-[20rem] max-md:h-[250px] relative mt-[5%]">
+      <div className="font-header text-[1.75em] z-10 text-btn_color absolute bottom-[5%] left-[10%] xlarge:left-[15%] w-[50%] xlarge:w-[40%]">
+      “The birth of SlumTech Foundation was a beacon of hope,  
+      driven by the vision to transform adversity into opportunity through technology”
+
+      <p className="font-[500] italic text-right">Olanrewaju D. Ogunleye</p>
+      </div>
     <Image 
       src="/images/about_banner.png"
       fill
       alt="logo"
+      className="filter brightness-[30%]"
         /> 
     </div>
 
-    <section className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-0 px-normal max-md:px-md">
+    <section className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-0 px-normal xlarg:px-xnormal max-md:px-md">
       {/* grid1 */}
       <div className="w-[37%] max-large:w-[100%] pt-[10%]">
           <Headers
@@ -70,7 +77,7 @@ export default function About() {
     </section>
 
     {/* vision section */}
-    <section className="flex flex-row max-large:flex-col-reverse justify-between px-normal max-md:px-md pt-[5%]">
+    <section className="flex flex-row max-large:flex-col-reverse justify-between px-normal xlarge:px-xnormal max-md:px-md pt-[5%]">
       <div className="w-[50%] max-large:w-full">
       <div className="w-full h-[28.125rem] max-large:h-[250px] relative"> 
           <Image 
@@ -96,14 +103,14 @@ export default function About() {
     </section>
 
     {/* program initiative */}
-    <section className="py-[5%] max-large:py-[15%] px-[10%] max-md:px-md  bg-layout">
+    <section className="py-[5%] max-large:py-[15%] px-normal xlarge:px-xnormal max-md:px-md">
     <Headers
         index={"P"}
         headings={"rogram Initiatives"}
       />
       <div className="flex flex-row max-large:flex-col justify-between items-center w-[80%] max-large:w-full">
       <div className="flex flex-row large:justify-between w-[40%] max-md:w-full large:hidden">
-      <div  className="relative w-[170px] max-md:w-[150px] h-[170px] max-md:h-[150px]">
+      <div  className="relative w-[10.625em] max-md:w-[150px] h-[10.625em] max-md:h-[150px]">
         <Image 
       src="/images/free1.png"
       fill
@@ -259,10 +266,9 @@ export default function About() {
     </section>
 
     {/* our impact */} 
-    {/* box-shadow: 0px 2px 8px 0px #00000029 inset; */}
-    <section className="max-sm:pb-[10%] sm:h-[300px] w-full px-normal sm:relative">
-      <div className="z-20 shadow-lg shadow-[#00000029] rounded-normal py-[6%] px-[5%] bg-btn_color w-[450px] max-sm:w-[100%] sm:absolute sm:top-0 sm:left-[10%]">
-      <Headers
+    <section className="py-[3%] w-[100%] flex flex-row justify-between items-center px-normal xlarge:px-xnormal">
+    <div className="w-[50%]">
+    <Headers
         index={"O"}
         headings={"ur Impact"}
       />
@@ -275,7 +281,15 @@ export default function About() {
       of poverty and drive sustainable transformation within Africa's 
       most underserved communities.
       </div>
-      </div>
+    </div>
+
+    <div className="relative w-[40%] h-[18.7em]">
+    <Image 
+      src="/images/impact.png"
+      fill
+      alt="impact"
+      /> 
+    </div>
     </section>
 
     <section className="relative h-[28.125rem] max-large:h-[300px] w-full">
@@ -285,7 +299,7 @@ export default function About() {
       alt="banner"
         /> 
 
-        <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] max-md:left-[5%] w-[50%] max-large:w-[80%]">
+        <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] xlarge:left-[15%] max-md:left-[5%] w-[50%] max-large:w-[80%]">
           <span className="text-fourteen max-large:text-[11px]">
           SlumTech Foundation welcomes collaborations, partnerships, 
           and support from individuals, organizations, and stakeholders who share our 
