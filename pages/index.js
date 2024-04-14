@@ -298,7 +298,7 @@ export default function Home() {
       </div>
       </div>
   
-      <section className="relative h-[70rem] mt-[18%] xlarge:mt-[15%]">
+      <section className="relative h-[70rem] xlarge-[75rem] mt-[18%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
