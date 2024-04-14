@@ -3,22 +3,9 @@ import Link from 'next/link';
 
 const Footer = () => {
     return(
-        <footer className='bg-text_color py-[3%] cursor-pointer'>
-            <section className='w-[25%] max-md:w-full ml-[65%] max-md:ml-0 max-md:px-md'>
-                <div className='text-[#F9FCF9] text-normal font-btn_weight'>
-                Be the first to get updated on our Latest projects and ways to Participate
-                </div>
-                <form className='mt-3'>
-                    <div>
-                        <label className='text-[#ffffff] text-normal font-normal'>Email</label><br/>
-                        <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-2 w-full rounded-[8px] outline-none border-1 border-text_color' />
-                    </div>
-                    <button className='mt-3 h-[2.5rem] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
-                </form>
-            </section>
-
-            <section className='pl-[20%] max-md:pl-0 mt-[5%] flex flex-row max-md:flex-col justify-between'>
-                <div className='w-[20%] max-large:w-full flex flex-row md:justify-between text-footer_text max-md:px-md'>
+        <footer className='bg-text_color py-[5%] cursor-pointer'>
+            <section className='w-[80%] mx-auto xlarge:w-[70%] flex flex-row justify-between items-center max-md:w-full max-md:ml-0 max-md:px-md'>
+            <div className='w-[20%] max-large:w-full flex flex-row md:justify-between text-footer_text max-md:px-md'>
                     <div>
                     <header className='font-btn_weight mb-3 text-fourteen'>Services</header>
                     <ul className='text-footertext font-normal'>
@@ -66,8 +53,22 @@ const Footer = () => {
                     </ul>
                     </div>
                 </div>
-                <div className='w-[90%] large:w-[65%] max-md:ml-[10%]'>
-                <div className='h-[7.5rem] mt-3 w-full bg-btn_color rounded-tl-[2.5rem] rounded-bl-[2.5rem] py-[1%]'>
+                <div className='w-[25%] max-large:w-full max-md:px-md'> 
+                <div className='text-[#F9FCF9] text-normal font-btn_weight'>
+                Be the first to get updated on our Latest projects and ways to Participate
+                </div>
+                <form className='mt-3'>
+                    <div>
+                        <label className='text-[#ffffff] text-normal font-normal'>Email</label><br/>
+                        <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-2 w-full rounded-[8px] outline-none border-1 border-text_color' />
+                    </div>
+                    <button className='mt-3 h-[2.5rem] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
+                </form>
+                </div>
+            </section>
+
+            <section className='mt-[5%]'>       
+                <div className='h-[7.5rem] mt-3 w-[55%] ml-auto max-large:w-[65%] max-md:ml-[10%]  bg-btn_color rounded-tl-[2.5rem] rounded-bl-[2.5rem] py-[1%]'>
                 <div className='relative w-[9rem] h-[2.5rem] mx-auto'>
                 <Image 
                 src="/logo/slumtech.png"
@@ -109,10 +110,9 @@ const Footer = () => {
                  </a>
                 </div>
                 </div>
-                <div className='text-[#CAD0CB] font-normal text-twelve text-center'>
+                <div className='text-[#CAD0CB] font-normal text-twelve text-center w-[55%] ml-auto'>
                 SlumTech Foundation - Empowering Africa's Future through Technology
-                </div>
-                </div>
+                </div>    
             </section>
         </footer>
     )

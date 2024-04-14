@@ -24,7 +24,7 @@ module.exports = {
         footer_text: "#D6D6D6"
     },
     screens: {
-      'large': '950px',
+      'large': '900px',
       "small": "395px",
       "xlarge": "1900px"
     },
