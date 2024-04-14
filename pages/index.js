@@ -281,7 +281,7 @@ export default function Home() {
     </section>
     </section>
 
-    <section className="w-[100%] h-[84.75rem] xlarge:h-[110rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+    <section className="w-[100%] h-[84.75rem] xlarge:h-[130rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
     <Image 
       src="/images/what.png"
       fill
@@ -303,7 +303,7 @@ export default function Home() {
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-full pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full max-md:h-[250px] h-[31.25em] xlarge:h-[58em]  max-large:h-[200px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full max-md:h-[250px] h-[31.25em] xlarge:h-[48em]  max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -312,12 +312,12 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[38%] xlarge:bottom-[34%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] xlarge:w-[70] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
+        <div className="absolute bottom-[38%] xlarge:bottom-[31%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] xlarge:w-[70] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-full">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[58em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[48em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -327,12 +327,12 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] xlarge:bottom-[3%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[35%] max-large:mt-0">
+        <div className="font-header text-[1.5em]  xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[58em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[40em] max-large:w-full h-[31.25em] xlarge:h-[48em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
