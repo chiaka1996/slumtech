@@ -107,7 +107,7 @@ export default function Home() {
           </div> 
 
           <div className="z-30 mt-[7%]">
-          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[45%]">
+          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[60%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
@@ -173,8 +173,8 @@ export default function Home() {
         /> 
     </div>
     <div className="w-[40%] z-50 xlarge:w-[35%]  max-large:w-full">
-    <header className="font-header text-header text-head xlarge:text-btn_color xlarge:text-[5em] mb-3">Our Approach</header>
-    <div className="text-normal xlarge:text-xnormal  font-normal text-text_color xlarge:text-btn_color">
+    <header className="font-header text-header text-head xlarge:text-[5em] mb-3">Our Approach</header>
+    <div className="text-normal xlarge:text-xnormal  font-normal text-text_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
     to provide a comprehensive tech education experience that equips 
@@ -193,7 +193,7 @@ export default function Home() {
     </div>
    </div>
 
-   <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] xlarge:w-[10em]">
+   <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] xlarge:w-[11em]">
       <div className="text-[#FFCB2F] font-header text-head  xlarge:text-xhead recruite"></div>
       <div className="text-normal  xlarge:text-xnormal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
@@ -266,7 +266,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left:[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25em] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     
     <Image 
       src="/images/schoolboy.png"
@@ -298,12 +298,12 @@ export default function Home() {
       </div>
       </div>
   
-      <section className="relative h-[70rem] mt-[18%]">
+      <section className="relative h-[70rem] mt-[18%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[15.5em] pt-[10%] max-large:pt-[15%]">
+        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[23.875em] max-large:w-full max-md:h-[250px] h-[31.25em] max-large:h-[200px] relative">
+      <div className="w-[23.875em] xlarge:w-[26em] max-large:w-full max-md:h-[250px] h-[31.25em] xlarge:h-[33em] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -313,11 +313,11 @@ export default function Home() {
         </div>
  
         <div className="absolute bottom-[38%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[21.875rem]">
+        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[21.875rem]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[26em]  max-large:w-full h-[31.25em] xlarge:h-[33em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -326,13 +326,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[24.875rem] max-large:w-full mt-[35%] max-large:mt-0">
+        <div className="absolute bottom-[9%] xlarge:bottom-[5%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] max-large:w-full mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] xlarge:w-[26em] max-large:w-full h-[31.25em] xlarge:h-[33em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
