@@ -303,7 +303,7 @@ export default function Home() {
         <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
-      <div className="w-[23.875em] xlarge:w-[26em] max-large:w-full max-md:h-[250px] h-[31.25em] xlarge:h-[33em] max-large:h-[200px] relative">
+      <div className="w-[23.875em] max-large:w-full max-md:h-[250px] h-[31.25em] max-large:h-[200px] relative">
       <Image 
         src="/images/wedo1.png"
         fill
@@ -317,7 +317,7 @@ export default function Home() {
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
-      <div className="w-[23.875em] xlarge:w-[26em]  max-large:w-full h-[31.25em] xlarge:h-[33em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
@@ -327,12 +327,12 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] xlarge:bottom-[5%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] max-large:w-full mt-[35%] max-large:mt-0">
+        <div className="font-header text-[1.5em] max-large:text-[16px] text-btn_color w-[24.875rem] max-large:w-full mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
         </div>
-      <div className="w-[23.875em] xlarge:w-[26em] max-large:w-full h-[31.25em] xlarge:h-[33em] max-large:h-[250px] relative">
+      <div className="w-[23.875em] max-large:w-full h-[31.25em] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo3.png"
         fill
