@@ -21,7 +21,7 @@ export default function About() {
         /> 
     </div>
 
-    <section className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-0 px-normal xlarg:px-xnormal max-md:px-md">
+    <section className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-0 px-normal xlarge:px-xnormal max-md:px-md">
       {/* grid1 */}
       <div className="w-[37%] max-large:w-[100%] pt-[10%]">
           <Headers
@@ -292,11 +292,12 @@ export default function About() {
     </div>
     </section>
 
-    <section className="relative h-[28.125rem] max-large:h-[300px] w-full">
+    <section className="relative h-[62vh] max-large:h-[300px] w-full">
     <Image 
       src="/images/ladies.png"
       fill
       alt="banner"
+      className="filter brightness-[50%]"
         /> 
 
         <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] xlarge:left-[15%] max-md:left-[5%] w-[50%] max-large:w-[80%]">

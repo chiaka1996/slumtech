@@ -143,42 +143,57 @@ const submitBtn = async (e) => {
           </div>
 
           <div className="flex flex-row max-md:flex-col justify-between mt-3">
-            <section onClick={() => setToggleMoney(true)} className="cursor-pointer p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] max-md:px-[5%] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[5rem] h-[5rem]">
+            <section onClick={() => setToggleMoney(true)} className="flex flex-row items-center justify-center cursor-pointer p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] max-md:px-[5%] bg-[#313231] rounded-[24px] shadow-lg shadow-[#00000029] relative">
+            <div className="">
+            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
                 src="/images/donate1.png"
                 fill
                 alt="donate"
                     /> 
                 </div>
-            <div className="text-sub_header text-nav_links font-header">Donate Money</div>
+           
+            <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                Donate Money
+            </button>
+            </div>
             </section>
 
-            <section onClick={() => setToggleGadget(true)} className="cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[400px] max-large:h-[350px] bg-btn_color rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[5rem] h-[5rem]">
+            <section onClick={() => setToggleGadget(true)} className="flex flex-row items-center justify-center cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] bg-[#313231] rounded-[30px] shadow-lg shadow-[#00000029] relative">
+            <div>
+            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
                 src="/images/donate2.png"
                 fill
                 alt="donate"
                     /> 
                 </div>
-                    <div className="text-sub_header text-nav_links font-header">Donate Gadgets</div>
+                
+                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                Donate Gadget
+            </button>
+                </div>
             </section>
 
-            <section className="max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[25rem] max-large:h-[350px] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
-            <div className="relative w-[5rem] h-[5rem]">
+            <section className="flex flex-row items-center justify-center max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
+            <div>
+            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
                 src="/images/donate3.png"
                 fill
                 alt="donate"
                     /> 
                 </div>
-                    <div className="text-sub_header text-nav_links font-header">GoFundMe</div>
+              
+                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                GoFundMe
+            </button>
+                </div>
             </section>
           </div>
           </section>
 
-          <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] max-large:w-full mx-[10%]  max-large:mx-0">
+          <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
             <div className="w-[25rem] max-large:w-full h-[23.125rem] relative">
             <Image 
             src="/images/donate_book.png"
@@ -199,7 +214,7 @@ const submitBtn = async (e) => {
             </div>
           </section>
 
-          <section className="my-[5%] w-[80%] max-large:w-[90%] mx-[10%] max-md:mx-[5%]">
+          <section className="my-[5%] w-[80%] xlarge:w-[70%] max-large:w-[90%] mx-auto">
           <Headers
             index={"B"}
             headings={"ecome a volunteer"}
