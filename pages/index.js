@@ -265,7 +265,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[65vh] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    <div className="schoolboy absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[80vh] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     
     <Image 
       src="/images/schoolboy.png"
@@ -297,9 +297,9 @@ export default function Home() {
       </div>
       </div>
   
-      <section className="relative h-[160vh] xlarge:h-[100rem] mt-[18%] xlarge:mt-[15%]">
-      <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-full pt-[10%] max-large:pt-[15%]">
+      <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%] xlarge:mt-[15%]">
+      <div className="w-[70%] xlarge:w-[100] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-full pt-[10%] max-large:pt-[15%]">
         strategic partnerships with schools in Slum communities
         </div>
       <div className=" w-[45%] max-large:w-full max-md:h-[250px] h-[70vh] max-large:h-[200px] relative">
@@ -312,7 +312,7 @@ export default function Home() {
         </div>
  
         <div className="absolute bottom-[38%] xlarge:bottom-[31%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] xlarge:w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[1.5em] xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-[58%]">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-[58%]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div>
@@ -327,7 +327,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] xlarge:bottom-[3%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em]  xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[30%] max-large:mt-0">
+        <div className="font-header text-[1.5em]  xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[30%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
