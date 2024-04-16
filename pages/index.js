@@ -280,7 +280,7 @@ export default function Home() {
     </section>
     </section>
 
-    <section className="w-[100%] h-[200vh] xlarge:h-[130rem] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+    <section className="w-[100%] h-[200vh] xlarge:h-[200vh] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
     <Image 
       src="/images/what.png"
       fill
