@@ -10,7 +10,10 @@ const Footer = () => {
                     <header className='font-btn_weight mb-3 text-fourteen'>Services</header>
                     <ul className='text-footertext font-normal'>
                         <li className='mb-2'>
-                            Partner</li>
+                        <Link href="/partnership" className='no-underline'>
+                        Partner
+                        </Link>  
+                        </li>
                         <li  className='mb-2'>
                         <Link href="/donation" className='no-underline'>
                             Donate

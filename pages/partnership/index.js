@@ -115,14 +115,14 @@ const Partnership = () => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <div className="px-[10%] max-md:px-[5%] pt-[5%] max-large:mb-[7%] ">
+        <div className="px-normal xlarge-xnormal max-md:px-[5%] pt-[5%] max-large:mb-[7%] ">
         <Headers
             index={"C"}
             headings={"all for Partnership"}
           />
           </div>
 
-        <div className="relative w-full h-[20rem] max-md:h-[270px] my-[1%]">
+        <div className="relative w-full h-[44vh] max-md:h-[270px] my-[1%]">
             <Image 
             src="/images/partnership.png"
             fill
