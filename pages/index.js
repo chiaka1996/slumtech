@@ -210,7 +210,7 @@ export default function Home() {
   
 
     {/* our identity */}
-    <div className="z-50 w-[43.25rem] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="z-50 w-[45%] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
     {
         toggleIdentity ? 
       <div className="w-[60%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
@@ -252,7 +252,7 @@ export default function Home() {
      
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[43.25em] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="z-50 flex flex-row justify-center items-center w-[45%] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
       <div className="text-[1.5rem] max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
@@ -265,7 +265,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[31.25em] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    <div className="absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[65vh] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     
     <Image 
       src="/images/schoolboy.png"
