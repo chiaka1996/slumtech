@@ -106,7 +106,7 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[8%]">
+          <div className="z-30 mt-[5%]">
           <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[60%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
