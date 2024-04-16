@@ -192,7 +192,7 @@ export default function Home() {
     </div>
    </div>
 
-   <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] xlarge:w-[11em]">
+   <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]  max-large:right-[50%] w-[9.1rem] xlarge:w-[12em]">
       <div className="text-[#FFCB2F] font-header text-head  xlarge:text-xhead recruite"></div>
       <div className="text-normal  xlarge:text-xnormal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
@@ -327,7 +327,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] xlarge:bottom-[3%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em]  xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[35%] max-large:mt-0">
+        <div className="font-header text-[1.5em]  xlarge:text-[3em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-full max-large:w-full mt-[30%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
