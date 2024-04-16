@@ -292,7 +292,7 @@ export default function About() {
     </div>
     </section>
 
-    <section className="relative h-[62vh] max-large:h-[300px] w-full">
+    <section className="relative h-[62vh] max-large:h-[300px] w-full xlarge:w-[70%] mx-auto">
     <Image 
       src="/images/ladies.png"
       fill
