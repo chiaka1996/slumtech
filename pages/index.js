@@ -326,7 +326,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-[9%] xlarge:bottom-[3%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        <div className="absolute bottom-[9%] xlarge:bottom-[7%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-[55%] max-large:w-full mt-[30%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
