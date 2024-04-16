@@ -299,8 +299,8 @@ export default function Home() {
   
       <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-[55%] pt-[10%] max-large:pt-[15%]">
-        strategic partnerships with schools in Slum communities
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-[50%] pt-[10%] max-large:pt-[15%]">
+        Strategic partnerships with schools in Slum communities
         </div>
       <div className=" w-[45%] max-large:w-full max-md:h-[250px] h-[70vh] max-large:h-[200px] relative">
       <Image 
@@ -327,7 +327,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-[55%] max-large:w-full mt-[30%] xlarge:mt-[33%] max-large:mt-0">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-[50%] max-large:w-full mt-[30%] xlarge:mt-[33%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
