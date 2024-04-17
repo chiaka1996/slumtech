@@ -212,10 +212,10 @@ export default function Home() {
   
 
     {/* our identity */}
-    <div className="z-50 w-[45%] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="z-50 w-[45%] xlarge:w-[40%] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
     {
         toggleIdentity ? 
-      <div className="w-[60%] xlarge:w-[50%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
+      <div className="w-[60%] xlarge:w-[80%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
           <header className="font-header text-head text-header">Our Identity</header>
       <div className="text-normal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
