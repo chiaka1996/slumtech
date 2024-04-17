@@ -135,7 +135,7 @@ export default function Home() {
                             /> 
                         </div>
                     <span className="font-header text-normal text-btn_color">Location</span>
-                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color xlarge:ml-[7em]">
+                    <p className="font-normal text-twelve text-btn_color xlarge:ml-[7em]">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>
                     </h2>
@@ -153,7 +153,7 @@ export default function Home() {
                     </div>
                     <span className="font-header text-normal text-btn_color">Email</span>
                     </h2>
-                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color xlarge:ml-[7em]">
+                    <p className="font-normal text-twelve  text-btn_color">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
