@@ -94,9 +94,9 @@ export default function Home() {
     <Sidebar /> 
   
     <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[3%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] max-large:w-[90%] xlarge:w-[35%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[3%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] max-large:w-[90%] z-30">  
        <div className="h-[20em]">
-        <header className={`font-header text-[3rem] leading-[4rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
+        <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
@@ -106,14 +106,14 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[5%]">
-          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[70%]">
+          <div className="z-30 mt-[5%] xlarge:mt[10%]">
+          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
           <div className="flex flex-row mt-[2%]">
-            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5rem] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[5em] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-normal mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[5em] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] xlarge:text-normal outline-none" >Become a Volunteer</button>
           </div>
           </div>     
       </div>
