@@ -175,7 +175,7 @@ export default function Home() {
     {/* xlarge:text-xnormal */}
     <div className="w-[40%] z-50  max-large:w-full">
     <header className="font-header text-header text-head xlarge:text-xhead mb-3">Our Approach</header>
-    <div className="text-normal   font-normal text-text_color">
+    <div className="text-normal xlarge:text-xnormal  font-normal text-text_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
     to provide a comprehensive tech education experience that equips 
@@ -189,25 +189,25 @@ export default function Home() {
    <section className="relative mt-[3%] h-[90em] xlarge:h-[130vh]  max-large:h-[1800]">
    <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[20.5em]">
-      <div className="text-[#0F01AF] font-header text-head xlarge:text-xhead"><span className="free">100% </span>Free</div>
+      <div className="text-[#0F01AF] font-header text-head xlarge:text-[3.5em]"><span className="free">100% </span>Free</div>
       <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
    <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]   max-large:right-[50%] w-[9.1rem] xlarge:w-[20em]">
-      <div className="text-[#FFCB2F] font-header text-head  xlarge:text-xhead recruite"></div>
+      <div className="text-[#FFCB2F] font-header text-head  xlarge:text-[3.5em] recruite"></div>
       <div className="text-normal  xlarge:text-xnormal  max-large:text-[14px] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
     <div className="absolute z-50 top-[36%] xlarge:top-[40%]  max-large:-top-[10%] right-[12%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[25.2em]  max-large:w-[150px]">
-      <div className="text-[#1A9635] font-header text-head  xlarge:text-xhead mb-2 mission"></div>
+      <div className="text-[#1A9635] font-header text-head  xlarge:text-[3.5em] mb-2 mission"></div>
       <div className="text-normal z-60 xlarge:text-xnormal max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
-    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[75em] h-[40.6rem] xlarge:h-[75em]  max-large:h-[450px] rounded-full top-[40%] xlarg:top-[45%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
+    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[50em] h-[40.6rem] xlarge:h-[50em]  max-large:h-[450px] rounded-full top-[40%] xlarg:top-[50%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
    </div>
   
 
@@ -255,7 +255,7 @@ export default function Home() {
     </div>
 
     <div className="z-50 flex flex-row justify-center items-center w-[45%] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
-      <div className="text-[1.5rem] max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
+      <div className="text-[1.5rem] xlarge:text-xnormal max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
        and register students with a passion for technology and a drive to excel. 
@@ -267,7 +267,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="schoolboy absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[80vh] xlarge:h-[33em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    <div className="schoolboy absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[80vh] xlarge:h-[40em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     
     <Image 
       src="/images/schoolboy.png"
