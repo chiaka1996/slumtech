@@ -134,14 +134,15 @@ export default function Home() {
                         alt="location"
                             /> 
                         </div>
-                    <span className="font-header text-normal xlarge:text-xnormal text-btn_color">Location</span>
-                    </h2>
-                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color">
+                    <span className="font-header text-normal text-btn_color">Location</span>
+                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color xlarge:ml-[3em]">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>
+                    </h2>
+                   
                 </div>
 
-                <div className="ml-2">
+                <div className="ml-2 xlarge:ml-5">
                     <h2 className="flex flex-row">
                     <div className="relative w-[40px] h-[26px] mr-2">
                         <Image 
@@ -150,9 +151,9 @@ export default function Home() {
                         alt="location"
                             /> 
                     </div>
-                    <span className="font-header text-normal xlarge:text-xnormal text-btn_color">Email</span>
+                    <span className="font-header text-normal text-btn_color">Email</span>
                     </h2>
-                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color">
+                    <p className="font-normal text-twelve xlarge:text-normal text-btn_color xlarge:ml-[3em]">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
