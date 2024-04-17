@@ -171,7 +171,8 @@ export default function Home() {
       className="approach"
         /> 
     </div>
-    <div className="w-[40%] z-50 xlarge:w-[35%]  max-large:w-full">
+    {/* x-large:w-32% */}
+    <div className="w-[40%] z-50  max-large:w-full">
     <header className="font-header text-header text-head xlarge:text-xhead mb-3">Our Approach</header>
     <div className="text-normal xlarge:text-xnormal  font-normal text-text_color">
     Through strategic partnerships, 
