@@ -135,11 +135,10 @@ export default function Home() {
                             /> 
                         </div>
                     <span className="font-header text-normal text-btn_color">Location</span>
+                    </h2>
                     <p className="font-normal text-twelve text-btn_color">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
-                    </p>
-                    </h2>
-                   
+                    </p>         
                 </div>
 
                 <div className="ml-2">
