@@ -43,10 +43,11 @@ module.exports = {
   },
   fontSize: {
     normal: "1em",
-    xnormal: "1.2em",
+    xnormal: "2.2em",
     head: "2.5em",
     xhead: "4.5em",
     sub_header: "1.25em",
+    xsub: "3.5em",
     footertext: "0.75em",
     fourteen: "0.875em",
     ten: "0.625em",

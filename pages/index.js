@@ -100,14 +100,14 @@ export default function Home() {
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3rem] leading-[4rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>  
           </div> 
 
           <div className="z-30 mt-[5%]">
-          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[60%]">
+          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[70%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
         alt="banner"
         className="filter brightness-[30%]"
           />
-        <div className="flex flex-row absolute bottom-[5%] right-[5%] text-btn_color">
+        <div className="flex flex-row absolute bottom-[10%] right-[5%] text-btn_color">
                 <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
@@ -172,7 +172,7 @@ export default function Home() {
         /> 
     </div>
     <div className="w-[40%] z-50 xlarge:w-[35%]  max-large:w-full">
-    <header className="font-header text-header text-head xlarge:text-[5em] mb-3">Our Approach</header>
+    <header className="font-header text-header text-head xlarge:text-xhead mb-3">Our Approach</header>
     <div className="text-normal xlarge:text-xnormal  font-normal text-text_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
@@ -185,8 +185,8 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[90em]  max-large:h-[1800]">
-   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[35.2em]  max-large:w-[300px] h-[31.3rem] xlarge:w-[35em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
-   <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[12.2em]">
+   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[35.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[35.2em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[12.5em]">
       <div className="text-[#0F01AF] font-header text-head xlarge:text-xhead"><span className="free">100% </span>Free</div>
       <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
     </div>
