@@ -186,8 +186,8 @@ export default function Home() {
    </section>
 
    
-   <section className="relative mt-[3%] h-[90em] xlarge:h-[130vh]  max-large:h-[1800]">
-   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 xlarge:-top-[5%] -right-[5%] bg-[#F5FBF6]'>
+   <section className="relative mt-[3%] h-[90em] xlarge:h-[200vh]  max-large:h-[1800]">
+   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[40.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[40.2em] max-large:h-[300px] rounded-full top-0 xlarge:-top-[5%] -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[20.5em]">
       <div className="text-[#0F01AF] font-header text-head xlarge:text-[3.5em]"><span className="free">100% </span>Free</div>
       <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
@@ -283,7 +283,7 @@ export default function Home() {
     </section>
     </section>
 
-    <section className="w-[100%] h-[200vh] xlarge:h-[200vh] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+    {/* <section className="w-[100%] h-[200vh] xlarge:h-[200vh] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
     <Image 
       src="/images/what.png"
       fill
@@ -309,8 +309,8 @@ export default function Home() {
       <Image 
         src="/images/wedo1.png"
         fill
-        alt="school boy"
-          /> 
+        alt="school boy" */}
+          {/* /> 
           </div>
         </div>
  
@@ -318,18 +318,18 @@ export default function Home() {
         <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-[58%]">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
-        </div>
+        </div> */}
         {/* w-[23.875em] */}
-      <div className="w-[45%] max-large:w-full h-[70vh] max-large:h-[250px] relative">
+      {/* <div className="w-[45%] max-large:w-full h-[70vh] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
         fill
         alt="school boy"
           /> 
           </div>
-        </div>
+        </div> */}
 
-        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
+        {/* <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-full mt-[30%] xlarge:mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
@@ -344,11 +344,11 @@ export default function Home() {
           </div>
         </div>
         </section>
-    </section>
+    </section> */}
 
-      <section className="educationBg relative pb-[1%]"> 
+      {/* <section className="educationBg relative pb-[1%]">  */}
       {/* eductional initiatives */}
-      <section className="py-[5%] px-[10%] xlarge:px-[15%]  max-large:px-[5%] ">
+      {/* <section className="py-[5%] px-[10%] xlarge:px-[15%]  max-large:px-[5%] ">
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
@@ -359,18 +359,18 @@ export default function Home() {
       alt="education"
       className="rounded-t-[8px] rounded-b-[20%]"
         /> 
-      </div>
-        <div className="pt-[5%] px-[5%]">
+      </div> */}
+        {/* <div className="pt-[5%] px-[5%]">
         <h3 className="mt-1 text-text_color font-header text-sub_header ">{option.header}</h3>
         <div className="text-[#7d7f82] text-fourteen font-normal">{option.text}</div>
         </div>
       </div>
        )} 
     </Slider>
-    </section>
+    </section> */}
 
       {/* partner with us */}
-    <section className="z-50 px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[5%] w-full flex flex-row max-large:flex-col-reverse justify-between">
+    {/* <section className="z-50 px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[5%] w-full flex flex-row max-large:flex-col-reverse justify-between">
       <div className=" w-[45%] max-large:w-full max-large:mt-[5%] ">
       <p className="text-normal font-normal text-color">
       Being a part of SlumTech is a rewarding experience that allows 
@@ -405,8 +405,8 @@ export default function Home() {
           className="yellowshirt"
           /> 
       </div>
-      </div>
-      <div className="flex flex-row justify-center">
+      </div> */}
+      {/* <div className="flex flex-row justify-center">
       <div  className="relative w-[16.25rem] max-large:w-[200px] h-[16.25rem] max-large:h-[200px]">
       <Image 
       src="/images/partner1.png"
@@ -417,12 +417,12 @@ export default function Home() {
       </div>
       </div>
       </div>
-    </section>
-    </section>
+    </section> */}
+    {/* </section> */}
 
     {/* donate */}
-    <section className="w-[100%] h-[25rem] max-md:h-[250px] relative">
-    <Image 
+    {/* <section className="w-[100%] h-[25rem] max-md:h-[250px] relative"> */}
+    {/* <Image 
       src="/images/donate_banner.png"
       fill
       alt="banner"
@@ -440,8 +440,8 @@ export default function Home() {
         <button onClick={() => router.push('/donation')}  className="hover:bg-[#66B978] w-[16.187rem] max-large:w-[170px] h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color hover:text-text_color mr-5 outline-none">Donate</button>
       </div>
     </div>
-    </section>
-    <Footer />
+    </section> */}
+    {/* <Footer /> */}
     </main>
   );
 }
