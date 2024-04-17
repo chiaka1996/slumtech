@@ -135,14 +135,14 @@ export default function Home() {
                             /> 
                         </div>
                     <span className="font-header text-normal text-btn_color">Location</span>
-                    <p className="font-normal text-twelve text-btn_color xlarge:ml-[7em]">
+                    <p className="font-normal text-twelve text-btn_color">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>
                     </h2>
                    
                 </div>
 
-                <div className="ml-2 xlarge:ml-5">
+                <div className="ml-2">
                     <h2 className="flex flex-row">
                     <div className="relative w-[40px] h-[26px] mr-2">
                         <Image 
