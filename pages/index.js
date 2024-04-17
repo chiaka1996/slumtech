@@ -187,7 +187,7 @@ export default function Home() {
 
    
    <section className="relative mt-[3%] h-[90em] xlarge:h-[130vh]  max-large:h-[1800]">
-   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 xlarge:-top-[5%] -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[20.5em]">
       <div className="text-[#0F01AF] font-header text-head xlarge:text-[3.5em]"><span className="free">100% </span>Free</div>
       <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
@@ -201,13 +201,13 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="absolute z-50 top-[36%] xlarge:top-[40%]  max-large:-top-[10%] right-[12%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[25.2em]  max-large:w-[150px]">
+    <div className="absolute z-50 top-[36%]  max-large:-top-[10%] right-[12%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[25.2em]  max-large:w-[150px]">
       <div className="text-[#1A9635] font-header text-head  xlarge:text-[3.5em] mb-2 mission"></div>
       <div className="text-normal z-60 xlarge:text-xnormal max-large:text-fourteen text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
-    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[50em] h-[40.6rem] xlarge:h-[50em]  max-large:h-[450px] rounded-full top-[40%] xlarg:top-[50%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
+    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[60em] h-[40.6rem] xlarge:h-[60em]  max-large:h-[450px] rounded-full top-[40%] xlarg:top-[50%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
    </div>
   
 
@@ -217,7 +217,7 @@ export default function Home() {
         toggleIdentity ? 
       <div className="w-[60%] xlarge:w-[80%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
           <header className="font-header text-head text-header">Our Identity</header>
-      <div className="text-normal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] max-large:w-[100%]">
+      <div className="text-normal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] xlarge:w-[100%] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
       environment that thrives on diversity, inclusivity, and social responsibility. 
       We prioritize ethical tech practices, environmental sustainability, and social impact,
@@ -254,7 +254,7 @@ export default function Home() {
      
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[45%] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="z-50 flex flex-row justify-center items-center w-[45%] xlarge:w-[40%] max-large:w-[90%] h-[41.25em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
       <div className="text-[1.5rem] xlarge:text-xnormal max-large:text-fourteen font-header text-text_color w-[25.5rem]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
