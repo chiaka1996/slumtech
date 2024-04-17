@@ -207,7 +207,7 @@ export default function Home() {
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
-    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[60em] h-[40.6rem] xlarge:h-[60em]  max-large:h-[450px] rounded-full top-[40%] xlarge:top-[50%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
+    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[62em] h-[40.6rem] xlarge:h-[62em]  max-large:h-[450px] rounded-full top-[40%] xlarge:top-[45%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
    </div>
   
 
