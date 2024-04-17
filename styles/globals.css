@@ -9,6 +9,45 @@
     font-size: 1rem;
 }
 
+.schoolboy{
+  animation-name: schoolboy;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes schoolboy{
+  0%{
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+  20%{
+    -webkit-filter: grayscale(20%);
+            filter: grayscale(20%);
+  }
+  40%{
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+  }
+  60%{
+    -webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
+  }
+  80%{
+    -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
+  }
+  90%{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  100%{
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
 .pageLoaderInactive{
   display: none;
   visibility: none;

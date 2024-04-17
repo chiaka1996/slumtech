@@ -275,6 +275,7 @@ export default function Home() {
       }}
       fill
       alt="school boy"
+      className="schoolboy"
         /> 
     </div>
     </section>
