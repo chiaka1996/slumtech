@@ -106,14 +106,14 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[5%] xlarge:mt[20%]">
+          <div className="z-30 mt-[5%] xlarge:mt-[20%]">
           <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
           <div className="flex flex-row mt-[2%]">
-            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[5em] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
-            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[5em] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] xlarge:text-xnormal outline-none" >Become a Volunteer</button>
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] xlarge:text-xnormal outline-none" >Become a Volunteer</button>
           </div>
           </div>     
       </div>
