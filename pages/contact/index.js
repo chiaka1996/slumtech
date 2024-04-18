@@ -112,7 +112,7 @@ const submitBtn = async (e) => {
             />
             <div className="flex flex-row max-large:flex-col justify-between ">
                 <div className="w-[47%] max-large:w-full">
-                    <div className="mt-[5%] font-normal text-twelve text-text_color">
+                    <div className="mt-[5%] font-normal text-twelve xlarge:text-fourteen  text-text_color">
                     Please reach out to us by completing this form. Your messages,suggestions and 
                     feedback will play a crucial role in shaping a brighter, technology-driven future 
                     for everyone
@@ -170,9 +170,9 @@ const submitBtn = async (e) => {
                         alt="location"
                             /> 
                         </div>
-                    <span className="font-header text-normal xlarge:text-xnormal text-nav_links">Location</span>
+                    <span className="font-header text-normal text-nav_links">Location</span>
                     </h2>
-                    <p className="font-normal text-normal xlarge:text-xnormal text-text_color">
+                    <p className="font-normal text-normal text-text_color">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>
                 </div>
@@ -186,9 +186,9 @@ const submitBtn = async (e) => {
                         alt="location"
                             /> 
                     </div>
-                    <span className="font-header text-normal xlarge:text-xnormal text-nav_links">Email</span>
+                    <span className="font-header text-normal text-nav_links">Email</span>
                     </h2>
-                    <p className="font-normal text-normal xlarge:text-xnormal text-text_color">
+                    <p className="font-normal text-normal text-text_color">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
@@ -202,9 +202,9 @@ const submitBtn = async (e) => {
                     alt="location"
                         /> 
                     </div>
-                    <span className="font-header text-normal xlarge:text-xnormal text-nav_links">Phone</span>
+                    <span className="font-header text-normal text-nav_links">Phone</span>
                     </h2>
-                    <p className="font-normal text-normal xlarge:text-xnormal text-text_color">
+                    <p className="font-normal text-normal text-text_color">
                     +1888-355-2015
                     </p>
              </div>                
@@ -229,50 +229,50 @@ const submitBtn = async (e) => {
           <div className="flex flex-row max-large:flex-col justify-between">
             <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             What is SlumTech Foundation?
             </span>
-            <p className="px-[2%] bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-xnormal text-text_color">
+            <p className="px-[2%] bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal text-text_color">
             SlumTech Foundation is a non-profit organization dedicated 
             to providing technology education and opportunities to underprivileged communities.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-xnormal font-header  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="py-[0.5%] px-[2%] text-normal font-header  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How does SlumTech Foundation make a difference?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             SlumTech Foundation empowers individuals in slums 
             by teaching them valuable tech skills, equipping them for a brighter future.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-xnormal font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="py-[0.5%] px-[2%] text-normal font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Who can benefit from SlumTech Foundation's programs?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal  px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal  px-[2%] text-text_color">
             Anyone living in slum communities who wants to learn 
             tech skills and improve their future prospects can benefit from our programs.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-xnormal font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="py-[0.5%] px-[2%] text-normal font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Is SlumTech Foundation a registered charity?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             Yes, SlumTech Foundation is a registered non-profit organization with a 
             mission to bridge the digital divide in underprivileged areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Where does SlumTech Foundation operate?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             SlumTech Foundation currently operates in slum areas in developing countries,
              focusing on empowering communities through technology.
           </p>
@@ -281,57 +281,57 @@ const submitBtn = async (e) => {
 
           <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             What programs does SlumTech Foundation offer?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             SlumTech Foundation offers coding workshops, 
             digital literacy courses, and mentorship programs for individuals in slum areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-headerpy-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-headerpy-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I support SlumTech Foundation's mission?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             You can support us by donating, volunteering, 
             or spreading awareness about our cause to help us reach more individuals in need.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I get involved with SlumTech Foundation as a volunteer?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             If you're passionate about tech education and want to make a difference,
              you can apply to volunteer with SlumTech Foundation on our website
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Can I sponsor a student through SlumTech Foundation?
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] text-text_color">
             Yes, you can sponsor a student's education and 
             tech training through SlumTech Foundation to support their growth and development.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-xnormal text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <span className="font-header py-[0.5%] px-[2%] text-normal text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I stay updated on SlumTech Foundation's work and events
             </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%] xlarge:text-xnormal text-text_color">
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal px-[2%]  text-text_color">
             You can follow us on social media, subscribe to our newsletter, 
             or visit our website regularly for updates on our programs and events.
           </p>
           </div>
           </div>
           </div>
-          <div className="mt-[5%] max-large:mt-[10%] font-normal text-normal xlarge:text-xnormal text-header">
+          <div className="mt-[5%] max-large:mt-[10%] font-normal text-normal text-header">
             <p className="w-[60%] max-large:w-full">
             Thank you for dedicating time to explore our FAQs.
              We hope you found the answers you were looking for here at SlumTech 
