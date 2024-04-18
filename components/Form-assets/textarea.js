@@ -1,7 +1,7 @@
 const TextAreaComponent = ({labelName, placeholder, onChangeInput, name, value}) => {
     return (
         <div className=" my-5">
-            <label className="font-label text-normal xlarge:text-xnormal text-header">{labelName}</label><br/>
+            <label className="font-label text-normal text-header">{labelName}</label><br/>
             <textarea
             placeholder={placeholder} 
             name={name}
