@@ -207,7 +207,7 @@ export default function About() {
       <header className="font-header text-header text-sub_header">
       Community-Driven Tech Innovation
       </header>
-      <div className="font-normal text-normal xlarge:text-xnormal text-text_color">
+      <div className="font-normal text-normal text-text_color">
       SlumTech Foundation actively fosters grassroots tech innovation 
       by establishing innovation hubs and community-driven tech spaces 
       within slum communities. These hubs serve as creative breeding grounds 
@@ -251,10 +251,10 @@ export default function About() {
       </div>
       </div>
         <div className="w-[43%] max-large:w-full">
-      <header className="font-header text-header text-sub_header xlarge:text-xsub ">
+      <header className="font-header text-header text-sub_header ">
       Advocating for Inclusive Tech Policies
         </header>
-      <div className="font-normal text-normal xlarge:text-xnormal  text-text_color">
+      <div className="font-normal text-normal text-text_color">
       We advocate for policies that promote inclusive access to tech education, 
       support the integration of marginalized communities into the tech workforce, 
       and create an enabling environment for tech-driven entrepreneurship. 
@@ -272,7 +272,7 @@ export default function About() {
         index={"O"}
         headings={"ur Impact"}
       />
-      <div className="text-normal xlarge:text-xnormal">
+      <div className="text-normal">
       Through our 100% free programs and initiatives, SlumTech Nigeria has 
       transformed the lives of countless youths from slum communities, offering 
       them a pathway to upward mobility, economic independence, and a brighter future. 
@@ -301,7 +301,7 @@ export default function About() {
         /> 
 
         <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] xlarge:left-[15%] max-md:left-[5%] w-[50%] max-large:w-[80%]">
-          <span className="text-fourteen xlarge:text-xnormal max-large:text-[11px]">
+          <span className="text-fourteen max-large:text-[11px]">
           SlumTech Foundation welcomes collaborations, partnerships, 
           and support from individuals, organizations, and stakeholders who share our 
           vision of empowering youths from slum communities and positioning africa as a 
