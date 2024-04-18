@@ -28,7 +28,7 @@ export default function About() {
             index={"O"}
             headings={"ur Mission"}
           />
-        <div className="font-normal text-normal  text-text_color">
+        <div className="font-normal text-normal xlarge:text-about  text-text_color">
         SlumTech Foundation is a US-based nonprofit organization with a bold mission 
         to establish world-class tech institutions across Africa, specifically targeting 
         youths in slum communities. Our commitment is to provide 100% free access to high-quality 
@@ -93,7 +93,7 @@ export default function About() {
         index={"O"}
         headings={"ur Vision"}
       />
-      <div className="font-normal text-normal text-text_color">
+      <div className="font-normal text-normal xlarge:text-about text-text_color">
       Our vision is to revolutionize access to technology education in Africa by building 
       a network of world-class, free tech institutes in slum communities. We envision a 
       future where every young person in these communities has the opportunity 
@@ -127,8 +127,8 @@ export default function About() {
       </div>
         
         <div className="w-[43%] max-large:w-full">
-      <header className="font-header text-header text-sub_header ">Free Tech Education and Skill Development</header>
-      <div className="font-normal text-normal  text-text_color">
+      <header className="font-header text-header text-sub_header xlarge:text-xsub ">Free Tech Education and Skill Development</header>
+      <div className="font-normal text-normal xlarge:text-about  text-text_color">
       SlumTech Foundation provides comprehensive, 100% free tech 
       education and skill development programs tailored to the unique 
       needs and aspirations of young talents from slum communities. 
@@ -176,7 +176,7 @@ export default function About() {
       <header className="font-header text-header xlarge:text-xsub text-sub_header ">
       Youth Empowerment and Entrepreneurship
         </header>
-      <div className="font-normal text-normal  text-text_color">
+      <div className="font-normal text-normal xlarge:text-about  text-text_color">
       We empower young individuals from slum communities to harness 
       their potential by incubating innovative ideas, nurturing entrepreneurial 
       mindsets, and providing the resources needed to launch tech-driven ventures. 
@@ -204,10 +204,10 @@ export default function About() {
       </div>
       </div>
         <div className="w-[43%] max-large:w-full">
-      <header className="font-header text-header text-sub_header">
+      <header className="font-header text-header xlarge:text-xsub text-sub_header">
       Community-Driven Tech Innovation
       </header>
-      <div className="font-normal text-normal text-text_color">
+      <div className="font-normal text-normal xlarge:text-about text-text_color">
       SlumTech Foundation actively fosters grassroots tech innovation 
       by establishing innovation hubs and community-driven tech spaces 
       within slum communities. These hubs serve as creative breeding grounds 
@@ -251,10 +251,10 @@ export default function About() {
       </div>
       </div>
         <div className="w-[43%] max-large:w-full">
-      <header className="font-header text-header text-sub_header ">
+      <header className="font-header text-header text-sub_header xlarge:text-xsub ">
       Advocating for Inclusive Tech Policies
         </header>
-      <div className="font-normal text-normal text-text_color">
+      <div className="font-normal text-normal xlarge:text-about text-text_color">
       We advocate for policies that promote inclusive access to tech education, 
       support the integration of marginalized communities into the tech workforce, 
       and create an enabling environment for tech-driven entrepreneurship. 
@@ -272,7 +272,7 @@ export default function About() {
         index={"O"}
         headings={"ur Impact"}
       />
-      <div className="text-normal">
+      <div className="text-normal xlarge:text-about">
       Through our 100% free programs and initiatives, SlumTech Nigeria has 
       transformed the lives of countless youths from slum communities, offering 
       them a pathway to upward mobility, economic independence, and a brighter future. 
@@ -292,7 +292,7 @@ export default function About() {
     </div>
     </section>
 
-    <section className="relative h-[62vh] max-large:h-[300px] w-full xlarge:w-[70%] mx-auto">
+    <section className="relative h-[62vh] xlarge:h-[50vh] max-large:h-[300px] w-full xlarge:w-[70%] mx-auto xlarge:mb-[5%]">
     <Image 
       src="/images/ladies.png"
       fill
@@ -301,14 +301,14 @@ export default function About() {
         /> 
 
         <div className="text-btn_color z-30 absolute bottom-[5%] left-[10%] xlarge:left-[15%] max-md:left-[5%] w-[50%] max-large:w-[80%]">
-          <span className="text-fourteen max-large:text-[11px]">
+          <span className="text-fourteen xlarge:text-about max-large:text-[11px]">
           SlumTech Foundation welcomes collaborations, partnerships, 
           and support from individuals, organizations, and stakeholders who share our 
           vision of empowering youths from slum communities and positioning africa as a 
           trailblazing tech hub in the world
           </span>
           <div className="text-center max-large:text-left mt-3">
-            <button className="text-normal xlarge:text-xnormal text_btn_color bg-btn_green rounded-normal px-[1rem] h-[3rem] ">Partner with us</button>
+            <button className="text-normal xlarge:text-about text_btn_color bg-btn_green rounded-normal px-[1rem] h-[4rem] ">Partner with us</button>
           </div>
         </div>
     </section>
