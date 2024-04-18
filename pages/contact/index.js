@@ -112,7 +112,7 @@ const submitBtn = async (e) => {
             />
             <div className="flex flex-row max-large:flex-col justify-between ">
                 <div className="w-[47%] max-large:w-full">
-                    <div className="mt-[5%] font-normal text-twelve xlarge:text-fourteen  text-text_color">
+                    <div className="mt-[5%] font-normal text-twelve  xlarge:text-faq  text-text_color">
                     Please reach out to us by completing this form. Your messages,suggestions and 
                     feedback will play a crucial role in shaping a brighter, technology-driven future 
                     for everyone
