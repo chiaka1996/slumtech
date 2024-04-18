@@ -151,7 +151,7 @@ const submitBtn = async (e) => {
 
                 {/* h-[30.625rem */}
             <div className="w-[40%] max-large:w-full h-full max-large:mt-[10%]">
-            <div className="relative w-full  h-[32rem] xlarge:h-[34rem]">
+            <div className="relative w-full  h-[32rem] xlarge:h-[36.5rem]">
             <Image 
             src="/images/contact1.png"
             fill
