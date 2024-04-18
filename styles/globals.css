@@ -9,6 +9,67 @@
     font-size: 1rem;
 }
 
+.eduslide{
+  animation-name: eduslide;
+  animation-delay: -2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes eduslide{
+  from{
+    transform: translateX(400%);
+  }
+  to{
+      transform: translateX(-150%);
+  }
+}
+
+.eduslide2{
+  animation-name: eduslide2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes eduslide2{
+  0%{
+    transform: translateX(400%);
+  }
+  10%{
+    transform: translateX(350%);
+  }
+  20%{
+    transform: translateX(300%);
+  }
+  30%{
+    transform: translateX(250%);
+  }
+  40%{
+    transform: translateX(200%);
+  }
+  50%{
+    transform: translateX(100%);
+  }
+  60%{
+    transform: translateX(50%);
+  }
+  70%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-50%);
+  }
+  90%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(-150%);
+  }
+
+}
+
 .schoolboy{
   animation-name: schoolboy;
   animation-duration: 5s;

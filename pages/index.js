@@ -348,10 +348,67 @@ export default function Home() {
 
       <section className="educationBg relative pb-[1%]"> 
       {/* eductional initiatives */}
-      <section className="py-[5%] px-[10%] xlarge:px-[15%]  max-large:px-[5%] ">
-      <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
-      <Slider {...settings}>
-      {data.map((option, i) =>  <div key={i} className="mb-[5%] w-[30%]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
+      <section className="py-[5%]">
+      <header className="font-header max-large:px-[5%]  px-[10%] xlarge:px-[15%] text-head text-header mb-[3%]">Our Educational initiatives</header>
+      {/* <Slider {...settings}> */}
+      <div className="flex flex-row w-[170rem] eduslide">
+      <div className="relative w-[17.5rem] h-[21rem] ">
+      <Image 
+      src= "/images/edu1.png"
+      fill
+      alt="education"
+        /> 
+        </div>
+      
+        <div className="relative w-[17.5rem] h-[21rem]">
+      <Image 
+      src= "/images/edu2.png"
+      fill
+      alt="education"
+        /> 
+        </div>
+
+        <div className="relative w-[17.5rem] h-[21rem]">
+      <Image 
+      src= "/images/edu2.png"
+      fill
+      alt="education"
+        /> 
+        </div>
+
+        <div className="relative w-[17.5rem] h-[21rem]">
+      <Image 
+      src= "/images/edu2.png"
+      fill
+      alt="education"
+        /> 
+        </div>
+
+        {/* <div className="relative w-[17.5rem] h-[21rem]  eduslide2">
+      <Image 
+      src= "/images/edu3.png"
+      fill
+      alt="education"
+        /> 
+        </div>
+
+        <div className="relative w-[17.5rem] h-[21rem] eduslide2">
+      <Image 
+      src= "/images/edu4.png"
+      fill
+      alt="education"
+        /> 
+        </div> */}
+
+        {/* <div className="relative w-[17.5rem] h-[21rem] mr-5 eduslide">
+      <Image 
+      src= "/images/edu2.png"
+      fill
+      alt="education"
+        /> 
+        </div> */}
+      
+      {/* {data.map((option, i) =>  <div key={i} className="eduSlide mb-[5%] w-[40rem]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
       <div className="h-[9.4rem] rounded-xl relative">
       <Image 
       src={option.img}
@@ -365,8 +422,9 @@ export default function Home() {
         <div className="text-[#7d7f82] text-fourteen font-normal">{option.text}</div>
         </div>
       </div>
-       )} 
-    </Slider>
+       )}  */}
+       </div>
+    {/* </Slider>  */}
     </section> 
 
       {/* partner with us */}
