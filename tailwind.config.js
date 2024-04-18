@@ -44,6 +44,7 @@ module.exports = {
   fontSize: {
     normal: "1em",
     about: '1.2em',
+    faq: '1.2em',
     xnormal: "2.2em",
     head: "2.5em",
     xhead: "4.5em",
