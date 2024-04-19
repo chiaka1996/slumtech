@@ -352,8 +352,8 @@ export default function Home() {
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {/* <div className="flex flex-row eduslide overflow-x-auto"> */}
-      {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
-      <div className="h-[9.4rem] rounded-xl relative">
+      {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] xlarge:h-[30rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
+      <div className="h-[9.4rem] xlarge:h-[12rem] rounded-xl relative">
       <Image 
       src={option.img}
       fill
@@ -362,8 +362,8 @@ export default function Home() {
         /> 
       </div> 
         <div className="pt-[5%] px-[5%]">
-        <h3 className="mt-1 text-text_color font-header text-sub_header ">{option.header}</h3>
-        <div className="text-[#7d7f82] text-fourteen font-normal">{option.text}</div>
+        <h3 className="mt-1 text-text_color font-header text-sub_header xlarge:text-[1.4em] ">{option.header}</h3>
+        <div className="text-[#7d7f82] text-fourteen xlarge:text-normal font-normal">{option.text}</div>
         </div>
       </div>
        )} 
