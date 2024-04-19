@@ -11,18 +11,52 @@
 
 .eduslide{
   animation-name: eduslide;
-  animation-delay: -2s;
-  animation-duration: 5s;
+  /* animation-delay: -2s; */
+  animation-duration: 10s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
   animation-timing-function: linear;
 }
 
 @keyframes eduslide{
-  from{
+  /* from{
     transform: translateX(400%);
   }
   to{
       transform: translateX(-150%);
+  } */
+  0%{
+    transform: translateX(400%);
+  }
+  10%{
+    transform: translateX(370%);
+  }
+  20%{
+    transform: translateX(340%);
+  }
+  30%{
+    transform: translateX(310%);
+  }
+  40%{
+    transform: translateX(290%);
+  }
+  50%{
+    transform: translateX(260%);
+  }
+  60%{
+    transform: translateX(230%);
+  }
+  70%{
+    transform: translateX(200%);
+  }
+  80%{
+    transform: translateX(170%);
+  }
+  90%{
+    transform: translateX(140%);
+  }
+  100%{
+    transform: translateX(-150%);
   }
 }
 
@@ -38,31 +72,31 @@
     transform: translateX(400%);
   }
   10%{
-    transform: translateX(350%);
+    transform: translateX(370%);
   }
   20%{
-    transform: translateX(300%);
+    transform: translateX(340%);
   }
   30%{
-    transform: translateX(250%);
+    transform: translateX(310%);
   }
   40%{
-    transform: translateX(200%);
+    transform: translateX(290%);
   }
   50%{
-    transform: translateX(100%);
+    transform: translateX(260%);
   }
   60%{
-    transform: translateX(50%);
+    transform: translateX(230%);
   }
   70%{
-    transform: translateX(0%);
+    transform: translateX(200%);
   }
   80%{
-    transform: translateX(-50%);
+    transform: translateX(170%);
   }
   90%{
-    transform: translateX(-100%);
+    transform: translateX(140%);
   }
   100%{
     transform: translateX(-150%);

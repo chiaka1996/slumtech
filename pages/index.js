@@ -106,7 +106,7 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[5%] xlarge:mt-[20%]">
+          <div className="z-30 mt-[7%] xlarge:mt-[20%]">
           <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
@@ -348,67 +348,11 @@ export default function Home() {
 
       <section className="educationBg relative pb-[1%]"> 
       {/* eductional initiatives */}
-      <section className="py-[5%]">
-      <header className="font-header max-large:px-[5%]  px-[10%] xlarge:px-[15%] text-head text-header mb-[3%]">Our Educational initiatives</header>
-      {/* <Slider {...settings}> */}
-      <div className="flex flex-row w-[170rem] eduslide">
-      <div className="relative w-[17.5rem] h-[21rem] ">
-      <Image 
-      src= "/images/edu1.png"
-      fill
-      alt="education"
-        /> 
-        </div>
-      
-        <div className="relative w-[17.5rem] h-[21rem]">
-      <Image 
-      src= "/images/edu2.png"
-      fill
-      alt="education"
-        /> 
-        </div>
-
-        <div className="relative w-[17.5rem] h-[21rem]">
-      <Image 
-      src= "/images/edu2.png"
-      fill
-      alt="education"
-        /> 
-        </div>
-
-        <div className="relative w-[17.5rem] h-[21rem]">
-      <Image 
-      src= "/images/edu2.png"
-      fill
-      alt="education"
-        /> 
-        </div>
-
-        {/* <div className="relative w-[17.5rem] h-[21rem]  eduslide2">
-      <Image 
-      src= "/images/edu3.png"
-      fill
-      alt="education"
-        /> 
-        </div>
-
-        <div className="relative w-[17.5rem] h-[21rem] eduslide2">
-      <Image 
-      src= "/images/edu4.png"
-      fill
-      alt="education"
-        /> 
-        </div> */}
-
-        {/* <div className="relative w-[17.5rem] h-[21rem] mr-5 eduslide">
-      <Image 
-      src= "/images/edu2.png"
-      fill
-      alt="education"
-        /> 
-        </div> */}
-      
-      {/* {data.map((option, i) =>  <div key={i} className="eduSlide mb-[5%] w-[40rem]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
+      <section className="py-[5%] max-large:px-[5%] px-[10%] xlarge:px-[15%]">
+      <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
+      <Slider {...settings}>
+      {/* <div className="flex flex-row eduslide overflow-x-auto"> */}
+      {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
       <div className="h-[9.4rem] rounded-xl relative">
       <Image 
       src={option.img}
@@ -422,15 +366,15 @@ export default function Home() {
         <div className="text-[#7d7f82] text-fourteen font-normal">{option.text}</div>
         </div>
       </div>
-       )}  */}
-       </div>
-    {/* </Slider>  */}
+       )} 
+       {/* </div> */}
+    </Slider> 
     </section> 
 
       {/* partner with us */}
      <section className="z-50 px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[5%] w-full flex flex-row max-large:flex-col-reverse justify-between">
       <div className=" w-[45%] max-large:w-full max-large:mt-[5%] ">
-      <p className="text-normal font-normal text-color">
+      <p className="text-normal xlarge:text-about font-normal text-color">
       Being a part of SlumTech is a rewarding experience that allows 
       you to make a tangible difference in the lives of others. By giving your 
       time and skills, you have the opportunity to create positive change, build

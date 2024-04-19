@@ -194,15 +194,15 @@ const submitBtn = async (e) => {
           </section>
 
           <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
-            <div className="w-[25rem] max-large:w-full h-[23.125rem] relative">
+            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23.125rem] xlarge:w-[27rem] relative">
             <Image 
             src="/images/donate_book.png"
             fill
             alt="donate"
             /> 
             </div>
-            <div className="w-[20.5rem]">
-            <p className="text-text_color font-normal text-normal">
+            <div className="w-[20.5rem] xlarge:w-[22rem">
+            <p className="text-text_color font-normal text-normal xlarge:text-about">
             "Tech Entrepreneurship and Career for 
             Africa Development" is a comprehensive guide by SlumTech Foundation, 
             focusing on leveraging technology for economic growth,
