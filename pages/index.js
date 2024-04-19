@@ -352,7 +352,7 @@ export default function Home() {
       <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {/* <div className="flex flex-row eduslide overflow-x-auto"> */}
-      {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] xlarge:h-[30rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
+      {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] xlarge:h-[25rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
       <div className="h-[9.4rem] xlarge:h-[12rem] rounded-xl relative">
       <Image 
       src={option.img}
