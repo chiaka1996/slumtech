@@ -363,7 +363,7 @@ export default function Home() {
       </div> 
         <div className="pt-[5%] px-[5%]">
         <h3 className="mt-1 text-text_color font-header text-sub_header xlarge:text-[2.2em] ">{option.header}</h3>
-        <div className="text-[#7d7f82] text-fourteen xlarge:text-[2em] font-normal">{option.text}</div>
+        <div className="text-[#7d7f82] text-fourteen xlarge:text-[1.6em] font-normal">{option.text}</div>
         </div>
       </div>
        )} 
