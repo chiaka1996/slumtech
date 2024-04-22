@@ -107,7 +107,7 @@ const Partnership = () => {
   }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%]">
+        <main className="relative overflow-hidden mt-[5%]  max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -115,27 +115,27 @@ const Partnership = () => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <div className="px-normal xlarge-xnormal max-md:px-[5%] pt-[5%] max-large:mb-[7%] ">
+        <div className="px-normal xlarge-xnormal max-large:px-[5%] pt-[5%] max-large:my-[7%] ">
         <Headers
             index={"C"}
             headings={"all for Partnership"}
           />
           </div>
 
-        <div className="relative w-full h-[44vh] max-md:h-[270px] my-[1%]">
+        <div className="relative w-full h-[44vh] max-large:h-[12.5em] my-[1%]">
             <Image 
             src="/images/partnership.png"
             fill
             alt="register"
                 /> 
-            <p className="absolute bottom-[10%] max-md:bottom-[15%] left-[27%] max-md:left-[5%] w-[50%] max-md:w-[90%] font-btn_weight text-sub_header text-btn_color">
+            <p className="absolute bottom-[10%] max-md:bottom-[15%] left-[27%] max-md:left-[5%] w-[50%] max-md:w-[90%] font-btn_weight text-sub_header max-large:text-normal text-btn_color">
             We are seeking for partnership from both organization 
             and individuals that will help us build the future of technology through SlumTech
             </p>
             </div>
 
             <form className="my-[5%] mx-auto w-[30%] max-md:w-[90%]">
-                <p className="mb-[5%] font-normal text-sub_header text-header">
+                <p className="mb-[5%] font-normal text-sub_header max-large:text-[1.5em] text-header">
                     Kindly fill the form provided
                 </p>
 
@@ -167,7 +167,7 @@ const Partnership = () => {
                 onChangeInput={onChangeInput}
                 />
 
-                <div className="my-[5%]">
+                <div className="my-[5%] bg-[#ffffff] max-large:w-[80%] max-large:p-[1%]">
                     <header className="mb-[3%] font-label text-sub_header text-header">Please Indicate</header>
                     <div className="flex flex-row">
                     <div className="mr-[1.25rem] flex flex-row items-center">
