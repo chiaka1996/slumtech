@@ -300,7 +300,7 @@ export default function Home() {
   
       <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%]  max-large:mt-[38%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[15.5em] max-large:w-[70%] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[15.5em] max-large:w-[75%] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
         Strategic partnerships with schools in Slum communities
         </div>
       <div className=" w-[45%] max-large:w-full max-md:h-[250px] h-[70vh] max-large:h-[200px] relative">
@@ -313,7 +313,7 @@ export default function Home() {
         </div>
  
         <div className="absolute bottom-[38%] max-large:bottom-[32%] left-0 w-[66%] max-large:w-[100%] xlarge:w-[65%]  flex flex-row max-large:flex-col justify-between max-large:justify-left items-center max-large:items-start">
-        <div className="font-header text-[1.5em] max-large:text-mnormal xlarge:text-[2.5em] text-btn_color w-[21.875rem] xlarge:w-[58%] max-large:w-[70%] mx-0">
+        <div className="font-header text-[1.5em] max-large:text-mnormal xlarge:text-[2.5em] text-btn_color w-[21.875rem] xlarge:w-[58%] max-large:w-[75%] mx-0">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div> 
@@ -327,7 +327,7 @@ export default function Home() {
         </div> 
 
         <div className="absolute bottom-[9%] max-large:-bottom-[4%] right-[0] w-[70%] max-large:w-[100%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-[70%] mt-[30%] xlarge:mt-[35%] max-large:mt-0">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-[75%] mt-[30%] xlarge:mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills

@@ -113,7 +113,7 @@ const Footer = () => {
                  </a>
                 </div>
                 </div>
-                <div className='text-[#CAD0CB] font-normal text-twelve text-center w-[55%] max-large:w-[85%] ml-auto'>
+                <div className='text-[#CAD0CB] font-normal text-twelve max-large:text-ten text-center w-[55%] max-large:w-[85%] ml-auto'>
                 SlumTech Foundation - Empowering Africa's Future through Technology
                 </div>    
             </section>
