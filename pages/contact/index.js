@@ -105,7 +105,7 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] xlarge:px-[15%] max-md:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
+        <section className="px-[10%] xlarge:px-[15%] max-large:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
             <Headers
             index={"C"}
             headings={"ontact Us"}
@@ -150,7 +150,7 @@ const submitBtn = async (e) => {
                 </div>
 
                 {/* h-[30.625rem */}
-            <div className="w-[40%] max-large:w-full h-full max-large:mt-[10%]">
+            <div className="w-[40%] max-large:w-full h-full max-large:hidden">
             <div className="relative w-full  h-[32rem] xlarge:h-[38.5rem]">
             <Image 
             src="/images/contact1.png"
@@ -161,7 +161,7 @@ const submitBtn = async (e) => {
             </div>
             </div>
 
-            <div className="flex flex-row max-large:flex-col justify-between mt-[5%]">
+            <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:hidden">
                 <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
@@ -219,7 +219,7 @@ const submitBtn = async (e) => {
           />
         
         <div className="mt-[5%] flex flex-row max-md:flex-col justify-between">
-          <p className="font-normal text-normal xlarge:text-faq text-text_color w-[47%] max-large:w-full">
+          <p className="font-normal text-normal max-large:text-twelve xlarge:text-faq text-text_color w-[47%] max-large:w-full">
           We've compiled some commonly asked questions to assist you better. 
           We hope you find the answers helpful. If you have any further inquiries,
           Don't hesitate to reach out to us
@@ -230,50 +230,50 @@ const submitBtn = async (e) => {
           <div className="flex flex-row max-large:flex-col justify-between">
             <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             What is SlumTech Foundation?
-            </span>
-            <p className="px-[2%] bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  text-text_color">
+            </div>
+            <p className="px-[2%] bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-text_color">
             SlumTech Foundation is a non-profit organization dedicated 
             to providing technology education and opportunities to underprivileged communities.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-faq  font-header  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How does SlumTech Foundation make a difference?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation empowers individuals in slums 
             by teaching them valuable tech skills, equipping them for a brighter future.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Who can benefit from SlumTech Foundation's programs?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq   px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq   px-[2%] text-text_color">
             Anyone living in slum communities who wants to learn 
             tech skills and improve their future prospects can benefit from our programs.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="py-[0.5%] px-[2%] text-normal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Is SlumTech Foundation a registered charity?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             Yes, SlumTech Foundation is a registered non-profit organization with a 
             mission to bridge the digital divide in underprivileged areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Where does SlumTech Foundation operate?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation currently operates in slum areas in developing countries,
              focusing on empowering communities through technology.
           </p>
@@ -282,29 +282,29 @@ const submitBtn = async (e) => {
 
           <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             What programs does SlumTech Foundation offer?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation offers coding workshops, 
             digital literacy courses, and mentorship programs for individuals in slum areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-headerpy-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I support SlumTech Foundation's mission?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             You can support us by donating, volunteering, 
             or spreading awareness about our cause to help us reach more individuals in need.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I get involved with SlumTech Foundation as a volunteer?
-            </span>
+            </div>
             <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
             If you're passionate about tech education and want to make a difference,
              you can apply to volunteer with SlumTech Foundation on our website
@@ -312,27 +312,28 @@ const submitBtn = async (e) => {
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             Can I sponsor a student through SlumTech Foundation?
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             Yes, you can sponsor a student's education and 
             tech training through SlumTech Foundation to support their growth and development.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <span className="font-header py-[0.5%] px-[2%] text-normal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
             How can I stay updated on SlumTech Foundation's work and events
-            </span>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%]  text-text_color">
+            </div>
+            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%]  text-text_color">
             You can follow us on social media, subscribe to our newsletter, 
             or visit our website regularly for updates on our programs and events.
           </p>
           </div>
           </div>
           </div>
-          <div className="mt-[5%] max-large:mt-[10%] font-normal text-normal xlarge:text-faq  text-header">
+
+          <div className="mt-[5%] max-large:mt-[10%] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-header">
             <p className="w-[60%] max-large:w-full">
             Thank you for dedicating time to explore our FAQs.
              We hope you found the answers you were looking for here at SlumTech 
@@ -342,6 +343,56 @@ const submitBtn = async (e) => {
             </p>
             <p></p>
         </div>
+
+        <div className="flex flex-row max-large:flex-col justify-between mt-[5%] large:hidden">
+                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[1rem] h-[1.25rem] mr-2">
+                        <Image 
+                        src="/icons/location.png"
+                        fill
+                        alt="location"
+                            /> 
+                        </div>
+                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Location</span>
+                    </h2>
+                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
+                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
+                    </p>
+                </div>
+
+                <div className="max-large:mt-[10%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[40px] max-large:w-[24px] h-[26px] max-large:h-[16px] mr-2">
+                        <Image 
+                        src="/icons/email.png"
+                        fill
+                        alt="location"
+                            /> 
+                    </div>
+                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Email</span>
+                    </h2>
+                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
+                    contact@slumtechfoundation.com
+                    </p>
+                </div>
+
+                <div className="max-large:mt-[10%] max-large:mb-[5%]">
+                    <h2 className="flex flex-row">
+                    <div className="relative w-[1.5625rem] max-large:w-[15px] h-[1.875rem] max-large:h-[19px] mr-2">
+                    <Image 
+                    src="/icons/phone.png"
+                    fill
+                    alt="location"
+                        /> 
+                    </div>
+                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Phone</span>
+                    </h2>
+                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
+                    +1888-355-2015
+                    </p>
+             </div>                
+            </div>
           </section>
           <Footer />
           </main>
