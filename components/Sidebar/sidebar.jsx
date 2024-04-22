@@ -43,7 +43,7 @@ const SideBar = ({page}) => {
        <nav className={bar ? style.sidebarContainer : style.sidebarContainerClose}>
           {
               NavItems.map((data, i) =>  <div key={i} className='w-full text-center mb-[10%]' >
-                <Link href={data.url} className='no-underline text-nav_links text-normal'>
+                <Link href={data.url} className='no-underline text-nav_links text-normal font-label'>
                 <span onClick={()=>closeBar()} className={router.asPath == data.url ? style.activeLink : style.navLink}>{data.label}</span>
                 </Link>
                 </div>

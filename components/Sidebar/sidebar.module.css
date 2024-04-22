@@ -31,6 +31,8 @@
   border-bottom: 1px solid #1A1A1A;
   text-align: center;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .activeLink:before{
@@ -64,5 +66,7 @@
   margin: 0 auto 5% auto;
   width: 80%;
   text-align: center;
+  font-weight: 500;
+  font-size: 16px;
 }
 
