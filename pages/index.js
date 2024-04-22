@@ -93,14 +93,14 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[30rem] relative">
+    <div className="mt-[4%] max-large:mt-[22%] small:max-large:mt-[14%] w-full h-[100vh] max-large:h-[30rem] relative">
     <Image 
         src="/images/banner.png"
         fill
         alt="banner"
         className="filter brightness-[30%]"
           />
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[10%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
        <div className="h-[20em]  max-large:h-[26vh]">
         <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
