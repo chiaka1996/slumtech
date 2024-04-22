@@ -3,10 +3,10 @@ import {Navigation, Sidebar, Headers, Footer} from "../../components"
 
 const Policy = () => {
     return (
-        <main className="relative overflow-hidden">
+        <main className="relative overflow-hidden bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
-        <section className="px-normal xlarge:px-xnormal max-md:px-[5%] py-[5%] mt-[5%]  max-large:mt-[25%]">
+        <section className="px-normal xlarge:px-xnormal max-large:px-[5%] py-[5%] mt-[5%]  max-large:mt-[25%]">
         <Headers
             index={"P"}
             headings={"rivacy and Policy"}
