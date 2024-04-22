@@ -25,7 +25,7 @@ module.exports = {
     },
     screens: {
       'large': '900px',
-      "small": "395px",
+      "small": "400px",
       "xlarge": "1900px"
     },
     backgroundImage: {
@@ -43,10 +43,12 @@ module.exports = {
   },
   fontSize: {
     normal: "1em",
+    mnormal: "0.875em",
     about: '1.2em',
     faq: '1.2em',
     xnormal: "2.2em",
     head: "2.5em",
+    mhead:"1.5em",
     xhead: "4.5em",
     sub_header: "1.25em",
     xsub: "1.5em",

@@ -93,9 +93,15 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[300px] relative">
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[3%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
-       <div className="h-[20em]">
+    <div className="mt-[4%] max-large:mt-[22%] w-full h-[100vh] max-large:h-[30rem] relative">
+    <Image 
+        src="/images/banner.png"
+        fill
+        alt="banner"
+        className="filter brightness-[30%]"
+          />
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
+       <div className="h-[20em]  max-large:h-[26vh]">
         <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
@@ -106,8 +112,8 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[7%] xlarge:mt-[20%]">
-          <div className="font-normal text-normal xlarge:text-[2.2em] max-large:text-[12px] max-large:h-[310px] text-btn_color w-[70%] max-large:w-[70%] xlarge:w-[90%]">
+          <div className="z-30 mt-[7%] xlarge:mt-[20%] max-large:mt-[2%]">
+          <div className="font-normal text-normal max-large:text-twelve xlarge:text-[2.2em] max-large:text-[12px] text-btn_color w-[70%] max-large:w-[90%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
@@ -117,15 +123,8 @@ export default function Home() {
           </div>
           </div>     
       </div>
-
-      <Image 
-        src="/images/banner.png"
-        fill
-        alt="banner"
-        className="filter brightness-[30%]"
-          />
-        <div className="flex flex-row absolute bottom-[10%] right-[5%] text-btn_color">
-                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
+      <div className="flex flex-row absolute bottom-[10%] max-large:bottom-[2%] max-large:left-[5%] right-[5%] text-btn_color">
+                <div className="w-[15.625rem]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
                         <Image 
@@ -134,25 +133,25 @@ export default function Home() {
                         alt="location"
                             /> 
                         </div>
-                    <span className="font-header text-normal text-btn_color">Location</span>
+                    <span className="font-header text-normal max-large:text-twelve text-btn_color">Location</span>
                     </h2>
-                    <p className="font-normal text-twelve text-btn_color">
+                    <p className="font-normal text-twelve max-large:text-ten text-btn_color">
                     801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
                     </p>         
                 </div>
 
-                <div className="ml-2">
+                <div className="ml-2 ">
                     <h2 className="flex flex-row">
-                    <div className="relative w-[40px] h-[26px] mr-2">
+                    <div className="relative w-[40px] h-[26px] max-large:w-[1.7rem] max-large:h-[1.25rem] mr-2">
                         <Image 
                         src="/icons/email.png"
                         fill
                         alt="location"
                             /> 
                     </div>
-                    <span className="font-header text-normal text-btn_color">Email</span>
+                    <span className="font-header text-normal max-large:text-twelve text-btn_color">Email</span>
                     </h2>
-                    <p className="font-normal text-twelve  text-btn_color">
+                    <p className="font-normal text-twelve max-large:text-ten text-btn_color">
                     contact@slumtechfoundation.com
                     </p>
                 </div>
@@ -163,7 +162,7 @@ export default function Home() {
     <section className="approachBg pt-[10%]">
     {/* our approach */}
    <section className="w-full xlarge:mt-0 xlarge:pt-[10%] px-[10%] xlarge:px-[15%] max-md:px-[5%] flex flex-row  max-large:flex-col-reverse items-center justify-center z-5">
-   <div className="z-50 w-[28.1rem] h-[28.1rem]  max-md:w-[250px] max-md:h-[250px] relative mr-[9.375em]  max-large:mr-0  max-large:mt-5">
+   <div className="z-50 w-[28.1rem] h-[28.1rem]  max-large:w-[12.5em] max-large:h-[12.5em] relative mr-[9.375em]  max-large:mr-0  max-large:mt-5">
     <Image
       src="/images/approach.png"
       fill
@@ -171,11 +170,10 @@ export default function Home() {
       className="approach"
         /> 
     </div>
-    {/* x-large:w-32% */}
-    {/* xlarge:text-xnormal */}
+    
     <div className="w-[40%] z-50  max-large:w-full">
-    <header className="font-header text-header text-head xlarge:text-xhead mb-3">Our Approach</header>
-    <div className="text-normal xlarge:text-xnormal  font-normal text-text_color">
+    <header className="font-header text-header text-head max-large:text-mhead xlarge:text-xhead mb-3">Our Approach</header>
+    <div className="text-normal max-large:text-fourteen xlarge:text-xnormal  font-normal text-text_color">
     Through strategic partnerships, 
     innovative curriculum, and dedicated mentors, we aim 
     to provide a comprehensive tech education experience that equips 
@@ -186,38 +184,38 @@ export default function Home() {
    </section>
 
    
-   <section className="relative mt-[3%] h-[90em] xlarge:h-[150vh]  max-large:h-[1800]">
-   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 -right-[5%] bg-[#F5FBF6]'>
+   <section className="relative mt-[3%] max-large:mt-0 h-[90em] xlarge:h-[150vh]">
+   <div className='z-10 absolute w-[31.3rem]  xlarge:w-[50.2em]  max-large:w-[300px] h-[31.3rem] xlarge:h-[50.2em] max-large:h-[300px] rounded-full top-0 max-large:-top-[5%] -right-[5%] bg-[#F5FBF6]'>
    <div className="absolute z-50 bottom-[20%] left-[20%] w-[195px] xlarge:w-[20.5em]">
-      <div className="text-[#0F01AF] font-header text-head xlarge:text-[4em]"><span className="free">100% </span>Free</div>
-      <div className="text-normal xlarge:text-xnormal  max-large:text-[14px] text-header font-header">Tech training for young African talents from the slum</div>
+      <div className="text-[#0F01AF] font-header text-head max-large:text-[2em] xlarge:text-[4em]"><span className="free">100% </span>Free</div>
+      <div className="text-normal xlarge:text-xnormal  max-large:text-twelve text-header font-header max-large:w-[10em]">Tech training for young African talents from the slum</div>
     </div>
    </div>
 
-   <div className="absolute top-[30%] z-50  max-large:top-[20%] right-[30%]   max-large:right-[50%] w-[9.1rem] xlarge:w-[20em]">
-      <div className="text-[#FFCB2F] font-header text-head  xlarge:text-[4em] recruite"></div>
-      <div className="text-normal  xlarge:text-xnormal  max-large:text-[14px] text-header font-header">
+   <div className="absolute top-[30%] z-50  max-large:top-[15%] right-[30%] max-large:right-[50%] w-[9.1rem] xlarge:w-[20em]">
+      <div className="text-[#FFCB2F] font-header text-head  xlarge:text-[4em] max-large:text-[2em] recruite"></div>
+      <div className="text-normal  xlarge:text-xnormal  max-large:text-twelve max-large:w-[9em] text-header font-header">
       We are recruiting millions of young African talents into the tech industry
       </div>
     </div>
 
-    <div className="absolute z-50 top-[36%] xlarge:top-[40%]  max-large:-top-[10%] right-[12%] xlarge:right-[10%]  max-large:right-[35%] w-[12.9rem] xlarge:w-[25.2em]  max-large:w-[150px]">
-      <div className="text-[#1A9635] font-header text-head  xlarge:text-[4em] mb-2 mission"></div>
-      <div className="text-normal z-60 xlarge:text-xnormal max-large:text-fourteen text-header font-header">
+    <div className="absolute z-50 top-[36%] xlarge:top-[40%]  max-large:top-[20%] right-[12%] xlarge:right-[10%]  max-large:right-[10%] w-[12.9rem] xlarge:w-[25.2em]  max-large:w-[150px]">
+      <div className="text-[#1A9635] font-header text-head  xlarge:text-[4em] max-large:text-[2em] mb-2 mission"></div>
+      <div className="text-normal z-60 xlarge:text-xnormal max-large:text-twelve text-header font-header">
       We are on a mission to recruit thousands of secondary schools housing talented teens within the slum community
       </div>
     </div>
-    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[62em] h-[40.6rem] xlarge:h-[62em]  max-large:h-[450px] rounded-full top-[40%] xlarge:top-[45%]  max-large:top-[30%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
+    <div className='z-10 opacity-50 absolute w-[40.6rem]  max-large:w-[450px] xlarge:w-[62em] h-[40.6rem] xlarge:h-[62em]  max-large:h-[450px] rounded-full top-[40%] xlarge:top-[45%]  max-large:top-[22%] -right-[1%]  max-large:-right-[35%] bg-[#FFE7E7]' > 
    </div>
   
 
     {/* our identity */}
-    <div className="z-50 w-[45%] xlarge:w-[40%] xlarge:h-[70vh] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[43%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="z-50 w-[45%] xlarge:w-[40%] xlarge:h-[70vh] max-large:h-[30em] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[35%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
     {
         toggleIdentity ? 
-      <div className="w-[60%] xlarge:w-[80%] xlarge:mx-[10%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]">
-          <header className="font-header text-head text-header">Our Identity</header>
-      <div className="text-normal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] xlarge:w-[100%] max-large:w-[100%]">
+      <div className="w-[60%] xlarge:w-[80%] xlarge:mx-[10%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]  max-large:mt-[15%]">
+          <header className="font-header text-head max-large:text-mhead text-header">Our Identity</header>
+      <div className="text-normal max-large:text-mnormal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] xlarge:w-[100%] max-large:w-[100%]">
       SlumTech Foundation is committed to building a sustainable tech ecosystem 
       environment that thrives on diversity, inclusivity, and social responsibility. 
       We prioritize ethical tech practices, environmental sustainability, and social impact,
@@ -254,8 +252,8 @@ export default function Home() {
      
     </div>
 
-    <div className="z-50 flex flex-row justify-center items-center w-[45%] xlarge:w-[40%] max-large:w-[90%] h-[41.25em] xlarge:h-[45em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
-      <div className="text-[1.5rem] xlarge:text-xnormal max-large:text-fourteen font-header text-text_color w-[25.5rem] xlarge:w-[80%]  max-large:px-[5%]">
+    <div className="z-50 flex flex-row justify-center items-center w-[45%] xlarge:w-[40%] max-large:w-[90%] h-[41.25em] xlarge:h-[45em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[13%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+      <div className="text-[1.5rem] xlarge:text-xnormal max-large:text-mnormal font-header text-text_color w-[25.5rem] xlarge:w-[80%]  max-large:px-[5%]">
       <p>
       SlumTech is committed to working closely with schools in Slum communities to identify
        and register students with a passion for technology and a drive to excel. 
@@ -267,7 +265,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="schoolboy absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[100px] h-[80vh] xlarge:h-[40em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
+    <div className="schoolboy absolute bottom-[3%] max-large:bottom-0 left-[10%] xlarge:left-[15%] max-large:left-[5%] z-10 max-large:z-[100] max-large:h-[12em] h-[80vh] xlarge:h-[40em] w-[80%] xlarge:w-[70%] max-large:w-[90%]">
     
     <Image 
       src="/images/schoolboy.png"
@@ -283,7 +281,7 @@ export default function Home() {
     </section>
     </section>
 
-     <section className="w-[100%] h-[200vh] xlarge:h-[200vh] py-[5%] px-[10%] xlarge:px-[15%] max-md:px-[5%] relative max-md:mt-[5%]">
+     <section className="w-[100%] h-[200vh] max-large:h-[1400px] xlarge:h-[200vh] py-[5%] max-large:py-[2%] px-[10%] xlarge:px-[15%] max-large:px-[5%] relative max-large:mt-[1%]">
     <Image 
       src="/images/what.png"
       fill
@@ -291,18 +289,18 @@ export default function Home() {
       alt="what background"
         /> 
     
-    <div className="z-10 absolute top-[5%] left-[10%] xlarge:left-[15%]">
-        <header className="font-header text-head text-btn_color z-100">What We Do</header>
-        <div className="text-normal xlarge:text-[1.2em] font-normal text-btn_color w-[20.56em] xlarge:w-[25em] max-large:w-full z-100">
+    <div className="z-10  max-large:top-[3%] max-large:left-[5%] absolute top-[5%] left-[10%] xlarge:left-[15%]">
+        <header className="font-header text-head  max-large:text-mhead text-btn_color z-10">What We Do</header>
+        <div className="text-normal  max-large:text-twelve xlarge:text-[1.2em] font-normal text-btn_color w-[20.56em] xlarge:w-[25em] max-large:w-[70%] z-100">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
       </div>
       </div>
   
-      <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%] xlarge:mt-[15%]">
+      <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%]  max-large:mt-[38%] xlarge:mt-[15%]">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[15.5em] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[15.5em] max-large:w-[70%] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
         Strategic partnerships with schools in Slum communities
         </div>
       <div className=" w-[45%] max-large:w-full max-md:h-[250px] h-[70vh] max-large:h-[200px] relative">
@@ -314,12 +312,11 @@ export default function Home() {
           </div>
         </div>
  
-        <div className="absolute bottom-[38%] max-large:bottom-[35%] left-0 max-large:right-[5%] w-[66%] xlarge:w-[65%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between items-center max-large:items-top">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[21.875rem] xlarge:w-[58%]">
+        <div className="absolute bottom-[38%] max-large:bottom-[32%] left-0 w-[66%] max-large:w-[100%] xlarge:w-[65%]  flex flex-row max-large:flex-col justify-between max-large:justify-left items-center max-large:items-start">
+        <div className="font-header text-[1.5em] max-large:text-mnormal xlarge:text-[2.5em] text-btn_color w-[21.875rem] xlarge:w-[58%] max-large:w-[70%] mx-0">
         Identifying and fostering tech skills and talents in students 
         and youths with creative minds and passion for technology
         </div> 
-        {/* w-[23.875em] */}
       <div className="w-[45%] max-large:w-full h-[70vh] max-large:h-[250px] relative">
       <Image 
         src="/images/wedo2.png"
@@ -329,8 +326,8 @@ export default function Home() {
           </div>
         </div> 
 
-        <div className="absolute bottom-[9%] max-large:bottom-[5%] right-[0] max-large:right-[5%] w-[70%] max-large:w-[90%] flex flex-row max-large:flex-col justify-between">
-        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-[16px] text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-full mt-[30%] xlarge:mt-[35%] max-large:mt-0">
+        <div className="absolute bottom-[9%] max-large:-bottom-[4%] right-[0] w-[70%] max-large:w-[100%] flex flex-row max-large:flex-col justify-between">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-[70%] mt-[30%] xlarge:mt-[35%] max-large:mt-0">
         Providing an inclusive and supportive 
         environment where teens and youth from slum 
         areas can explore and develop their tech skills
@@ -349,7 +346,7 @@ export default function Home() {
       <section className="educationBg relative pb-[1%]"> 
       {/* eductional initiatives */}
       <section className="py-[5%] max-large:px-[5%] px-[10%] xlarge:px-[15%]">
-      <header className="font-header text-head text-header mb-[3%]">Our Educational initiatives</header>
+      <header className="font-header text-head max-large:text-mhead text-header mb-[3%]">Our Educational initiatives</header>
       <Slider {...settings}>
       {/* <div className="flex flex-row eduslide overflow-x-auto"> */}
       {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] xlarge:h-[30rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
@@ -374,7 +371,7 @@ export default function Home() {
       {/* partner with us */}
      <section className="z-50 px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[5%] w-full flex flex-row max-large:flex-col-reverse justify-between">
       <div className=" w-[45%] max-large:w-full max-large:mt-[5%] ">
-      <p className="text-normal xlarge:text-about font-normal text-color">
+      <p className="text-normal max-large:text-mnormal xlarge:text-about font-normal text-color">
       Being a part of SlumTech is a rewarding experience that allows 
       you to make a tangible difference in the lives of others. By giving your 
       time and skills, you have the opportunity to create positive change, build
@@ -423,14 +420,14 @@ export default function Home() {
     </section> 
 
     {/* donate */}
-     <section className="w-[100%] h-[25rem] max-md:h-[250px] relative"> 
+     <section className="w-[100%] h-[25rem] max-large:h-[9.63em] relative"> 
      <Image 
       src="/images/donate_banner.png"
       fill
       alt="banner"
         /> 
 
-    <div className="absolute top-[30%] max-large:top-[20%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[26.3125em] max-large:w-[90%] text-btn_color">
+    <div className="absolute top-[30%] max-large:hidden left-[10%] xlarge:left-[15%]  w-[26.3125em] text-btn_color">
       <p className="text-normal max-large:text-[12px] font-normal text-color">
       Your donation has the power to change lives.
        By contributing to SlumTech Foundation, you're not just giving, 
@@ -443,6 +440,18 @@ export default function Home() {
       </div>
     </div>
     </section> 
+    <div className="hidden max-large:block px-[5%] py-[5%]">
+    <p className="text-mnormal font-normal text-[#2B2B2B]">
+      Your donation has the power to change lives.
+       By contributing to SlumTech Foundation, you're not just giving, 
+       you're impacting lives, opportunity, and a chance for a brighter future.
+      Every donation, makes a difference
+      Together, we can build a better world
+      </p>
+      <div className="mt-[5%]">
+        <button onClick={() => router.push('/donation')}  className="w-[170px] h-[3em]  bg-btn_green rounded-[8px] font-btn_weight text-normal text-btn_color outline-none">Donate</button>
+      </div>
+    </div>
     <Footer />
     </main>
   );
