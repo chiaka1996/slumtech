@@ -116,7 +116,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%] bg-[#EDECEC]">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -132,19 +132,19 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-normal xlarge:px-xnormal max-md:px-[5%] py-[5%]">
+        <section className="px-normal xlarge:px-xnormal max-md:px-[5%] py-[5%] max-large:mt-[5%]">
         <Headers
             index={"D"}
             headings={"onation"}
           />
 
-          <div className="font-lael text-sub_header text-[#111111] max-large:mt-[7%]">
+          <div className="font-label max-large:font-header text-sub_header max-large:text-normal text-[#111111] max-large:mt-[7%]">
           Kindly choose your preferred method of donation
           </div>
 
-          <div className="flex flex-row max-md:flex-col justify-between mt-3">
-            <section onClick={() => setToggleMoney(true)} className="flex flex-row items-center justify-center cursor-pointer p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] max-md:px-[5%] bg-[#313231] rounded-[24px] shadow-lg shadow-[#00000029] relative">
-            <div className="">
+          <div className="flex flex-row max-large:flex-col justify-between mt-3">
+            <section onClick={() => setToggleMoney(true)} className="flex flex-row items-center justify-center cursor-pointer p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] max-large:px-[5%] bg-[#313231] rounded-[24px] shadow-lg shadow-[#00000029] relative">
+            <div>
             <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
                 src="/images/donate1.png"
@@ -153,13 +153,13 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
            
-            <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+            <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
                 Donate Money
             </button>
             </div>
             </section>
 
-            <section onClick={() => setToggleGadget(true)} className="flex flex-row items-center justify-center cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] bg-[#313231] rounded-[30px] shadow-lg shadow-[#00000029] relative">
+            <section onClick={() => setToggleGadget(true)} className="flex flex-row items-center justify-center cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] bg-[#313231] rounded-[30px] shadow-lg shadow-[#00000029] relative">
             <div>
             <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
@@ -169,13 +169,13 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
                 
-                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
                 Donate Gadget
             </button>
                 </div>
             </section>
 
-            <section className="flex flex-row items-center justify-center max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[350px] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
+            <section className="flex flex-row items-center justify-center max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
             <div>
             <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
                 <Image 
@@ -185,7 +185,7 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
               
-                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
                 GoFundMe
             </button>
                 </div>
@@ -193,8 +193,8 @@ const submitBtn = async (e) => {
           </div>
           </section>
 
-          <section className="bg-[#FBFDFB] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
-            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23.125rem] xlarge:w-[27rem] relative">
+          <section className="bg-[#FBFDFB] max-large:bg-[#EDECEC] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
+            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23.125rem] max-large:h-[16.6em] relative">
             <Image 
             src="/images/donate_book.png"
             fill
@@ -202,7 +202,7 @@ const submitBtn = async (e) => {
             /> 
             </div>
             <div className="w-[20.5rem] xlarge:w-[22rem">
-            <p className="text-text_color font-normal text-normal xlarge:text-about">
+            <p className="text-text_color font-normal max-large:font-header text-normal max-large:text-mnormal xlarge:text-about">
             "Tech Entrepreneurship and Career for 
             Africa Development" is a comprehensive guide by SlumTech Foundation, 
             focusing on leveraging technology for economic growth,
@@ -222,7 +222,7 @@ const submitBtn = async (e) => {
 
           <div className="mt-3% max-large:mb-[15%]  flex flex-row max-large:flex-col-reverse justify-between">
             <div className="w-[47%] max-large:w-full">
-            <p className="text-nav_links text-sub_header font-normal mb-[5%] max-large:mt-[5%]">
+            <p className="text-nav_links text-sub_header max-large:text-mnormal font-normal max-large:font-header my-[5%] max-large:mt-[15%]">
             Kindly fill the form provided
             </p>
 
@@ -302,7 +302,7 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
 
-            <div className="text-normal text-text_color font-normal mt-[2%]">
+            <div className="text-normal max-large:text-mnormal text-text_color font-normal mt-[2%] max-large:mt-0">
             Volunteering to work with SlumTech Foundation, entail your dedication to educating young talents about technology. 
             This is an opportunity to inspire the next generation of innovators, 
             through imparting your expertise and enthusiasm for technology, you can 
