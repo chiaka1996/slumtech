@@ -173,13 +173,13 @@ const RegisterIndividual = () => {
             <form>
           <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-[10%]">
             <div className="w-[47%] max-large:w-full">
-            <p className="text-text_color font-normal text-normal mb-[5%]">
+            <p className="text-text_color font-normal text-normal max-large:text-mnormal mb-[5%]">
             We are deeply committed to shaping the future alongside the youth in the slum through 
             technology. Recognizing that individuals within the desired age range (15 - 21) may have 
             completed secondary school and therefore may not be eligible
              to register with a school, we have created an opportunity for such individuals to register in this section
             </p>
-            <span className="px-[5%] font-header text-header text-sub_header border border-header rounded-[16px]">
+            <span className="px-[5%] font-header text-header text-sub_header max-large:text-normal border border-header rounded-[16px]">
             Register as an individual
             </span>
 
@@ -261,7 +261,7 @@ const RegisterIndividual = () => {
             alt="register"
                 /> 
             </div>
-            <header className="font-header text-[18px] text-header">Provide your guarantor information</header>
+            <header className="font-header text-[18px] max-large:text-normal text-header">Provide your guarantor information</header>
             <div className=" mt-[10%]">
             <InputComponent
             type="text"
@@ -301,8 +301,8 @@ const RegisterIndividual = () => {
 
             <div className="flex flex-row justify-between items-end">
                 <div className="w-[45%]">
-                    <div className="font-header text-normal text-header">Senior School Certificate</div>
-                    <span className="text-[#565656] font-normal text-[14px]">e.g Waec, Kcse, Gce</span>
+                    <div className="font-header text-normal text-header max-large:w-[70%]">Senior School Certificate</div>
+                    <span className="text-[#565656] font-normal text-[14px] max-large:hidden">e.g Waec, Kcse, Gce</span>
                     
                         {preview1 ?  <div className="w-[1.875rem] h-[1.875rem] relative">
                             <Image 
@@ -330,8 +330,8 @@ const RegisterIndividual = () => {
                      />
                 </div>
                 
-                <div className="text-right">
-                    <div className="font-header text-normal text-header">Date of Birth Certificate</div>
+                <div className="text-right max-large:text-left max-large:w-[45%">
+                    <div className="font-header text-normal text-header max-large:w-[70%]">Date of Birth Certificate</div>
                     
                         {preview2 ?  <div className="w-[1.875rem] h-[1.875rem] relative">
                             <Image 

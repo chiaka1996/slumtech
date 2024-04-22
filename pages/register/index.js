@@ -105,7 +105,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[25%] bg-[#EDECEC]">
+        <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -113,7 +113,7 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] xlarge:px-[15%] max-md:px-[5%] pt-[5%]">
+        <section className="px-[10%] xlarge:px-[15%] max-large:px-[5%] pt-[5%] max-large:mt-[5%]">
         <Headers
             index={"R"}
             headings={"egistration"}
@@ -121,7 +121,7 @@ const submitBtn = async (e) => {
 
           <div className="flex flex-row max-large:flex-col justify-between">
             <div className="w-[47%] max-large:w-full">
-            <p className="text-text_color font-normal text-normal">
+            <p className="text-text_color font-normal text-normal max-large:text-mnormal">
             We're keen on reaching out to schools in underprivileged areas, 
             such as public schools, to identify their top-performing students. 
             Our focus is on secondary school students preparing for their final exams 
@@ -130,7 +130,7 @@ const submitBtn = async (e) => {
              Educators are kindly requested to register their schools by completing the input 
              form provided.
             </p>
-            <div className="relative w-full h-[36.5em] xlarge:h-[41.5em] mt-[5%]">
+            <div className="relative w-full h-[36.5em] max-large:h-[12.5em] xlarge:h-[41.5em] mt-[5%]">
             <Image 
             src="/images/register1.png"
             fill
@@ -139,8 +139,8 @@ const submitBtn = async (e) => {
             </div>
             </div>
 
-            <div className="w-[47%] max-large:w-full">
-            <span className="px-[5%] font-header text-header text-sub_header border border-header rounded-[1rem]">
+            <div className="w-[47%] max-large:w-full max-large:mt-[10%]">
+            <span className="px-[5%] font-header text-header text-sub_header max-large:text-normal border border-header rounded-[1rem]">
             Register as a School
             </span>
 
@@ -219,7 +219,7 @@ const submitBtn = async (e) => {
 
         <RegisterIndividual />
 
-        <div className="relative w-full h-[390px] max-sm:h-[230px] my-[5%]">
+        <div className="relative w-full h-[390px] max-large:h-[8.2em] my-[5%]">
             <Image 
             src="/images/register3.png"
             fill
