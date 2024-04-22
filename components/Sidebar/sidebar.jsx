@@ -2,7 +2,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link';
 import style from './sidebar.module.css';
-import Image from 'next/image'
 import { BarState } from '../../context/context';
 
 const SideBar = ({page}) => {
@@ -43,9 +42,9 @@ const SideBar = ({page}) => {
     return(
        <nav className={bar ? style.sidebarContainer : style.sidebarContainerClose}>
           {
-              NavItems.map((data, i) =>  <div key={i} onClick={()=>closeBar()} className={router.asPath == data.url ? style.activeLink : style.navLink}>
+              NavItems.map((data, i) =>  <div key={i} className='w-full text-center mb-[10%]' >
                 <Link href={data.url} className='no-underline text-nav_links text-normal'>
-                {data.label}
+                <span onClick={()=>closeBar()} className={router.asPath == data.url ? style.activeLink : style.navLink}>{data.label}</span>
                 </Link>
                 </div>
               )
