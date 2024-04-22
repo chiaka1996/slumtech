@@ -37,7 +37,7 @@ const Navigation = () => {
         />
            <div className="w-[50%] flex flex-row justify-between items-center font-nav max-lg:hidden">
             {
-              NavItems.map((data, i) =>  <div key={i} className={router.asPath == data.url ? style.activeLink : style.navLink}>
+              NavItems.map((data, i) =>  <div key={i}  className={router.asPath == data.url ? style.activeLink : style.navLink}>
                 <Link href={data.url} className='no-underline text-nav_links text-normal'>
                 {data.label}
                 </Link>

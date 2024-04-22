@@ -25,21 +25,9 @@
     transition: left 1s;
 }
 
-/* .activeLink{
-  position: relative;
-  background-color: #D1EAD7;
-  width: 80%;
-  padding: 5% 0;
-  margin: 0 auto 5% auto;
-  text-align: center;
-  border-radius: 8px;
-} */
-
 .activeLink{
   position: relative;
-  /* width: 80%; */
   padding: 0 2% 3% 2%;
-  /* margin: 0 auto 5% auto; */
   border-bottom: 1px solid #1A1A1A;
   text-align: center;
   cursor: pointer;
