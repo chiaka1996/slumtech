@@ -192,7 +192,8 @@ const RegisterIndividual = () => {
             name="name"
             onChangeInput={onChangeInput}
             />
-
+            
+            <div className="my-5">
             <InputComponent
             type="email"
             placeholder=""
@@ -201,7 +202,9 @@ const RegisterIndividual = () => {
             name="email"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="number"
             placeholder=""
@@ -210,7 +213,9 @@ const RegisterIndividual = () => {
             name="phone"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -219,9 +224,10 @@ const RegisterIndividual = () => {
             name="nationality"
             onChangeInput={onChangeInput}
             />
+            </div>
 
-            <div className="flex flex-row justify-between">
-            <div className="w-[47%]">
+            <div className="flex flex-row justify-between max-large:mt-5">
+            <div className="w-[47%] my-5 max-large:my-0">
             <SelectComponent
             labelName="Gender"
             options={["Male","Female"]}
@@ -230,7 +236,7 @@ const RegisterIndividual = () => {
             onChangeInput={onChangeInput}
             />
             </div>
-            <div className="w-[47%]">
+            <div className="w-[47%] my-5 max-large:my-0">
             <InputComponent
             type="text"
             placeholder=""
@@ -241,6 +247,8 @@ const RegisterIndividual = () => {
             />
             </div>
             </div>
+
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -252,8 +260,9 @@ const RegisterIndividual = () => {
             </div>
 
             </div>
+            </div>
 
-            <div className="w-[47%] max-large:w-full">
+            <div className="w-[47%] max-large:w-full max-large:mt-5">
             <div className="relative w-full h-[160px] mb-[10%]">
             <Image 
             src="/images/register2.png"
@@ -272,6 +281,7 @@ const RegisterIndividual = () => {
             onChangeInput={onChangeInput}
             />
 
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -280,7 +290,9 @@ const RegisterIndividual = () => {
             name="relationship"
             onChangeInput={onChangeInput}
             />
-
+            </div>
+            
+            <div className="my-5">
             <InputComponent
             type="number"
             placeholder=""
@@ -289,7 +301,9 @@ const RegisterIndividual = () => {
             name="guarantorPhone"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -298,6 +312,7 @@ const RegisterIndividual = () => {
             name="guarantorAddress"
             onChangeInput={onChangeInput}
             />
+            </div>
 
             <div className="flex flex-row justify-between items-end">
                 <div className="w-[45%]">

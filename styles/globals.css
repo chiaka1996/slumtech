@@ -9,15 +9,6 @@
     font-size: 1rem;
 }
 
-.eduslide{
-  animation-name: eduslide;
-  /* animation-delay: -2s; */
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
 .slick-slide > div{
   margin: 0 25px
 }
@@ -29,6 +20,33 @@ ul.slick-dots{
 .slick-dots li button:before {
   font-size: 20px !important;
   line-height: 20px !important; 
+}
+/* for country input */
+.ReactFlagsSelect-module_flagsSelect__2pfa2 button{
+  background-color: white;
+  height: 3em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+}
+
+.eduslide{
+  animation-name: eduslide;
+  /* animation-delay: -2s; */
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes eduslide{

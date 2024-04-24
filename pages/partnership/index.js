@@ -32,8 +32,6 @@ const Partnership = () => {
         ...data, 
         [name] : value
     })
-
-    console.log(data)
   }
   
   const submitBtn = async (e) => {
@@ -115,7 +113,7 @@ const Partnership = () => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <div className="px-normal xlarge-xnormal max-large:px-[5%] pt-[5%] max-large:my-[7%] ">
+        <div className="px-normal xlarge-xnormal max-large:px-[5%] pt-[5%] max-large:my-[5%] ">
         <Headers
             index={"C"}
             headings={"all for Partnership"}
@@ -127,7 +125,8 @@ const Partnership = () => {
             src="/images/partnership.png"
             fill
             alt="register"
-                /> 
+            className="filter brightness-[40%]"
+             /> 
             <p className="absolute bottom-[10%] max-md:bottom-[15%] left-[27%] max-md:left-[5%] w-[50%] max-md:w-[90%] font-btn_weight text-sub_header max-large:text-normal text-btn_color">
             We are seeking for partnership from both organization 
             and individuals that will help us build the future of technology through SlumTech
@@ -167,7 +166,7 @@ const Partnership = () => {
                 onChangeInput={onChangeInput}
                 />
 
-                <div className="my-[5%] bg-[#ffffff] max-large:w-[80%] max-large:p-[1%]">
+                <div className="my-[5%] max-large:w-[80%] max-large:p-[1%]">
                     <header className="mb-[3%] font-label text-sub_header text-header">Please Indicate</header>
                     <div className="flex flex-row">
                     <div className="mr-[1.25rem] flex flex-row items-center">
@@ -176,7 +175,7 @@ const Partnership = () => {
                     </div>
                     <div className="flex flex-row items-center">
                         <label htmlFor='individual'>Individual</label>
-                    <input type="radio" className="ml-[0.625rem] w-[1.25rem] h-[1.25rem]" id="individual" name="type"  value="individual" onChange={onChangeInput} />
+                    <input type="radio" className="ml-[0.625rem] w-[1.25rem] h-[1.25rem]" id="individual" name="type"  value="individual" onChange={onChangeInput} checked />
                     </div>
                     </div>
                 </div>

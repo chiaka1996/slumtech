@@ -128,6 +128,7 @@ const submitBtn = async (e) => {
                         onChangeInput={onChangeInput}
                         />
 
+                        <div className="mt-[5%]">
                         <InputComponent
                         type="email"
                         placeholder="e.g chiaka@gmail.com"
@@ -136,6 +137,7 @@ const submitBtn = async (e) => {
                         name="email"
                         onChangeInput={onChangeInput}
                         />
+                        </div>
 
                         <TextAreaComponent
                         labelName="Message"

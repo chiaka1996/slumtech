@@ -2,9 +2,11 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactFlagsSelect from "react-flags-select";
 import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
 const Register = () => {
+  const [selected, setSelected] = useState("NG");
   const [toggleModal, setToggleModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState({
@@ -13,7 +15,7 @@ const Register = () => {
       registrationNumber: "",
       phone: "",
       address: "",
-      country: "",
+      country: selected,
       studentsNumber: ""
   })
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
@@ -113,7 +115,7 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] xlarge:px-[15%] max-large:px-[5%] pt-[5%] max-large:mt-[5%]">
+        <section className="px-normal xlarge:px-[15%] max-large:px-[5%] pt-[5%] max-large:mt-[5%]">
         <Headers
             index={"R"}
             headings={"egistration"}
@@ -130,7 +132,7 @@ const submitBtn = async (e) => {
              Educators are kindly requested to register their schools by completing the input 
              form provided.
             </p>
-            <div className="relative w-full h-[36.5em] max-large:h-[12.5em] xlarge:h-[41.5em] mt-[5%]">
+            <div className="relative w-full h-[36.5em] max-large:h-[13em] xlarge:h-[41.5em] mt-[5%]">
             <Image 
             src="/images/register1.png"
             fill
@@ -145,6 +147,7 @@ const submitBtn = async (e) => {
             </span>
 
             <form className=" mt-[10%]">
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -153,7 +156,9 @@ const submitBtn = async (e) => {
             name="schoolName"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder=""
@@ -162,7 +167,9 @@ const submitBtn = async (e) => {
             name="registrationNumber"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="email"
             placeholder=""
@@ -171,7 +178,9 @@ const submitBtn = async (e) => {
             name="email"
             onChangeInput={onChangeInput}
             />
+          </div>
 
+            <div className="my-5">
             <InputComponent
             type="number"
             placeholder="080 8405 2342"
@@ -180,7 +189,9 @@ const submitBtn = async (e) => {
             name="phone"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="text"
             placeholder="40, ajibulu str"
@@ -189,18 +200,28 @@ const submitBtn = async (e) => {
             name="address"
             onChangeInput={onChangeInput}
             />
+            </div>
 
-            <div className="flex flex-row max-large:flex-col justify-between">
-            <div className="w-[47%] max-large:w-full">
-            <SelectComponent
+            <div className="flex flex-row max-large:flex-col justify-between max-large:mt-5">
+            <div className="w-[47%] max-large:w-full my-5 max-large:my-0">
+            {/* <SelectComponent
             labelName="Country"
             options={["Nigeria"]}
             value={data.country}
             name="country"
             onChangeInput={onChangeInput}
-            />
+            /> */}
+            <label className="font-label text-normal xlarge:text-normal text-header">Country</label><br/>
+            <ReactFlagsSelect
+              countries={["DZ", "AO", "BJ", "BW", "BI", "CM", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
+              selected={selected}
+              onSelect={(code) => setSelected(code)}
+              placeholder=""
+              searchable
+              searchPlaceholder="Search a country"
+             />
             </div>
-            <div className="w-[47%] max-large:w-full">
+            <div className="w-[47%] max-large:w-full my-5">
             <InputComponent
             type="number"
             placeholder=""
