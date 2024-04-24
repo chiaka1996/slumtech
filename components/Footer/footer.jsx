@@ -56,14 +56,14 @@ const Footer = () => {
                     </ul>
                     </div>
                 </div>
-                <div className='w-[25%] max-large:w-full max-large:px-md max-large:mb-[5%]'> 
+                <div className='w-[362px] max-large:w-full max-large:px-md max-large:mb-[5%]'> 
                 <div className='text-[#F9FCF9] text-[20px] font-header'>
                 Be the first to get updated on our Latest projects and ways to Participate
                 </div>
                 <form className='mt-3'>
                     <div>
                         <label className='text-[#ffffff] text-normal font-normal '>Email</label><br/>
-                        <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-2 w-full rounded-[8px] outline-none border-1 border-text_color mt-[2%]'/>
+                        <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-5 w-full rounded-[8px] outline-none border-1 border-text_color mt-[2%] text-fourteen placeholder-[#565656] '/>
                     </div>
                     <button className='mt-3 h-[2.5rem] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
                 </form>
@@ -84,7 +84,7 @@ const Footer = () => {
                 partnership opportunities, or to get involved, please reach 
                 out to us at contact@slumtechfoundation.com
                 </div>
-                <div className='w-[12%] max-large:w-[20%] flex flex-row justify-between mx-auto mt-[3%]'>
+                <div className='w-[12%] max-large:w-[20%] flex flex-row justify-between mx-auto mt-2'>
                 <a href="https://www.instagram.com/slumtechfoundation/" target="_blank">
                 <img 
                 width="20" 

@@ -106,7 +106,7 @@ export default function Home() {
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[3%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>  
@@ -118,12 +118,12 @@ export default function Home() {
             Together, we can build a more inclusive and empowered Africa
           </div>
           <div className="flex flex-row mt-[2%]">
-            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5em] px-[6%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
-            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] xlarge:text-xnormal outline-none" >Become a Volunteer</button>
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5em] px-[6%] bg-btn_green hover:bg-[#8CCA9A] rounded-[8px] font-btn_weight  text-btn_color hover:text-[#093212] max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-[#D1EAD7] hover:bg-[#8CCA9A] rounded-[8px] font-btn_weight text-[#093212] hover:text-[#093212] max-large:text-[14px] xlarge:text-xnormal outline-none" >Become a Volunteer</button>
           </div>
           </div>     
       </div>
-      <div className="flex flex-row max-large:items-center absolute bottom-[10%] max-large:bottom-[2%] max-large:left-[5%] right-[5%] text-btn_color">
+      <div className="flex flex-row items-end absolute bottom-[10%] max-large:bottom-[2%] max-large:left-[5%] right-[10%] xlarge:right-[15%] text-btn_color">
                 <div className="w-[15.625rem]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
@@ -421,8 +421,8 @@ export default function Home() {
       technology
       </p>
       <div className="flex flex-row justify-between mt-[5%]">
-        <button className="w-[48%] h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-        <button className="w-[48%] h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+        <button className="w-[48%] h-[3rem] px-[5%] bg-btn_green hover:bg-[#8CCA9A] rounded-[8px] font-btn_weight  text-btn_color hover:text-[#093212] max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="w-[48%] h-[3rem] px-[5%] bg-[#D1EAD7] hover:bg-[#8CCA9A] rounded-[8px] font-btn_weight text-[#093212] hover:text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
       </div>
       </div>
       <div className="w-[45%] max-large:w-full">
@@ -475,7 +475,7 @@ export default function Home() {
       Together, we can build a better world
       </p>
       <div className="mt-[5%]">
-        <button onClick={() => router.push('/donation')}  className="hover:bg-[#66B978] w-[16.187rem] max-large:w-[170px] h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color hover:text-text_color mr-5 outline-none">Donate</button>
+        <button onClick={() => router.push('/donation')}  className="hover:bg-[#8CCA9A] w-[16.187rem] max-large:w-[170px] h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color hover:text-[#093212] mr-5 outline-none">Donate</button>
       </div>
     </div>
     </section> 
