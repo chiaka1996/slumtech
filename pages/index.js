@@ -9,7 +9,7 @@ import {Navigation, Sidebar, Footer} from "../components"
 
 export default function Home() {
   const [toggleIdentity, setToggleIdentity] = useState(true)
-  setInterval(() => setToggleIdentity(!toggleIdentity), 9000);
+  setInterval(() => setToggleIdentity(!toggleIdentity), 5000);
   const router = useRouter();
 
   const settings = {
@@ -93,15 +93,15 @@ export default function Home() {
     <Navigation />
     <Sidebar /> 
   
-    <div className="mt-[4%] max-large:mt-[22%] small:max-large:mt-[14%] w-full h-[100vh] max-large:h-[30rem] relative">
+    <div className="mt-[4%] max-large:mt-[22%] small:max-large:mt-[14%] w-full h-[100vh] max-large:h-[25rem] relative">
     <Image 
         src="/images/banner.png"
         fill
         alt="banner"
         className="filter brightness-[30%]"
           />
-      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[10%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
-       <div className="h-[20em]  max-large:h-[26vh]">
+      <div className="animate__animated animate__slower animate__slideInLeft absolute top-[10%] xlarge:top-[15%] max-large:top-[5%] left-[10%] xlarge:left-[15%] max-large:left-[5%] w-[47%] xlarge:w-[45%] max-large:w-[90%] z-30">  
+       <div className="h-[20em]  max-large:h-[12em]">
         <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header1" : "header2"}`}>
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
@@ -112,18 +112,18 @@ export default function Home() {
           </header>  
           </div> 
 
-          <div className="z-30 mt-[7%] xlarge:mt-[20%] max-large:mt-[2%]">
+          <div className="z-30 mt-[7%] xlarge:mt-[20%] max-large:mt-0">
           <div className="font-normal text-normal max-large:text-twelve xlarge:text-[2.2em] max-large:text-[12px] text-btn_color w-[70%] max-large:w-[90%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa
           </div>
           <div className="flex flex-row mt-[2%]">
-            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
+            <button onClick={() => router.push('/partnership')} className="h-[3rem] xlarge:h-[3.5em] px-[6%] bg-btn_green hover:bg-[#66B978] rounded-[8px] font-btn_weight  text-btn_color hover:text-text_color max-large:text-[14px] xlarge:text-xnormal mr-5 max-large:mr-3 outline-none">Partner with us</button>
             <button onClick={() => router.push('/contact')} className="h-[3rem] xlarge:h-[3.5em] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] xlarge:text-xnormal outline-none" >Become a Volunteer</button>
           </div>
           </div>     
       </div>
-      <div className="flex flex-row absolute bottom-[10%] max-large:bottom-[2%] max-large:left-[5%] right-[5%] text-btn_color">
+      <div className="flex flex-row max-large:items-center absolute bottom-[10%] max-large:bottom-[2%] max-large:left-[5%] right-[5%] text-btn_color">
                 <div className="w-[15.625rem]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
@@ -211,6 +211,7 @@ export default function Home() {
 
     {/* our identity */}
     <div className="z-50 w-[45%] xlarge:w-[40%] xlarge:h-[70vh] max-large:h-[30em] max-large:w-[90%] bg-[#F5FBF6]  pt-[6%] pb-[10%] absolute top-[10%] max-large:top-[35%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
+    <div className="max-large:hidden">
     {
         toggleIdentity ? 
       <div className="w-[60%] xlarge:w-[80%] xlarge:mx-[10%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]  max-large:mt-[15%]">
@@ -249,6 +250,19 @@ export default function Home() {
           </section>
        </div>
       } 
+      </div>
+
+      {/* displays on mobile only */}
+      <div className="large:hidden w-[60%] xlarge:w-[80%] xlarge:mx-[10%] mx-[20%] max-large:w-[90%]  max-large:mx-[5%]  max-large:mt-[15%]">
+          <header className="font-header text-head max-large:text-mhead text-header">Our Identity</header>
+      <div className="text-normal max-large:text-mnormal xlarge:text-xnormal font-normal text-text_color w-[23.5rem] xlarge:w-[100%] max-large:w-[100%]">
+      SlumTech Foundation is committed to building a sustainable tech ecosystem 
+      environment that thrives on diversity, inclusivity, and social responsibility. 
+      We prioritize ethical tech practices, environmental sustainability, and social impact,
+      ensuring that our initiatives contribute to a future where all African
+      teens and youth [18 - 21 yrs] can participate in, and benefit from the digital economy
+      </div>
+      </div> 
      
     </div>
 
@@ -261,7 +275,7 @@ export default function Home() {
       skilled students to participate in the SlumTech project and benefit from our
       educational programs
       </p>
-      <button  onClick={() => router.push('/register')} className="h-[3em] px-[7%] bg-[#1A9635] hover:bg-[#66B978] font-btn_weight text-btn_color hover:text-text_color text-normal rounded-[8px] mt-7">Enroll Now</button>
+      <button  onClick={() => router.push('/register')} className="h-[3em] px-[7%] bg-[#1A9635] hover:bg-[#66B978] font-btn_weight text-btn_color hover:text-text_color text-normal rounded-[8px] mt-7 max-large:mt-[5%]">Enroll Now</button>
       </div>
     </div>
 
@@ -344,9 +358,10 @@ export default function Home() {
     </section> 
 
       <section className="educationBg relative pb-[1%]"> 
+
       {/* eductional initiatives */}
       <section className="py-[5%] max-large:px-[5%] px-[10%] xlarge:px-[15%]">
-      <header className="font-header text-head max-large:text-mhead text-header mb-[3%]">Our Educational initiatives</header>
+      <header className="font-header text-head max-large:text-mhead text-header mb-3">Our Educational initiatives</header>
       <Slider {...settings}>
       {/* <div className="flex flex-row eduslide overflow-x-auto"> */}
       {data.map((option, i) =>  <div key={i} className="inline mb-[5%] w-[70px]  max-large:w-[40%]  h-[20rem] xlarge:h-[30rem] rounded-xl shadow-lg shadow-[#ffffff] bg-btn-color">
@@ -368,6 +383,30 @@ export default function Home() {
     </Slider> 
     </section> 
 
+    {/* our book launch */}
+          <section className="large:hidden w-[90%] mx-auto mt-[15%] mb-[5%] ">
+            <div className="w-[100%] bg-[#fff] h-[22.5em] flex flex-row justify-center items-center">
+            <div className="w-[19.4em] h-[20em] relative">
+            <Image 
+            src="/images/donate_book.png"
+            fill
+            alt="donate"
+            /> 
+            </div>
+            </div>
+            <div className="">
+            <p className="text-text_color font-normal text-mnormal mt-[5%]">
+            "Tech Entrepreneurship and Career for 
+            Africa Development" is a comprehensive guide by SlumTech Foundation, 
+            focusing on leveraging technology for economic growth,
+            entrepreneurship opportunities, and career development in Africa. 
+            The book explores innovative strategies for sustainable development in the tech sector”
+            </p>
+
+            <p className="text-[#F32B04] font-header text-normal mt-[2%] coming">Coming Soon..</p>
+            </div>
+          </section>
+
       {/* partner with us */}
      <section className="z-50 px-[15%] xlarge:px-[20%] max-large:px-[5%] mt-[5%] max-large:mt-[15%] mb-[5%] w-full flex flex-row max-large:flex-col-reverse justify-between">
       <div className=" w-[45%] max-large:w-full max-large:mt-[5%] ">
@@ -382,8 +421,8 @@ export default function Home() {
       technology
       </p>
       <div className="flex flex-row justify-between mt-[5%]">
-        <button className="h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
-        <button className="h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
+        <button className="w-[48%] h-[3rem] px-[5%] bg-btn_green rounded-[8px] font-btn_weight  text-btn_color max-large:text-[14px] mr-5 max-large:mr-3 outline-none">Partner with us</button>
+        <button className="w-[48%] h-[3rem] px-[5%] bg-[#D1EAD7] rounded-[8px] font-btn_weight text-[#093212] max-large:text-[14px] outline-none" >Become a Volunteer</button>
       </div>
       </div>
       <div className="w-[45%] max-large:w-full">

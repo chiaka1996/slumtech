@@ -71,7 +71,7 @@ const Footer = () => {
             </section>
 
             <section className='mt-[5%]'>       
-                <div className='h-[7.5rem] mt-3 w-[55%] ml-auto max-large:w-[90%] max-large:ml-[10%]  bg-btn_color rounded-tl-[2.5rem] rounded-bl-[2.5rem] py-[1%]'>
+                <div className='h-[8rem] mt-3 w-[55%] ml-auto max-large:w-[90%] max-large:ml-[10%]  bg-btn_color rounded-tl-[2.5rem] rounded-bl-[2.5rem] py-[1%]'>
                 <div className='relative w-[9rem] h-[2.5rem] mx-auto'>
                 <Image 
                 src="/logo/slumtech.png"
@@ -84,7 +84,7 @@ const Footer = () => {
                 partnership opportunities, or to get involved, please reach 
                 out to us at contact@slumtechfoundation.com
                 </div>
-                <div className='w-[12%] max-large:w-[20%] flex flex-row justify-between mx-auto'>
+                <div className='w-[12%] max-large:w-[20%] flex flex-row justify-between mx-auto mt-[3%]'>
                 <a href="https://www.instagram.com/slumtechfoundation/" target="_blank">
                 <img 
                 width="20" 

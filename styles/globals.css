@@ -18,6 +18,19 @@
   animation-timing-function: linear;
 }
 
+.slick-slide > div{
+  margin: 0 25px
+}
+
+ul.slick-dots{
+  bottom: -15%;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  line-height: 20px !important; 
+}
+
 @keyframes eduslide{
   /* from{
     transform: translateX(400%);
@@ -225,12 +238,6 @@
   100%{
       width: 100%;
   }
-}
-
-
-/* react slick */
-.slick-slide > div{
-    margin: 0 25px
 }
 
 .modalCircle{
@@ -522,9 +529,32 @@
 }
 
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 760px) {
     .slick-slide > div{
         margin: 0 5px
+    }
+
+    ul.slick-dots{
+      bottom: -10%;
+    }
+
+    .slick-dots li{
+      margin: 0 0 !important;
+    }
+    
+
+    .slick-dots li button:before {
+      font-size: 10px !important;
+      line-height: 20px !important;
+    
+     
     }
 
     @keyframes zoomImage {
@@ -586,8 +616,6 @@
       }
         
     }
-
-
   }
 
   
