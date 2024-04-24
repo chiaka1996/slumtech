@@ -475,7 +475,9 @@ export default function Home() {
       Together, we can build a better world
       </p>
       <div className="mt-[5%]">
-        <button onClick={() => router.push('/donation')}  className="hover:bg-[#8CCA9A] w-[16.187rem] max-large:w-[170px] h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight text-btn_color hover:text-[#093212] mr-5 outline-none">Donate</button>
+        <button onClick={() => router.push('/donation')}  className="hover:bg-[#8CCA9A] w-[16.187rem] max-large:w-[170px] 
+        h-[3em] max-large:h-[3em] px-[5%] max-large:px-0 max-large:text-[12px] bg-btn_green rounded-[8px] font-btn_weight 
+        text-btn_color hover:text-[#093212] mr-5 outline-none">Donate</button>
       </div>
     </div>
     </section> 
