@@ -210,7 +210,7 @@ const submitBtn = async (e) => {
             The book explores innovative strategies for sustainable development in the tech sector”
             </p>
 
-            <p className="text-[#F32B04] font-header text-normal mt-[2%]">Coming Soon..</p>
+            <p className="text-[#F32B04] font-header text-normal mt-[2%] coming">Coming Soon..</p>
             </div>
           </section>
 

@@ -183,7 +183,7 @@ export default function About() {
       locally relevant solutions to address societal challenges.
         </div>
       </div>
-      <div className="flex flex-row ;large:justify-between w-[40%] max-large:w-full max-large:mb-[3%]">
+      <div className="flex flex-row large:justify-between w-[40%] max-large:w-full max-large:mb-[3%]">
       <div  className="relative w-[10.625rem] max-large:w-[4.75em] h-[10.625rem] max-large:h-[4.75em] max-large:mb-[3%]">
         <Image 
       src="/images/community1.png"
