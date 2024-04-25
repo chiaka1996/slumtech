@@ -267,19 +267,20 @@ export default function About() {
       alt="banner"
       className="filter brightness-[50%]"
         /> 
-        <div className="text-btn_color z-30 absolute bottom-[5%] xlarge:bottom-[10%] left-[10%] w-[50%] max-large:hidden">
-          <span className="text-fourteen xlarge:text-xsub max-large:text-[11px]">
+        <div className="text-btn_color z-30 absolute bottom-[5%] xlarge:bottom-[10%] left-[10%] w-[65%] max-large:hidden">
+          <span className="text-[20px] xlarge:text-xsub max-large:text-[11px]">
           SlumTech Foundation welcomes collaborations, partnerships, 
           and support from individuals, organizations, and stakeholders who share our 
           vision of empowering youths from slum communities and positioning africa as a 
           trailblazing tech hub in the world
           </span>
           <div className="text-center max-large:text-left mt-3">
-            <button className="text-normal xlarge:text-about text_btn_color bg-btn_green rounded-normal px-[1rem] xlarge:px-[2rem] h-[4rem] ">Partner with us</button>
+            <button className="text-normal xlarge:text-about text_btn_color bg-btn_green rounded-normal px-[1rem] xlarge:px-[2rem] h-[3rem] xlarge:h-[4em] ">Partner with us</button>
           </div>
         </div>
     </section>
 
+    {/* for mobile */}
     <div className="my-[5%] px-md large:hidden">
           <span className="text-mnormal text-header font-normal">
           SlumTech Foundation welcomes collaborations, partnerships, 
