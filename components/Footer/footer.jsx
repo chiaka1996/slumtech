@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
 
                     <div className='max-large:ml-[60px]'>
-                    <header className='text-fourteen font-header mb-3'>About SlumTech</header>
+                    <header className='text-fourteen font-header mb-4'>About SlumTech</header>
                     <ul className='text-footertext font-normal'>
                         <li className='mb-4'>
                         <span className={style.navLink}>Team</span>

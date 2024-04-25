@@ -275,7 +275,7 @@ export default function About() {
           trailblazing tech hub in the world
           </span>
           <div className="text-center max-large:text-left mt-3">
-            <button className="text-normal xlarge:text-about text_btn_color bg-btn_green rounded-normal px-[1rem] xlarge:px-[2rem] h-[3rem] xlarge:h-[4em] ">Partner with us</button>
+            <button className="text-normal xlarge:text-about text_btn_color hover:text-[#093212] bg-btn_green hover:bg-[#8CCA9A] rounded-normal px-[1rem] xlarge:px-[2rem] h-[3rem] xlarge:h-[4em] ">Partner with us</button>
           </div>
         </div>
     </section>
