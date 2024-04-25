@@ -295,24 +295,79 @@ export default function Home() {
     </section>
     </section>
 
-     <section className="w-[100%] h-[200vh] max-large:h-[1400px] xlarge:h-[200vh] py-[5%] max-large:py-[2%] px-[10%] xlarge:px-[15%] max-large:px-[5%] relative max-large:mt-[1%]">
+
+     <section className="whatWedo w-[100%] h-[200vh]  max-large:h-[100%]  xlarge:h-[200vh] py-[5%] max-large:py-[2%] px-[10%] xlarge:px-[15%] max-large:px-[5%] relative max-large:mt-[1%]">
     <Image 
       src="/images/what.png"
       fill
-      className="filter brightness-[10%] -z-5"
+      className="filter brightness-[10%] -z-5 whatImg"
       alt="what background"
         /> 
     
-    <div className="z-10  max-large:top-[3%] max-large:left-[5%] absolute top-[5%] left-[10%] xlarge:left-[15%]">
-        <header className="font-header text-head  max-large:text-mhead text-btn_color z-10">What We Do</header>
+    <div className="z-10  max-large:top-[3%] max-large:left-[5%] absolute top-[5%] left-[10%] xlarge:left-[15%] max-large:hidden">
+        <header className="font-header text-head  max-large:text-mhead text-btn_color z-10 max-large:mb-2">What We Do</header>
         <div className="text-normal  max-large:text-twelve xlarge:text-[1.2em] font-normal text-btn_color w-[20.56em] xlarge:w-[25em] max-large:w-[70%] z-100">
         At SlumTech, we understand the potential of every individual, 
         and we are dedicated to providing access, guidance, and education 
         to unlock their full capabilities through:
       </div>
       </div>
+
+        {/* for mobile */}
+      <div className="z-10 mt-[10%] large:hidden">
+        <header className="font-header text-head  max-large:text-mhead text-btn_color z-10 max-large:mb-2">What We Do</header>
+        <div className="text-normal  max-large:text-twelve xlarge:text-[1.2em] font-normal text-btn_color w-[20.56em] xlarge:w-[25em] max-large:w-[70%] z-100">
+        At SlumTech, we understand the potential of every individual, 
+        and we are dedicated to providing access, guidance, and education 
+        to unlock their full capabilities through:
+      </div>
+      </div>
+
+      <section className="relative h-[100%] large:hidden">
+      <div className="w-[100%] ">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[15.5em] max-large:w-[75%] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
+        Strategic partnerships with schools in Slum communities
+        </div>
+      <div className=" w-[45%] max-large:w-full h-[70vh] max-large:h-[300px] relative">
+      <Image 
+        src="/images/wedo1.png"
+        fill
+        alt="school boy" 
+          /> 
+          </div>
+        </div>
+ 
+        <div className=" w-[100%] mt-[50px]">
+        <div className="font-header text-[1.5em] max-large:text-mnormal xlarge:text-[2.5em] text-btn_color w-[21.875rem] xlarge:w-[58%] max-large:w-[75%] mx-0">
+        Identifying and fostering tech skills and talents in students 
+        and youths with creative minds and passion for technology
+        </div> 
+      <div className="w-[45%] max-large:w-full h-[70vh] max-large:h-[300px] relative">
+      <Image 
+        src="/images/wedo2.png"
+        fill
+        alt="school boy"
+          /> 
+          </div>
+        </div> 
+
+        <div className="w-[100%] mt-[50px]">
+        <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[24.875rem] xlarge:w-[40%] max-large:w-[75%] mt-[30%] xlarge:mt-[35%] max-large:mt-0">
+        Providing an inclusive and supportive 
+        environment where teens and youth from slum 
+        areas can explore and develop their tech skills
+        </div>
+      <div className="w-[45%] max-large:w-full h-[70vh] max-large:h-[300px] relative">
+      <Image 
+        src="/images/wedo3.png"
+        fill
+        alt="school boy"
+          /> 
+          </div>
+        </div>
+        </section>
   
-      <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%]  max-large:mt-[38%] xlarge:mt-[15%]">
+      <section className="relative h-[160vh] xlarge:h-[160vh] mt-[18%]  max-large:mt-[38%] xlarge:mt-[15%] max-large:hidden">
       <div className="w-[70%] max-large:w-[100%] ml-[30%] max-large:ml-0 flex flex-row max-large:flex-col justify-between">
         <div className="font-header text-[1.5em] xlarge:text-[2.5em] max-large:text-mnormal text-btn_color w-[15.5em] max-large:w-[75%] xlarge:w-[40%] pt-[10%] max-large:pt-[15%]">
         Strategic partnerships with schools in Slum communities
@@ -403,7 +458,7 @@ export default function Home() {
             The book explores innovative strategies for sustainable development in the tech sector”
             </p>
 
-            <p className="text-[#F32B04] font-header text-normal mt-[2%] coming">Coming Soon..</p>
+            <p className="text-[#F32B04] font-header text-normal mt-[2%] coming text-center">Coming Soon..</p>
             </div>
           </section>
 

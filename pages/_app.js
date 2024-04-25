@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router';
 import {State} from "../context/context"
 import '../styles/globals.css';
+import '../styles/home.css';
 
 function LoadingNewPage() {
   const router = useRouter();
