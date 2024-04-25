@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactFlagsSelect from "react-flags-select";
+import Head from 'next/head'
 import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
 const Register = () => {
@@ -108,6 +109,15 @@ const submitBtn = async (e) => {
 
     return (
         <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
+           <Head>
+          <title>Slumtech Registration page </title>
+          <meta
+            name="description"
+            content="We're keen on reaching out to schools in underprivileged areas,"
+            key="desc"
+          />
+          <meta name="keywords" content="underprivileged, slum, nonprofit, foundation, technology, africa, africa slum" />
+        </Head>
         <Navigation />
         <Sidebar /> 
         <ToastContainer />

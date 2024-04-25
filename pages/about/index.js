@@ -1,9 +1,21 @@
 import Image from "next/image";
 import {Navigation, Sidebar, Headers, Footer} from "../../components"
+import Head from 'next/head'
+
 
 export default function About() {
   return (
    <main className="bg-[#EDECEC]">
+    <Head>
+    <title>Slumtech About page </title>
+    <meta
+      name="description"
+      content="SlumTech Foundation is a US-based nonprofit organization with a bold mission 
+      to establish world-class tech institutions across Africa"
+      key="desc"
+    />
+    <meta name="keywords" content="nonprofit, foundation, slum, technology, africa" />
+    </Head>
     <Navigation />
     <Sidebar /> 
     <div className="w-[100%] h-[20rem] max-large:h-[128px]  max-large:mt-[20%] small:max-large:mt-[14%] relative mt-[5%]">

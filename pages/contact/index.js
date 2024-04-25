@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from 'next/head'
 import {Navigation, Sidebar, Headers, Footer, InputComponent, TextAreaComponent, ButtonComponent, SubmitModal} from "../../components";
 
 
@@ -98,6 +99,15 @@ const submitBtn = async (e) => {
 
     return (
         <main className="relative overflow-hidden bg-[#EDECEC]">
+          <Head>
+          <title>Slumtech Contact page </title>
+          <meta
+            name="description"
+            content="contact@slumtechfoundation.com, +1888-355-2015"
+            key="desc"
+          />
+          <meta name="keywords" content="nonprofit, foundation, slum, technology, africa" />
+    </Head>
         <Navigation />
         <Sidebar /> 
         <ToastContainer />

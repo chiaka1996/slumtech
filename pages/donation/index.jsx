@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactFlagsSelect from "react-flags-select";
+import Head from 'next/head'
 import {SubmitModal, DonateMoney, DonateGadget, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
 
 
@@ -117,6 +118,16 @@ const submitBtn = async (e) => {
 
     return (
         <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
+         <Head>
+          <title>Slumtech Donation page </title>
+          <meta
+            name="description"
+            content="We sincerely appreciate your generosity in providing hope to these young talents 
+            Your support is deeply valued and enables us to persist in our crucial mission"
+            key="desc"
+          />
+          <meta name="keywords" content="Donate, nonprofit, foundation, slum, technology, africa" />
+    </Head>
         <Navigation />
         <Sidebar /> 
         <ToastContainer />

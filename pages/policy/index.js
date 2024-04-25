@@ -1,9 +1,20 @@
 import Image from "next/image";
 import {Navigation, Sidebar, Headers, Footer} from "../../components"
+import Head from 'next/head'
 
 const Policy = () => {
     return (
         <main className="relative overflow-hidden bg-[#EDECEC]">
+          <Head>
+          <title>Slumtech Policy page </title>
+          <meta
+            name="description"
+            content="SlumTech Foundation is committed to protecting the privacy of our visitors and users. 
+            This Privacy Policy outlines how we collect, use, and protect personal information"
+            key="desc"
+          />
+          <meta name="keywords" content="nonprofit, foundation, slum, technology, africa, africa slum" />
+        </Head>
         <Navigation />
         <Sidebar /> 
         <section className="px-normal xlarge:px-xnormal max-large:px-[5%] py-[5%] mt-[5%]  max-large:mt-[25%]">

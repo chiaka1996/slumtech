@@ -30,9 +30,10 @@ function LoadingNewPage() {
 
 
 function MyApp({ Component, pageProps }) {
-  return( 
+  return(
     <div>
       <Head>
+      <link rel="shortcut icon" href="/logo/slumtech.png" sizes='32x32' />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
           <link
         rel="stylesheet"

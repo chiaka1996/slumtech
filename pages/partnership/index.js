@@ -138,7 +138,7 @@ const Partnership = () => {
                     Kindly fill the form provided
                 </p>
 
-                <div className=" mt-[5%]">
+                <div className=" my-[5%]">
                 <InputComponent
                 type="text"
                 placeholder="e.g nancy clemz"
@@ -148,7 +148,7 @@ const Partnership = () => {
                 onChangeInput={onChangeInput}
                 />
                 
-                <div className="mt-[5%]">
+                <div className="my-[5%]">
                 <InputComponent
                 type="email"
                 placeholder="e.g nancy@gmaail.com"
@@ -159,7 +159,7 @@ const Partnership = () => {
                 />
                 </div>
 
-                <div className="mt-[5%]">
+                <div className="my-[5%]">
                 <InputComponent
                 type="number"
                 placeholder="e.g nancy@gmaail.com"
@@ -170,7 +170,7 @@ const Partnership = () => {
                 />
                 </div>
 
-                <div className="mt-[5%] max-large:w-[80%] max-large:p-[1%]">
+                <div className="my-[5%] max-large:w-[80%] max-large:p-[1%]">
                     <header className="mb-[3%] font-label text-sub_header text-header">Please Indicate</header>
                     <div className="flex flex-row">
                     <div className="mr-[1.25rem] flex flex-row items-center">
