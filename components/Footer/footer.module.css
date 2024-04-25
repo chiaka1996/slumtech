@@ -1,0 +1,63 @@
+.activeLink{
+    position: relative;
+    padding: 1% 5px;
+    cursor: pointer;
+    margin: 0 0 7px 0;
+    border-bottom: 1px solid #FDFEFD;
+  }
+
+  .activeLink::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 3px;
+    background-color: #FDFEFD;
+    bottom: 0;
+    left: 0;
+  }
+
+  .activeLink::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 3px;
+    background-color: #FDFEFD;
+    bottom: 0;
+    right: 0;
+  }
+
+
+  .navLink{
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .navLink:hover{
+    padding: 1% 5px;
+    border-bottom: 1px solid #FDFEFD;
+    text-align: center;
+  }
+
+  .navLink:hover::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 3px;
+    background-color: #FDFEFD;
+    /* border-radius: 0.1875rem; */
+    bottom: 0;
+    right: 0;
+  }
+
+  .navLink:hover::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 3px;
+    background-color: #FDFEFD;
+    /* border-radius: 0.1875rem; */
+    bottom: 0;
+    left: 0;
+  }

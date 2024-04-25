@@ -21,10 +21,6 @@ const SideBar = ({page}) => {
         label: "About",
         url: "/about"
       },
-      // {
-      //    label: "Volunteer",
-      //    url: "/partnership"
-      //  },
        {
          label: "Partner with us",
          url: "/partnership"

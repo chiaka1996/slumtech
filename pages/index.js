@@ -106,13 +106,13 @@ export default function Home() {
           Nurturing Young Talents from Slum Communities in Africa Into Tech
           </header>
           
-          <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[3%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
+          <header className={`font-header text-[3rem] xlarge:text-[4.5em] max-large:text-[1.5rem] text-btn_color absolute top-[4%] left-0 ${toggleIdentity ? "header2" : "header1"}`}>
           Let's Inspire and support the Next Generation of Tech-Savy Innovators as they Shape 
           the World of Tommorrow!
           </header>  
           </div> 
 
-          <div className="z-30 mt-[7%] xlarge:mt-[20%] max-large:mt-0">
+          <div className="z-30 mt-[8%] xlarge:mt-[20%] max-large:mt-0">
           <div className="font-normal text-normal max-large:text-twelve xlarge:text-[2.2em] max-large:text-[12px] text-btn_color w-[70%] max-large:w-[90%] xlarge:w-[90%]">
             Join us in our mission to empower Africa's youth through technology
             Together, we can build a more inclusive and empowered Africa

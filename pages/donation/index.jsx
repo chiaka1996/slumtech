@@ -45,8 +45,6 @@ const Donation = () => {
 
 const submitBtn = async (e) => {
     try{
-        console.log("submited")
-        // e.preventDefault()
         setLoading(true)
     const {name, email, phone, gender, nationality, location, skills} = data;
 
@@ -153,7 +151,7 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
            
-            <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+            <button className="hover:bg-[#66B978] hover:text-text_color w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] text-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
                 Donate Money
             </button>
             </div>
@@ -169,7 +167,7 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
                 
-                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                <button className="hover:bg-[#66B978] hover:text-text_color w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] text-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
                 Donate Gadget
             </button>
                 </div>
@@ -185,7 +183,7 @@ const submitBtn = async (e) => {
                     /> 
                 </div>
               
-                <button className="hover:bg-[#66B978] hover:text-text_color w-[10vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
+                <button className="w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-[#BBBBBB] rounded-[8px] cursor-not-allowed">
                 GoFundMe
             </button>
                 </div>
@@ -194,7 +192,7 @@ const submitBtn = async (e) => {
           </section>
 
           <section className="bg-[#FBFDFB] max-large:bg-[#EDECEC] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
-            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23.125rem] max-large:h-[16.6em] relative">
+            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23rem] max-large:h-[16.6em] relative">
             <Image 
             src="/images/donate_book.png"
             fill
@@ -235,6 +233,7 @@ const submitBtn = async (e) => {
             onChangeInput={onChangeInput}
             />
              
+             <div className="my-5">
             <InputComponent
             type="email"
             placeholder="e.g clement@gmail.com"
@@ -243,7 +242,9 @@ const submitBtn = async (e) => {
             name="email"
             onChangeInput={onChangeInput}
             />
+            </div>
 
+            <div className="my-5">
             <InputComponent
             type="number"
             placeholder="e.g 0989 535 9584"
@@ -252,6 +253,7 @@ const submitBtn = async (e) => {
             name="phone"
             onChangeInput={onChangeInput}
             />
+            </div>
 
             <div className="flex flex-row justify-between">
             <div className="w-[47%]">
@@ -264,9 +266,9 @@ const submitBtn = async (e) => {
             />
             </div>
             <div className="w-[47%]">
-            <SelectComponent
+             <InputComponent
+            type="text"
             labelName="Nationality"
-            options={["Nigerian"]}
             value={data.nationality}
             name="nationality"
             onChangeInput={onChangeInput}
@@ -274,6 +276,7 @@ const submitBtn = async (e) => {
             </div>
             </div>
 
+            <div className="my-5">
             <SelectComponent
             labelName="Location"
             options={["Lagos", "Abuja", "Owerri"]}
@@ -281,8 +284,9 @@ const submitBtn = async (e) => {
             name="location"
             onChangeInput={onChangeInput}
             />
+            </div>
 
-            <div className="mt-[7%]">
+            <div className="mt-5">
             <TextAreaComponent      
             labelName="Skills"
             placeholder="web development"

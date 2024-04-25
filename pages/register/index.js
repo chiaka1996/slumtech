@@ -203,14 +203,7 @@ const submitBtn = async (e) => {
             </div>
 
             <div className="flex flex-row max-large:flex-col justify-between max-large:mt-5">
-            <div className="w-[47%] max-large:w-full my-5 max-large:my-0">
-            {/* <SelectComponent
-            labelName="Country"
-            options={["Nigeria"]}
-            value={data.country}
-            name="country"
-            onChangeInput={onChangeInput}
-            /> */}
+            <div className="w-[47%] max-large:w-full max-large:my-0">
             <label className="font-label text-normal xlarge:text-normal text-header">Country</label><br/>
             <ReactFlagsSelect
               countries={["DZ", "AO", "BJ", "BW", "BI", "CM", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
@@ -221,7 +214,7 @@ const submitBtn = async (e) => {
               searchPlaceholder="Search a country"
              />
             </div>
-            <div className="w-[47%] max-large:w-full my-5">
+            <div className="w-[47%] max-large:w-full max-large:my-5">
             <InputComponent
             type="number"
             placeholder=""

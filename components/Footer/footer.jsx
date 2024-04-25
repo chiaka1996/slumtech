@@ -1,37 +1,41 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from "next/router";
+import style from './footer.module.css';
 
 const Footer = () => {
+    const router = useRouter();
+
     return(
         <footer className='bg-text_color py-[5%] cursor-pointer'>
             <section className='w-[80%] mx-auto xlarge:w-[70%] flex flex-row max-large:flex-col-reverse justify-between items-center max-large:w-full'>
             <div className='w-[20%] max-large:w-full flex flex-row md:justify-between text-footer_text max-md:px-md max-large:mt-[5%] '>
                     <div>
-                    <header className='font-header mb-3 text-fourteen'>Services</header>
+                    <header className='font-header mb-4 text-fourteen'>Services</header>
                     <ul className='text-footertext font-normal'>
-                        <li className='mb-2'>
+                        <li className='mb-4'>
                         <Link href="/partnership" className='no-underline'>
-                        Partner
+                        <span className={router.asPath == "/partnership" ? style.activeLink : style.navLink}>Partner</span>
                         </Link>  
                         </li>
-                        <li  className='mb-2'>
+                        <li className="mb-4">
                         <Link href="/donation" className='no-underline'>
-                            Donate
+                        <span className={router.asPath == "/donation" ? style.activeLink : style.navLink}>Donation</span>
                         </Link>    
                         </li>
-                        <li  className='mb-2'>
-                        <Link href="/donation" className='no-underline'>
-                            Volunteer
-                        </Link>    
-                        </li>
-                        <li  className='mb-2'>
+                        <li className="mb-4">
                         <Link href="/register" className='no-underline'>
-                            Enroll
+                        <span className={router.asPath == "/register" ? style.activeLink : style.navLink}>Enroll</span>
                         </Link> 
                         </li>
-                        <li  className='mb-2'>
+                        <li className="mb-4">
+                        <Link href="/donation" className='no-underline'>
+                        <span className={router.asPath == "/donation" ? style.activeLink : style.navLink}>Volunteer</span>
+                        </Link> 
+                        </li>
+                        <li>
                         <Link href="/contact" className='no-underline'>
-                            FAQs
+                        <span className={router.asPath == "/contact" ? style.activeLink : style.navLink}>FAQ</span>
                         </Link> 
                         </li>
                     </ul>
@@ -40,17 +44,23 @@ const Footer = () => {
                     <div className='max-large:ml-[60px]'>
                     <header className='text-fourteen font-header mb-3'>About SlumTech</header>
                     <ul className='text-footertext font-normal'>
-                        <li  className='mb-2'>Team</li>
-                        <li  className='mb-2'>Initiatives</li>
-                        <li  className='mb-2'>
+                        <li className='mb-4'>
+                        <span className={style.navLink}>Team</span>
+                        </li>
+                        <li className='mb-4'>
+                        <span className={style.navLink}>Initiatives</span>
+                        </li>
+                        <li className='mb-4'>
                         <Link href="/contact" className='no-underline'>
-                            Contacts
+                        <span className={router.asPath == "/contact" ? style.activeLink : style.navLink}>Contacts</span>
                         </Link> 
                         </li>
-                        <li  className='mb-2'>Gallery</li>
-                        <li  className='mb-2'>
+                        <li className="mb-4">
+                        <span className={style.navLink}>Gallery</span>        
+                        </li>
+                        <li className='mb-4'>
                         <Link href="/policy" className='no-underline'>
-                            Privacy Policy
+                        <span className={router.asPath == "/policy" ? style.activeLink : style.navLink}>Policy</span>
                         </Link> 
                         </li>
                     </ul>
