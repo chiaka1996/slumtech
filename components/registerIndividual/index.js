@@ -227,7 +227,7 @@ const RegisterIndividual = () => {
             </div>
 
             <div className="flex flex-row justify-between max-large:mt-5">
-            <div className="w-[47%] my-5 max-large:my-0">
+            <div className="w-[47%] max-large:my-0">
             <SelectComponent
             labelName="Gender"
             options={["Male","Female"]}
@@ -236,7 +236,7 @@ const RegisterIndividual = () => {
             onChangeInput={onChangeInput}
             />
             </div>
-            <div className="w-[47%] my-5 max-large:my-0">
+            <div className="w-[47%] max-large:my-0">
             <InputComponent
             type="text"
             placeholder=""
@@ -263,7 +263,7 @@ const RegisterIndividual = () => {
             </div>
 
             <div className="w-[47%] max-large:w-full max-large:mt-5">
-            <div className="relative w-full h-[160px] mb-[10%]">
+            <div className="relative w-full h-[205px] mb-[10%]">
             <Image 
             src="/images/register2.png"
             fill

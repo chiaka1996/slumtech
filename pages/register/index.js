@@ -132,7 +132,7 @@ const submitBtn = async (e) => {
              Educators are kindly requested to register their schools by completing the input 
              form provided.
             </p>
-            <div className="relative w-full h-[36.5em] max-large:h-[13em] xlarge:h-[41.5em] mt-[5%]">
+            <div className="relative w-full h-[32em] max-large:h-[13em] xlarge:h-[41.5em] mt-[5%]">
             <Image 
             src="/images/register1.png"
             fill
