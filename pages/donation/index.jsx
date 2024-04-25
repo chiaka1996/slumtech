@@ -2,10 +2,12 @@ import { useState } from "react";
 import Image from "next/image";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ReactFlagsSelect from "react-flags-select";
 import {SubmitModal, DonateMoney, DonateGadget, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
 
 
 const Donation = () => {
+    const [selected, setSelected] = useState("NG");
     const [toggleModal, setToggleModal] = useState(false)
     const [toggleMoney, setToggleMoney] = useState(false)
     const [toggleGadget, setToggleGadget] = useState(false)
@@ -14,7 +16,7 @@ const Donation = () => {
         name: "",
         email: "",
         nationality: "",
-        location: "",
+        location: selected,
         skills: "",
         gender: "",
         phone: ""
@@ -277,13 +279,15 @@ const submitBtn = async (e) => {
             </div>
 
             <div className="my-5">
-            <SelectComponent
-            labelName="Location"
-            options={["Lagos", "Abuja", "Owerri"]}
-            value={data.location}
-            name="location"
-            onChangeInput={onChangeInput}
-            />
+            <label className="font-label text-normal xlarge:text-normal text-header">Location</label><br/>
+            <ReactFlagsSelect
+              countries={["DZ", "AO", "BJ", "BW", "BI", "CM", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
+              selected={selected}
+              onSelect={(code) => setSelected(code)}
+              placeholder="Enter location"
+              searchable
+              searchPlaceholder="Search a country"
+             />
             </div>
 
             <div className="mt-5">

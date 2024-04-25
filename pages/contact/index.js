@@ -163,7 +163,7 @@ const submitBtn = async (e) => {
             </div>
             </div>
 
-            <div className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:hidden">
+            <div className="flex flex-row max-large:flex-col justify-between items-end mt-[5%] max-large:hidden">
                 <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
                     <h2 className="flex flex-row">
                     <div className="relative w-[1rem] h-[1.25rem] mr-2">
