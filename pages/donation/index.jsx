@@ -75,9 +75,19 @@ const submitBtn = async (e) => {
             });
     }
 
+    const postData = {
+         name,
+         email, 
+         phone, 
+         gender, 
+         nationality: selected,
+         location,
+         skills
+    }
+
     const httpRequest = await fetch('../api/addvolunteer',{
         method: "POST",
-        body: JSON.stringify(data),
+        body: JSON.stringify(postData),
         headers:{
             "Content-type": "application/json; charset=UTF-8"
         }

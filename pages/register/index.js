@@ -7,7 +7,7 @@ import Head from 'next/head'
 import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
 const Register = () => {
-  const [selected, setSelected] = useState("NG");
+  const [selected, setSelected] = useState("");
   const [toggleModal, setToggleModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState({
@@ -19,6 +19,7 @@ const Register = () => {
       country: selected,
       studentsNumber: ""
   })
+  
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
  
   const toggleState = () => {
@@ -37,14 +38,13 @@ const Register = () => {
 
 const submitBtn = async (e) => {
   try{
-      console.log("submited")
       e.preventDefault()
       setLoading(true)
   const {schoolName, email, phone, registrationNumber, address, country, studentsNumber} = data;
 
-  if(!schoolName || !email || !registrationNumber || !phone || !address || !country || !studentsNumber) {
+  if(!schoolName || !email || !registrationNumber || !phone || !address || !selected || !studentsNumber) {
       setLoading(false)
-      return  toast.error("please fill all required fields.", {
+      return toast.error("please fill all required fields.", {
           position: "top-right",
           theme: "colored",
           });
@@ -52,7 +52,7 @@ const submitBtn = async (e) => {
 
   if(schoolName.length < 2){
       setLoading(false)
-      return  toast.error("name should be a minimum of 2 characters", {
+      return toast.error("name should be a minimum of 2 characters", {
           position: "top-right",
           theme: "colored",
           });
@@ -60,15 +60,25 @@ const submitBtn = async (e) => {
 
   if(!emailRegex.test(email)){
       setLoading(false)
-      return  toast.error("invalid email", {
+      return toast.error("invalid email", {
           position: "top-right",
           theme: "colored",
           });
   }
 
+  const postData = {
+    schoolName,
+    email,
+    registrationNumber,
+    phone,
+    address,
+    country: selected,
+    studentsNumber
+  }
+
   const httpRequest = await fetch('../api/registerSchool',{
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify(postData),
       headers:{
           "Content-type": "application/json; charset=UTF-8"
       }
@@ -77,9 +87,8 @@ const submitBtn = async (e) => {
   const response = await httpRequest.json();
 
   if(response.status){
+      setToggleModal(true)
       setLoading(false)
-    setToggleModal(true)
-
       setData({
         schoolName: "",
         email: "",
@@ -92,10 +101,10 @@ const submitBtn = async (e) => {
   }
   else{
       setLoading(false)
-      toast.error(`${response.message}`, {
-          position: "top-right",
-          theme: "colored",
-          });
+    return toast.error(<div>{response.message}</div>, {
+      position: "top-right",
+      theme: "colored",
+      });
   }
   }
   catch(error){
