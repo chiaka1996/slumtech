@@ -19,10 +19,10 @@ const DonateMoney = ({toggle, toggleState}) => {
           
           </div> 
 
-          <div className="my-[2%] font-header text-[3rem] text-nav_links">9068458302</div>
-          <div className="my-[2%] font-[500] text-[1.75rem] text-nav_links">Guarantee Trust Bank</div>
-          <div className="my-[2%] font-[500] text-[1.75rem] text-nav_links">SlumTech Foundation</div>
-          <div className="my-[2%] font-[400] text-[1.25rem] text-[#232323]">
+          <div className="my-2 font-header text-[3rem] text-nav_links">**********</div>
+          <div className="my-2 font-[500] text-[1.75rem] text-nav_links">*********</div>
+          <div className="my-2 font-[500] text-[1.75rem] text-nav_links">SlumTech Foundation</div>
+          <div className="my-2 font-[400] text-[1.25rem] text-[#232323]">
           We sincerely appreciate your generosity in providing hope to these young talents
           Your support is deeply valued and enables us to persist in our crucial mission
           </div>
