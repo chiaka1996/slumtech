@@ -269,7 +269,7 @@ const submitBtn = async (e) => {
 
             <div className="my-5">
             <InputComponent
-            type="number"
+            type="text"
             placeholder="e.g 0989 535 9584"
             labelName="Phone No"
             value={data.phone}
@@ -302,7 +302,7 @@ const submitBtn = async (e) => {
             <div className="my-5">
             <label className="font-label text-normal xlarge:text-normal text-header">Location</label><br/>
             <ReactFlagsSelect
-              countries={["DZ", "AO", "BJ", "BW", "BI", "CM", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
+              countries={["DZ", "AO", "BJ", "BF", "BW", "BI", "CM", "CV", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
               selected={selected}
               onSelect={(code) => setSelected(code)}
               placeholder="Enter location"
@@ -314,7 +314,7 @@ const submitBtn = async (e) => {
             <div className="mt-5">
             <TextAreaComponent      
             labelName="Skills"
-            placeholder="web development"
+            placeholder="please type here..."
             value={data.skills}
             name="skills"
             onChangeInput={onChangeInput}

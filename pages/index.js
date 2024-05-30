@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -8,8 +8,13 @@ import {Navigation, Sidebar, Footer} from "../components"
 
 
 export default function Home() {
-  const [toggleIdentity, setToggleIdentity] = useState(true)
-  setInterval(() => setToggleIdentity(!toggleIdentity), 5000);
+  const [toggleIdentity, setToggleIdentity] = useState(true);
+
+  useEffect(() => {
+    const interval =  setInterval(() => setToggleIdentity(!toggleIdentity), 5000);
+    return () => clearInterval(interval)
+  },[toggleIdentity])
+
   const router = useRouter();
 
   const settings = {

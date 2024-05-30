@@ -271,7 +271,7 @@ const RegisterIndividual = () => {
                 /> 
             </div>
             <header className="font-header text-[18px] max-large:text-normal text-header">Provide your guarantor information</header>
-            <div className=" mt-[10%]">
+            <div className=" mt-[5%]">
             <InputComponent
             type="text"
             placeholder=""
@@ -294,7 +294,7 @@ const RegisterIndividual = () => {
             
             <div className="my-5">
             <InputComponent
-            type="number"
+            type="text"
             placeholder=""
             labelName="Phone Number"
             value={data.guarantorPhone}
@@ -347,6 +347,7 @@ const RegisterIndividual = () => {
                 
                 <div className="text-right max-large:text-left max-large:w-[45%">
                     <div className="font-header text-normal text-header max-large:w-[70%]">Date of Birth Certificate</div>
+                    <span className="text-[#565656] font-normal text-[14px] max-large:hidden opacity-0">e.g Waec, Kcse, Gce</span>
                     
                         {preview2 ?  <div className="w-[1.875rem] h-[1.875rem] relative">
                             <Image 

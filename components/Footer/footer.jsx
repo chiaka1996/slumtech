@@ -48,7 +48,9 @@ const Footer = () => {
                         <span className={style.navLink}>Team</span>
                         </li>
                         <li className='mb-4'>
-                        <span className={style.navLink}>Initiatives</span>
+                        <Link href="/about" className='no-underline'>
+                        <span className={router.asPath == "/about" ? style.activeLink : style.navLink}>Initiatives</span>
+                        </Link>
                         </li>
                         <li className='mb-4'>
                         <Link href="/contact" className='no-underline'>
@@ -75,7 +77,7 @@ const Footer = () => {
                         <label className='text-[#ffffff] text-normal font-normal '>Email</label><br/>
                         <input type='email' placeholder='email@gmail.com' className='h-[3rem] px-5 w-full rounded-[8px] outline-none border-1 border-text_color mt-[2%] text-fourteen placeholder-[#565656] '/>
                     </div>
-                    <button className='mt-3 h-[2.5rem] w-full bg-btn_green text-btn_color font-normal text-normal rounded-normal'>Subscribe</button>
+                    <button className='mt-3 h-[2.5rem] w-full bg-btn_green hover:bg-[#66B978] text-btn_color font-normal text-normal hover:text-text_color rounded-normal'>Subscribe</button>
                 </form>
                 </div>
             </section>

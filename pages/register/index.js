@@ -201,7 +201,7 @@ const submitBtn = async (e) => {
 
             <div className="my-5">
             <InputComponent
-            type="number"
+            type="text"
             placeholder="080 8405 2342"
             labelName="Phone no"
             value={data.phone}
@@ -225,7 +225,7 @@ const submitBtn = async (e) => {
             <div className="w-[47%] max-large:w-full max-large:my-0">
             <label className="font-label text-normal xlarge:text-normal text-header">Country</label><br/>
             <ReactFlagsSelect
-              countries={["DZ", "AO", "BJ", "BW", "BI", "CM", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
+              countries={["DZ", "AO", "BJ","BF", "BW", "BI", "CM","CV", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
               selected={selected}
               onSelect={(code) => setSelected(code)}
               placeholder=""

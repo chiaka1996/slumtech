@@ -242,50 +242,50 @@ const submitBtn = async (e) => {
           <div className="flex flex-row max-large:flex-col justify-between">
             <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             What is SlumTech Foundation?
             </div>
-            <p className="px-[2%] bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-text_color">
+            <p className="px-[2%] bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-text_color">
             SlumTech Foundation is a non-profit organization dedicated 
             to providing technology education and opportunities to underprivileged communities.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq font-header text-header bg-btn_color">
             How does SlumTech Foundation make a difference?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation empowers individuals in slums 
             by teaching them valuable tech skills, equipping them for a brighter future.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color">
             Who can benefit from SlumTech Foundation's programs?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq   px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq   px-[2%] text-text_color">
             Anyone living in slum communities who wants to learn 
             tech skills and improve their future prospects can benefit from our programs.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color">
             Is SlumTech Foundation a registered charity?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             Yes, SlumTech Foundation is a registered non-profit organization with a 
             mission to bridge the digital divide in underprivileged areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             Where does SlumTech Foundation operate?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation currently operates in slum areas in developing countries,
              focusing on empowering communities through technology.
           </p>
@@ -294,50 +294,50 @@ const submitBtn = async (e) => {
 
           <div className="w-[47%] max-large:w-full">
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             What programs does SlumTech Foundation offer?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             SlumTech Foundation offers coding workshops, 
             digital literacy courses, and mentorship programs for individuals in slum areas.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             How can I support SlumTech Foundation's mission?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             You can support us by donating, volunteering, 
             or spreading awareness about our cause to help us reach more individuals in need.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             How can I get involved with SlumTech Foundation as a volunteer?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
             If you're passionate about tech education and want to make a difference,
              you can apply to volunteer with SlumTech Foundation on our website
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
             Can I sponsor a student through SlumTech Foundation?
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
             Yes, you can sponsor a student's education and 
             tech training through SlumTech Foundation to support their growth and development.
           </p>
           </div>
 
           <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color shadow-lg shadow-[#00000029]">
-            How can I stay updated on SlumTech Foundation's work and events
+            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
+            <span>How can I stay updated on SlumTech Foundation's work and events</span>
             </div>
-            <p className="bg-[#F3FAF4] shadow-lg shadow-[#00000029] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%]  text-text_color">
+            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%]  text-text_color">
             You can follow us on social media, subscribe to our newsletter, 
             or visit our website regularly for updates on our programs and events.
           </p>
