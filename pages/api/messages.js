@@ -1,5 +1,6 @@
 import ConnectMongo from '../../utilis/MongoDb/connectDb';
 import modelMessages from '../../Model/message';
+import {mailOptions, transporter} from "../../Config/nodemailer";
 
 const AddMessage = async (req, res) => {
     try{
@@ -31,6 +32,12 @@ const AddMessage = async (req, res) => {
                 code: 400
             })
         }
+
+        await transporter.sendMail({
+            ...mailOptions,
+            subject: "Slumtech Contact Message",
+            html: `<!DOCTYPE html><html lang="en"><body><div class=""><h1>Slumtech Message</h1><p>Email:<span>${email}</span></p><p>Name:<span>${name}</span></p><p>message:<span>${message}</span></p></div></body></html>`
+        })
 
         const saveMessage = new modelMessages({
             name,

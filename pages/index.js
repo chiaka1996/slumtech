@@ -8,14 +8,13 @@ import {Navigation, Sidebar, Footer} from "../components"
 
 
 export default function Home() {
+  const router = useRouter();
   const [toggleIdentity, setToggleIdentity] = useState(true);
 
   useEffect(() => {
     const interval =  setInterval(() => setToggleIdentity(!toggleIdentity), 5000);
     return () => clearInterval(interval)
   },[toggleIdentity])
-
-  const router = useRouter();
 
   const settings = {
     dots: true,
@@ -267,8 +266,7 @@ export default function Home() {
       ensuring that our initiatives contribute to a future where all African
       teens and youth [18 - 21 yrs] can participate in, and benefit from the digital economy
       </div>
-      </div> 
-     
+      </div>     
     </div>
 
     <div className="z-50 flex flex-row justify-center items-center w-[45%] xlarge:w-[40%] max-large:w-[90%] h-[41.25em] xlarge:h-[45em]  max-large:h-[350px] bg-[#FDFEFD] absolute bottom-[15%] max-large:bottom-[13%] left-[10%] xlarge:left-[15%] max-large:left-[5%]">
