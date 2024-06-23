@@ -317,7 +317,7 @@ export default function Home() {
       </div>
 
         {/* for mobile */}
-      <div className="z-10 mt-[10%] large:hidden">
+      <div className="z-10 mt-[10%] large:hidden relative">
         <header className="font-header text-head  max-large:text-mhead text-btn_color z-10 max-large:mb-2">What We Do</header>
         <div className="text-normal  max-large:text-twelve xlarge:text-[1.2em] font-normal text-btn_color w-[20.56em] xlarge:w-[25em] max-large:w-[70%] z-100">
         At SlumTech, we understand the potential of every individual, 

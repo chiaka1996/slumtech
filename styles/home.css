@@ -6,7 +6,7 @@
     display: block;
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
     .whatWedo{
         background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -16,4 +16,4 @@
     .whatImg{
         display: none;
     }
-}
+} */
