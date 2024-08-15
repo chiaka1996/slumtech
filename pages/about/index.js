@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export default function About() {
   return (
-   <main className="bg-[#EDECEC]">
+   <main>
     <Head>
     <title>Slumtech About page </title>
     <meta
@@ -18,20 +18,8 @@ export default function About() {
     </Head>
     <Navigation />
     <Sidebar /> 
-    <div className="w-[100%] h-[20rem] max-large:h-[128px]  max-large:mt-[20%] small:max-large:mt-[14%] relative mt-[5%]">
-      <div className="font-header text-[1.75em] max-large:text-fourteen z-10 text-btn_color absolute bottom-[5%] max-large:bottom-[15%] left-[10%]  max-large:left-[5%] xlarge:left-[15%] w-[50%] max-large:w-[90%] xlarge:w-[40%]">
-      “The birth of SlumTech Foundation was a beacon of hope,   
-      driven by the vision to transform adversity into opportunity through technology”
+    <header className="font-h1 text-h1 text-h1 mt-[6em] text-center">ABOUT SLUM TECH FOUNDATION</header>
 
-      <p className="font-[500] italic text-right max-large:text-twelve">Olanrewaju D. Ogunleye</p>
-      </div>
-    <Image 
-      src="/images/about_banner.png"
-      fill
-      alt="logo"
-      className="filter brightness-[30%]"
-        /> 
-    </div>
 
     <section className="flex flex-row max-large:flex-col justify-between mt-[5%] max-large:mt-0 px-normal xlarge:px-xnormal max-md:px-md">
       {/* grid1 */}

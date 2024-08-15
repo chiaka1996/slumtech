@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .navContainer{
-   font-family: "Lato";
+   font-family: "Public Sans";
   }
   
   .hamburger{
@@ -10,7 +10,7 @@
 
   .activeLink{
     position: relative;
-    background-color: #D1EAD7;
+    background-color: #ffccd3;
     padding: 1% 1%;
     border-radius: 0.5rem;
     cursor: pointer;

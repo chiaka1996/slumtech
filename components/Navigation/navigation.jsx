@@ -10,19 +10,23 @@ const Navigation = () => {
 
   const NavItems = [
     {
-      label: "Home",
+      label: "HOME",
       url: "/"
     },
     {
-      label: "Enroll",
-      url: "/register"
-    },
-    {
-      label: "About",
+      label: "ABOUT",
       url: "/about"
     },
     {
-      label: "Contact Us",
+      label: "PROGRAMS",
+      url: "/register"
+    },
+    {
+      label: "MEDIA",
+      url: "/contact"
+    },
+    {
+      label: "CONTACT US",
       url: "/contact"
     }
   ]
@@ -35,10 +39,10 @@ const Navigation = () => {
             height="64"
             alt="logo"
         />
-           <div className="w-[50%] flex flex-row justify-between items-center font-nav max-lg:hidden">
+           <div className="w-[70%] flex flex-row justify-between items-center font-nav max-lg:hidden">
             {
               NavItems.map((data, i) =>  <div key={i}  className={router.asPath == data.url ? style.activeLink : style.navLink}>
-                <Link href={data.url} className='no-underline text-nav_links text-normal'>
+                <Link href={data.url} className='no-underline text-primary text-normal'>
                 {data.label}
                 </Link>
                 </div>
@@ -46,7 +50,7 @@ const Navigation = () => {
             }
 
             
-              <button onClick={() => router.push('/donation')} className='bg-btn_green hover:bg-[#66B978] text-normal px-[5%]  py-2 2xl:py-3 text-btn_color hover:text-text_color rounded-[0.313rem] font-label'>Donate</button>
+              <button onClick={() => router.push('/donation')} className='bg-btn_bg text-normal px-[1rem] py-2 2xl:py-3 text-btn_color rounded-[12px] font-header'>GET INVOLVED</button>
           
            </div>
 

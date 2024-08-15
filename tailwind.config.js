@@ -12,8 +12,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        btn_green: '#1A9635',
-        nav_links: "#111111",
+        btn_bg: '#FD213E',
+        h1: "#3F3F3F",
+        primary: "#353535",
         header: "#0A0A0A",
         header_shadow: "#66B978",
         text_color: "#1A1A1A",
@@ -36,13 +37,15 @@ module.exports = {
     },
     fontWeight: {
       normal: "400",
+      h1: "800",
       header: "700",
       btn_weight: "500",
       label: "500",
       nav: "600"
   },
   fontSize: {
-    normal: "1em",
+    h1: '2.25rem',
+    normal: "0.875em",
     mnormal: "0.875em",
     about: '1.2em',
     faq: '1.2em',
@@ -58,7 +61,7 @@ module.exports = {
     twelve: "0.75em"
 },
 fontFamily: {
-  "primary": ['Lato'],
+  "primary": ['Public Sans'],
   'serif': ['ui-serif', 'Georgia']
 },
 padding: {
