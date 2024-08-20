@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactFlagsSelect from "react-flags-select";
 import Head from 'next/head'
-import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
+import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, TextAreaComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
+
 
 const Register = () => {
   const [selected, setSelected] = useState("");
@@ -117,7 +119,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
+        <main className="relative overflow-hidden text-primary">
            <Head>
           <title>Slumtech Registration page </title>
           <meta
@@ -134,133 +136,161 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-normal xlarge:px-[15%] max-large:px-[5%] pt-[5%] max-large:mt-[5%]">
-        <Headers
-            index={"R"}
-            headings={"egistration"}
-          />
-
-          <div className="flex flex-row max-large:flex-col justify-between">
-            <div className="w-[47%] max-large:w-full">
-            <p className="text-text_color font-normal text-normal max-large:text-mnormal">
-            We're keen on reaching out to schools in underprivileged areas, 
-            such as public schools, to identify their top-performing students. 
-            Our focus is on secondary school students preparing for their final exams 
-            (Senior Secondary School Certificate Examination) and disadvantaged youths with 
-            a passion for technology.
-             Educators are kindly requested to register their schools by completing the input 
-             form provided.
-            </p>
-            <div className="relative w-full h-[35em] max-large:h-[13em] xlarge:h-[41.5em] mt-[5%]">
-            <Image 
-            src="/images/register1.png"
-            fill
-            alt="register"
-                /> 
-            </div>
-            </div>
-
-            <div className="w-[47%] max-large:w-full max-large:mt-[10%]">
-            <span className="px-[5%] font-header text-header text-sub_header max-large:text-normal border border-header rounded-[1rem]">
-            Register as a School
-            </span>
-
-            <form className=" mt-[10%]">
-            <div className="my-5">
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="Name Of School"
-            value={data.schoolName}
-            name="schoolName"
-            onChangeInput={onChangeInput}
-            />
-            </div>
-
-            <div className="my-5">
-            <InputComponent
-            type="text"
-            placeholder=""
-            labelName="School registration number"
-            value={data.registrationNumber}
-            name="registrationNumber"
-            onChangeInput={onChangeInput}
-            />
-            </div>
-
-            <div className="my-5">
-            <InputComponent
-            type="email"
-            placeholder=""
-            labelName="Email"
-            value={data.email}
-            name="email"
-            onChangeInput={onChangeInput}
-            />
+        <div className="relative text-center">
+        <Link href='/about' className='no-underline'>
+          <div className="absolute top-0 left-[10%] text-secondary font-normal text-[#000] flex flex-row items-center">
+          <div className=" w-[50px] h-[50px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5">
+          <div className="relative w-[30px] h-[30px]">
+          <img 
+          src="https://img.icons8.com/ios-glyphs/30/ffffff/left.png"
+          alt="left"/>
+          </div>
+          </div>
+          <span> Back to About</span>        
+        </div>
+        </Link>
+          <header className="font-h1 text-head text-h1 mt-[5em] text-center">JOIN US AS A VOLUNTEER</header>
           </div>
 
-            <div className="my-5">
-            <InputComponent
-            type="text"
-            placeholder="080 8405 2342"
-            labelName="Phone no"
-            value={data.phone}
-            name="phone"
-            onChangeInput={onChangeInput}
-            />
+          <div  className="relative w-full h-[26.6rem] max-large:h-[29rem] mt-[3em]">
+          <Image 
+          src="/images/volunteer.png"
+          fill
+          alt="volunteer banner"
+          /> 
+          </div>
+
+          <section className="w-[37%] mx-auto py-[3em]">
+            <p className="text-[#5C5C5C] text-[1.125em] font-normal">At SlumTech Foundation, we believe in the power of 
+              volunteers to drive positive change in the community. 
+              Join us in our mission to empower and uplift 
+              underprivileged communities through technology and education.
+            </p>
+
+            <div className="mt-[1em]">
+              <header className="text-h2 font-h2">Benefits of Volunteering with SlumTech Foundation</header>
+              <ul className="text-secondary font-normal list-disc pl-[2em]">
+              <li>Make a tangible impact on disadvantaged communities</li>
+              <li>Gain valuable experience and skills</li>
+              <li>Build meaningful connections and friendships</li>
+              <li>Contribute to a worthwhile cause and make a difference</li>
+              </ul>
             </div>
 
-            <div className="my-5">
-            <InputComponent
-            type="text"
-            placeholder="40, ajibulu str"
-            labelName="School Address"
-            value={data.address}
-            name="address"
-            onChangeInput={onChangeInput}
-            />
+            <div className="mt-[1em]">
+              <header className="text-h2 font-h2">Next Steps</header>
+              <ul className="text-secondary font-normal list-disc pl-[2em]">
+              <li>
+              Once you submit your registration, our team will review your information and 
+              reach out to you with volunteer opportunities that match your skills and interests. 
+              Thank you for supporting our mission!
+              </li>
+              </ul>
             </div>
 
-            <div className="flex flex-row max-large:flex-col justify-between max-large:mt-5">
-            <div className="w-[47%] max-large:w-full max-large:my-0">
-            <label className="font-label text-normal xlarge:text-normal text-header">Country</label><br/>
-            <ReactFlagsSelect
+            <div className="bg-btn_bg text-center py-3 text-[#fff] my-[0.5em] font-h2 text-h2">
+              <p>Ready to make a difference?</p>
+              <p>Fill out the registration form below and become</p>
+                <p>a part of our volunteer community today!</p>
+            </div>
+
+            <form>
+              {/* grid 1 */}
+              <div className="grid grid-cols-2 gap-7 mt-4">
+              <InputComponent
+              type="text"
+              placeholder="First Name"
+              value={data.firstname}
+              name="firstName"
+              onChangeInput={onChangeInput}
+              />
+
+            <InputComponent
+            type="text"
+            placeholder="Last Name"
+            value={data.lastname}
+            name="lastName"
+            onChangeInput={onChangeInput}
+            />
+              </div>
+
+              {/* grid2 */}
+              <div className="grid grid-cols-2 gap-7 mt-4">
+              <InputComponent
+              type="text"
+              placeholder="Email Address"
+              value={data.email}
+              name="name"
+              onChangeInput={onChangeInput}
+              />
+
+              <ReactFlagsSelect
               countries={["DZ", "AO", "BJ","BF", "BW", "BI", "CM","CV", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
               selected={selected}
               onSelect={(code) => setSelected(code)}
               placeholder=""
               searchable
               searchPlaceholder="Search a country"
+              />
+              </div>
+
+              <div className="mt-4">
+              <InputComponent
+              type="text"
+              placeholder="Address"
+              value={data.address}
+              name="address"
+              onChangeInput={onChangeInput}
+              />
+              </div>
+
+              <div className="mt-4">
+              <InputComponent
+              type="text"
+              placeholder="Address"
+              value={data.address}
+              name="address"
+              onChangeInput={onChangeInput}
+              />
+              </div>
+
+              <div className="mt-4">
+              <TextAreaComponent
+              placeholder="Skills (List any relevant skills or expertise you have and separate each skill with a comma)"
+              name="skill"
+              value={data.skill}
+              onChangeInput={onChangeInput}
              />
-            </div>
-            <div className="w-[47%] max-large:w-full max-large:my-5">
-            <InputComponent
-            type="number"
-            placeholder=""
-            labelName="Number Of Students"
-            value={data.studentsNumber}
-            name="studentsNumber"
-            onChangeInput={onChangeInput}
-            />
-            </div>
-            </div>
+              </div>
 
-            <ButtonComponent text="Submit Application" submitBtn={submitBtn} loading={loading} />
+              <div className="mt-4">
+              <TextAreaComponent
+              placeholder="Interests (What areas are you passionate about?)"
+              name="interest"
+              value={data.interest}
+              onChangeInput={onChangeInput}
+             />
+              </div>
+
+              <div className="mt-4">
+              <TextAreaComponent
+              placeholder="Availability (When are you available to volunteer?)"
+              name="availabilty"
+              value={data.availability}
+              onChangeInput={onChangeInput}
+             />
+              </div>
+
+              <div className="mt-4">
+              <TextAreaComponent
+              placeholder="Why do you want to volunteer with us? (Briefly share your motivation)"
+              name="whyVolunterr"
+              value={data.whyVolunteer}
+              onChangeInput={onChangeInput}
+             />
+              </div>
             </form>
-            </div>
-          </div>
 
-        <RegisterIndividual />
-
-        <div className="relative w-full h-[390px] max-large:h-[8.2em] my-[5%]">
-            <Image 
-            src="/images/register3.png"
-            fill
-            alt="register"
-            className="filter brightness-[30%]"
-                /> 
-              <p className="absolute right-[8%] bottom-[5%] font-header text-btn_color text-[45px] max-md:text-[15px]">Together, we can make a difference... </p>
-            </div> 
           </section>
           <Footer />
           </main>

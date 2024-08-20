@@ -12,14 +12,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        btn_bg: '#FD213E',
+        basic: "#000",
         h1: "#3F3F3F",
+        btn_bg: '#FD213E',
         primary: "#353535",
+        btn_color: "#F5F5F5",
+        card1: "#F5F5F5",
+        // old colors
         header: "#0A0A0A",
         header_shadow: "#66B978",
         text_color: "#1A1A1A",
         subtext: "#343434",
-        btn_color: "#FDFEFD",
         index: "#FFFFFF",
         layout: "#F5FBF6",
         footer_text: "#D6D6D6"
@@ -38,14 +41,23 @@ module.exports = {
     fontWeight: {
       normal: "400",
       h1: "800",
-      header: "700",
+      h2: "700",
+      h3: "600",
+      tertiary: "900",
+      // old weight
+      
       btn_weight: "500",
       label: "500",
-      nav: "600"
+      
   },
   fontSize: {
-    h1: '2.25rem',
-    normal: "0.875em",
+    normal: "0.875em", //14px
+    h1: '2.25rem', //36px
+    h2: '1.5rem', //24px,
+    secondary: '1.25rem', //20px
+    head: "2.6875rem", //43px
+
+    // old sizes
     mnormal: "0.875em",
     about: '1.2em',
     faq: '1.2em',

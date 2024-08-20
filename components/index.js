@@ -10,3 +10,5 @@ export {default as RegisterIndividual} from "./registerIndividual";
 export {default as SubmitModal} from "./Modals/SubmitModal";
 export {default as DonateGadget} from "./Modals/GadgetModal";
 export {default as DonateMoney} from "./Modals/MoneyModal";
+export {default as Newsletter} from "./Newsletter/index";
+export {default as ProgramCard} from "./ProgramCard/index";

@@ -19,7 +19,7 @@ const Navigation = () => {
     },
     {
       label: "PROGRAMS",
-      url: "/register"
+      url: "/programs"
     },
     {
       label: "MEDIA",
@@ -32,11 +32,11 @@ const Navigation = () => {
   ]
 
     return(
-      <nav className="font-primary bg-[#FDFEFD] shadow-md shadow-[#00000029] z-[500] py-2 2xl:py-6 px-normal xlarge:px-xnormal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
+      <nav className="font-primary bg-[#fff] z-[500] py-2 2xl:py-6 px-normal xlarge:px-xnormal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
          <Image 
-            src="/logo/slumtech.png"
-            width="192"
-            height="64"
+            src="/logo/slumtechLogo.png"
+            width="120"
+            height="60"
             alt="logo"
         />
            <div className="w-[70%] flex flex-row justify-between items-center font-nav max-lg:hidden">
