@@ -13,17 +13,19 @@ module.exports = {
     extend: {
       colors: {
         basic: "#000",
+        blog: "#2D3748",
         h1: "#3F3F3F",
         btn_bg: '#FD213E',
         primary: "#353535",
         btn_color: "#F5F5F5",
         card1: "#F5F5F5",
+        index: "#FFFFFF",
         // old colors
         header: "#0A0A0A",
         header_shadow: "#66B978",
         text_color: "#1A1A1A",
         subtext: "#343434",
-        index: "#FFFFFF",
+        
         layout: "#F5FBF6",
         footer_text: "#D6D6D6"
     },
@@ -43,15 +45,14 @@ module.exports = {
       h1: "800",
       h2: "700",
       h3: "600",
+      h4: "500",
       tertiary: "900",
       // old weight
-      
-      btn_weight: "500",
       label: "500",
       
   },
   fontSize: {
-    normal: "0.875em", //14px
+    normal: "1em", //16px
     h1: '2.25rem', //36px
     h2: '1.5rem', //24px,
     secondary: '1.25rem', //20px
@@ -74,7 +75,7 @@ module.exports = {
 },
 fontFamily: {
   "primary": ['Public Sans'],
-  'serif': ['ui-serif', 'Georgia']
+  "secondary" : ['Inter']
 },
 padding: {
   normal: "10%",

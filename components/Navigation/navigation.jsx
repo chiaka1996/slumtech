@@ -23,7 +23,7 @@ const Navigation = () => {
     },
     {
       label: "MEDIA",
-      url: "/contact"
+      url: "/media"
     },
     {
       label: "CONTACT US",

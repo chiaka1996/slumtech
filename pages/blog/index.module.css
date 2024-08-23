@@ -1,0 +1,13 @@
+.blogBanner{
+    background: linear-gradient(180deg, rgba(232, 16, 125, 0) 0%, #044930 96.5%), url("/images/blog_banner.jpeg") no-repeat top center;
+    background-size: cover;
+    height: 40.2em;
+    width: 100%;
+}
+
+.blogBanner2{
+    background: linear-gradient(180deg, rgba(232, 16, 125, 0) 0%, #044930 96.5%), url("/images/blog_banner2.png") no-repeat top center;
+    background-size: cover;
+    height: 40.2em;
+    width: 100%;
+}

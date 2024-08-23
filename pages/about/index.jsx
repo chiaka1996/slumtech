@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
 import Head from 'next/head'
 
-
 export default function About() {
   return (
    <main className="text-primary">

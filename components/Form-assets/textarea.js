@@ -7,7 +7,7 @@ const TextAreaComponent = ({labelName, placeholder, onChangeInput, name, value})
             name={name}
             value={value}
             onChange={onChangeInput}
-            className="mt-[ rounded-[0.5rem] px-[1.2em] py-[0.5em] outline-none 
+            className="rounded-[0.5rem] px-[1.2em] py-[0.5em] outline-none 
             border border-btn_bg w-[100%] h-[7.5rem] text-primary font-normal 
             text-[18px] xlarge:text-normal placeholder-primary"
             >

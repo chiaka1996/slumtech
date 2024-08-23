@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from 'next/link';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ReactFlagsSelect from "react-flags-select";
 import Head from 'next/head'
 import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, TextAreaComponent, InputComponent, SelectComponent, RegisterIndividual} from "../../components"
 
@@ -215,7 +214,7 @@ const submitBtn = async (e) => {
               </div>
 
               {/* grid2 */}
-              <div className="grid grid-cols-2 gap-7 mt-4">
+              <div className="grid grid-cols-2 gap-7">
               <InputComponent
               type="text"
               placeholder="Email Address"
@@ -224,24 +223,13 @@ const submitBtn = async (e) => {
               onChangeInput={onChangeInput}
               />
 
-              <ReactFlagsSelect
-              countries={["DZ", "AO", "BJ","BF", "BW", "BI", "CM","CV", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
-              selected={selected}
-              onSelect={(code) => setSelected(code)}
-              placeholder=""
-              searchable
-              searchPlaceholder="Search a country"
-              />
-              </div>
-
-              <div className="mt-4">
               <InputComponent
-              type="text"
-              placeholder="Address"
-              value={data.address}
-              name="address"
+              type="number"
+              placeholder="phone"
+              value={data.phone}
+              name="phone"
               onChangeInput={onChangeInput}
-              />
+              />    
               </div>
 
               <div className="mt-4">
@@ -263,7 +251,7 @@ const submitBtn = async (e) => {
              />
               </div>
 
-              <div className="mt-4">
+              <div className="mt-2">
               <TextAreaComponent
               placeholder="Interests (What areas are you passionate about?)"
               name="interest"
@@ -272,7 +260,7 @@ const submitBtn = async (e) => {
              />
               </div>
 
-              <div className="mt-4">
+              <div className="mt-2">
               <TextAreaComponent
               placeholder="Availability (When are you available to volunteer?)"
               name="availabilty"
@@ -281,7 +269,7 @@ const submitBtn = async (e) => {
              />
               </div>
 
-              <div className="mt-4">
+              <div className="my-2">
               <TextAreaComponent
               placeholder="Why do you want to volunteer with us? (Briefly share your motivation)"
               name="whyVolunterr"
@@ -289,6 +277,7 @@ const submitBtn = async (e) => {
               onChangeInput={onChangeInput}
              />
               </div>
+              <button className="bg-btn_bg text-btn_color rounded-[12px] px-12 py-3">Submit</button>
             </form>
 
           </section>
