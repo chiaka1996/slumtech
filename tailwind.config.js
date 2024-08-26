@@ -55,6 +55,7 @@ module.exports = {
     normal: "1em", //16px
     h1: '2.25rem', //36px
     h2: '1.5rem', //24px,
+    h3: '1.125rem', //18px
     secondary: '1.25rem', //20px
     head: "2.6875rem", //43px
 
