@@ -20,14 +20,6 @@ module.exports = {
         btn_color: "#F5F5F5",
         card1: "#F5F5F5",
         index: "#FFFFFF",
-        // old colors
-        header: "#0A0A0A",
-        header_shadow: "#66B978",
-        text_color: "#1A1A1A",
-        subtext: "#343434",
-        
-        layout: "#F5FBF6",
-        footer_text: "#D6D6D6"
     },
     screens: {
       'large': '900px',
@@ -56,6 +48,7 @@ module.exports = {
     h1: '2.25rem', //36px
     h2: '1.5rem', //24px,
     h3: '1.125rem', //18px
+    h4: '2rem', //32px
     secondary: '1.25rem', //20px
     head: "2.6875rem", //43px
 

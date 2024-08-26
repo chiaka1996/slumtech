@@ -1,350 +1,163 @@
-import { useState } from "react";
 import Image from "next/image";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import ReactFlagsSelect from "react-flags-select";
+import Link from 'next/link';
+import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
 import Head from 'next/head'
-import {SubmitModal, DonateMoney, DonateGadget, Navigation, Sidebar, Headers, Footer, ButtonComponent, InputComponent, SelectComponent, TextAreaComponent} from "../../components"
 
-
-const Donation = () => {
-    const [selected, setSelected] = useState("NG");
-    const [toggleModal, setToggleModal] = useState(false)
-    const [toggleMoney, setToggleMoney] = useState(false)
-    const [toggleGadget, setToggleGadget] = useState(false)
-    const [loading, setLoading] = useState(false)
-    const [data, setData] =  useState({
-        name: "",
-        email: "",
-        nationality: "",
-        location: selected,
-        skills: "",
-        gender: "",
-        phone: ""
-    })
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/gi;
-
-    const toggleState = () => {
-        setToggleModal(false)
-      }
-
-      const toggleMoneyState = () => {
-        setToggleMoney(false)
-      }
-
-      const toggleGadgetState = () => {
-        setToggleGadget(false)
-      }
-
-    const onChangeInput = (e) => {
-    const value = e.target.value;
-    const name = e.target.name;
-
-    setData({
-        ...data, 
-        [name] : value
-    })
-}
-
-const submitBtn = async (e) => {
-    try{
-        setLoading(true)
-    const {name, email, phone, gender, nationality, location, skills} = data;
-
-    if(!name || !email || !phone || !gender || !nationality || !location || !skills) {
-        setLoading(false)
-        return  toast.error("please fill all required fields.", {
-            position: "top-right",
-            theme: "colored",
-            });
-    }
-
-    if(name.length < 2){
-        setLoading(false)
-        return  toast.error("name should be a minimum of 2 characters", {
-            position: "top-right",
-            theme: "colored",
-            });
-    }
-
-    if(!emailRegex.test(email)){
-        setLoading(false)
-        return  toast.error("invalid email", {
-            position: "top-right",
-            theme: "colored",
-            });
-    }
-
-    const postData = {
-         name,
-         email, 
-         phone, 
-         gender, 
-         nationality: selected,
-         location,
-         skills
-    }
-
-    const httpRequest = await fetch('../api/addvolunteer',{
-        method: "POST",
-        body: JSON.stringify(postData),
-        headers:{
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    })
-
-    const response = await httpRequest.json();
-
-    if(response.status){
-        setLoading(false)
-        setToggleModal(true)
-
-        setData({
-            name: "",
-            email: "",
-            nationality: "",
-            location: "",
-            skills: "",
-            gender: "",
-            phone: ""
-        })
-    }
-    else{
-        setLoading(false)
-        toast.error(`${response.message}`, {
-            position: "top-right",
-            theme: "colored",
-            });
-    }
-    }
-    catch(error){
-    setLoading(false)
-    return toast.error(`${error.message}`, {
-        position: "top-right",
-        theme: "colored",
-        });
-}
-}
-
-    return (
-        <main className="relative overflow-hidden mt-[5%] max-large:mt-[20%] small:max-large:mt-[14%] bg-[#EDECEC]">
-         <Head>
-          <title>Slumtech Donation page </title>
-          <meta
-            name="description"
-            content="We sincerely appreciate your generosity in providing hope to these young talents 
-            Your support is deeply valued and enables us to persist in our crucial mission"
-            key="desc"
-          />
-          <meta name="keywords" content="Donate, nonprofit, foundation, slum, technology, africa" />
+export default function Donation() {
+  return (
+   <main className="text-primary">
+    <Head>
+    <title>Slumtech Donation page </title>
+    <meta
+      name="description"
+      content="SlumTech Foundation is a US-based nonprofit organization with a bold mission 
+      to establish world-class tech institutions across Africa"
+      key="desc"
+    />
+    <meta name="keywords" content="nonprofit, foundation, slum, technology, africa, donation" />
     </Head>
-        <Navigation />
-        <Sidebar /> 
-        <ToastContainer />
-        <DonateMoney
-        toggle={toggleMoney} 
-        toggleState={toggleMoneyState}
-        />
-        <DonateGadget
-        toggle={toggleGadget} 
-        toggleState={toggleGadgetState}
-        />
-        <SubmitModal 
-        toggle={toggleModal} 
-        toggleState={toggleState}
-        />
-        <section className="px-normal xlarge:px-xnormal max-md:px-[5%] py-[5%] max-large:mt-[5%]">
-        <Headers
-            index={"D"}
-            headings={"onation"}
-          />
+    <Navigation />
+    <Sidebar /> 
 
-          <div className="font-label max-large:font-header text-sub_header max-large:text-normal text-[#111111] max-large:mt-[7%]">
-          Kindly choose your preferred method of donation
-          </div>
+    <div  className="relative w-full min-h-[20rem] max-large:h-[25rem] mt-[10em]">
+    <Image 
+    src="/images/donation1.png"
+    fill
+    alt="banner"
+    /> 
+    {/* <div className="text-card1 text-h1 font-h2 absolut relative z-[10] min-h-[20rem] flex flex-row justify-center items-center">
+    Donation
+    </div>   */}
+    </div>
 
-          <div className="flex flex-row max-large:flex-col justify-between mt-3">
-            <section onClick={() => setToggleMoney(true)} className="flex flex-row items-center justify-center cursor-pointer p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] max-large:px-[5%] bg-[#313231] rounded-[24px] shadow-lg shadow-[#00000029] relative">
-            <div>
-            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
-                <Image 
-                src="/images/donate1.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-           
-            <button className="hover:bg-[#66B978] hover:text-text_color w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] text-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
-                Donate Money
-            </button>
+    <div className="w-[50%] mt-[3em] font-h2 text-h2 mx-auto">
+    Welcome to SlumTech Foundation, where every donation makes a difference in empowering the youth in underserved 
+    communities through technology. 
+    Your support enables us to provide access to education, skills training, and opportunities for a brighter future.
+    </div>
+
+    <form className="w-[60%] rounded-[16px] bg-[#FD213E] px-[3em] py-[2em] mt-[1.5em] mx-auto">
+        <header className="font-h3 text-btn_color text-h1">DONATE NOW</header>
+        <div className="mt-[1em] flex flex-row items-center text-btn_color">
+            <button className="mr-[2em] p-[0.5em] border border-btn_color rounded-[12px]">$20</button>
+            <button className="mr-[2em] p-[0.5em] border border-btn_color rounded-[12px]">$50</button>
+            <button className="mr-[2em] p-[0.5em] border border-btn_color rounded-[12px]">$100</button>
+            <button className="mr-[2em] p-[0.5em] border border-btn_color rounded-[12px]">$200</button>
+            <button className="mr-[2em] p-[0.5em] border border-btn_color rounded-[12px]">$500</button>
+        </div>
+        <header className="font-normal mt-[0.5em] text-btn_color text-[2em]">Payment Method</header>
+        <div className="flex flex-row mt-[0.5em] text-btn_color items-center">
+        <div className='flex flex-row items-center'>
+                <input type="checkbox" className='appearance-none outline-none border border-btn_color rounded-full h-[15px] w-[15px]' />
+                <span className='font-normal text-h2 ml-[0.3em]'>
+                Offline Donation
+                </span>
             </div>
-            </section>
-
-            <section onClick={() => setToggleGadget(true)} className="flex flex-row items-center justify-center cursor-pointer max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] bg-[#313231] rounded-[30px] shadow-lg shadow-[#00000029] relative">
-            <div>
-            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
-                <Image 
-                src="/images/donate2.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-                
-                <button className="hover:bg-[#66B978] hover:text-text_color w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] text-normal font-[500] text-btn_color bg-btn_green rounded-[8px]">
-                Donate Gadget
-            </button>
-                </div>
-            </section>
-
-            <section className="flex flex-row items-center justify-center max-large:mt-[5%] p-[2%] w-[30%] max-large:w-full h-[30vh] max-large:h-[13em] bg-[#313231] rounded-[1.875rem] shadow-lg shadow-[#00000029] relative">
-            <div>
-            <div className="relative w-[5rem] h-[5rem] mb-[10%] mx-auto">
-                <Image 
-                src="/images/donate3.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
-              
-                <button className="w-[12vw] max-large:w-full h-[2.5em] px-[1em] py-[0.5em] tex-normal font-[500] text-btn_color bg-[#BBBBBB] rounded-[8px] cursor-not-allowed">
-                GoFundMe
-            </button>
-                </div>
-            </section>
-          </div>
-          </section>
-
-          <section className="bg-[#FBFDFB] max-large:bg-[#EDECEC] flex flex-row max-large:flex-col items-center justify-between py-[5%] px-[10%] max-large:px-[5%] w-[80%] xlarge:w-[70%] max-large:w-full mx-auto  max-large:mx-0">
-            <div className="w-[25rem] xlarge:w-[27rem] max-large:w-full h-[23rem] max-large:h-[16.6em] relative">
-            <Image 
-            src="/images/donate_book.png"
-            fill
-            alt="donate"
-            /> 
+            <div className='flex flex-row items-center ml-[7em]'>
+                <input type="checkbox" className='appearance-none outline-none border border-btn_color rounded-full h-[15px] w-[15px]' />
+                <span className='font-normal text-h2 ml-[0.3em]'>
+                Stripe Credit Card
+                </span>
             </div>
-            <div className="w-[20.5rem] xlarge:w-[22rem">
-            <p className="text-text_color font-normal max-large:font-header text-normal max-large:text-mnormal xlarge:text-about">
-            "Tech Entrepreneurship and Career for 
-            Africa Development" is a comprehensive guide by SlumTech Foundation, 
-            focusing on leveraging technology for economic growth,
-            entrepreneurship opportunities, and career development in Africa. 
-            The book explores innovative strategies for sustainable development in the tech sector”
-            </p>
-
-            <p className="text-[#F32B04] font-header text-normal mt-[2%] coming">Coming Soon..</p>
-            </div>
-          </section>
-
-          <section className="my-[5%] w-[80%] xlarge:w-[70%] max-large:w-[90%] mx-auto">
-          <Headers
-            index={"B"}
-            headings={"ecome a volunteer"}
-          />
-
-          <div className="mt-3% max-large:mb-[15%]  flex flex-row max-large:flex-col-reverse justify-between">
-            <div className="w-[47%] max-large:w-full">
-            <p className="text-nav_links text-sub_header max-large:text-mnormal font-normal max-large:font-header my-[5%] max-large:mt-[15%]">
-            Kindly fill the form provided
-            </p>
-
-            <InputComponent
+        </div>
+        {/* grid 1 */}
+        <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
+        <input 
             type="text"
-            placeholder="e.g nancy clemz"
-            labelName="Name"
-            value={data.name}
-            name="name"
-            onChangeInput={onChangeInput}
+            placeholder="First Name"
+            name="firstName"
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
             />
-             
-             <div className="my-5">
-            <InputComponent
-            type="email"
-            placeholder="e.g clement@gmail.com"
-            labelName="Email"
-            value={data.email}
+
+        <input 
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            value=''
+            className="rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
+        </div>
+
+        <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
+        <input 
+            type="text"
+            placeholder="Email Address"
             name="email"
-            onChangeInput={onChangeInput}
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
             />
-            </div>
 
-            <div className="my-5">
-            <InputComponent
+        <input 
             type="text"
-            placeholder="e.g 0989 535 9584"
-            labelName="Phone No"
-            value={data.phone}
+            placeholder="Phone no"
             name="phone"
-            onChangeInput={onChangeInput}
+            value=''
+            className="rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
             />
-            </div>
+        </div>
 
-            <div className="flex flex-row justify-between">
-            <div className="w-[47%]">
-            <SelectComponent
-            labelName="Gender"
-            options={["male", "female"]}
-            value={data.gender}
-            name="gender"
-            onChangeInput={onChangeInput}
-            />
-            </div>
-            <div className="w-[47%]">
-             <InputComponent
+        <div className="w-full my-[1.5em]">
+        <input 
             type="text"
-            labelName="Nationality"
-            value={data.nationality}
-            name="nationality"
-            onChangeInput={onChangeInput}
+            placeholder="Address"
+            name="email"
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
             />
-            </div>
-            </div>
+        </div>
 
-            <div className="my-5">
-            <label className="font-label text-normal xlarge:text-normal text-header">Location</label><br/>
-            <ReactFlagsSelect
-              countries={["DZ", "AO", "BJ", "BF", "BW", "BI", "CM", "CV", "CG", "CI", "EG", "GA", "GM", "KE", "LY", "MW", "ML", "NA", "NE", "NG",  "SN", "ZA", "SS", "TG", "ZM", "ZW" ]}
-              selected={selected}
-              onSelect={(code) => setSelected(code)}
-              placeholder="Enter location"
-              searchable
-              searchPlaceholder="Search a country"
-             />
-            </div>
+        <button className="font-h2 p-[1em] text-btn_bg bg-h1 rounded-[12px] text-[1em]">Send</button>
+    </form>
+    <section className="w-[60%] mx-auto mt-[1.5em]">
+    <header className="text-h4 text-basic font-h2">Ways to Donate</header>
 
-            <div className="mt-5">
-            <TextAreaComponent      
-            labelName="Skills"
-            placeholder="please type here..."
-            value={data.skills}
-            name="skills"
-            onChangeInput={onChangeInput}
-            />
-            </div>
-            <ButtonComponent text="Submit" submitBtn={submitBtn} loading={loading} />
-          </div>
-          <div className="w-[47%] max-large:w-full px-[5%] max-large:px-0">
-          <div className="relative w-[450px] max-large:w-full h-[360px] mt-[10%] max-large:mt-[5%]">
-                <Image 
-                src="/images/volunteer1.png"
-                fill
-                alt="donate"
-                    /> 
-                </div>
+    <ul className="list-disc pl-[1em] mt-[1em]">
+        <li className="font-h2 text-h2">Monetary Donations</li>
+        <p className="font-normal text-secondary">
+        Your financial support fuels our programs and initiatives. Every dollar counts towards creating a 
+        tech-driven change in the lives of our beneficiaries. Click here to make a donation and transform lives today.
+        </p>
 
-            <div className="text-normal max-large:text-mnormal text-text_color font-normal mt-[2%] max-large:mt-0">
-            Volunteering to work with SlumTech Foundation, entail your dedication to educating young talents about technology. 
-            This is an opportunity to inspire the next generation of innovators, 
-            through imparting your expertise and enthusiasm for technology, you can 
-            help empower young minds, cultivate digital literacy, and prepare them 
-            for future opportunities
-            </div>
-          </div>
-          </div>
-          </section>
+        <li className="font-h2 text-h2 mt-[1em]">Computers and Equipment</li>
+        <p className="font-normal text-secondary">
+        Donate pre-owned or new computers, laptops, tablets, or other tech equipment to equip our 
+        learning centers and empower young minds with essential digital skills. Contact us to arrange a donation.
+        </p>
 
-        <Footer />       
-        </main>
-    )
+        <li className="font-h2 text-h2 mt-[1em]">Customized SlumTech Souvenirs</li>
+        <p className="font-normal text-secondary">
+        Show your support with exclusive SlumTech souvenirs. Purchase t-shirts, mugs, badges, and more, 
+        showcasing our mission and spreading awareness. Proceeds go directly to supporting our projects.
+        </p>
+    </ul>
+
+    <div className="mt-[2em] px-[2em] font-normal text-h4 text-center">
+    <p>Your contribution, whether big or small, has a ripple effect on the communities we serve. 
+    Join us in bridging the digital divide and fostering a generation of tech-savvy change-makers.
+    </p>
+
+    <p className="mt-[1em]">
+    Thank you for being a part of the SlumTech Foundation's journey towards a more inclusive 
+    and tech-empowered society. Together, we can build a brighter tomorrow.
+    </p>
+    </div>
+
+    <div className="my-[2em] py-[2.5em] px-[2em] bg-btn_bg text-btn_color text-h1 font-h2 rounded-[12px]">
+    Donate today and be the catalyst for change!
+    </div>
+    </section>
+    <Footer />
+    </main>
+  )
 }
-
-export default Donation;
