@@ -51,21 +51,6 @@ module.exports = {
     h4: '2rem', //32px
     secondary: '1.25rem', //20px
     head: "2.6875rem", //43px
-
-    // old sizes
-    mnormal: "0.875em",
-    about: '1.2em',
-    faq: '1.2em',
-    xnormal: "2.2em",
-    head: "2.5em",
-    mhead:"1.5em",
-    xhead: "4.5em",
-    sub_header: "1.25em",
-    xsub: "1.5em",
-    footertext: "0.75em",
-    fourteen: "0.875em",
-    ten: "0.625em",
-    twelve: "0.75em"
 },
 fontFamily: {
   "primary": ['Public Sans'],

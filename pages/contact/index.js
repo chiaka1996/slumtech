@@ -98,7 +98,7 @@ const submitBtn = async (e) => {
 }
 
     return (
-        <main className="relative overflow-hidden bg-[#EDECEC]">
+        <main className="text-primary font-primary">
           <Head>
           <title>Slumtech Contact page </title>
           <meta
@@ -106,8 +106,8 @@ const submitBtn = async (e) => {
             content="contact@slumtechfoundation.com, +1888-355-2015"
             key="desc"
           />
-          <meta name="keywords" content="nonprofit, foundation, slum, technology, africa" />
-    </Head>
+          <meta name="keywords" content="nonprofit, foundation, slum, technology, africa, contact" />
+        </Head>
         <Navigation />
         <Sidebar /> 
         <ToastContainer />
@@ -115,297 +115,116 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <section className="px-[10%] xlarge:px-[15%] max-large:px-[5%] py-[5%] max-large:mt-[25%] mt-[5%]">
-            <Headers
-            index={"C"}
-            headings={"ontact Us"}
-            />
-            <div className="flex flex-row max-large:flex-col justify-between ">
-                <div className="w-[47%] max-large:w-full">
-                    <div className="mt-[5%] font-normal text-twelve  xlarge:text-faq  text-text_color">
-                    Please reach out to us by completing this form. Your messages,suggestions and 
-                    feedback will play a crucial role in shaping a brighter, technology-driven future 
-                    for everyone
-                    </div>
-
-                    <form className="mt-[5%]">
-                        <InputComponent
-                        type="text"
-                        placeholder="e.g nancy clemz"
-                        labelName="Name"
-                        value={data.name}
-                        name="name"
-                        onChangeInput={onChangeInput}
-                        />
-
-                        <div className="mt-[5%]">
-                        <InputComponent
-                        type="email"
-                        placeholder="e.g chiaka@gmail.com"
-                        labelName="Email"
-                        value={data.email}
-                        name="email"
-                        onChangeInput={onChangeInput}
-                        />
-                        </div>
-
-                        <TextAreaComponent
-                        labelName="Message"
-                        placeholder="please type here..."
-                        value={data.message}
-                        name="message"
-                        onChangeInput={onChangeInput}
-                          />
-
-                      <ButtonComponent text="Send" submitBtn={submitBtn} loading={loading} />
-                    </form>
-                </div>
-
-                {/* h-[30.625rem */}
-            <div className="w-[40%] max-large:w-full h-full max-large:hidden">
-            <div className="relative w-full  h-[32rem] xlarge:h-[38.5rem]">
-            <Image 
-            src="/images/contact1.png"
-            fill
-            alt="register"
-                /> 
-            </div> 
-            </div>
-            </div>
-
-            <div className="flex flex-row max-large:flex-col justify-between items-end mt-[5%] max-large:hidden">
-                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[1rem] h-[1.25rem] mr-2">
-                        <Image 
-                        src="/icons/location.png"
-                        fill
-                        alt="location"
-                            /> 
-                        </div>
-                    <span className="font-header text-normal text-nav_links">Location</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
-                    </p>
-                </div>
-
-                <div className="max-large:mt-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[40px] h-[26px] mr-2">
-                        <Image 
-                        src="/icons/email.png"
-                        fill
-                        alt="location"
-                            /> 
-                    </div>
-                    <span className="font-header text-normal text-nav_links">Email</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    contact@slumtechfoundation.com
-                    </p>
-                </div>
-
-                <div className="max-large:my-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[1.5625rem] h-[1.875rem] mr-2">
-                    <Image 
-                    src="/icons/phone.png"
-                    fill
-                    alt="location"
-                        /> 
-                    </div>
-                    <span className="font-header text-normal text-nav_links">Phone</span>
-                    </h2>
-                    <p className="font-normal text-normal text-text_color">
-                    +1888-355-2015
-                    </p>
-             </div>                
-            </div>        
-          </section>
-
-        <section className="px-[10%] xlarge:px-[15%] max-md:px-md py-0 mt-0 max-large:mt-[5%] mb-[5%]">
-        <Headers
-            index={"F"}
-            headings={"AQS"}
-          />
-        
-        <div className="mt-[5%] flex flex-row max-md:flex-col justify-between">
-          <p className="font-normal text-normal max-large:text-twelve xlarge:text-faq text-text_color w-[47%] max-large:w-full">
-          We've compiled some commonly asked questions to assist you better. 
-          We hope you find the answers helpful. If you have any further inquiries,
-          Don't hesitate to reach out to us
-          </p>
-          <p></p>
-          </div> 
-
-          <div className="flex flex-row max-large:flex-col justify-between">
-            <div className="w-[47%] max-large:w-full">
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            What is SlumTech Foundation?
-            </div>
-            <p className="px-[2%] bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-text_color">
-            SlumTech Foundation is a non-profit organization dedicated 
-            to providing technology education and opportunities to underprivileged communities.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq font-header text-header bg-btn_color">
-            How does SlumTech Foundation make a difference?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            SlumTech Foundation empowers individuals in slums 
-            by teaching them valuable tech skills, equipping them for a brighter future.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color">
-            Who can benefit from SlumTech Foundation's programs?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq   px-[2%] text-text_color">
-            Anyone living in slum communities who wants to learn 
-            tech skills and improve their future prospects can benefit from our programs.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  font-header text-header bg-btn_color">
-            Is SlumTech Foundation a registered charity?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            Yes, SlumTech Foundation is a registered non-profit organization with a 
-            mission to bridge the digital divide in underprivileged areas.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            Where does SlumTech Foundation operate?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            SlumTech Foundation currently operates in slum areas in developing countries,
-             focusing on empowering communities through technology.
-          </p>
-          </div>
-          </div>
-
-          <div className="w-[47%] max-large:w-full">
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            What programs does SlumTech Foundation offer?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            SlumTech Foundation offers coding workshops, 
-            digital literacy courses, and mentorship programs for individuals in slum areas.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            How can I support SlumTech Foundation's mission?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            You can support us by donating, volunteering, 
-            or spreading awareness about our cause to help us reach more individuals in need.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            How can I get involved with SlumTech Foundation as a volunteer?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal xlarge:text-faq  px-[2%] text-text_color">
-            If you're passionate about tech education and want to make a difference,
-             you can apply to volunteer with SlumTech Foundation on our website
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            Can I sponsor a student through SlumTech Foundation?
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%] text-text_color">
-            Yes, you can sponsor a student's education and 
-            tech training through SlumTech Foundation to support their growth and development.
-          </p>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%]">
-            <div className="inline max-large:block font-header py-[0.5%] px-[2%] text-normal max-large:text-mnormal xlarge:text-faq  text-header bg-btn_color">
-            <span>How can I stay updated on SlumTech Foundation's work and events</span>
-            </div>
-            <p className="bg-[#F3FAF4] font-normal text-normal max-large:text-mnormal xlarge:text-faq  px-[2%]  text-text_color">
-            You can follow us on social media, subscribe to our newsletter, 
-            or visit our website regularly for updates on our programs and events.
-          </p>
-          </div>
-          </div>
-          </div>
-
-          <div className="mt-[5%] max-large:mt-[10%] font-normal text-normal max-large:text-mnormal xlarge:text-faq  text-header">
-            <p className="w-[60%] max-large:w-full">
-            Thank you for dedicating time to explore our FAQs.
-             We hope you found the answers you were looking for here at SlumTech 
-             Foundation, If you have any other questions or need further assistance, 
-             please don't hesitate to contact our support team. 
-            We are here to help you at every step of the way
-            </p>
-            <p></p>
+         <div  className="relative w-full min-h-[20rem] max-large:h-[25rem] mt-[10em]">
+        <Image 
+        src="/images/contact.png"
+        fill
+        alt="banner"
+        /> 
+          
         </div>
 
-        <div className="flex flex-row max-large:flex-col justify-between mt-[5%] large:hidden">
-                <div className="w-[15.625rem] max-large:w-full max-large:mt-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[1rem] h-[1.25rem] mr-2">
-                        <Image 
-                        src="/icons/location.png"
-                        fill
-                        alt="location"
-                            /> 
-                        </div>
-                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Location</span>
-                    </h2>
-                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
-                    801 Travis Street, Suite 2101, PMB 714, Houston Texas  77002
-                    </p>
-                </div>
+        <section className="w-[60%] mx-auto my-[3em]">
+          <header className="text-[48px] font-h4 pl-[3rem]">Send us a Mail</header>
 
-                <div className="max-large:mt-[10%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[40px] max-large:w-[24px] h-[26px] max-large:h-[16px] mr-2">
-                        <Image 
-                        src="/icons/email.png"
-                        fill
-                        alt="location"
-                            /> 
-                    </div>
-                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Email</span>
-                    </h2>
-                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
-                    contact@slumtechfoundation.com
-                    </p>
-                </div>
+        <form className="w-full rounded-[16px] bg-[#FD213E] px-[3em] py-[2em] mt-[1.5em]">
+        {/* grid 1 */}
+        <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
+        <input 
+            type="text"
+            placeholder="First Name"
+            name="firstName"
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
 
-                <div className="max-large:mt-[10%] max-large:mb-[5%]">
-                    <h2 className="flex flex-row">
-                    <div className="relative w-[1.5625rem] max-large:w-[15px] h-[1.875rem] max-large:h-[19px] mr-2">
-                    <Image 
-                    src="/icons/phone.png"
-                    fill
-                    alt="location"
-                        /> 
-                    </div>
-                    <span className="font-header text-normal max-large:text-twelve text-nav_links">Phone</span>
-                    </h2>
-                    <p className="font-normal text-normal max-large:text-twelve text-text_color">
-                    +1888-355-2015
-                    </p>
-             </div>                
-            </div>
-          </section>
+        <input 
+            type="text"
+            placeholder="Last Name"
+            name="lastName"
+            value=''
+            className="rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
+        </div>
+
+        <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
+        <input 
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
+
+        <input 
+            type="text"
+            placeholder="Phone no"
+            name="phone"
+            value=''
+            className="rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
+        </div>
+
+        <div className="w-full my-[1.5em]">
+        <input 
+            type="text"
+            placeholder="Address"
+            name="email"
+            value=''
+            className=" rounded-[0.5rem] pl-[1.2em] outline-none border border-index
+            w-[100%] h-[3rem] text-primary font-normal text-[18px] placeholder-primary"
+            // onChange={onChangeInput}
+            />
+        </div>
+
+        <button className="font-h2 p-[1em] text-btn_bg bg-h1 rounded-[12px] text-[1em]">Send</button>
+    </form>
+
+    <div className="flex justify-left items-center mt-[3rem] pl-[3rem]">
+    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.5em]">
+    <Image 
+    src="https://img.icons8.com/material-outlined/24/open-envelope.png"
+    fill
+    alt="mail"
+    /> 
+    </div>
+    <span className="text-btn_bg text-h2 font-normal underline">career@slumtech.org</span>
+    </div>
+
+    <div className="flex justify-left items-center mt-[1rem] pl-[3rem]">
+    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.5rem]">
+    <Image 
+    src="https://img.icons8.com/material-outlined/24/open-envelope.png"
+    fill
+    alt="mail"
+    /> 
+    </div>
+    <span className="text-btn_bg text-h2 font-normal underline">media@slumtech.org</span>
+    </div>
+
+    <div className="flex justify-left items-center mt-[1rem] pl-[3rem]">
+    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.2rem]">
+    <Image 
+    src="https://img.icons8.com/ios/24/address--v1.png" 
+    fill
+    alt="mail"
+    /> 
+    </div>
+    <span className="text-h2 font-normal underline">
+    801 Travis Street Suite 2101 Houston, Texas 77002
+    United States
+    </span>
+    </div>
+
+        </section>
           <Footer />
           </main>
     )
