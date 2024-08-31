@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Carousel } from "flowbite-react";
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
 import Head from 'next/head'
-import style from "./index.module.css"
+import style from "./index.module.css";
 
 export const Card = ({title, paragraph, link, img}) => {
     return(
@@ -64,8 +64,8 @@ export default function Blog() {
    
     <div className={`mt-[10em] w-[100%] min-h-[40.2em] sm:h-64 xl:h-80 2xl:h-96 relative`}>
       <Carousel>
-      <div className={`${style.blogBanner} flex justify-center items-center text-center text-index`}>
-        <div>
+      
+        <div><div className={`${style.blogBanner} flex justify-center items-center text-center text-index`}>
             <p className="font-normal text-[2em]">
             5th August, 2024
             </p>

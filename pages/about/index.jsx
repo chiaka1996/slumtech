@@ -18,9 +18,9 @@ export default function About() {
     </Head>
     <Navigation />
     <Sidebar /> 
-    <header className="font-h1 text-head text-h1 mt-[5em] text-center">ABOUT SLUM TECH FOUNDATION</header>
+    <header className="font-h1 text-heading text-h1 max-large:text-h4 mt-[5em] max-large:mt-[3em] text-center">ABOUT SLUM TECH FOUNDATION</header>
 
-    <div  className="relative w-full h-[27rem] max-large:h-[29rem] mt-[3em]">
+    <div  className="relative w-full h-[27rem] max-large:h-[18rem] mt-[3em] max-large:mt-[2em]">
         <Image 
         src="/images/aboutbanner.png"
         fill
@@ -29,21 +29,21 @@ export default function About() {
         </div>
 
     {/* sub links */}
-    <div className="flex flex-row justify-center mt-[3em]">
-      <div className="font-normal text-primary text-h2 mr-[3em]">
+    <div className="flex flex-row justify-center mt-[3em] max-large:mt-[2em]">
+      <div className="font-normal text-primary text-h2 mr-[3em] max-large:mr-[1.5em]">
       <Link href='/about/mission' className='no-underline hover:text-btn_bg'>
         Our mission
       </Link>
       </div>
-      <div className="font-normal text-primary text-h2 mr-[3em]">
+      <div className="font-normal text-primary text-h2 mr-[3em] max-large:mr-0">
       <Link href='/about/vision' className='no-underline hover:text-btn_bg'>
         Our Vision
         </Link>
         </div>
     </div>
 
-    <div className="font-[900] text-h1 w-[54.5rem] mx-auto mt-[3em] relative text-[#000]">
-    <span className="text-[#FD213E] font-tertiary text-[3em] absolute -top-[0.57em] -left-[0.4em]">“</span>
+    <div className="font-[900] text-h1 max-large:text-[1.75em] w-[54.5rem] max-large:w-[90%] mx-auto mt-[3em] max-large:mt-[2em] relative text-[#000]">
+    <span className="text-[#FD213E] font-tertiary text-[3em] max-large:text-head absolute -top-[0.57em] -left-[0.4em] max-large:-left-[0.3em]">“</span>
     <p>
     At the core of SlumTech Foundation's mission is the belief that every young person, 
     regardless of their background or circumstances, 
@@ -51,7 +51,7 @@ export default function About() {
     </p>
     </div>
 
-    <section className="mt-[3em] text-h2 font-normal text-primary w-[80%] mx-auto">
+    <section className="mt-[3em] max-large:mt-[2em] text-h2 max-large:text-h3 font-normal text-primary w-[80%] max-large:w-[90%] mx-auto">
     <p className="mb-[1em]">SlumTech Foundation is a transformative non-profit organization that is making a significant 
     impact in underserved communities across the globe by empowering youth through technology education and mentorship. 
     With a vision to bridge the digital divide and create opportunities for a brighter future, SlumTech Foundation is dedicated 
@@ -82,14 +82,14 @@ export default function About() {
     more young people with its programs and resources.
     </p> 
 
-    <div  className="relative w-[28.6rem] max-large:w-[29.6rem] h-[27rem] max-large:h-[29rem] my-[3em] mx-auto">
+    <div  className="relative w-[28.6rem] max-large:w-[90%] h-[27rem] max-large:h-[15rem] my-[3em] max-large:my-[1em] mx-auto">
     <Image 
     src="/images/aboutChild.png"
     fill
     alt="about_child"
     /> 
     </div>
-        <p className="mb-[1em]">
+        <p className="mb-[1em] max-large:mt-0">
         SlumTech Foundation is committed to holistic youth development. In addition to technical skills training, 
         the foundation emphasizes the importance of soft skills such as communication, teamwork, and problem-solving. 
         By fostering a well-rounded approach to education, SlumTech Foundation equips young people with the tools they 

@@ -10,4 +10,8 @@
 
 }
 
+/* home banner */
+.bannerOverlay{
+  background: linear-gradient(180deg, rgba(232, 16, 125, 0) 0%, #044930 96.5%);
+}
   

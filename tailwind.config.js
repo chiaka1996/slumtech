@@ -24,6 +24,7 @@ module.exports = {
     screens: {
       'large': '900px',
       "small": "400px",
+      "medium": "768px",
       "xlarge": "1900px"
     },
     backgroundImage: {

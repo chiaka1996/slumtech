@@ -19,16 +19,23 @@ export default function Vision() {
     </Head>
     <Navigation />
     <Sidebar /> 
-    <div className="relative text-center">
-    <span className="absolute top-[1em] left-[10%] text-secondary font-normal text-[#000]">
+    <div className="relative text-center mt-[10em] max-large:mt-[7em] w-[80%] mx-auto max-large:w-[90%]">
     <Link href='/about' className='no-underline'>
-    Back to About
-    </Link>
-   </span>
-    <header className="font-h1 text-head text-h1 mt-[5em] text-center">OUR MISSION</header>
+    <div className="text-secondary max-large:text-normal font-normal text-[#000] flex flex-row items-center absolute top-0 max-large:top-[0.5rem] left-0">
+          <div className=" w-[50px] max-large:w-[30px] h-[50px] max-large:h-[30px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5">
+          <div className="relative w-[30px] max-large:w-[15px] h-[30px] max-large:h-[15px]">
+          <img 
+          src="https://img.icons8.com/ios-glyphs/30/ffffff/left.png"
+          alt="left"/>
+          </div>
+          </div>
+          <span className="max-large:hidden"> Back to About</span>        
+        </div>
+        </Link>
+    <header className="font-h1 text-heading text-h1 max-large:text-h4">OUR VISSION</header>
     </div>
 
-    <div  className="relative w-full h-[27rem] max-large:h-[29rem] mt-[3em]">
+    <div  className="relative w-full h-[27rem] max-large:h-[15rem] mt-[3em] max-large:mt-[2em]">
         <Image 
         src="/images/aboutbanner.png"
         fill
@@ -37,18 +44,18 @@ export default function Vision() {
         </div>
 
     {/* sub links */}
-    <div className="flex flex-row justify-center mt-[3em]">
-      <div className="font-normal text-h2 mr-[3em] text-primary">
+    <div className="flex flex-row justify-center mt-[3em] max-large:mt-[2em]">
+      <div className="font-normal text-h2 mr-[3em] max-large:mr-[1.5em] text-primary">
       <Link href='/about/mission' className='no-underline'>
         Our mission
         </Link>
       </div>
-      <div className="font-normal text-btn_bg text-h2 mr-[3em] underline">  
+      <div className="font-normal text-btn_bg text-h2 mr-[3em] max-large:mr-[1.5em]  underline">  
         Our Vision
         </div>
     </div>
 
-    <section className="mt-[3em] text-h2 font-normal text-primary w-[80%] mx-auto">
+    <section className="mt-[3em] max-large:mt-[2em] text-h2 max-large:text-h3 font-normal text-primary w-[80%] max-large:w-[90%] mx-auto">
     <p className="mb-[1em]">
     At SlumTech Foundation, our vision is a world where technology is a powerful force for good, 
     transforming the lives of individuals in underserved communities. We envision a future where 

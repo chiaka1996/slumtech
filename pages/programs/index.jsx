@@ -77,17 +77,17 @@ export default function Programs() {
     </Head>
     <Navigation />
     <Sidebar /> 
-    <header className="font-h1 text-head text-h1 mt-[5em] text-center">OUR PROGRAMS</header>
+    <header className="font-h1 text-heading text-h1 max-large:text-h4  mt-[5em] max-large:mt-[3em] text-center">OUR PROGRAMS</header>
 
-    <section className="w-[60%] mx-auto mt-[3em]">
-        <div className="text-center px-16 text-h1 text-h2 font-h3">
+    <section className="w-[60%] max-large:w-[90%] mx-auto mt-[3em] max-large:mt-[1em]">
+        <div className="text-center px-16 max-large:px-0 text-heading text-h2 max-large:text-h3 font-h3">
         Our programs are designed to equip individuals with the skills and resources they need to 
         thrive in the digital age. From computer literacy classes and coding workshops to entrepreneurship 
         training and mentorship programs, 
         we offer a range of initiatives to support our beneficiaries on their journey to success.
         </div>
 
-        <div className="mt-[3em] grid grid-cols-2 gap-[5em]">
+        <div className="mt-[3em] grid grid-cols-2 max-large:grid-cols-1 gap-[5em] max-large:gap-[2em]">
             {
                 programList.map((program, i) => <div key={i}>
                     <ProgramCard
@@ -101,7 +101,7 @@ export default function Programs() {
         </div>
     </section>
 
-    <section className="rounded-[20px] bg-[#02AED6] w-[70%] mx-auto text-center px-[1em] py-[1em] my-[3em] text-[#fff] font-h2 text-h2">
+    <section className="rounded-[20px] bg-[#02AED6] w-[70%] max-large:w-[90%] mx-auto text-center px-[1em] py-[1em] mt-[3em] max-large:mt-[2em] text-[#fff] font-h2 text-h2 max-large:text-secondary">
     <div className="flex flex-row items-center justify-center w-[38px] h-[38px] bg-btn_bg mx-auto rounded-full">
     <div className="relative w-[27px] h-[27px]">
     <Image 

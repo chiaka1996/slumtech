@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 const ProgramCards = ({img, title, list}) => {
 
     return(
-        <div className='min-h-[34rem] bg-card1 rounded-[21px] px-[2em] pt-[2em]'>
+        <div className='min-h-[34rem] bg-card1 rounded-[21px] px-[2em] pt-[2em] pb-[0.5em]'>
             <div  className="relative w-full min-h-[14em]">
             <Image 
             src={img}

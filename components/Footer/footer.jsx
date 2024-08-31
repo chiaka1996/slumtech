@@ -28,13 +28,13 @@ const Footer = () => {
         </div>
 
         <button className='px-5 py-3 text-btn_color bg-btn_bg rounded-[12px]'>Donate</button>
-        <div className='w-full text-center my-5'>
-            <span className='ml-[3em]'>About us</span>
-            <span className='ml-[3em]'>Events and News</span>
-            <span className='ml-[3em]'>Programs</span>
-            <span className='ml-[3em]'>Get Involved</span>
-            <span className='ml-[3em]'>Contact</span>
-            <span className='ml-[3em]'>FAQs</span>
+        <div className='w-full text-center my-5 flex flex-row justify-center flex-wrap'>
+            <div className=''>About us</div>
+            <div className='ml-[3em]  max-large:ml-[1em]'>Events and News</div>
+            <div className='ml-[3em]  max-large:ml-[1em]'>Programs</div>
+            <div className='ml-[3em]  max-large:ml-[1em]'>Get Involved</div>
+            <div className='ml-[3em]  max-large:ml-[1em]'>Contact</div>
+            <div className='ml-[3em]  max-large:ml-[1em]'>FAQs</div>
         </div>
 
         <div className=' w-full justify-center flex flex-row'>
