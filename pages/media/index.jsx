@@ -5,8 +5,8 @@ import Head from 'next/head'
 
 export const Card = ({title, paragraph, link, img}) => {
     return(
-        <div className="relative">
-            <div  className="relative w-full min-h-[17.5rem] max-large:h-[20rem]">
+        <div className="relative  max-large:pb-[4rem] max-large:mb-[0.5rem]">
+            <div  className="relative w-full min-h-[17.5rem] max-large:min-h-[15rem]">
                 <Image 
                 src={img}
                 fill
@@ -21,8 +21,8 @@ export const Card = ({title, paragraph, link, img}) => {
            {paragraph}
             </p>   
                 <Link href={link}>
-                <button className="px-3 py-3 bg-btn_bg rounded-[12px] absolute bottom-[0.5rem] right-0 no-underline">
-                <div  className="relative min-w-[20px] min-h-[20px] max-large:h-[30px]">
+                <button className="px-3 max-large:px-4 py-3 bg-btn_bg rounded-[12px] absolute bottom-[0.5rem] right-0 no-underline">
+                <div  className="relative min-w-[20px] min-h-[20px] max-large:min-h-[20px]">
                 <Image 
                 src="https://img.icons8.com/ios/20/000000/circled-right-2.png" 
                 fill
@@ -82,8 +82,8 @@ export default function Media() {
     <Navigation />
     <Sidebar /> 
 
-    <section className="flex flex-row items-center w-[80%] mx-auto mt-[10em]">
-    <div  className="relative w-[55%] min-h-[32.5rem] max-large:h-[29rem] mt-[3em]">
+    <section className="flex flex-row max-large:flex-col items-center w-[80%] max-large:w-[90%] mx-auto mt-[10em] max-large:mt-[5em]">
+    <div  className="relative w-[55%] max-large:w-full min-h-[32.5rem] max-large:min-h-[20rem] mt-[3em]">
     <Image 
     src="/images/event1.png"
     fill
@@ -91,16 +91,16 @@ export default function Media() {
     /> 
     </div>
 
-    <div className="w-[40%] ml-[5rem]">
-        <header className="font-h4 text-[2.5em] text-primary">
+    <div className="w-[40%] max-large:w-full ml-[5rem] max-large:ml-0">
+        <header className="font-h4 text-[2.5em] max-large:text-h4 text-primary">
         Embracing Digital Transformation: Unlocking the Potential of Slum Communities
         </header>
-        <p className="text-[23px] text-[#044930] font-normal mt-[1em]">
+        <p className="text-[23px] max-large:text-h3 text-[#044930] font-normal mt-[1em]">
         In the bustling streets of urban slums, where challenges like poverty, limited resources, 
         and inadequate infrastructure persist, a beacon of hope is emerging – digitalization.
         </p>
 
-        <div className="w-full text-right mt-[2rem]">
+        <div className="w-full text-right mt-[2rem] max-large:mt-[1rem]">
         <button className="px-6 py-3 bg-btn_bg rounded-[12px]">
         <div  className="relative min-w-[30px] min-h-[30px] max-large:h-[30px]">
         <Image 
@@ -115,10 +115,10 @@ export default function Media() {
     </section>
 
     {/* all news */}
-    <section className="mt-[3em] w-[80%] mx-auto">
-        <header className="font-h4 text-[2.5em]">All news</header>
+    <section className="mt-[3em] w-[80%] max-large:w-[90%] mx-auto">
+        <header className="font-h4 text-[2.5em] max-large:text-mHeader">All news</header>
 
-        <div className="mt-[1em] grid grid-cols-4 gap-4 min-h-[36.5em]">
+        <div className="mt-[1em] grid grid-cols-4 max-large:grid-cols-1 gap-4">
           {
             AllNews.map((item, i) => <Card title={item.title} paragraph={item.paragraph} img={item.img} link={item.link} key={i}/>)
           }
@@ -126,10 +126,10 @@ export default function Media() {
     </section>
 
     {/* AllEvents */}
-    <section className="mt-[3em] w-[80%] mx-auto">
-        <header className="font-h4 text-[2.5em]">All Events</header>
+    <section className="mt-[3em] w-[80%] max-large:w-[90%] mx-auto">
+        <header className="font-h4 text-[2.5em] max-large:text-mHeader">All Events</header>
 
-        <div className="mt-[1em] grid grid-cols-4 gap-4 min-h-[36.5em]">
+        <div className="mt-[1em] grid grid-cols-4 max-large:grid-cols-1 gap-4">
           {
             AllEvents.map((item, i) => <Card title={item.title} paragraph={item.paragraph} img={item.img} link={item.link} key={i}/>)
           }

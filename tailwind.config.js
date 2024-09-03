@@ -52,6 +52,9 @@ module.exports = {
     h4: '2rem', //32px use for mobile header
     secondary: '1.25rem', //20px
     head: "2.6875rem", //43px
+    mHeader: "2rem", //mobile header
+    msubHeader: "1.125rem", //mobile sub header
+    
 },
 fontFamily: {
   "primary": ['Public Sans'],

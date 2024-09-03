@@ -39,7 +39,7 @@ export default function Mission() {
         <Image 
         src="/images/aboutbanner.png"
         fill
-        alt="banner"
+        alt="banner" 
         /> 
         </div>
 
