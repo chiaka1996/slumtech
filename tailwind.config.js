@@ -14,7 +14,7 @@ module.exports = {
       colors: {
         basic: "#000",
         blog: "#2D3748",
-        h1: "#3F3F3F",
+        heading: "#3F3F3F",
         btn_bg: '#FD213E',
         primary: "#353535",
         btn_color: "#F5F5F5",
@@ -46,10 +46,10 @@ module.exports = {
   },
   fontSize: {
     normal: "1em", //16px
-    h1: '2.25rem', //36px
+    h1: '2.25rem', //36px 
     h2: '1.5rem', //24px,
-    h3: '1.125rem', //18px
-    h4: '2rem', //32px
+    h3: '1.125rem', //18px for mobile sub heading
+    h4: '2rem', //32px use for mobile header
     secondary: '1.25rem', //20px
     head: "2.6875rem", //43px
 },

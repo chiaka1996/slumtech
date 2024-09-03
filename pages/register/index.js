@@ -135,23 +135,23 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-        <div className="relative text-center">
+    <div className="relative text-center mt-[10em] max-large:mt-[7em] w-[80%] mx-auto max-large:w-[90%]">
         <Link href='/about' className='no-underline'>
-          <div className="absolute top-0 left-[10%] text-secondary font-normal text-[#000] flex flex-row items-center">
-          <div className=" w-[50px] h-[50px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5">
-          <div className="relative w-[30px] h-[30px]">
-          <img 
-          src="https://img.icons8.com/ios-glyphs/30/ffffff/left.png"
-          alt="left"/>
-          </div>
-          </div>
-          <span> Back to About</span>        
+        <div className="text-secondary max-large:text-normal font-normal text-[#000] flex flex-row items-center absolute top-0 max-large:top-[0.5rem] left-0">
+              <div className=" w-[50px] max-large:w-[30px] h-[50px] max-large:h-[30px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5">
+              <div className="relative w-[30px] max-large:w-[15px] h-[30px] max-large:h-[15px]">
+              <img 
+              src="https://img.icons8.com/ios-glyphs/30/ffffff/left.png"
+              alt="left"/>
+              </div>
+              </div>
+              <span className="max-large:hidden"> Back to About</span>        
+            </div>
+            </Link>
+        <header className="font-h1 text-heading text-h1 max-large:text-h4">JOIN US AS A VOLUNTEER</header>
         </div>
-        </Link>
-          <header className="font-h1 text-head text-h1 mt-[5em] text-center">JOIN US AS A VOLUNTEER</header>
-          </div>
 
-          <div  className="relative w-full h-[26.6rem] max-large:h-[29rem] mt-[3em]">
+          <div  className="relative w-full h-[26.6rem] max-large:h-[15rem] mt-[3em]">
           <Image 
           src="/images/volunteer.png"
           fill
@@ -159,7 +159,7 @@ const submitBtn = async (e) => {
           /> 
           </div>
 
-          <section className="w-[37%] mx-auto py-[3em]">
+          <section className="w-[37%] max-large:w-[90%] mx-auto py-[3em]">
             <p className="text-[#5C5C5C] text-[1.125em] font-normal">At SlumTech Foundation, we believe in the power of 
               volunteers to drive positive change in the community. 
               Join us in our mission to empower and uplift 
@@ -168,7 +168,7 @@ const submitBtn = async (e) => {
 
             <div className="mt-[1em]">
               <header className="text-h2 font-h2">Benefits of Volunteering with SlumTech Foundation</header>
-              <ul className="text-secondary font-normal list-disc pl-[2em]">
+              <ul className="text-secondary max-large:text-h3 font-normal list-disc pl-[2em]">
               <li>Make a tangible impact on disadvantaged communities</li>
               <li>Gain valuable experience and skills</li>
               <li>Build meaningful connections and friendships</li>
@@ -178,7 +178,7 @@ const submitBtn = async (e) => {
 
             <div className="mt-[1em]">
               <header className="text-h2 font-h2">Next Steps</header>
-              <ul className="text-secondary font-normal list-disc pl-[2em]">
+              <ul className="text-secondary max-large:text-h3 font-normal list-disc pl-[2em]">
               <li>
               Once you submit your registration, our team will review your information and 
               reach out to you with volunteer opportunities that match your skills and interests. 
@@ -187,7 +187,7 @@ const submitBtn = async (e) => {
               </ul>
             </div>
 
-            <div className="bg-btn_bg text-center py-3 text-[#fff] my-[0.5em] font-h2 text-h2">
+            <div className="bg-btn_bg text-center py-3 text-[#fff] my-[0.5em] font-h2 text-h2 max-large:text-secondary">
               <p>Ready to make a difference?</p>
               <p>Fill out the registration form below and become</p>
                 <p>a part of our volunteer community today!</p>
