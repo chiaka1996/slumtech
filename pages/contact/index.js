@@ -115,19 +115,18 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-         <div  className="relative w-full min-h-[20rem] max-large:h-[25rem] mt-[10em]">
+         <div  className="relative w-full min-h-[20rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7rem]">
         <Image 
         src="/images/contact.png"
         fill
         alt="banner"
-        /> 
-          
+        />   
         </div>
 
-        <section className="w-[60%] mx-auto my-[3em]">
-          <header className="text-[48px] font-h4 pl-[3rem]">Send us a Mail</header>
+        <section className="w-[60%] max-large:w-[90%] mx-auto my-[3em]">
+          <header className="text-[48px] max-large:text-mHeader font-h4 pl-[3rem] max-large:pl-0">Send us a Mail</header>
 
-        <form className="w-full rounded-[16px] bg-[#FD213E] px-[3em] py-[2em] mt-[1.5em]">
+        <form className="w-full rounded-[16px] bg-[#FD213E] px-[3em] max-large:px-[1em] py-[2em] max-large:py-[1em] mt-[1.5em]">
         {/* grid 1 */}
         <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
         <input 
@@ -185,11 +184,11 @@ const submitBtn = async (e) => {
             />
         </div>
 
-        <button className="font-h2 p-[1em] text-btn_bg bg-h1 rounded-[12px] text-[1em]">Send</button>
+        <button className="font-h2 p-[1em] text-btn_bg bg-h1 rounded-[12px] text-[1em] bg-card1">Send</button>
     </form>
 
-    <div className="flex justify-left items-center mt-[3rem] pl-[3rem]">
-    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.5em]">
+    <div className="flex justify-left items-center mt-[3rem] max-large:mt-[2rem] pl-[3rem] max-large:pl-0">
+    <div className="relative w-[24px] h-[24px] max-large:h-[24px] mr-[0.7em] mt-[0.5em]">
     <Image 
     src="https://img.icons8.com/material-outlined/24/open-envelope.png"
     fill
@@ -199,8 +198,8 @@ const submitBtn = async (e) => {
     <span className="text-btn_bg text-h2 font-normal underline">career@slumtech.org</span>
     </div>
 
-    <div className="flex justify-left items-center mt-[1rem] pl-[3rem]">
-    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.5rem]">
+    <div className="flex justify-left items-center mt-[1rem] pl-[3rem] max-large:pl-0">
+    <div className="relative w-[24px] h-[24px] max-large:h-[24px] mr-[0.7em] mt-[0.5rem]">
     <Image 
     src="https://img.icons8.com/material-outlined/24/open-envelope.png"
     fill
@@ -210,8 +209,8 @@ const submitBtn = async (e) => {
     <span className="text-btn_bg text-h2 font-normal underline">media@slumtech.org</span>
     </div>
 
-    <div className="flex justify-left items-center mt-[1rem] pl-[3rem]">
-    <div className="relative w-[24px] h-[24px] max-large:h-[19px] mr-[0.7em] mt-[0.2rem]">
+    <div className="flex justify-left items-center mt-[1rem] pl-[3rem] max-large:pl-0">
+    <div className="relative w-[24px] max-large:w-[36px] h-[24px] max-large:h-[36px] mr-[0.7em] mt-[0.2rem]">
     <Image 
     src="https://img.icons8.com/ios/24/address--v1.png" 
     fill
