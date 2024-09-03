@@ -19,21 +19,21 @@ export default function Career() {
     <Navigation />
     <Sidebar /> 
 
-    <div  className="relative w-full min-h-[20rem] max-large:h-[25rem] mt-[10em]">
+    <div  className="relative w-full min-h-[20rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7em]">
     <Image 
     src="/images/career1.png"
     fill
     alt="banner"
     /> 
-    <div className="text-card1 text-h1 font-h2 absolut relative z-[10] min-h-[20rem] flex flex-row justify-center items-center">
+    <div className="text-card1 text-h1 font-h2 absolut relative z-[10] min-h-[20rem] max-large:min-h-[13rem] flex flex-row justify-center items-center">
     <h2>Career</h2>
     </div>  
     </div>
 
-    <h3 className="font-h1 text-[2em] text-primary mt-[2em] text-center">Join Us in Building a Brighter Future</h3>
-    <div className="font-[300] text-secondary text-center">These roles are currently open, and we are hoping you can fill them.</div>
+    <h3 className="font-h1 text-[2em] text-primary mt-[2em] max-large:mt-[1em] text-center">Join Us in Building a Brighter Future</h3>
+    <div className="font-[300] text-secondary max-large:text-h3 text-center">These roles are currently open, and we are hoping you can fill them.</div>
 
-    <div className="bg-[#02AED633] rounded-[10px] px-[5em] py-[2em] mt-[3em] w-[80%] mx-auto flex flex-row items-center justify-between">
+    <div className="bg-[#02AED633] rounded-[10px] px-[5em] max-large:px-[1em] py-[2em] mt-[3em] max-large:mt-[2em] w-[80%] max-large:w-[90%] mx-auto flex flex-row flex-wrap items-center justify-between">
         <span>Country Director/Representative at SlumTech Foundation</span>
         <span>Full Time</span>
         <button className="bg-btn_bg rounded-[12px] text-card1 text-[1em] min-h-[3.2em] px-[1em]">

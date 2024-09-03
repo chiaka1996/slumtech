@@ -22,18 +22,18 @@ export default function Vacancy1() {
     <Navigation />
     <Sidebar /> 
 
-    <div  className="relative w-full min-h-[20rem] max-large:h-[25rem] mt-[10em]">
+    <div  className="relative w-full min-h-[20rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7em]">
     <Image 
     src="/images/career1.png"
     fill
     alt="banner"
     /> 
-    <div className="text-card1 text-h1 font-h2 absolut relative z-[10] min-h-[20rem] flex flex-row justify-center items-center">
+    <div className="text-card1 text-h1 font-h2 relative z-[10] min-h-[20rem] max-large:min-h-[15rem] flex flex-row justify-center items-center">
     <h2>APPLY CAREER</h2>
     </div>  
     </div>
 
-    <div className="flex flex-row justify-center items-center my-[3em]">
+    <div className="flex flex-row justify-center items-center my-[3em] max-large:px-[5%]">
     <div className="relative w-[4em] h-[4em] max-large:h-[4rem] mr-[1em]">
     <Image 
     src="/icons/apply1.png"
@@ -41,16 +41,16 @@ export default function Vacancy1() {
     alt="apply"
     /> 
     </div>
-    <span className="text-h2 font-normal">Country Director/Representative at SlumTech Foundation</span>
+    <span className="text-h2 max-large:text-h3 font-normal">Country Director/Representative at SlumTech Foundation</span>
     </div>
 
-    <section className="px-[10%]">
+    <section className="px-[10%] max-large:px-[5%]">
     <div className="flex flex-row">
         <span className="text-blog font-h2 text-h3 mr-3">Posted: </span>
         <span className="font-normal text-h3  font-secondary text-[#718096]"> August 5, 2024</span>
     </div>
 
-    <div className="mt-[1.5em] text-secondary">
+    <div className="mt-[1.5em] text-secondary max-large:text-h3">
         <h3 className="font-h2 text-blog">Job Description:</h3>
         <p className="font-normal">SlumTech Foundation is seeking motivated and dynamic individuals to join our team as Country Directors/Representatives 
             in various regions. As a Country Director/Representative, you will play a key role in representing SlumTech 
@@ -58,7 +58,7 @@ export default function Vacancy1() {
         </p>
     </div>
 
-    <div className="mt-[1em] text-secondary">
+    <div className="mt-[1em] text-secondary max-large:text-h3">
         <h3 className="font-h2 text-blog">Responsibilities:</h3>
         <p className="font-normal">
         Digitalization has significantly improved access to essential services in slum communities. 
@@ -111,7 +111,7 @@ export default function Vacancy1() {
     </li>
     </ul>
 
-    <div className="mt-[1em] text-secondary">
+    <div className="mt-[1em] text-secondary max-large:text-h3">
     <h3 className="font-h2 text-blog">Qualifications:</h3>
     <ul className="list-decimal pl-[2em] font-normal">
     <li>Bachelor's degree in a relevant field (education, social sciences, business, technology, etc.). 
@@ -143,8 +143,8 @@ export default function Vacancy1() {
     Join us in making a difference in the lives of young people and shaping a brighter future for all.
     </p>     
     </div>
-    <form className="w-[80%] rounded-[16px] bg-[#E8107D] px-[5em] py-[3em] my-[3em]">
-        <header className="font-h3 text-btn_color text-h1">APPLY</header>
+    <form className="w-[80%] max-large:w-full max-large:mx-auto rounded-[16px] bg-[#E8107D] px-[5em] max-large:px-[1em] py-[3em] max-large:py-[1em] my-[3em]">
+        <header className="font-h3 text-btn_color text-h1 max-large:text-h4">APPLY</header>
         {/* grid 1 */}
         <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
         <input 
