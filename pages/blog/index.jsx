@@ -7,8 +7,8 @@ import style from "./index.module.css";
 
 export const Card = ({title, paragraph, link, img}) => {
     return(
-        <div className="relative">
-            <div  className="relative w-full min-h-[17.5rem] max-large:h-[20rem]">
+        <div className="relative max-large:pb-[4rem]">
+            <div  className="relative w-full min-h-[17.5rem] max-large:min-h-[15rem]">
                 <Image 
                 src={img}
                 fill
@@ -62,21 +62,21 @@ export default function Blog() {
     <Navigation />
     <Sidebar /> 
    
-    <div className={`mt-[10em] w-[100%] min-h-[40.2em] sm:h-64 xl:h-80 2xl:h-96 relative`}>
+    <div className={`mt-[10em] max-large:mt-[5em] w-[100%] min-h-[40.2em] max-large:min-h-[20rem] relative`}>
       <Carousel>
-      
-        <div><div className={`${style.blogBanner} flex justify-center items-center text-center text-index`}>
+        <div>
+          <div className={`${style.blogBanner} flex justify-center items-center text-center text-index`}>
+            <div>
             <p className="font-normal text-[2em]">
             5th August, 2024
             </p>
             <p className="font-h2 text-[2em]">Empowering Tomorrow's Leaders:</p>
             <p className="font-h2 text-[2em]">The Global Impact of SlumTech Institutes' Future</p>
             <p className="font-h2 mb-2 text-[2em]">Expansion and Strategic Partnerships</p>
-
             <Link href="/blog/post2" className='no-underline'>
             <button className="px-3 py-2 bg-btn_bg rounded-[12px] text-normal">View post</button>
             </Link>
-
+            </div>
         </div>
         </div>
 
@@ -100,7 +100,7 @@ export default function Blog() {
      <section className="mt-[3em] w-[80%] mx-auto">
         <header className="font-h4 text-[2.5em]">Blog Posts</header>
 
-        <div className="mt-[1em] grid grid-cols-4 gap-4 min-h-[36.5em]">
+        <div className="mt-[1em] grid grid-cols-4  max-large:grid-cols-1 gap-4">
           {
             AllBlogs.map((item, i) => <Card title={item.title} paragraph={item.paragraph} link={item.link} img={item.img}  key={i}/>)
           }

@@ -19,11 +19,11 @@ const BlogPost1 = () => {
         </Head>
         <Navigation />
         <Sidebar /> 
-        <div className="relative mt-[10em] w-[80%] mx-auto">
+        <div className="relative mt-[10em] max-large:mt-[7rem] w-[80%] max-large:w-[90%] mx-auto">
         <Link href='/blog' className='no-underline'>
           <div className="text-secondary font-normal text-[#000] flex flex-row items-center">
-          <div className=" w-[50px] h-[50px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5">
-          <div className="relative w-[30px] h-[30px]">
+          <div className=" w-[50px] max-large:w-[30px] h-[50px] max-large:h-[30px] rounded-full bg-btn_bg flex flex-rows justify-center items-center mr-5 max-large:mr-3">
+          <div className="relative w-[30px] max-large:w-[15px] h-[30px] max-large:h-[15px]">
           <img 
           src="https://img.icons8.com/ios-glyphs/30/ffffff/left.png"
           alt="left"/>
@@ -34,13 +34,13 @@ const BlogPost1 = () => {
         </Link>
         </div>
 
-        <section className="w-[80%] mx-auto text-center mt-[3em]">
-            <header className="text-cente font-h2 text-h1 text-primary w-[70%] mx-auto">
+        <section className="w-[80%] max-large:w-[90%] mx-auto text-center mt-[3em]">
+            <header className="text-center font-h2 text-h1 max-large:text-mHeader text-primary w-[70%] max-large:w-full mx-auto">
             Embracing Digital Transformation: 
             Unlocking the Potential of Slum Communities
             </header>
 
-            <div  className="relative w-full h-[24rem] max-large:h-[29rem] mt-[3em]">
+            <div  className="relative w-full h-[24rem] max-large:h-[15rem] mt-[3em]">
             <Image 
             src="/images/blog_banner2.png"
             fill
@@ -52,7 +52,7 @@ const BlogPost1 = () => {
                 <span className="text-[#718096] text-[18px] font-normal font-secondary">Monday - August 5</span>
             </div>
 
-            <div className="border border-[#E8E7E7] border-x-0 border-t-1 border-b-0 pt-4 text-left text-secondary">
+            <div className="border border-[#E8E7E7] border-x-0 border-t-1 border-b-0 pt-4 text-left text-secondary max-large:text-h3">
             <p>In the bustling streets of urban slums, where challenges like poverty, limited resources, 
                 and inadequate infrastructure persist, a beacon of hope is emerging – digitalization. 
                 The integration of digital technologies and solutions in slum communities is 
