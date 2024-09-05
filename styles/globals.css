@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.programSection{
+  background: linear-gradient(180deg, #E8107D 0%, #FD213E 100%);
+}
+
+.program_grid{
+  border: 1px solid;
+  border-image: linear-gradient(to bottom, rgba(245, 245, 245, 0) 0%, #F5F5F5 50%, rgba(245, 245, 245, 0)) 1 100%;
+ /* border-image:  linear-gradient(to bottom, white,  rgba(0, 0, 0, 0)) 1 100%; */
+}
 
 .upcomingEvent{
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
-
-/* background-color: red; */
-
 }
 
 /* home banner */

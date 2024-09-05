@@ -2,9 +2,113 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-import { Carousel } from "flowbite-react";
 import {Navigation, Sidebar, Footer, Newsletter} from "../components"
 import style from "./blog/index.module.css"
+
+export const ProgramCard1 = () => {
+  return (
+    <div className="grid grid-cols-2 w-[45%]">
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector1.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Community Tech Hubs</p>
+      </div>
+     </div>
+
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector6.png" 
+      fill
+      alt="vector"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">STEM Education Outreach</p>
+      </div>
+     </div>
+
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector4.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Digital Literacy Workshops</p>
+      </div>
+     </div>
+
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector5.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Tech for Good Initiatives</p>
+      </div>
+     </div>
+    </div>
+
+  )
+}
+
+export const ProgramCard2 = () => {
+  return (
+    <div className="grid grid-cols-2 w-[45%]">
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector1.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Community Tech Hubs</p>
+      </div>
+     </div>
+
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector6.png" 
+      fill
+      alt="vector"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">STEM Education Outreach</p>
+      </div>
+     </div>
+
+     <div className="text-center px-[2rem] flex items-center program_grid">
+      <div>
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector4.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Digital Literacy Workshops</p>
+      </div>
+     </div>
+    </div>
+
+  )
+}
 
 
 export default function Home() {
@@ -17,6 +121,26 @@ export default function Home() {
     },5000)
     return () => clearInterval(interval)
   },[imgCount])
+
+  const empowerImages = ["/images/empower.png", "/images/donation1.png", "/images/donation2.png"]
+  const [empowerCount, setEmpowerCount] = useState(0);
+
+  useEffect(() => {
+    const interval =  setInterval(() => {
+      imgCount > 1 ? setEmpowerCount(0) : setEmpowerCount((img) => img + 1)
+    },7000)
+    return () => clearInterval(interval)
+  },[empowerCount])
+
+  const [programSwitch, setProgramSwitch] = useState(false);
+  useEffect(() => {
+    const interval =  setInterval(() => {
+      programSwitch ? setProgramSwitch(false) : setProgramSwitch(true)
+    },7000)
+    return () => clearInterval(interval)
+  },[programSwitch])
+
+
 
 
   return (
@@ -62,19 +186,42 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="mt-[5rem] max-large:mt-[3rem] w-[50%] max-large:w-[90%] mx-auto text-center">
-    <div className="relative max-w-[13rem] h-[10rem] max-large:h-[10rem] mx-auto">
+    <section className="relative mt-[5rem] max-large:mt-[3rem] w-[50%] max-large:w-[90%] mx-auto text-center z-[100]">
+    <div className="relative max-w-[13rem] h-[10rem] max-large:h-[10rem] mx-auto z-[100]">
       <Image 
-      src="/images/home1.png" 
+      src="/images/boylaptop.png" 
       fill
       alt="home"
       /> 
       </div>
-      <p className="mt-[2em] font-h4 text-h2 max-large:text-h3">
+      <p className="mt-[2em] font-h4 text-h2 max-large:text-h3 z-[100]">
       Join us in our mission to make a difference and 
       transform lives through technology. Explore our website to learn more about our work, 
       get involved, and support our cause.
       </p>
+    </section>
+
+    {/* our programs */}
+    <section className="relative programSection text-btn_color px-[15%] py-2 mt-[5em] mb-[3em]">
+      {/* semi circle */}
+      <div className="absolute w-[38rem] h-[38rem] rounded-full bg-[#fff] left-[3rem] top-[-25rem] z-10"></div>
+      <div className="absolute w-[38rem] h-[38rem] rounded-full bg-[#fff] left-[-30rem] top-[-25rem] z-10"></div>
+    <div className="flex flex-row flex-wrap w-full justify-between z-[100]">
+    <div className="w-[45%] my-[5em] z-[100]">
+      <header className="text-btn_bg font-h2 text-h4 z-[100]">Our Programs</header>
+    <p className="font-normal text-secondary mt-[5em] mb-[1em]">
+    One of the key pillars of SlumTech Foundation is its focus on technology education. 
+    The foundation offers training in coding, digital skills, and entrepreneurship, 
+    preparing young people for the demands of the 21st-century workforce. By providing 
+    hands-on learning experiences and practical skills development, SlumTech 
+    Foundation empowers youth to become creators and innovators in an increasingly 
+    digital world.
+    </p>
+    <button className="px-[0.8em] py-[0.6em] font-h2 text-normal rounded-[12px] text-btn_bg bg-btn_color">Learn more</button>
+    </div>
+
+    {programSwitch ? <ProgramCard1 /> : <ProgramCard2 />}
+    </div>
     </section>
 
     {/* upcoming events */}
@@ -101,9 +248,9 @@ export default function Home() {
     <section className="mt-[5rem] max-large:mt-[3rem] flex flex-row max-large:flex-col items-center w-[65%] max-large:w-[90%] mx-auto">
     <div className="relative w-[45%] max-large:w-full min-h-[22rem] mr-[4em] max-large:mr-0 max-large:h-[20rem] mx-auto">
       <Image 
-      src="/images/empower.png" 
+       src={empowerImages[imgCount]}
       fill
-      alt="event"
+      alt="empower"
       /> 
       </div>
       <div className="text-center w-[55%] max-large:w-full max-large:mt-[1rem] font-h3 text-h1">

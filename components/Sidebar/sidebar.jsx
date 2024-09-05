@@ -10,30 +10,27 @@ const SideBar = ({page}) => {
 
     const NavItems = [
       {
-        label: "Home",
+        label: "HOME",
         url: "/"
       },
       {
-        label: "Enroll",
-        url: "/register"
-      },
-      {
-        label: "About",
+        label: "ABOUT",
         url: "/about"
       },
-       {
-         label: "Partner with us",
-         url: "/partnership"
-       },
-       {
-         label: "Privacy Policy",
-         url: "/policy"
-       },
       {
-        label: "Contact Us",
+        label: "PROGRAMS",
+        url: "/programs"
+      },
+      {
+        label: "MEDIA",
+        url: "/media"
+      },
+      {
+        label: "CONTACT US",
         url: "/contact"
       }
     ]
+  
     
     return(
        <nav className={bar ? style.sidebarContainer : style.sidebarContainerClose}>
@@ -46,8 +43,8 @@ const SideBar = ({page}) => {
               )
             }
 
-         <Link href='/donation' onClick={()=>closeBar()} className='no-underline'>
-        <button className='bg-btn_green text-normal px-3 py-[2%] text-btn_color rounded-[5px] w-[80%] mx-[10%]'>Donate</button>
+         <Link href='/ourteam' onClick={()=>closeBar()} className='no-underline'>
+        <button className='bg-btn_bg text-normal px-[1rem] py-[1rem] 2xl:py-3 text-btn_color rounded-[12px] font-header w-[80%] mx-[10%]'>GET INVOLVED</button>
         </Link>
        </nav>
     )

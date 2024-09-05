@@ -115,12 +115,15 @@ const submitBtn = async (e) => {
         toggle={toggleModal} 
         toggleState={toggleState}
         />
-         <div  className="relative w-full min-h-[20rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7rem]">
+         <div  className="relative w-full min-h-[30rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7rem]">
         <Image 
-        src="/images/contact.png"
+        src="/images/contactbanner.png"
         fill
         alt="banner"
         />   
+         <div className="text-card1 text-h1 font-h2 relative z-[10] min-h-[30rem] flex flex-row justify-center items-center">
+            CONTACT US
+        </div> 
         </div>
 
         <section className="w-[60%] max-large:w-[90%] mx-auto my-[3em]">

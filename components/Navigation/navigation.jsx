@@ -50,7 +50,7 @@ const Navigation = () => {
             }
 
             
-              <button onClick={() => router.push('/donation')} className='bg-btn_bg text-normal px-[1rem] py-2 2xl:py-3 text-btn_color rounded-[12px] font-header'>GET INVOLVED</button>
+              <button onClick={() => router.push('/ourteam')} className='bg-btn_bg text-normal px-[1rem] py-2 2xl:py-3 text-btn_color rounded-[12px] font-header'>GET INVOLVED</button>
           
            </div>
 

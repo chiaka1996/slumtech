@@ -19,15 +19,15 @@ export default function Donation() {
     <Navigation />
     <Sidebar /> 
 
-    <div  className="relative w-full min-h-[20rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7rem]">
+    <div  className="relative w-full min-h-[22rem] max-large:min-h-[15rem] mt-[10em] max-large:mt-[7rem]">
     <Image 
-    src="/images/donation1.png"
+    src="/images/donationbanner.png"
     fill
     alt="banner"
     /> 
-    {/* <div className="text-card1 text-h1 font-h2 absolut relative z-[10] min-h-[20rem] flex flex-row justify-center items-center">
+    <div className="text-card1 text-h1 font-h2 relative z-[10] min-h-[22rem] flex flex-row justify-center items-center">
     Donation
-    </div>   */}
+    </div>  
     </div>
 
     <div className="w-[50%] max-large:w-[90%] mt-[3em] font-h2 text-h2 max-large:text-msubHeader mx-auto">
