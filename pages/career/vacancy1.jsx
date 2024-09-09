@@ -143,7 +143,7 @@ export default function Vacancy1() {
     Join us in making a difference in the lives of young people and shaping a brighter future for all.
     </p>     
     </div>
-    <form className="w-[80%] max-large:w-full max-large:mx-auto rounded-[16px] bg-[#E8107D] px-[5em] max-large:px-[1em] py-[3em] max-large:py-[1em] my-[3em]">
+    <form className="w-[80%] mx-auto max-large:w-full max-large:mx-auto rounded-[16px] bg-[#E8107D] px-[5em] max-large:px-[1em] py-[3em] max-large:py-[1em] my-[3em]">
         <header className="font-h3 text-btn_color text-h1 max-large:text-h4">APPLY</header>
         {/* grid 1 */}
         <div className="grid grid-cols-2 gap-5 mt-[1.5em]">
@@ -227,12 +227,36 @@ export default function Vacancy1() {
             /> 
         </div>
 
-         {/* grid5 */}
-         <div>
-        
+        {/* cv */}
+        <div className="mt-[1.5em]">
+        <label htmlFor="cv"  className="block flex items-center rounded-[0.5rem] pl-[1.2em]
+            w-full bg-index h-[3rem] text-primary font-normal text-[18px]">
+        CV/Resume
+        </label>
+        <input 
+        type="file"
+        id="cv" 
+        // onInput = {handleFile2}
+        // accept='images/*'
+       className="hidden"
+        />
         </div>
 
-
+         {/* grid5 */}
+         <div className="my-[1.5em]">
+         <textarea
+            placeholder="cover letter" 
+            name="coverLetter"
+            value=""
+            onChange={onChangeInput}
+            className="rounded-[0.5rem] px-[1.2em] py-[0.5em] outline-none 
+            border border-btn_bg w-[100%] h-[7.5rem] text-primary font-normal 
+            text-[18px] xlarge:text-normal placeholder-primary"
+            >
+            </textarea>
+        </div>
+      
+    <button className="px-[1rem] py-[0.7rem] text-normal font-h2 text-btn_bg rounded-[12px] border border-btn_color bg-btn_color">Send</button>
     </form>
     </section>
     <Newsletter />
