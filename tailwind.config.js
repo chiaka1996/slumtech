@@ -17,6 +17,7 @@ module.exports = {
         heading: "#3F3F3F",
         btn_bg: '#FD213E',
         primary: "#353535",
+        // primary: "#FFCCD3",
         btn_color: "#F5F5F5",
         card1: "#F5F5F5",
         index: "#FFFFFF",

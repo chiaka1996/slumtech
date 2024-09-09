@@ -117,7 +117,7 @@ export default function Donation() {
             />
         </div>
 
-        <button className="font-h2 p-[1em] text-btn_bg bg-h1 rounded-[12px] text-[1em]">Send</button>
+        <button className="font-h2 p-[1em] text-btn_bg bg-btn_color rounded-[12px] text-[1em]">Send</button>
     </form>
     <section className="w-[60%] max-large:w-[90%] mx-auto mt-[1.5em]">
     <header className="text-h4 max-large:text-h2 text-basic font-h2">Ways to Donate</header>

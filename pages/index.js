@@ -7,9 +7,9 @@ import style from "./blog/index.module.css"
 
 export const ProgramCard1 = () => {
   return (
-    <div className="grid grid-cols-2 w-[45%]">
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
+    <div className="grid grid-cols-2 w-[45%] max-large:w-full">
+     <div className="text-center flex items-center program_grid">
+      <div className="w-full">
      <div className="relative w-[66px] h-[71px] mx-auto">
       <Image 
       src="/icons/vector1.png" 
@@ -17,12 +17,12 @@ export const ProgramCard1 = () => {
       alt="event"
       /> 
       </div>
-      <p className="font-h3 text-secondary text-index mt-[1rem]">Community Tech Hubs</p>
+      <p className="font-h3 text-secondary text-center text-index mt-[1rem]">Community Tech Hubs</p>
       </div>
      </div>
 
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
+     <div className="text-center flex items-center program_grid">
+      <div className="w-full">
      <div className="relative w-[66px] h-[71px] mx-auto">
       <Image 
       src="/icons/vector6.png" 
@@ -34,8 +34,8 @@ export const ProgramCard1 = () => {
       </div>
      </div>
 
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
+     <div className="text-center flex items-center program_grid max-large:my-[2em]">
+      <div className="w-full">
      <div className="relative w-[66px] h-[71px] mx-auto">
       <Image 
       src="/icons/vector4.png" 
@@ -47,8 +47,8 @@ export const ProgramCard1 = () => {
       </div>
      </div>
 
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
+     <div className="text-center flex items-center program_grid max-large:my-[2em]">
+      <div className="w-full">
      <div className="relative w-[66px] h-[71px] mx-auto">
       <Image 
       src="/icons/vector5.png" 
@@ -66,35 +66,9 @@ export const ProgramCard1 = () => {
 
 export const ProgramCard2 = () => {
   return (
-    <div className="grid grid-cols-2 w-[45%]">
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
-     <div className="relative w-[66px] h-[71px] mx-auto">
-      <Image 
-      src="/icons/vector1.png" 
-      fill
-      alt="event"
-      /> 
-      </div>
-      <p className="font-h3 text-secondary text-index mt-[1rem]">Community Tech Hubs</p>
-      </div>
-     </div>
-
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
-     <div className="relative w-[66px] h-[71px] mx-auto">
-      <Image 
-      src="/icons/vector6.png" 
-      fill
-      alt="vector"
-      /> 
-      </div>
-      <p className="font-h3 text-secondary text-index mt-[1rem]">STEM Education Outreach</p>
-      </div>
-     </div>
-
-     <div className="text-center px-[2rem] flex items-center program_grid">
-      <div>
+    <div className="grid grid-cols-2 w-[45%] max-large:w-full">
+     <div className="text-center flex items-center program_grid">
+      <div className="w-full">
      <div className="relative w-[66px] h-[71px] mx-auto">
       <Image 
       src="/icons/vector4.png" 
@@ -102,11 +76,36 @@ export const ProgramCard2 = () => {
       alt="event"
       /> 
       </div>
-      <p className="font-h3 text-secondary text-index mt-[1rem]">Digital Literacy Workshops</p>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Digital Inclusion Campaign</p>
+      </div>
+     </div>
+
+     <div className="text-center flex items-center program_grid">
+      <div className="w-full">
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector3.png" 
+      fill
+      alt="vector"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Tech Entrepreneurship Incubator</p>
+      </div>
+     </div>
+    
+     <div className="text-center flex items-center program_grid max-large:my-[2em]">
+      <div className="w-full">
+     <div className="relative w-[66px] h-[71px] mx-auto">
+      <Image 
+      src="/icons/vector2.png" 
+      fill
+      alt="event"
+      /> 
+      </div>
+      <p className="font-h3 text-secondary text-index mt-[1rem]">Innovation Grants Program</p>
       </div>
      </div>
     </div>
-
   )
 }
 
@@ -164,8 +163,9 @@ export default function Home() {
       </div>
     </section>
     
+    {/* about description */}
     <section className="">
-      <div className="flex flex-row max-large:flex-col items-center w-[65%] max-large:w-[90%] px-[3em] max-large:px-[1em] rounded-[12px] py-[3em] max-large:py-[1em] mx-auto border border-[btn_bg] border-t-0">
+      <div className="flex flex-row max-large:flex-col items-center w-[65%] max-large:w-[90%] px-[3em] max-large:px-[1em] rounded-[12px] py-[3em] max-large:py-[1em] mx-auto indexAbout">
       <div className="mr-[1rem] max-large:mr-[0] text-h2 max-large:text-h3 font-normal min-w-[55%] max-large:w-full max-large:mb-[2rem]">
       <p className="mb-[0.5em]">
       At SlumTech Foundation, we are dedicated to leveraging the power of technology to uplift and empower 
@@ -202,12 +202,13 @@ export default function Home() {
     </section>
 
     {/* our programs */}
-    <section className="relative programSection text-btn_color px-[15%] py-2 mt-[5em] mb-[3em]">
+    <section className="relative programSection text-btn_color px-[15%] max-large:px-[5%]  py-2 mt-[5em] mb-[3em]">
       {/* semi circle */}
-      <div className="absolute w-[38rem] h-[38rem] rounded-full bg-[#fff] left-[3rem] top-[-25rem] z-10"></div>
-      <div className="absolute w-[38rem] h-[38rem] rounded-full bg-[#fff] left-[-30rem] top-[-25rem] z-10"></div>
-    <div className="flex flex-row flex-wrap w-full justify-between z-[100]">
-    <div className="w-[45%] my-[5em] z-[100]">
+      <div className="absolute w-[38rem] max-large:w-[20rem] h-[38rem] max-large:h-[20rem] rounded-full bg-[#fff] left-[3rem] max-large:left-[-1rem] top-[-25rem] max-large:top-[-7rem] z-10"></div>
+      <div className="max-large:hidden absolute w-[38rem] h-[38rem] rounded-full bg-[#fff] left-[-30rem] top-[-25rem] z-10"></div>
+    
+    <div className="flex flex-row max-large:flex-col flex-wrap w-full justify-between z-[100]">
+    <div className="w-[45%] max-large:w-full mt-[5em] mb-[5em] max-large:mb-[1.5em] z-[100]">
       <header className="text-btn_bg font-h2 text-h4 z-[100]">Our Programs</header>
     <p className="font-normal text-secondary mt-[5em] mb-[1em]">
     One of the key pillars of SlumTech Foundation is its focus on technology education. 
@@ -217,7 +218,9 @@ export default function Home() {
     Foundation empowers youth to become creators and innovators in an increasingly 
     digital world.
     </p>
-    <button className="px-[0.8em] py-[0.6em] font-h2 text-normal rounded-[12px] text-btn_bg bg-btn_color">Learn more</button>
+    <Link href="/programs" className='no-underline'>
+    <button className="px-[0.8em] max-large:px-[1.2em] py-[0.6em] max-large:py-[1em] font-h2 text-normal rounded-[12px] text-btn_bg bg-btn_color">Learn more</button>
+    </Link>
     </div>
 
     {programSwitch ? <ProgramCard1 /> : <ProgramCard2 />}
