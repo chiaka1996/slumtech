@@ -9,29 +9,6 @@ const Navigation = () => {
   const { bar, openBar, closeBar} = BarState();
   const router = useRouter();
 
-  const NavItems = [
-    {
-      label: "HOME",
-      url: "/"
-    },
-    {
-      label: "ABOUT",
-      url: "/about"
-    },
-    {
-      label: "PROGRAMS",
-      url: "/programs"
-    },
-    {
-      label: "MEDIA",
-      url: "/media"
-    },
-    {
-      label: "CONTACT US",
-      url: "/contact"
-    }
-  ]
-
     return(
       <nav className="font-primary bg-[#fff] z-[500] py-2 2xl:py-6 px-normal xlarge:px-xnormal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
          <Image 
@@ -104,7 +81,7 @@ const Navigation = () => {
             </Link>
             </div>
 
-            <div className={router.asPath == "/career" ? style.activeLink : style.navLink}> 
+            <div className={/^\/career\/*\w*/.test(router.asPath) || router.asPath == '/career' ? style.activeLink : style.navLink}> 
            <Link href="/career" className='no-underline text-primary text-normal'>
             CAREER
             </Link>

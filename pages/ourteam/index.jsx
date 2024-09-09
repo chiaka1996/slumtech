@@ -40,12 +40,16 @@ export default function OurTeam() {
             </p>
  
             <div className="flex flex-row items-center mt-[1em]">
+            <Link href="/register" className='no-underline'>
                 <button className="px-4 py-3 bg-btn_bg rounded-[12px] border border-btn_bg font-h2 text-[#fff] text-[1em] max-large:text-[14px] mr-[2em]">
                     JOIN US AS A VOLUNTEER
                 </button>
+            </Link>
+            <Link href="/career" className='no-underline'>
                 <button className="p-3 bg-transparent rounded-[12px] border border-btn_bg font-h2 text-btn_bg text-[1em] max-large:text-[14px]">
                     Careers
                 </button>
+            </Link>
 
                 <div className="relative w-[50px] h-[50px] ml-[1.4em]">
                     <Image 
