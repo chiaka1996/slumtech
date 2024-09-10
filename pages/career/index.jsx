@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
@@ -54,7 +55,6 @@ export default function Career() {
 
     <span className="text-btn_bg text-h2 font-normal underline">career@slumtech.org</span>
     </div>
-
     <Newsletter />
     <Footer />
     </main>

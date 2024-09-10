@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
@@ -67,9 +68,7 @@ export default function Mission() {
     we are building a more inclusive and equitable society where everyone has the chance to succeed.
     </p>
     </section>
-
     <Newsletter />
-
     <Footer /> 
     </main>
   );

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BarState } from '../../context/context';
@@ -8,6 +9,14 @@ import { useRouter } from "next/router";
 const Navigation = () => {
   const { bar, openBar, closeBar} = BarState();
   const router = useRouter();
+
+  function googleTranslateElementInit() {
+    new window.google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+
+  useEffect(() => {
+    googleTranslateElementInit()
+  })
 
     return(
       <nav className="font-primary bg-[#fff] z-[500] py-2 2xl:py-6 px-normal xlarge:px-xnormal max-large:px-[5%] flex flex-row justify-between items-center fixed top-0 left-0 w-full">
@@ -113,6 +122,7 @@ const Navigation = () => {
                     />   
                 </div>
                 }
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
       </nav>
     )
 }

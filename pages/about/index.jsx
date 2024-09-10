@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
@@ -108,9 +109,7 @@ export default function About() {
         the chance to thrive.
         </p>
     </section>
-
     <Newsletter />
-
     <Footer /> 
     </main>
   );

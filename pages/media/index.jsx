@@ -1,9 +1,17 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import {Navigation, Sidebar, Newsletter, Footer} from "../../components"
 import Head from 'next/head'
 
 export const Card = ({title, paragraph, link, img}) => {
+    function googleTranslateElementInit() {
+        new window.google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    
+      useEffect(() => {
+        googleTranslateElementInit()
+      },[])
     return(
         <div className="relative  max-large:pb-[4rem] max-large:mb-[0.5rem]">
             <div  className="relative w-full min-h-[17.5rem] max-large:min-h-[15rem]">

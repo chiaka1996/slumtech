@@ -145,10 +145,7 @@ export default function Home() {
 
   useEffect(() => {
     googleTranslateElementInit()
-  },[])
-
-
-
+  })
 
   return (
    <main className="font-primary text-primary">

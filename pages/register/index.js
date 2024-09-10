@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from 'next/link';
 import { ToastContainer, toast } from "react-toastify";
@@ -8,6 +8,13 @@ import {SubmitModal, Navigation, Sidebar, Headers, Footer, ButtonComponent, Text
 
 
 const Register = () => {
+  function googleTranslateElementInit() {
+    new window.google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+
+  useEffect(() => {
+    googleTranslateElementInit()
+  },[])
   const [selected, setSelected] = useState("");
   const [toggleModal, setToggleModal] = useState(false)
   const [loading, setLoading] = useState(false)
