@@ -17,7 +17,7 @@ const Navigation = () => {
             height="60"
             alt="logo"
         />
-           <div className="w-[70%] flex flex-row justify-between items-center font-nav max-lg:hidden">
+           <div className="w-[85%] flex flex-row justify-between items-center font-nav max-lg:hidden">
            <div className={router.asPath == "/" ? style.activeLink : style.navLink}> 
            <Link href="/" className='no-underline text-primary text-normal'>
             HOME
@@ -86,6 +86,9 @@ const Navigation = () => {
             CAREER
             </Link>
             </div>
+
+            <div id="google_translate_element" className=''></div>
+
               <button onClick={() => router.push('/ourteam')} className='bg-btn_bg text-normal px-[1rem] py-2 2xl:py-3 text-btn_color rounded-[12px] font-header'>GET INVOLVED</button>
           
            </div>

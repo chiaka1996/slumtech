@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* iframe.skiptranslate { display: "none !important"; } */
+.VIpgJd-ZVi9od-14eHX-hSRGPd{
+  display: "none !important";
+}
+
 .programSection{
   background: linear-gradient(180deg, #E8107D 0%, #FD213E 100%);
 }

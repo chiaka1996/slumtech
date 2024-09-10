@@ -139,6 +139,14 @@ export default function Home() {
     return () => clearInterval(interval)
   },[programSwitch])
 
+  function googleTranslateElementInit() {
+    new window.google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+
+  useEffect(() => {
+    googleTranslateElementInit()
+  },[])
+
 
 
 
@@ -324,6 +332,7 @@ export default function Home() {
 
     <Newsletter />
     <Footer />
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </main>
   );
 }

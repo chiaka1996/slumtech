@@ -30,6 +30,10 @@ function LoadingNewPage() {
 
 
 function MyApp({ Component, pageProps }) {
+ 
+
+ 
+
   return(
     <div>
       <Head>
